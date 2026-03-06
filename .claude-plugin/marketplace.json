@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fws-skills",
+  "version": "0.1.0",
+  "description": "Claude Code plugins and agent skills for product, development, and agency workflows — by Flying Web Solutions",
+  "owner": {
+    "name": "Flying Web Solutions",
+    "url": "https://www.flyingweb.ie"
+  },
+  "plugins": [
+    {
+      "name": "prd-builder",
+      "description": "Generate comprehensive PRDs by analyzing existing products, recommending a tech stack, and producing structured markdown documents",
+      "version": "0.1.0",
+      "source": "./prd-builder",
+      "category": "productivity"
+    },
+    {
+      "name": "fws-client-discovery",
+      "description": "Complete client discovery workflow — sitemap audit, competitor research, buyer personas, keyword strategy, and production-ready website copy with a 90-day content plan",
+      "version": "0.1.0",
+      "source": "./fws-client-discovery",
+      "category": "productivity"
+    }
+  ]
+}

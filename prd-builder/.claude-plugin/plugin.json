@@ -1,0 +1,15 @@
+{
+  "name": "prd-builder",
+  "version": "0.1.0",
+  "description": "Generate comprehensive PRDs for product clones by analyzing existing products, recommending tech stacks, and producing structured markdown documents",
+  "author": {
+    "name": "Flying Web Solutions | Davide"
+  },
+  "keywords": [
+    "prd",
+    "product-requirements",
+    "clone",
+    "tech-stack",
+    "product-spec"
+  ]
+}

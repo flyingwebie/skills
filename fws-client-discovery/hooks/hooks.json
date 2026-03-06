@@ -1,0 +1,26 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "cat ${CLAUDE_PLUGIN_ROOT}/templates/session-context.md",
+          "timeout": 5
+        }
+      ]
+    }
+  ],
+  "PreToolUse": [
+    {
+      "matcher": "Write",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "If writing to a client discovery output folder, verify the context file exists at the expected path and that the client name in the file path matches the active discovery session. If no discovery session is active, proceed normally.",
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}
