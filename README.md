@@ -4,24 +4,24 @@ Claude Code plugins and agent skills for product, development, and agency workfl
 
 ## Contents
 
-| Name | Type | Description |
-|------|------|-------------|
-| [`prd-builder`](./prd-builder/) | Plugin | Generate full PRDs by analyzing existing products and recommending a modern tech stack |
+| Name                                              | Type   | Description                                                                                         |
+| ------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------- |
+| [`prd-builder`](./prd-builder/)                   | Plugin | Generate full PRDs by analyzing existing products and recommending a modern tech stack              |
 | [`fws-client-discovery`](./fws-client-discovery/) | Plugin | Complete client discovery — sitemap, competitors, personas, keywords, copy, and 90-day content plan |
-| [`git-master`](./git-master/) | Skill | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management |
+| [`git-master`](./git-master/)                     | Skill  | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management |
 
-> **Plugins** add slash commands and are Claude Code-specific.  
+> **Plugins** add slash commands and are Claude Code-specific.
 > **Skills** (`SKILL.md` files) are cross-tool — they work in Claude Code, Gemini CLI, and OpenAI Codex CLI without modification.
 
 ---
 
 ## Compatibility
 
-| Tool | Plugins | Skills |
-|------|---------|--------|
-| [Claude Code](https://claude.ai/code) | Yes — full plugin system | Yes |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | No | Yes |
-| [OpenAI Codex CLI](https://github.com/openai/codex) | No | Yes |
+| Tool                                                      | Plugins                  | Skills |
+| --------------------------------------------------------- | ------------------------ | ------ |
+| [Claude Code](https://claude.ai/code)                     | Yes — full plugin system | Yes    |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | No                       | Yes    |
+| [OpenAI Codex CLI](https://github.com/openai/codex)       | No                       | Yes    |
 
 ---
 
@@ -34,7 +34,7 @@ This repo ships with a `.claude-plugin/marketplace.json`, which makes it a valid
 ```bash
 claude plugin marketplace add <github-username>/<repo-name>
 # Example:
-claude plugin marketplace add flyingweb/skills
+claude plugin marketplace add flyingwebie/skills
 ```
 
 Verify it was registered:
