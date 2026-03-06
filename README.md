@@ -6,11 +6,11 @@ Claude Code plugins and agent skills for product, development, and agency workfl
 
 | Name                                              | Type   | Description                                                                                         |
 | ------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------- |
-| [`prd-builder`](./prd-builder/)                   | Plugin | Generate full PRDs by analyzing existing products and recommending a modern tech stack              |
-| [`fws-client-discovery`](./fws-client-discovery/) | Plugin | Complete client discovery — sitemap, competitors, personas, keywords, copy, and 90-day content plan |
-| [`git-master`](./git-master/)                     | Skill  | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management |
+| [`prd-builder`](./prd-builder/)                   | Plugin | Generate full PRDs by analyzing existing products and recommending a modern tech stack               |
+| [`fws-client-discovery`](./fws-client-discovery/) | Plugin | Complete client discovery — sitemap, competitors, personas, keywords, copy, and 90-day content plan  |
+| [`git-master`](./git-master/)                     | Plugin | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management  |
 
-> **Plugins** add slash commands and are Claude Code-specific.
+> **Plugins** add slash commands, hooks, and bundled skills — they are Claude Code-specific.
 > **Skills** (`SKILL.md` files) are cross-tool — they work in Claude Code, Gemini CLI, and OpenAI Codex CLI without modification.
 
 ---
@@ -49,17 +49,10 @@ claude plugin marketplace list
 # Install globally for your user account
 claude plugin install prd-builder
 claude plugin install fws-client-discovery
+claude plugin install git-master
 
 # Install only for the current project
 claude plugin install prd-builder --scope project
-```
-
-### 3 — Install standalone skills
-
-The `git-master` skill has no slash commands — it's invoked automatically by Claude when relevant. Install it by symlinking it into Claude Code's skills directory:
-
-```bash
-ln -s /path/to/skills/git-master ~/.claude/skills/git-master
 ```
 
 ### Managing plugins
@@ -87,11 +80,12 @@ Gemini CLI supports skills natively via the `.agents/skills/` path. Plugins are 
 ### Install skills globally (all projects)
 
 ```bash
-# Symlink each skill into the Gemini user skills directory
-ln -s /path/to/skills/git-master ~/.gemini/skills/git-master
+# Symlink bundled skills from plugins into the Gemini user skills directory
+ln -s /path/to/skills/git-master/skills/git-workflow ~/.gemini/skills/git-workflow
+ln -s /path/to/skills/git-master/skills/commit-conventions ~/.gemini/skills/commit-conventions
 
 # Or use the ~/.agents/skills/ path (shared with Codex)
-ln -s /path/to/skills/git-master ~/.agents/skills/git-master
+ln -s /path/to/skills/git-master/skills/git-workflow ~/.agents/skills/git-workflow
 ```
 
 ### Install skills for one project (workspace)
@@ -101,7 +95,7 @@ Copy or symlink the skill into your project's local skills folder:
 ```bash
 # Inside your project root
 mkdir -p .agents/skills
-ln -s /path/to/skills/git-master .agents/skills/git-master
+ln -s /path/to/skills/git-master/skills/git-workflow .agents/skills/git-workflow
 ```
 
 Commit `.agents/skills/` to version control so the whole team shares the same skills.
@@ -127,7 +121,7 @@ Codex CLI uses the same `.agents/skills/` convention as Gemini CLI, so the same 
 ### Install skills globally (all projects)
 
 ```bash
-ln -s /path/to/skills/git-master ~/.agents/skills/git-master
+ln -s /path/to/skills/git-master/skills/git-workflow ~/.agents/skills/git-workflow
 ```
 
 ### Install skills for one project (workspace)
@@ -135,7 +129,7 @@ ln -s /path/to/skills/git-master ~/.agents/skills/git-master
 ```bash
 # Inside your project root
 mkdir -p .agents/skills
-ln -s /path/to/skills/git-master .agents/skills/git-master
+ln -s /path/to/skills/git-master/skills/git-workflow .agents/skills/git-workflow
 ```
 
 ### Install via the built-in skill installer
@@ -151,7 +145,7 @@ Then provide the GitHub repo and path when prompted.
 ### Invoke a skill explicitly in Codex
 
 ```
-$git-master  ← prefix with $ to call a skill by name
+$git-workflow  ← prefix with $ to call a skill by name
 ```
 
 ---
@@ -192,7 +186,7 @@ skill-name/
 │   └── marketplace.json     # Declares all plugins — enables `claude plugin marketplace add`
 ├── prd-builder/             # Plugin
 ├── fws-client-discovery/    # Plugin
-├── git-master/              # Standalone skill
+├── git-master/              # Plugin
 └── README.md
 ```
 
