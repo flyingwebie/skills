@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "fws-skills",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Claude Code plugins and agent skills for product, development, and agency workflows — by Flying Web Solutions",
   "owner": {
     "name": "Flying Web Solutions",
@@ -11,21 +11,21 @@
     {
       "name": "prd-builder",
       "description": "Generate comprehensive PRDs by analyzing existing products, recommending a tech stack, and producing structured markdown documents",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "source": "./prd-builder",
       "category": "productivity"
     },
     {
       "name": "fws-client-discovery",
       "description": "Complete client discovery workflow — sitemap audit, competitor research, buyer personas, keyword strategy, and production-ready website copy with a 90-day content plan",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "source": "./fws-client-discovery",
       "category": "productivity"
     },
     {
       "name": "git-master",
       "description": "Best-practice git workflow manager with Gitmoji + Conventional Commits, automated releases, branch hygiene, and safety hooks",
-      "version": "0.1.0",
+      "version": "1.1.0",
       "source": "./git-master",
       "category": "developer-tools"
     }

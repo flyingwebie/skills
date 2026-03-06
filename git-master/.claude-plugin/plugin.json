@@ -1,10 +1,18 @@
 {
   "name": "git-master",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Best-practice git workflow manager for feature-branch development on GitHub. Gitmoji + Conventional Commits, PR creation, releases, branch hygiene, and safety hooks.",
   "author": {
-    "name": "Flying Web Solutions | Davide",
-    "url": "https://flyingweb.ie"
+    "name": "Flying Web Solutions",
+    "url": "https://www.flyingweb.ie"
   },
-  "keywords": ["git", "workflow", "gitmoji", "conventional-commits", "pull-requests", "releases", "branches"]
+  "keywords": [
+    "git",
+    "workflow",
+    "gitmoji",
+    "conventional-commits",
+    "pull-requests",
+    "releases",
+    "branches"
+  ]
 }
