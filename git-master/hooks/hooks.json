@@ -1,0 +1,26 @@
+{
+  "SessionStart": [{
+    "matcher": "",
+    "hooks": [{
+      "type": "command",
+      "command": "cat ${CLAUDE_PLUGIN_ROOT}/templates/session-context.md",
+      "timeout": 5
+    }]
+  }],
+  "PreToolUse": [{
+    "matcher": "Bash",
+    "hooks": [{
+      "type": "command",
+      "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/pre-tool-use-guard.sh",
+      "timeout": 5
+    }]
+  }],
+  "PostToolUse": [{
+    "matcher": "Bash",
+    "hooks": [{
+      "type": "command",
+      "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/post-tool-use-commit-check.sh",
+      "timeout": 5
+    }]
+  }]
+}
