@@ -16,7 +16,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Branding Pipeline** - /branding command generates design systems from scratch or by reverse-engineering reference sites (completed 2026-03-10)
 - [x] **Phase 3: Page Design Engine** - /design command runs UX Agent (psychology) into UI Agent (Stitch) pipeline with copy generation (completed 2026-03-10)
 - [x] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs (completed 2026-03-10)
-- [ ] **Phase 5: Video-to-Website** - Scroll-driven animated site specs with canvas frame rendering and section choreography
+- [x] **Phase 5: Video-to-Website** - Scroll-driven animated site specs with canvas frame rendering and section choreography (completed 2026-03-10)
+- [ ] **Phase 6: Wire Animation and Video-to-Website Skills** - Connect existing animation and video-to-website skills to command entry points, fix schema gap and data sync issues
 
 ## Phase Details
 
@@ -92,12 +93,27 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 05-01-PLAN.md — Video-to-website skill with scroll-video reference guide, canvas frame rendering, and section choreography specs
+- [x] 05-01-PLAN.md — Video-to-website skill with scroll-video reference guide, canvas frame rendering, and section choreography specs
+
+### Phase 6: Wire Animation and Video-to-Website Skills
+**Goal**: Connect existing animation and video-to-website skills to command-level entry points so all v1 requirements are reachable by users, and fix schema/data sync gaps identified by milestone audit
+**Depends on**: Phase 4, Phase 5
+**Requirements**: ANIM-01, ANIM-02, ANIM-03
+**Gap Closure**: Closes gaps from v1.0 milestone audit
+**Success Criteria** (what must be TRUE):
+  1. `/design` command pipeline includes animation skill invocation as a step after UI Agent completion, producing per-page animation choreography specs
+  2. A command entry point exists for video-to-website skill (`/video` or integrated into `/design`), allowing users to generate scroll-driven animated site specs
+  3. `state.json` schema includes `scrollVideoSpecs[]` property for video-to-website skill persistence
+  4. REQUIREMENTS.md checkboxes for ANIM-01 and ANIM-02 reflect actual completion status; ROADMAP.md Phase 5 checkbox synced with STATE.md
+**Plans**: 0 plans (to be planned)
+
+Plans:
+- (none yet — run `/gsd:plan-phase 6`)
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -105,4 +121,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Branding Pipeline | 2/2 | Complete   | 2026-03-10 |
 | 3. Page Design Engine | 3/3 | Complete | 2026-03-10 |
 | 4. Design Iteration and Animation | 2/2 | Complete | 2026-03-10 |
-| 5. Video-to-Website | 0/1 | Not started | - |
+| 5. Video-to-Website | 1/1 | Complete | 2026-03-10 |
+| 6. Wire Animation and Video-to-Website Skills | 0/0 | Not started | - |
