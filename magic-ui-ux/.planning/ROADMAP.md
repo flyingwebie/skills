@@ -105,10 +105,11 @@ Plans:
   2. A command entry point exists for video-to-website skill (`/video` or integrated into `/design`), allowing users to generate scroll-driven animated site specs
   3. `state.json` schema includes `scrollVideoSpecs[]` property for video-to-website skill persistence
   4. REQUIREMENTS.md checkboxes for ANIM-01 and ANIM-02 reflect actual completion status; ROADMAP.md Phase 5 checkbox synced with STATE.md
-**Plans**: 0 plans (to be planned)
+**Plans**: 2 plans
 
 Plans:
-- (none yet — run `/gsd:plan-phase 6`)
+- [ ] 06-01-PLAN.md — Wire animation into /design pipeline, create /video command, add scrollVideoSpecs to schema
+- [ ] 06-02-PLAN.md — Update plugin indexes and sync requirement/roadmap completion status
 
 ## Progress
 
@@ -122,4 +123,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Page Design Engine | 3/3 | Complete | 2026-03-10 |
 | 4. Design Iteration and Animation | 2/2 | Complete | 2026-03-10 |
 | 5. Video-to-Website | 1/1 | Complete | 2026-03-10 |
-| 6. Wire Animation and Video-to-Website Skills | 0/0 | Not started | - |
+| 6. Wire Animation and Video-to-Website Skills | 0/2 | In progress | - |
