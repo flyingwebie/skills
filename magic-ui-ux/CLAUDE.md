@@ -30,6 +30,8 @@ magic-ui-ux/
   skills/
     persistence/          # .ui-ux/ folder management (tokens, state, briefs)
     psychology-router/    # Routes sections to relevant psychology skills
+    animation/            # Per-page animation choreography specs
+    video-to-website/     # Scroll-driven video-style site specs
   agents/
     ux-agent.md           # UX Agent -- psychology-based layout decisions
     ui-agent.md           # UI Agent -- Stitch screen generation from briefs

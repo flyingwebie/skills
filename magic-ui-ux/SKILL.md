@@ -28,6 +28,7 @@ Psychology-driven UI/UX design plugin for Claude Code. Separates UX (how users t
 | `copy-generation` | Generates psychology-aligned page copy (headlines, body, CTAs) with mandatory human approval before use |
 | `persistence` | Manages the `.ui-ux/` persistence folder -- design tokens, project state, screen references |
 | `animation` | Generates per-page animation choreography specs with Framer Motion, GSAP, Swup.js, and Lenis patterns |
+| `video-to-website` | Generates scroll-driven animated site specs with canvas frame rendering, GSAP ScrollTrigger pin/scrub, and Lenis integration for video-style web experiences |
 
 See `skills/` directory for full skill documentation.
 
