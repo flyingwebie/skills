@@ -13,7 +13,7 @@ This roadmap delivers a Claude Code plugin that produces psychologically-informe
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .ui-ux/ persistence layer, and psychology skill router (completed 2026-03-10)
-- [ ] **Phase 2: Branding Pipeline** - /branding command generates design systems from scratch or by reverse-engineering reference sites
+- [x] **Phase 2: Branding Pipeline** - /branding command generates design systems from scratch or by reverse-engineering reference sites (completed 2026-03-10)
 - [ ] **Phase 3: Page Design Engine** - /design command runs UX Agent (psychology) into UI Agent (Stitch) pipeline with copy generation
 - [ ] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs
 - [ ] **Phase 5: Video-to-Website** - Scroll-driven animated site specs with canvas frame rendering and section choreography
@@ -102,7 +102,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Plugin Foundation and Persistence | 2/2 | Complete   | 2026-03-10 |
-| 2. Branding Pipeline | 0/2 | Not started | - |
+| 2. Branding Pipeline | 2/2 | Complete   | 2026-03-10 |
 | 3. Page Design Engine | 0/3 | Not started | - |
 | 4. Design Iteration and Animation | 0/2 | Not started | - |
 | 5. Video-to-Website | 0/1 | Not started | - |
