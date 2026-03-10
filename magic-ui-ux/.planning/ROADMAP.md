@@ -47,8 +47,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Branding skill with industry design rules and niche-based generation flow
-- [ ] 02-02-PLAN.md — Reference extraction path (URL/screenshot) and .ui-ux/ consistency enforcement
+- [x] 02-01-PLAN.md — Branding skill with industry design rules and niche-based generation flow
+- [x] 02-02-PLAN.md — Reference extraction path (URL/screenshot) and .ui-ux/ consistency enforcement
 
 ### Phase 3: Page Design Engine
 **Goal**: Users can design pages end-to-end where psychology skills inform layout decisions and Stitch MCP generates production-quality screens, with copy generated when needed
@@ -60,12 +60,12 @@ Plans:
   3. UI Agent crafts Stitch prompts incorporating design tokens from `.ui-ux/`, the layout brief, and outputs generated screens
   4. When no copy is provided, plugin generates page text based on project niche and presents it for user approval before use
   5. Generated Stitch screen IDs and project links are saved to `.ui-ux/` for future reference and iteration
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — /design command orchestration and copy generation skill
+- [ ] 03-02-PLAN.md — UX Agent full implementation with psychology-informed layout briefs
+- [ ] 03-03-PLAN.md — UI Agent full implementation with Stitch prompt crafting
 
 ### Phase 4: Design Iteration and Animation
 **Goal**: Users can explore design variants, iterate on screens, and receive animation choreography specs for every designed page
