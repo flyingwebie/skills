@@ -89,10 +89,10 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. Plugin generates scroll-driven animated site specs with canvas frame rendering sequences and section choreography
   2. Output includes GSAP ScrollTrigger pin/scrub configurations, Lenis smooth scroll integration, and frame-by-frame timing
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — Video-to-website skill with scroll-video reference guide, canvas frame rendering, and section choreography specs
 
 ## Progress
 
