@@ -11,7 +11,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **FOUND-01**: Plugin scaffolded with CLAUDE.md, SKILL.md, plugin.json, commands/, skills/ following repo conventions (git-master, fws-client-discovery patterns)
 - [x] **FOUND-02**: `.ui-ux/` persistence folder stores design tokens (JSON), screen IDs, project state, and reference assets across sessions
-- [ ] **FOUND-03**: Psychology skill router selects 2-4 relevant skills per page section based on section type (hero, CTA, pricing, etc.) — not all 14 at once
+- [x] **FOUND-03**: Psychology skill router selects 2-4 relevant skills per page section based on section type (hero, CTA, pricing, etc.) — not all 14 at once
 
 ### Branding
 
@@ -73,7 +73,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | FOUND-01 | Phase 1 | Complete |
 | FOUND-02 | Phase 1 | Complete |
-| FOUND-03 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Complete |
 | BRAND-01 | Phase 2 | Pending |
 | BRAND-02 | Phase 2 | Pending |
 | BRAND-03 | Phase 2 | Pending |
