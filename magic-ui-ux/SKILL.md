@@ -17,6 +17,7 @@ Psychology-driven UI/UX design plugin for Claude Code. Separates UX (how users t
 |---------|-------------|
 | `/magic-ui-ux:branding` | Generate or reverse-engineer a design system for the project |
 | `/magic-ui-ux:design` | Design one or more pages with psychology-driven UX and Stitch-generated UI |
+| `/magic-ui-ux:iterate` | Iterate on existing designs -- generate variants or edit screens |
 
 ## Skills
 
