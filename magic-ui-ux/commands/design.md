@@ -1,32 +1,245 @@
 ---
 description: "Design one or more pages with psychology-driven UX and Stitch-generated UI"
-allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task
+allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, google_stitch_create_project, google_stitch_generate_screen_from_text
 argument-hint: "<pages> [--copy <file>]"
 ---
 
 # /magic-ui-ux:design
 
-Phase 3 will implement this command. For now, this stub exists to register the slash command.
+Design one or more pages end-to-end using the psychology-driven UX-to-UI pipeline. Each page flows through: section planning, UX Agent (psychology-informed layout), copy generation (with human approval), and UI Agent (Stitch screen generation).
 
-## What It Will Do
+---
 
-Design one or more pages end-to-end using the UX-to-UI pipeline:
+## Pre-Flight Check
 
-### Process
-1. **Read `.ui-ux/`** -- Load design tokens, project state, and branding guidelines
-2. **UX Agent** -- For each page, the psychology router selects relevant skills per section, and the UX Agent produces a layout brief (`{page}-ux-brief.md`) with section-by-section rationale
-3. **Copy Generation** -- If no `--copy` file is provided, generate page text based on project niche and present for user approval
-4. **UI Agent** -- Consumes the UX brief, design tokens, and approved copy to craft Stitch prompts and generate screens
-5. **Persist** -- Save generated screen IDs and page status to `.ui-ux/state.json`
+Before doing anything, read the project's persistence layer.
 
-### Usage Examples
+1. **Check `.ui-ux/` exists.**
+   - If `.ui-ux/` does not exist, initialize it per the persistence skill (`skills/persistence/SKILL.md`): create directories, create `state.json` with project name and niche (ask user if not known).
+
+2. **Read `.ui-ux/state.json`** for project context:
+   - `niche` -- needed for copy generation and section suggestions
+   - `pages` -- existing pages and their statuses (avoid re-doing completed work)
+   - `stitch.projectId` -- if a Stitch project already exists, reuse it
+
+3. **Read `.ui-ux/tokens.json`** -- REQUIRED.
+   - If `tokens.json` does not exist, **HALT**: "Run `/magic-ui-ux:branding` first. The design pipeline requires a design system."
+   - Verify tokens are complete: `colors.primary`, `colors.secondary`, `colors.cta`, `colors.background`, `colors.text`, `typography.heading.family`, `typography.body.family` must all have values.
+
+4. **Read `.ui-ux/branding.md`** for brand personality context (tone, style, personality traits).
+
+---
+
+## Input Parsing
+
+### Page Argument
+
+- **If `<pages>` argument provided:** Parse comma-separated page names.
+  ```
+  /magic-ui-ux:design homepage,services,about
+  ```
+  Produces: `["homepage", "services", "about"]`
+
+- **If no `<pages>` argument:** Prompt the user to select pages. Suggest common pages based on the project niche:
+
+  | Niche Category | Suggested Pages |
+  |---------------|-----------------|
+  | SaaS / Software | homepage, features, pricing, about, contact |
+  | E-commerce | homepage, product, category, cart, checkout |
+  | Agency / Services | homepage, services, portfolio, about, contact |
+  | Content / Blog | homepage, blog, article, about, contact |
+  | Portfolio / Personal | homepage, portfolio, about, contact |
+  | Restaurant / Local | homepage, menu, about, reservations, contact |
+  | Healthcare | homepage, services, providers, about, contact |
+  | Education | homepage, courses, instructors, about, contact |
+  | Real Estate | homepage, listings, property-detail, about, contact |
+  | Nonprofit | homepage, mission, programs, donate, contact |
+
+  Let the user type their selection or accept the suggestion.
+
+### Validation
+
+- Page names must be lowercase, alphanumeric, and hyphens only (e.g., `homepage`, `product-detail`, `about-us`)
+- Reject names with spaces, special characters, or uppercase letters
+- If a page already has status `"designed"` in `state.json`, warn: "Page '{name}' is already designed. Re-running will create new screens. Continue?"
+
+### Copy Flag
+
+- **If `--copy <file>` provided:** Read the specified file. Skip copy generation for ALL pages in this run. The file should contain section-labeled copy.
+- **If no `--copy` flag:** Copy generation runs per page (Step 3 in the pipeline below).
+
+---
+
+## Per-Page Pipeline
+
+Process pages **sequentially**. Each page completes the full pipeline before the next begins. This is required because:
+- User must approve copy per page (human-in-the-loop)
+- Stitch API calls are sequential
+- State is saved after each page so progress survives interruption
+
+### Step 1: Section Planning
+
+Based on the page type and project niche, suggest a default section list:
+
+| Page Type | Default Sections |
+|-----------|-----------------|
+| homepage | hero, features, testimonials, cta, footer |
+| landing | hero, features, social-proof, cta |
+| services | hero, services-list, process, testimonials, cta, footer |
+| about | hero, story, team, values, cta, footer |
+| pricing | hero, pricing-table, faq, cta, footer |
+| product | hero, features, specs, testimonials, cta, footer |
+| portfolio | hero, project-grid, testimonials, cta, footer |
+| contact | hero, contact-form, map, faq, footer |
+| blog | hero, article-grid, categories, newsletter, footer |
+| checkout | progress, cart-summary, payment-form, reassurance |
+
+Present to user:
+
+> **Suggested sections for {page}:** {section list}
+>
+> Approve these sections or tell me what to add, remove, or reorder.
+
+User confirms or modifies. Store the confirmed section list for the next steps.
+
+### Step 2: UX Agent
+
+Invoke the UX Agent (`agents/ux-agent.md`) with:
+
+| Parameter | Value |
+|-----------|-------|
+| `pageType` | The page name (e.g., "homepage") |
+| `sections` | Confirmed section list from Step 1 |
+| `niche` | From `.ui-ux/state.json` |
+| `tokens` | From `.ui-ux/tokens.json` |
+
+The UX Agent:
+1. Runs the psychology router to select 2-4 relevant skills per section
+2. Applies selected skills with awareness of design tokens
+3. Produces `.ui-ux/briefs/{page}-ux-brief.md` with section-by-section layout decisions and psychology rationale
+
+After UX Agent completes:
+- Update `.ui-ux/state.json`: set page status to `"ux-briefed"`, set `uxBriefPath`
+- If page entry doesn't exist in `state.json`, create it
+
+### Step 3: Copy Generation (if no --copy flag)
+
+Invoke the copy generation skill (`skills/copy-generation/SKILL.md`) with:
+
+| Parameter | Value |
+|-----------|-------|
+| `page_type` | The page name |
+| `sections` | Section list from the UX brief |
+| `niche` | From `.ui-ux/state.json` |
+| `tokens` | From `.ui-ux/tokens.json` (optional, for brand voice) |
+
+The copy generation skill:
+1. Reads the UX brief for psychology rationale per section
+2. Generates section-by-section copy aligned with the psychology skills applied
+3. **Presents ALL copy to user for approval** (mandatory human-in-the-loop)
+4. User approves, edits, or requests regeneration
+5. Saves approved copy to `.ui-ux/briefs/{page}-copy.md`
+
+**If `--copy` flag was provided:** Skip this step. Use the provided copy file instead.
+
+**CRITICAL: Never pass unapproved copy to the UI Agent.**
+
+### Step 4: UI Agent
+
+Invoke the UI Agent (`agents/ui-agent.md`) with:
+
+| Parameter | Value |
+|-----------|-------|
+| `uxBrief` | `.ui-ux/briefs/{page}-ux-brief.md` |
+| `tokens` | `.ui-ux/tokens.json` |
+| `branding` | `.ui-ux/branding.md` |
+| `copy` | `.ui-ux/briefs/{page}-copy.md` (or user-provided copy file) |
+
+The UI Agent:
+1. Reads all inputs (UX brief, tokens, branding, copy)
+2. Crafts detailed Stitch prompts with exact token values (hex codes, font names, UI style)
+3. Creates a Stitch project via `create_project` if no project exists yet (`stitch.projectId` is null in `state.json`)
+4. Generates screens via `generate_screen_from_text` for each section or page layout
+5. Returns screen IDs and project URL
+
+After UI Agent completes:
+- Update `.ui-ux/state.json`:
+  - Set page status to `"designed"`
+  - Populate `screenIds` array for the page
+  - Set `stitch.projectId` and `stitch.projectUrl` if newly created
+  - Update `updatedAt` timestamp
+
+---
+
+## Summary Output
+
+After all pages are processed, present a summary:
+
 ```
-/magic-ui-ux:design homepage
-/magic-ui-ux:design homepage,services,about
-/magic-ui-ux:design landing --copy content/landing-copy.md
+Design Complete
+
+| Page | Status | UX Brief | Copy | Screens |
+|------|--------|----------|------|---------|
+| homepage | designed | .ui-ux/briefs/homepage-ux-brief.md | .ui-ux/briefs/homepage-copy.md | 3 screens |
+| services | designed | .ui-ux/briefs/services-ux-brief.md | .ui-ux/briefs/services-copy.md | 2 screens |
+
+Stitch Project: [project URL]
+
+Next steps:
+- Run /magic-ui-ux:design to design additional pages
+- Use Stitch edit_screens to refine any screen
+- Use Stitch generate_variants to explore alternative designs
 ```
 
-### Output
-- `{page}-ux-brief.md` in `.ui-ux/briefs/`
-- Google Stitch screens (project link + screen IDs)
-- Updated `.ui-ux/state.json` with page statuses and screen references
+---
+
+## Multi-Page Handling
+
+- Pages are processed **sequentially** (not in parallel)
+- Reason: user must approve copy per page; Stitch calls are sequential
+- State is saved to `.ui-ux/state.json` after EACH page completes
+- If interrupted mid-run, completed pages retain their progress
+- Re-running `/design` for a page that is already `"designed"` will create new screens (user is warned during validation)
+
+---
+
+## Error Handling
+
+### Stitch MCP Not Connected
+
+If `create_project` or `generate_screen_from_text` is not available:
+
+> **Google Stitch MCP must be connected for screen generation.**
+> Connect the Stitch MCP server and retry. The UX brief and copy have been saved -- you won't lose progress.
+
+Save the UX brief and copy (partial progress is preserved), then halt the pipeline for this page.
+
+### Copy Approval Rejected
+
+If the user rejects all generated copy:
+
+1. Offer to regenerate with different parameters
+2. Offer to let the user provide their own copy file
+3. User can also skip copy and proceed without (UI Agent will use placeholder sections)
+
+### Stitch Generation Fails
+
+If Stitch returns an error during screen generation:
+
+1. Save UX brief and copy (partial progress preserved)
+2. Report the error with details
+3. Suggest: "The UX brief and copy are saved. You can retry `/design {page}` or use Stitch directly with the brief as a reference."
+
+### Tokens Incomplete
+
+If `tokens.json` exists but is missing required fields:
+
+> **Design tokens are incomplete.** Missing: {list of missing fields}.
+> Run `/magic-ui-ux:branding` to regenerate a complete design system.
+
+### Page Already Designed
+
+If a page has status `"designed"` and user confirms re-design:
+- Create new screens (don't delete old ones from Stitch)
+- Update `state.json` with new screen IDs (old IDs are replaced in the page entry)
+- Old screens remain in the `screens` array for reference
