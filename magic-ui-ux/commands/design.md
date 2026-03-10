@@ -169,6 +169,26 @@ After UI Agent completes:
   - Set `stitch.projectId` and `stitch.projectUrl` if newly created
   - Update `updatedAt` timestamp
 
+### Step 5: Animation Choreography
+
+Invoke the animation choreography skill (`skills/animation/SKILL.md`) with:
+
+| Parameter | Value |
+|-----------|-------|
+| `page` | Current page name (e.g., "homepage") |
+| `uxBrief` | `.ui-ux/briefs/{page}-ux-brief.md` (produced in Step 2) |
+| `tokens` | `.ui-ux/tokens.json` (loaded in pre-flight) |
+
+The animation skill:
+1. Reads the UX brief for psychology rationale per section
+2. Determines animation intensity from the UI style token (restrained, moderate, or expressive)
+3. Assembles per-section choreography with entrance animations, scroll behaviors, and reduced motion fallbacks
+4. Produces `.ui-ux/briefs/{page}-animation-spec.md`
+
+After animation skill completes:
+- Add entry to `state.json.animationSpecs[]`: `{ "page": "{page}", "specPath": ".ui-ux/briefs/{page}-animation-spec.md" }`
+- Update `state.json.updatedAt` timestamp
+
 ---
 
 ## Summary Output
@@ -178,15 +198,16 @@ After all pages are processed, present a summary:
 ```
 Design Complete
 
-| Page | Status | UX Brief | Copy | Screens |
-|------|--------|----------|------|---------|
-| homepage | designed | .ui-ux/briefs/homepage-ux-brief.md | .ui-ux/briefs/homepage-copy.md | 3 screens |
-| services | designed | .ui-ux/briefs/services-ux-brief.md | .ui-ux/briefs/services-copy.md | 2 screens |
+| Page | Status | UX Brief | Copy | Screens | Animation |
+|------|--------|----------|------|---------|-----------|
+| homepage | designed | .ui-ux/briefs/homepage-ux-brief.md | .ui-ux/briefs/homepage-copy.md | 3 screens | .ui-ux/briefs/homepage-animation-spec.md |
+| services | designed | .ui-ux/briefs/services-ux-brief.md | .ui-ux/briefs/services-copy.md | 2 screens | .ui-ux/briefs/services-animation-spec.md |
 
 Stitch Project: [project URL]
 
 Next steps:
 - Run /magic-ui-ux:design to design additional pages
+- Run /magic-ui-ux:video for scroll-driven video-style page specs
 - Use Stitch edit_screens to refine any screen
 - Use Stitch generate_variants to explore alternative designs
 ```
