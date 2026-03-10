@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Project State",
+  "type": "object",
+  "properties": {
+    "projectName": { "type": "string" },
+    "niche": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "stitch": {
+      "type": "object",
+      "properties": {
+        "projectId": { "type": "string" },
+        "projectUrl": { "type": "string" }
+      }
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "page": { "type": "string" },
+          "variant": { "type": "integer", "default": 0 },
+          "createdAt": { "type": "string", "format": "date-time" },
+          "stitchScreenId": { "type": "string" },
+          "uxBriefPath": { "type": "string" }
+        },
+        "required": ["id", "page"]
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["planned", "ux-briefed", "designed", "iterated"]
+          },
+          "uxBriefPath": { "type": "string" },
+          "screenIds": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["name", "status"]
+      }
+    },
+    "brandingComplete": { "type": "boolean", "default": false },
+    "animationSpecs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": { "type": "string" },
+          "specPath": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["projectName", "niche", "createdAt"]
+}
