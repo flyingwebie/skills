@@ -30,7 +30,6 @@ If a meeting transcript file is provided:
 - Read the file
 - Extract key signals: industry, services, target audience, competitors mentioned, pain points, questions
 - Write findings to `01-Client-Brief.md`
-- Generate `01-Client-Brief.docx` — read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md for branded template instructions
 - Update Step 0 section of `discovery-context.md`
 
 If no transcript is provided:
@@ -53,9 +52,8 @@ Phase A researches the client's market, audience, and competitors, then produces
 - If client has a URL: crawl and analyze the site structure
 - If no URL: build a recommended sitemap from industry benchmarks
 - Write `02-Sitemap-Report.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/sitemap-report.md
-- Generate `02-Sitemap-Report.docx` with visual tree diagram (see skill for details)
 - Update discovery context with sitemap findings
-- **Checkpoint**: Tell user "Step 1 complete — [X] pages found, [Y] gaps identified. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 1 complete — [X] pages found, [Y] gaps identified"
 
 ### Step 2: Competitor Research
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/competitor-research/SKILL.md
@@ -63,9 +61,8 @@ Phase A researches the client's market, audience, and competitors, then produces
 - Identify 3-5 competitors and deep-analyze each
 - Build competitive matrix and battlecards
 - Write `03-Competitor-Report.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/competitor-report.md
-- Generate `03-Competitor-Report.docx` with battlecard styling
 - Update discovery context with competitor findings
-- **Checkpoint**: Tell user "Step 2 complete — [X] competitors analyzed, [Y] content gaps found. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 2 complete — [X] competitors analyzed, [Y] content gaps found"
 
 ### Step 3: Buyer Persona Research
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/buyer-persona-research/SKILL.md
@@ -73,47 +70,41 @@ Phase A researches the client's market, audience, and competitors, then produces
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/buyer-persona-research/references/persona-interview-questions.md
 - Build 2-3 personas using APEX Value Equation methodology
 - Write `04-Buyer-Personas.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/persona-card.md
-- Generate `04-Buyer-Personas.docx` with APEX score coloring
 - Update discovery context with persona findings
-- **Checkpoint**: Tell user "Step 3 complete — [X] personas created: [names]. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 3 complete — [X] personas created: [names]"
 
 ### Step 4: Keyword Research
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/keyword-research/SKILL.md
 - Read @${CLAUDE_PLUGIN_ROOT}/references/core-eeat-benchmark.md
 - Generate persona-aware seeds, expand, classify, cluster
 - Write `05-Keyword-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/keyword-report.md
-- Generate `05-Keyword-Research.docx` with ICE score coloring
 - Update discovery context with keyword findings
-- **Checkpoint**: Tell user "Step 4 complete — [X] keywords in [Y] clusters, [Z] quick wins. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 4 complete — [X] keywords in [Y] clusters, [Z] quick wins"
 
 ### Step 5: UX/UI Research
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/ux-ui-research/SKILL.md
 - Read ALL reference files in @${CLAUDE_PLUGIN_ROOT}/skills/ux-ui-research/references/
 - Generate design system recommendation matched to industry and personas
 - Write `06-UX-UI-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/ux-research-report.md
-- Generate `06-UX-UI-Research.docx` with color swatch tables
 - Update discovery context with design findings
-- **Checkpoint**: Tell user "Step 5 complete — recommended style: [X], palette: [Y], fonts: [Z]. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 5 complete — recommended style: [X], palette: [Y], fonts: [Z]"
 
 ### Step 6: FAQ Research
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/faq-research/SKILL.md
 - Mine PAA, competitor FAQs, meeting questions, persona-driven questions
 - Write `07-FAQ-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/faq-report.md
-- Generate `07-FAQ-Research.docx` with priority-colored FAQ tables
 - Update discovery context with FAQ findings
-- **Checkpoint**: Tell user "Step 6 complete — [X] FAQs identified, [Y] with schema markup. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 6 complete — [X] FAQs identified, [Y] with schema markup"
 
 ### Step 7: Page Copywriting
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/SKILL.md
 - Read ALL reference files:
-  - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/pencil-prompt-framework.md
   - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/page-type-schemas.md
   - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/seo-metadata-guide.md
   - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/content-formatting-guide.md
 - Read CORE-EEAT benchmark: @${CLAUDE_PLUGIN_ROOT}/references/core-eeat-benchmark.md
 - Build page queue from sitemap (core → pillar → child → supporting, NO blog)
 - Generate all page markdown files with:
-  - Custom Pencil.dev prompt per page (with wireframe hints)
   - SEO metadata block (title, meta, OG, schema, canonical)
   - Heading accent (`:: keyword`) + H1
   - Full SEO/GEO-optimized body content
@@ -134,16 +125,14 @@ All website pages are now complete. Phase B plans the ongoing content strategy a
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/content-planning/SKILL.md
 - Synthesize ALL findings (Steps 1-7) into ICE-scored content plan + 90-day calendar
 - Write `08-Content-Plan.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/content-plan.md
-- Generate `08-Content-Plan.docx` with ICE scoring and calendar tables
 - Update discovery context with content plan summary
-- **Checkpoint**: Tell user "Step 8 complete — [X] content pieces planned over 90 days. Reports: .md + .docx"
+- **Checkpoint**: Tell user "Step 8 complete — [X] content pieces planned over 90 days"
 
 ### Step 9: Blog Copywriting
 - Read @${CLAUDE_PLUGIN_ROOT}/skills/blog-copywriter/SKILL.md
 - Read shared formatting references (same as Step 7)
 - Build blog queue from 90-day content plan calendar (Step 8)
 - Generate blog post markdown files with:
-  - Blog-specific Pencil.dev prompt (hero, body, author bio, related posts, CTA)
   - Article schema metadata (+ author, date, category, parent pillar)
   - Heading accent (`:: keyword`) + H1
   - Opening hook, body sections (H2 every 300-400 words), data points
@@ -170,26 +159,19 @@ All website pages are now complete. Phase B plans the ongoing content strategy a
   - Top 5 priorities across all dimensions
   - Recommended next steps
   - Deliverables checklist
-- Generate `00-Discovery-Report.docx` — this is the **first document clients see**, make it polished
-  - Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-  - Use Title style for the report name, Subtitle for client name + date
-  - Include all sections with proper H1/H2/H3 hierarchy
-  - Add the deliverables checklist as a branded table
 
 ### Completion Summary
 Present the user with:
 1. List of all deliverables created (with file paths):
-   - Master discovery report (00) — .md + .docx
-   - 7 research reports (01 through 07) — .md + .docx each
-   - Content plan (08) — .md + .docx
-   - Page content files (homepage, services, about, etc.) — .md only
-   - Blog post files — .md only
-   - **Total .docx files for client review: 9**
+   - Master discovery report (00)
+   - 7 research reports (01 through 07)
+   - Content plan (08)
+   - Page content files (homepage, services, about, etc.)
+   - Blog post files
 2. Content totals: total pages generated, total blog posts, total word count
 3. Top 5 overall priorities from the discovery
 4. Recommended immediate next steps
 5. Note that all files are in the `[Client-Name]/01-Discovery/` folder
-6. Note that .docx files are ready for upload to Google Drive for client review
 
 ---
 

@@ -4,7 +4,7 @@ description: >
   Identify and analyze competitors across SEO, content, UX, and positioning.
   Produces battlecards and gap analysis. Use when building competitive intelligence
   for a client project. Triggers: "competitor", "battlecard", "competitive analysis".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Competitor Research & Battlecards
@@ -167,13 +167,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `03-Competitor-Report.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `03-Competitor-Report.md` to `03-Competitor-Report.docx` using the FWS branded template
-- Use battlecard table styling (dark header #2C3E50, white text) for competitor cards
-- Validate the .docx file
 
 ## CITE Domain Rating Integration
 When assessing competitor domain strength, reference the CITE framework (40 items):

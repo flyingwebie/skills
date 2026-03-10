@@ -4,7 +4,7 @@ description: >
   Discover, classify, and organize keywords into topic clusters with intent mapping
   and ICE scoring. Persona-aware seed generation. Use when planning content strategy
   or SEO. Triggers: "keyword research", "topic clusters", "SEO keywords", "search terms".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Keyword Research & Topic Clusters
@@ -153,13 +153,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `05-Keyword-Research.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `05-Keyword-Research.md` to `05-Keyword-Research.docx` using the FWS branded template
-- Use color-coded ICE scores in priority tables (green 7+, orange 4-6, red <4)
-- Validate the .docx file
 
 ## GEO Optimization Note
 For every keyword, consider AI engine optimization:

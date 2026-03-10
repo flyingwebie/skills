@@ -2,21 +2,21 @@
 name: page-copywriter
 description: >
   Generate production-ready website page content as markdown files. Each file contains
-  full SEO/GEO-optimized copy with H1-H3 hierarchy, FAQs, quotes, CTAs, metadata,
-  and a Pencil.dev prompt for UI generation. Use after completing discovery workflow.
+  full SEO/GEO-optimized copy with H1-H3 hierarchy, FAQs, quotes, CTAs, and metadata.
+  Use after completing discovery workflow.
   Triggers: "copywrite", "page content", "website copy", "write pages", "generate content".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Page Copywriter — Production-Ready Website Content
 
 ## Purpose
-Generate complete, copy-paste-ready website page content as individual markdown files. Each page is fully optimized for SEO + GEO (AI citation), written in the client's brand voice and persona tone, and includes a Pencil.dev prompt at the top for automated UI generation.
+Generate complete, copy-paste-ready website page content as individual markdown files. Each page is fully optimized for SEO + GEO (AI citation), written in the client's brand voice and persona tone.
 
 ## When to Use
 - After completing Steps 1-7 of the FWS Discovery workflow
 - When the client needs actual website copy for all core pages
-- When handing off to design (Pencil.dev) or developers
+- When handing off to designers or developers
 
 ## CRITICAL: Prerequisites
 This skill REQUIRES completed discovery data. Before running, verify that `discovery-context.md` contains populated data for:
@@ -35,9 +35,6 @@ If any step is missing, warn the user and recommend running it first.
 Every generated markdown file follows this exact structure:
 
 ```markdown
-<!-- PENCIL.DEV PROMPT -->
-<!-- [Custom prompt for this specific page — see Pencil Prompt Framework] -->
-
 <!-- SEO METADATA -->
 <!-- title: [50-60 chars] -->
 <!-- meta_description: [150-160 chars] -->
@@ -89,7 +86,7 @@ Read the complete `discovery-context.md` file. Extract:
 - **Keywords mapped to pages** from keyword research
 - **Page list** from sitemap analysis + content plan
 - **FAQs per page topic** from FAQ research
-- **Design style** from UX/UI research (for Pencil prompts)
+- **Design style** from UX/UI research
 - **Competitor positioning** to ensure differentiation
 
 ### Step 2: Build Page Generation Queue
@@ -133,22 +130,13 @@ For each page in the queue, follow the Page Generation Protocol:
 - Competitor gap this page addresses
 - Internal link targets (3-5 relevant pages)
 
-#### B. Write the Pencil Prompt
-Generate a custom Pencil.dev prompt following the framework in `references/pencil-prompt-framework.md`. Include:
-- Page type and purpose
-- Design style from UX research
-- Color palette hex values
-- Typography selection
-- Section-by-section wireframe hints
-- Content tone and imagery direction
-
-#### C. Write SEO Metadata
+#### B. Write SEO Metadata
 - **Title tag**: Primary keyword + brand/benefit, 50-60 chars
 - **Meta description**: Compelling CTA with keyword, 150-160 chars
 - **Schema type**: Match to page type (see reference)
 - **Canonical URL**: Clean URL path
 
-#### D. Write Page Content
+#### C. Write Page Content
 Follow the content rules:
 
 **Heading Accent** (before H1):
@@ -218,7 +206,6 @@ Run each page through the quality checklist:
 - [ ] FAQs included and match FAQ research data
 - [ ] Internal links present (min 3 per page)
 - [ ] CTA present and journey-stage-appropriate
-- [ ] Pencil prompt complete with wireframe hints
 - [ ] SEO metadata complete and within character limits
 - [ ] No placeholder text remaining (except testimonial attribution)
 - [ ] Word count meets minimum for page type
@@ -310,11 +297,9 @@ Write all pages to a `pages/` subdirectory in the client's discovery folder:
 - **Don't**: Use placeholder text (except `[Client Name]` and testimonial names)
 - **Don't**: Write content for blog posts (use `/blog-content` for that)
 - **Don't**: Ignore the persona tone — a page for Decision Dave reads differently than Awareness Amy
-- **Don't**: Skip the Pencil prompt — it's critical for UI handoff
 - **Don't**: Write FAQs that don't match the FAQ research findings
 
 ## Reference Files
-- `references/pencil-prompt-framework.md` — How to write Pencil.dev prompts
 - `references/page-type-schemas.md` — Schema markup per page type
 - `references/seo-metadata-guide.md` — Title/meta best practices
 - `references/content-formatting-guide.md` — Markdown formatting standards

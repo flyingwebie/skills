@@ -4,7 +4,7 @@ description: >
   Generate data-driven design system recommendations matched to industry, audience,
   and brand. Includes color palettes, typography, UI styles, and accessibility.
   Triggers: "UX research", "design system", "UI style", "color palette", "typography".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # UX/UI Research & Design System
@@ -219,13 +219,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `06-UX-UI-Research.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `06-UX-UI-Research.md` to `06-UX-UI-Research.docx` using the FWS branded template
-- Include color swatches as colored table cells where color palettes are shown
-- Validate the .docx file
 
 ## Quality Checklist
 - [ ] Industry-matched design style selected with rationale

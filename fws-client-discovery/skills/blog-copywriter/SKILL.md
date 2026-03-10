@@ -2,16 +2,16 @@
 name: blog-copywriter
 description: >
   Generate production-ready blog post content as markdown files with full SEO/GEO
-  optimization. Each post includes Pencil.dev prompt, metadata, and copy-paste-ready
+  optimization. Each post includes metadata and copy-paste-ready
   content. Use after discovery + content plan are complete.
   Triggers: "blog content", "write blog", "blog posts", "generate articles".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Blog Copywriter — Production-Ready Blog Posts
 
 ## Purpose
-Generate complete, SEO/GEO-optimized blog posts as individual markdown files. Each post targets a specific keyword from the content plan, is written for the correct buyer persona, and includes a Pencil.dev prompt for UI generation.
+Generate complete, SEO/GEO-optimized blog posts as individual markdown files. Each post targets a specific keyword from the content plan, is written for the correct buyer persona.
 
 ## When to Use
 - After `/copywrite` has generated core website pages
@@ -41,41 +41,6 @@ Requires completed discovery data AND content plan. The blog posts are the "spok
 ## Blog Post Structure
 
 ```markdown
-<!-- PENCIL.DEV PROMPT
-===========================================
-PAGE: Blog Post — [Title]
-TYPE: blog-post
-STYLE: [UI style from UX research]
-MOOD: [informative and engaging]
-
-DESIGN SYSTEM: [same as site pages]
-
-LAYOUT SECTIONS:
-━━━━━━━━━━━━━━━━
-
-[SECTION 1: Blog Hero]
-→ Layout: full-width with featured image
-→ Elements: H1 title, author name + photo, publish date, reading time, category tag
-→ Notes: Clean, readable blog header. Featured image 16:9 ratio.
-
-[SECTION 2: Article Body]
-→ Layout: centered single column, max-width 720px
-→ Elements: Body content from markdown (paragraphs, lists, H2s, H3s, images, quotes)
-→ Notes: Generous line height (1.6-1.7), comfortable reading width
-
-[SECTION 3: Author Bio]
-→ Layout: card at end of article
-→ Elements: Author photo, name, title, brief bio, social links
-
-[SECTION 4: Related Posts]
-→ Layout: three-column cards
-→ Elements: 3 related post cards with thumbnail, title, excerpt, date
-
-[SECTION 5: CTA Banner]
-→ Layout: full-width banner
-→ Elements: H2, CTA text, button linked to relevant service or contact page
-=========================================== -->
-
 <!-- SEO METADATA -->
 <!-- title: [50-60 chars with keyword] -->
 <!-- meta_description: [150-160 chars] -->
@@ -174,7 +139,6 @@ Must include one of:
 - [ ] Key takeaways section
 - [ ] FAQ section (2-4 questions)
 - [ ] CTA links to pillar page + contact
-- [ ] Pencil prompt complete
 - [ ] SEO metadata complete
 - [ ] Word count meets type target
 - [ ] Persona tone matches target audience

@@ -4,7 +4,7 @@ description: >
   Identify and optimize FAQs using PAA mining, competitor analysis, and persona-driven
   questions. Generates JSON-LD schema markup and GEO-optimized answer guidelines.
   Triggers: "FAQ", "frequently asked questions", "PAA", "people also ask", "FAQ schema".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # FAQ Research — PAA + Schema + GEO
@@ -174,13 +174,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `07-FAQ-Research.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `07-FAQ-Research.md` to `07-FAQ-Research.docx` using the FWS branded template
-- Use color-coded priority scores in FAQ tables
-- Validate the .docx file
 
 ## Quality Checklist
 - [ ] Questions collected from all 4 sources (meeting, PAA, competitors, personas)

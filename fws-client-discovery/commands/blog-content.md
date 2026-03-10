@@ -9,7 +9,6 @@ You are running the **Blog Copywriter** — generating production-ready blog pos
 ## Setup
 1. Read the skill instructions: @${CLAUDE_PLUGIN_ROOT}/skills/blog-copywriter/SKILL.md
 2. Read the page copywriter references (shared formatting standards):
-   - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/pencil-prompt-framework.md
    - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/seo-metadata-guide.md
    - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/content-formatting-guide.md
 3. Read the CORE-EEAT benchmark: @${CLAUDE_PLUGIN_ROOT}/references/core-eeat-benchmark.md
@@ -42,9 +41,8 @@ mkdir -p [client-folder]/01-Discovery/pages/blog
 For each post in the queue:
 1. Identify target keyword, persona, buyer journey stage, and parent pillar page
 2. Determine blog post type (how-to, listicle, comparison, insight, case study, FAQ deep-dive, local)
-3. Write the Pencil.dev prompt (blog-specific layout)
-4. Write SEO metadata block (including author, publish date, category, parent pillar)
-5. Write full post content:
+3. Write SEO metadata block (including author, publish date, category, parent pillar)
+4. Write full post content:
    - Opening hook (first 100 words)
    - Body sections with H2 every 300-400 words
    - Data points and specific examples
@@ -52,8 +50,8 @@ For each post in the queue:
    - Key takeaways section (3-5 bullet points)
    - FAQ section (2-4 questions from FAQ research)
    - CTA linking to parent pillar and contact page
-6. Save as markdown to `pages/blog/[url-slug].md`
-7. Report: "✓ [slug].md — [word count] words, [keyword], links to [pillar]"
+5. Save as markdown to `pages/blog/[url-slug].md`
+6. Report: "✓ [slug].md — [word count] words, [keyword], links to [pillar]"
 
 ### Phase 4: Cross-Linking
 After ALL posts are generated:

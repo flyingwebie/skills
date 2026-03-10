@@ -1,14 +1,11 @@
 # Content Formatting Guide — Markdown Standards
 
 ## Purpose
-Every page file must be production-ready markdown. This guide defines the exact formatting standards so content can be copy-pasted directly into a CMS or used with Pencil.dev.
+Every page file must be production-ready markdown. This guide defines the exact formatting standards so content can be copy-pasted directly into a CMS.
 
 ## Document Structure
 
 ```markdown
-<!-- PENCIL.DEV PROMPT -->
-<!-- [Prompt block — see pencil-prompt-framework.md] -->
-
 <!-- SEO METADATA -->
 <!-- title: ... -->
 <!-- meta_description: ... -->
@@ -231,5 +228,4 @@ Before finalizing any page:
 - [ ] CTA section at the bottom
 - [ ] No "click here" links
 - [ ] No placeholder text except testimonial attribution
-- [ ] Pencil prompt is complete at the top
 - [ ] All SEO metadata comments filled in

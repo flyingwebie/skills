@@ -100,4 +100,4 @@ In each markdown page file, schema info is noted as:
 <!-- schema_type: Service -->
 <!-- schema_additional: FAQPage, BreadcrumbList -->
 ```
-The developer or Pencil implementation will use these to inject the actual JSON-LD.
+The developer will use these to inject the actual JSON-LD.

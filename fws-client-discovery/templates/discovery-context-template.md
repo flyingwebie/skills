@@ -166,7 +166,6 @@
 - **Total pages generated**:
 - **Total word count**:
 - **Heading accents used**: (all pages should have `::` accent)
-- **Pencil prompts complete**: ✓/✗
 - **Internal linking verified**: ✓/✗
 
 ### Pages Skipped or Deferred

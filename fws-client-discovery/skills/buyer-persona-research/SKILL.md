@@ -4,7 +4,7 @@ description: >
   Build data-driven buyer personas using the Hormozi Value Equation (APEX) methodology.
   Use when running client discovery, building landing pages, or aligning on target audience.
   Triggers: "buyer persona", "ideal customer", "target audience", "ICP", "value equation".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Buyer Persona Research — APEX Methodology
@@ -141,13 +141,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write completed personas to `04-Buyer-Personas.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `04-Buyer-Personas.md` to `04-Buyer-Personas.docx` using the FWS branded template
-- Use color-coded APEX scores in Value Equation tables (green 7+, orange 4-6, red <4)
-- Validate the .docx file
 
 ## Quality Checklist
 - [ ] Each persona has all 4 Value Equation components rated and detailed

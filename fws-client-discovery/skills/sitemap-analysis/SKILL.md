@@ -4,7 +4,7 @@ description: >
   Crawl and analyze a client's website structure, page inventory, technical SEO health,
   and content gaps. Use when auditing a site before redesign or planning new site architecture.
   Triggers: "sitemap", "site audit", "page analysis", "site structure", "crawl site".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Sitemap & Page Analysis
@@ -129,13 +129,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `02-Sitemap-Report.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `02-Sitemap-Report.md` to `02-Sitemap-Report.docx` using the FWS branded template
-- **IMPORTANT**: The sitemap .docx MUST include a visual tree diagram showing the full site hierarchy with box-drawing characters (├── │ └──) in Courier New monospace. See the docx-export SKILL.md for rendering details.
-- Validate the .docx file
 
 ## Quality Checklist
 - [ ] All accessible pages cataloged with URL, title, type

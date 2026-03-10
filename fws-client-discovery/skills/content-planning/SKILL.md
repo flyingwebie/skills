@@ -4,7 +4,7 @@ description: >
   Synthesize discovery findings into an ICE-prioritized content strategy with a 90-day
   execution calendar. Use as the final step of discovery or for standalone content planning.
   Triggers: "content plan", "content calendar", "content strategy", "90-day plan".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Content Planning — Gap Analysis + 90-Day Calendar
@@ -213,14 +213,6 @@ Append to `discovery-context.md`:
 
 ## Output
 Write findings to `08-Content-Plan.md` using the template.
-
-### Generate Branded .docx
-After writing the markdown report:
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/docx-export/SKILL.md
-- Convert `08-Content-Plan.md` to `08-Content-Plan.docx` using the FWS branded template
-- Use color-coded ICE scores in content priority tables
-- Calendar section should use clean table formatting with month headers
-- Validate the .docx file
 
 ## Quality Checklist
 - [ ] All previous discovery findings synthesized

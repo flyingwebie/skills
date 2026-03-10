@@ -9,41 +9,37 @@ This plugin runs a 9-step client discovery workflow for Flying Web Solutions (fl
 ### Phase A: Research + Page Content (Steps 1-7)
 Researches the client's market, audience, and competitors, then produces production-ready website page content. By the end of Phase A the full website copy is ready.
 
-| Step | Command | Output (markdown) | Output (.docx) | What It Does |
-|------|---------|-------------------|-----------------|-------------|
-| 0 | (auto) | `01-Client-Brief.md` | `01-Client-Brief.docx` | Extract signals from meeting transcript |
-| 1 | `/sitemap` | `02-Sitemap-Report.md` | `02-Sitemap-Report.docx` | Crawl site structure, inventory pages, find gaps |
-| 2 | `/competitors` | `03-Competitor-Report.md` | `03-Competitor-Report.docx` | Identify 3-5 competitors, build battlecards |
-| 3 | `/personas` | `04-Buyer-Personas.md` | `04-Buyer-Personas.docx` | Build buyer personas with APEX Value Equation |
-| 4 | `/keywords` | `05-Keyword-Research.md` | `05-Keyword-Research.docx` | Discover keywords, cluster by intent, ICE score |
-| 5 | `/ux-research` | `06-UX-UI-Research.md` | `06-UX-UI-Research.docx` | Design system: colors, fonts, UI style |
-| 6 | `/faqs` | `07-FAQ-Research.md` | `07-FAQ-Research.docx` | Mine FAQs from PAA, competitors, personas |
-| 7 | `/copywrite` | `pages/*.md` | — (markdown only) | Write all website pages with Pencil.dev prompts |
+| Step | Command | Output | What It Does |
+|------|---------|--------|-------------|
+| 0 | (auto) | `01-Client-Brief.md` | Extract signals from meeting transcript |
+| 1 | `/sitemap` | `02-Sitemap-Report.md` | Crawl site structure, inventory pages, find gaps |
+| 2 | `/competitors` | `03-Competitor-Report.md` | Identify 3-5 competitors, build battlecards |
+| 3 | `/personas` | `04-Buyer-Personas.md` | Build buyer personas with APEX Value Equation |
+| 4 | `/keywords` | `05-Keyword-Research.md` | Discover keywords, cluster by intent, ICE score |
+| 5 | `/ux-research` | `06-UX-UI-Research.md` | Design system: colors, fonts, UI style |
+| 6 | `/faqs` | `07-FAQ-Research.md` | Mine FAQs from PAA, competitors, personas |
+| 7 | `/copywrite` | `pages/*.md` | Write all website pages with SEO-optimized content |
 
 ### Phase B: Content Strategy + Blog (Steps 8-9)
 Plans ongoing content strategy and produces blog posts for SEO/GEO growth.
 
-| Step | Command | Output (markdown) | Output (.docx) | What It Does |
-|------|---------|-------------------|-----------------|-------------|
-| 8 | `/content-plan` | `08-Content-Plan.md` | `08-Content-Plan.docx` | ICE-scored plan + 90-day calendar |
-| 9 | `/blog-content` | `pages/blog/*.md` | — (markdown only) | Write blog posts from content plan |
+| Step | Command | Output | What It Does |
+|------|---------|--------|-------------|
+| 8 | `/content-plan` | `08-Content-Plan.md` | ICE-scored plan + 90-day calendar |
+| 9 | `/blog-content` | `pages/blog/*.md` | Write blog posts from content plan |
 
 ### Master Report
 | Output | What It Is |
 |--------|-----------|
-| `00-Discovery-Report.md` / `.docx` | Executive summary of all 9 steps — the first thing clients see |
+| `00-Discovery-Report.md` | Executive summary of all 9 steps — the first thing clients see |
 
 ## Context Chain
 
 Every step reads and writes to `discovery-context.md`. This markdown file is the shared memory between steps. It accumulates findings so that later steps can reference earlier research (e.g., keywords inform page content, personas inform messaging).
 
-**Important**: The `.md` files are the source of truth for Claude's context. The `.docx` files are branded copies for client review — they do not feed back into the workflow.
+## Output Format
 
-## Dual Output Format
-
-- **Markdown (.md)**: Used for Claude's context chain, developer handoff, and page content files
-- **Word (.docx)**: Branded with FWS template (logo, footer, heading styles) for client review on Google Drive
-- Page content files (Step 7) and blog posts (Step 9) are **markdown only** — they go to developers, not clients
+All outputs are **markdown (.md)** files. Markdown is the source of truth for Claude's context, developer handoff, and page content.
 
 ## File Structure Per Project
 
@@ -51,23 +47,14 @@ Every step reads and writes to `discovery-context.md`. This markdown file is the
 [Client-Name]/01-Discovery/
 ├── discovery-context.md          ← Claude's shared context (internal)
 ├── 00-Discovery-Report.md        ← Master summary
-├── 00-Discovery-Report.docx      ← Client-facing master summary
 ├── 01-Client-Brief.md
-├── 01-Client-Brief.docx
 ├── 02-Sitemap-Report.md
-├── 02-Sitemap-Report.docx
 ├── 03-Competitor-Report.md
-├── 03-Competitor-Report.docx
 ├── 04-Buyer-Personas.md
-├── 04-Buyer-Personas.docx
 ├── 05-Keyword-Research.md
-├── 05-Keyword-Research.docx
 ├── 06-UX-UI-Research.md
-├── 06-UX-UI-Research.docx
 ├── 07-FAQ-Research.md
-├── 07-FAQ-Research.docx
 ├── 08-Content-Plan.md
-├── 08-Content-Plan.docx
 └── pages/
     ├── homepage.md
     ├── about.md
@@ -83,18 +70,7 @@ Every step reads and writes to `discovery-context.md`. This markdown file is the
 
 ## Website Build Process
 
-After discovery is complete, the deliverables feed directly into the website design and build phase. FWS uses three tools flexibly depending on the project:
-
-### Pencil.dev
-Every page content file (Step 7) includes a **custom Pencil.dev prompt** at the top. This prompt is specifically crafted for that page and includes:
-- Wireframe structure hints (hero, sections, CTAs)
-- Content to use (headings, body text, testimonials)
-- Design direction from UX research (Step 5)
-- Persona context for layout decisions
-
-**How to use**: Copy the Pencil prompt from the page markdown file → paste into Pencil.dev → generate UI concepts → iterate.
-
-**When to use Pencil.dev**: For initial concept generation, rapid prototyping, and exploring layout options before committing to a design tool.
+After discovery is complete, the deliverables feed directly into the website design and build phase. FWS uses the following tools flexibly depending on the project:
 
 ### Figma
 Use Figma when the project requires:
@@ -108,7 +84,7 @@ Use Figma when the project requires:
 - Buyer Personas (Step 3) → layout decisions (e.g., analytical personas need data-heavy layouts)
 - Competitor Research (Step 2) → competitive UX benchmarks to match or exceed
 
-**Workflow**: Pencil concepts → import into Figma → build component library → design all pages → export
+**Workflow**: Discovery research → Figma design → build component library → design all pages → export
 
 ### Google Stitch
 Use Google Stitch for:
@@ -130,11 +106,10 @@ There is no fixed pipeline. The choice depends on the project:
 
 | Scenario | Recommended Flow |
 |----------|-----------------|
-| Full rebrand + new website | Pencil → Figma → Code |
-| Quick marketing site | Pencil → Stitch → Code |
-| Complex web app | Figma → Code (skip Pencil) |
-| Simple content site | Stitch → Code (skip Pencil) |
-| Need client approval on concepts | Pencil → Client review → Figma or Stitch |
+| Full rebrand + new website | Figma → Code |
+| Quick marketing site | Stitch → Code |
+| Complex web app | Figma → Code |
+| Simple content site | Stitch → Code |
 
 ### How Discovery Outputs Feed the Build
 
@@ -164,8 +139,6 @@ There is no fixed pipeline. The choice depends on the project:
 ## Important Rules
 
 1. **Phase A does NOT generate blog content** — blog posts are Phase B only
-2. **Markdown is source of truth** — .docx is for client review, not for Claude's context
+2. **Markdown is the only output format** — all deliverables are .md files
 3. **Each step reads discovery-context.md** before starting and updates it after finishing
-4. **Sitemap report must include a visual tree diagram** in the .docx version
-5. **Page content files include Pencil.dev prompts** — these are essential for the build phase
-6. **No step can be skipped** in the full `/discovery` flow — each builds on the previous
+4. **No step can be skipped** in the full `/discovery` flow — each builds on the previous

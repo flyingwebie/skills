@@ -1,7 +1,7 @@
 {
   "name": "fws-client-discovery",
-  "version": "1.0.0",
-  "description": "Run a complete client discovery workflow — from sitemap audit and competitor research to buyer personas, keyword strategy, and production-ready website copy. Delivers research reports, SEO-optimized page content with Pencil.dev prompts, and a 90-day blog calendar.",
+  "version": "1.1.0",
+  "description": "Run a complete client discovery workflow — from sitemap audit and competitor research to buyer personas, keyword strategy, and production-ready website copy. Delivers research reports, SEO-optimized page content, and a 90-day blog calendar.",
   "author": {
     "name": "Flying Web Solutions",
     "url": "https://www.flyingweb.ie"
