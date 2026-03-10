@@ -22,11 +22,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Page Design
 
-- [ ] **PAGE-01**: `/design <pages>` generates Google Stitch screens for specified pages (asks user which pages if not specified)
+- [x] **PAGE-01**: `/design <pages>` generates Google Stitch screens for specified pages (asks user which pages if not specified)
 - [x] **PAGE-02**: UX Agent applies selected psychology skills to produce a layout brief (`{page}-ux-brief.md`) before UI Agent generates visuals
-- [ ] **PAGE-03**: UI Agent crafts Stitch prompts incorporating design system tokens, layout brief, and animation specs to generate screens
+- [x] **PAGE-03**: UI Agent crafts Stitch prompts incorporating design system tokens, layout brief, and animation specs to generate screens
 - [ ] **PAGE-04**: User can generate variants via Stitch `generate_variants` and iterate via `edit_screens` with design system constraints
-- [ ] **PAGE-05**: Copy generation produces page text based on niche/project with human-in-the-loop approval before use in designs
+- [x] **PAGE-05**: Copy generation produces page text based on niche/project with human-in-the-loop approval before use in designs
 
 ### Animation
 
@@ -78,11 +78,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BRAND-02 | Phase 2 | Complete |
 | BRAND-03 | Phase 2 | Complete |
 | BRAND-04 | Phase 2 | Complete |
-| PAGE-01 | Phase 3 | Pending |
+| PAGE-01 | Phase 3 | Complete |
 | PAGE-02 | Phase 3 | Complete |
-| PAGE-03 | Phase 3 | Pending |
+| PAGE-03 | Phase 3 | Complete |
 | PAGE-04 | Phase 4 | Pending |
-| PAGE-05 | Phase 3 | Pending |
+| PAGE-05 | Phase 3 | Complete |
 | ANIM-01 | Phase 4 | Pending |
 | ANIM-02 | Phase 4 | Pending |
 | ANIM-03 | Phase 5 | Pending |
