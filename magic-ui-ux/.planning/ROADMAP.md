@@ -44,11 +44,11 @@ Plans:
   2. `/branding` command extracts a design system from a reference URL, Dribbble screenshot, or Awwwards site into structured tokens
   3. Design system persists in `.ui-ux/branding.md` (human-readable) and `.ui-ux/tokens.json` (machine-readable) with exact values
   4. Every subsequent design operation reads `.ui-ux/` before generating anything, enforcing cross-page consistency
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Branding skill with industry design rules and niche-based generation flow
+- [ ] 02-02-PLAN.md — Reference extraction path (URL/screenshot) and .ui-ux/ consistency enforcement
 
 ### Phase 3: Page Design Engine
 **Goal**: Users can design pages end-to-end where psychology skills inform layout decisions and Stitch MCP generates production-quality screens, with copy generated when needed
