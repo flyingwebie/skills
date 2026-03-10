@@ -1,0 +1,10 @@
+{
+  "name": "magic-ui-ux",
+  "version": "0.1.0",
+  "description": "Psychology-driven UI/UX design plugin. Combines cognitive psychology skills with Google Stitch MCP to generate premium, conversion-optimized page designs.",
+  "author": {
+    "name": "Flying Web Solutions",
+    "url": "https://www.flyingweb.ie"
+  },
+  "keywords": ["design", "ux", "ui", "psychology", "stitch", "branding"]
+}
