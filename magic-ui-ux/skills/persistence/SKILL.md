@@ -42,7 +42,8 @@ When `.ui-ux/` does not exist, initialize it:
      "screens": [],
      "pages": [],
      "brandingComplete": false,
-     "animationSpecs": []
+     "animationSpecs": [],
+     "scrollVideoSpecs": []
    }
    ```
 
@@ -75,7 +76,7 @@ After any design command completes:
 Design tokens and project state are validated against JSON Schema (draft-07):
 
 - **tokens.json**: See `schemas/tokens.json` -- defines colors (primary, secondary, CTA, background, text, semantic), typography (heading, body, accent with Google Fonts), spacing, UI style, industry, and component patterns.
-- **state.json**: See `schemas/state.json` -- defines project name, niche, timestamps, Stitch project reference, screens array, pages array with status tracking, branding completion flag, and animation specs.
+- **state.json**: See `schemas/state.json` -- defines project name, niche, timestamps, Stitch project reference, screens array, pages array with status tracking, branding completion flag, animation specs, and scroll-video specs.
 
 ## Key Rule
 

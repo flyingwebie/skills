@@ -27,6 +27,8 @@ magic-ui-ux/
   commands/
     branding.md           # /branding command -- generate or reverse-engineer design systems
     design.md             # /design command -- psychology-driven page design via Stitch
+    iterate.md            # /iterate command -- generate variants or edit existing screens
+    video.md              # /video command -- scroll-driven video-style site specs
   skills/
     persistence/          # .ui-ux/ folder management (tokens, state, briefs)
     psychology-router/    # Routes sections to relevant psychology skills
@@ -85,3 +87,5 @@ The plugin draws from 14 cognitive psychology skills:
 - `generate_screen_from_text` -- Generate screens from text prompts
 - `edit_screens` -- Modify existing screens with change requests
 - `generate_variants` -- Create design variants of existing screens
+
+**Note:** The `/video` command does **not** require Stitch MCP. It produces scroll-driven animation specs (GSAP ScrollTrigger, canvas frame sequences, Lenis integration) -- not visual screens.
