@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Page Design Engine** - /design command runs UX Agent (psychology) into UI Agent (Stitch) pipeline with copy generation (completed 2026-03-10)
 - [x] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs (completed 2026-03-10)
 - [x] **Phase 5: Video-to-Website** - Scroll-driven animated site specs with canvas frame rendering and section choreography (completed 2026-03-10)
-- [ ] **Phase 6: Wire Animation and Video-to-Website Skills** - Connect existing animation and video-to-website skills to command entry points, fix schema gap and data sync issues
+- [x] **Phase 6: Wire Animation and Video-to-Website Skills** - Connect existing animation and video-to-website skills to command entry points, fix schema gap and data sync issues (completed 2026-03-10)
 
 ## Phase Details
 
@@ -123,4 +123,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 | 3. Page Design Engine | 3/3 | Complete | 2026-03-10 |
 | 4. Design Iteration and Animation | 2/2 | Complete | 2026-03-10 |
 | 5. Video-to-Website | 1/1 | Complete | 2026-03-10 |
-| 6. Wire Animation and Video-to-Website Skills | 1/2 | In Progress|  |
+| 6. Wire Animation and Video-to-Website Skills | 2/2 | Complete   | 2026-03-10 |
