@@ -12,7 +12,7 @@ This roadmap delivers a Claude Code plugin that produces psychologically-informe
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .ui-ux/ persistence layer, and psychology skill router
+- [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .ui-ux/ persistence layer, and psychology skill router (completed 2026-03-10)
 - [ ] **Phase 2: Branding Pipeline** - /branding command generates design systems from scratch or by reverse-engineering reference sites
 - [ ] **Phase 3: Page Design Engine** - /design command runs UX Agent (psychology) into UI Agent (Stitch) pipeline with copy generation
 - [ ] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs
@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Plugin scaffolding, persistence layer, and agent contract stubs
-- [ ] 01-02-PLAN.md — Psychology skill router with section-to-skill mappings
+- [x] 01-01-PLAN.md — Plugin scaffolding, persistence layer, and agent contract stubs
+- [x] 01-02-PLAN.md — Psychology skill router with section-to-skill mappings
 
 ### Phase 2: Branding Pipeline
 **Goal**: Users can generate a complete design system either from their project niche or by reverse-engineering an existing reference site, stored as persistent tokens that all future design operations consume
@@ -101,7 +101,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Plugin Foundation and Persistence | 0/2 | Not started | - |
+| 1. Plugin Foundation and Persistence | 2/2 | Complete   | 2026-03-10 |
 | 2. Branding Pipeline | 0/2 | Not started | - |
 | 3. Page Design Engine | 0/3 | Not started | - |
 | 4. Design Iteration and Animation | 0/2 | Not started | - |
