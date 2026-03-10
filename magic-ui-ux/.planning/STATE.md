@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-10T17:01:47.639Z"
-last_activity: 2026-03-10 -- Completed Plan 05-01 (Video-to-website skill)
+status: in-progress
+stopped_at: Completed 06-01-PLAN.md
+last_updated: "2026-03-10T17:38:41Z"
+last_activity: 2026-03-10 -- Completed Plan 06-01 (Wire animation and video commands)
 progress:
-  total_phases: 5
+  total_phases: 6
   completed_phases: 5
-  total_plans: 10
-  completed_plans: 10
-  percent: 100
+  total_plans: 12
+  completed_plans: 11
+  percent: 92
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-10)
 
 **Core value:** Every page designed through this plugin is psychologically informed and visually premium -- not generic AI output, but design that understands why users click, scroll, and convert.
-**Current focus:** All 5 phases complete -- milestone v1.0 delivered
+**Current focus:** Phase 6 -- wiring animation and video skills to commands
 
 ## Current Position
 
-Phase: 5 of 5 (Video to Website) -- COMPLETE
-Plan: 1 of 1 in current phase
-Status: All phases complete, milestone v1.0 delivered
-Last activity: 2026-03-10 -- Completed Plan 05-01 (Video-to-website skill)
+Phase: 6 of 6 (Wire Animation and Video Skills)
+Plan: 1 of 2 in current phase -- COMPLETE
+Status: Plan 06-01 complete, Plan 06-02 remaining
+Last activity: 2026-03-10 -- Completed Plan 06-01 (Wire animation and video commands)
 
-Progress: [██████████] 100%
+Progress: [█████████░] 92%
 
 ## Performance Metrics
 
@@ -57,6 +57,7 @@ Progress: [██████████] 100%
 | Phase 04 P01 | 2min | 2 tasks | 3 files |
 | Phase 04 P02 | 3min | 2 tasks | 3 files |
 | Phase 05 P01 | 3min | 2 tasks | 4 files |
+| Phase 06 P01 | 3min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -101,6 +102,9 @@ Recent decisions affecting current work:
 - [05-01]: Maximum 3 video sequences per page to cap load times
 - [05-01]: Mobile fallback required -- reduced frame count or static image replacement
 - [05-01]: Lenis duration 1.4-1.8s for expressive scroll-video (longer than standard animation)
+- [06-01]: Animation step is mandatory in /design pipeline, not optional -- per ANIM requirements
+- [06-01]: /video command follows same pre-flight/input/invoke/summary/error pattern as existing commands
+- [06-01]: scrollVideoSpecs schema mirrors animationSpecs structure for consistency
 
 ### Pending Todos
 
@@ -114,6 +118,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-10T17:00:40.458Z
-Stopped at: Completed 05-01-PLAN.md
+Last session: 2026-03-10T17:38:41Z
+Stopped at: Completed 06-01-PLAN.md
 Resume file: None

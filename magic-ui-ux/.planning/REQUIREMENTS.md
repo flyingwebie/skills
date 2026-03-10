@@ -30,9 +30,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Animation
 
-- [ ] **ANIM-01**: Each page design includes animation choreography specs (entrance animations, scroll behaviors, page transitions)
-- [ ] **ANIM-02**: Animation specs reference Framer Motion, GSAP + ScrollTrigger, Swup.js page transitions, and Lenis smooth scroll with timing/easing values
-- [ ] **ANIM-03**: Video-to-website capability generates scroll-driven animated site specs with canvas frame rendering, section choreography, and Lenis integration
+- [x] **ANIM-01**: Each page design includes animation choreography specs (entrance animations, scroll behaviors, page transitions)
+- [x] **ANIM-02**: Animation specs reference Framer Motion, GSAP + ScrollTrigger, Swup.js page transitions, and Lenis smooth scroll with timing/easing values
+- [x] **ANIM-03**: Video-to-website capability generates scroll-driven animated site specs with canvas frame rendering, section choreography, and Lenis integration
 
 ## v2 Requirements
 
@@ -83,9 +83,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-03 | Phase 3 | Complete |
 | PAGE-04 | Phase 4 | Complete |
 | PAGE-05 | Phase 3 | Complete |
-| ANIM-01 | Phase 6 | Pending |
-| ANIM-02 | Phase 6 | Pending |
-| ANIM-03 | Phase 6 | Pending |
+| ANIM-01 | Phase 6 | Complete |
+| ANIM-02 | Phase 6 | Complete |
+| ANIM-03 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 15 total
