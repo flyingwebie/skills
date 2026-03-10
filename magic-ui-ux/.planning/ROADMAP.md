@@ -108,7 +108,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Wire animation into /design pipeline, create /video command, add scrollVideoSpecs to schema
+- [x] 06-01-PLAN.md — Wire animation into /design pipeline, create /video command, add scrollVideoSpecs to schema
 - [ ] 06-02-PLAN.md — Update plugin indexes and sync requirement/roadmap completion status
 
 ## Progress
