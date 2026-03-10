@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. `.ui-ux/` folder is created on first use and persists design tokens (JSON), screen IDs, and project state across sessions
   3. Psychology skill router accepts a page-type + section-type input and returns 2-4 relevant psychology skills (not all 14)
   4. UX Agent and UI Agent instruction files exist with clear interface contracts (what goes in, what comes out)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Plugin scaffolding, persistence layer, and agent contract stubs
+- [ ] 01-02-PLAN.md — Psychology skill router with section-to-skill mappings
 
 ### Phase 2: Branding Pipeline
 **Goal**: Users can generate a complete design system either from their project niche or by reverse-engineering an existing reference site, stored as persistent tokens that all future design operations consume
