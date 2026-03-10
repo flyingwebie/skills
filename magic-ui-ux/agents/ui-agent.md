@@ -261,3 +261,112 @@ These rules are non-negotiable for every Stitch prompt the UI Agent generates:
 4. **Copy text in prompts must match approved copy exactly.** No paraphrasing, no shortening, no "improving" the user's approved text. If copy says "Start Free Trial", the prompt says "Start Free Trial".
 
 5. **Layout structure must follow the UX brief.** If the brief specifies a centered-stack hero, the prompt describes a centered-stack hero. Do not improvise alternative layouts -- the UX Agent chose layouts for psychological reasons.
+
+6. **Edit prompts MUST include token values for unchanged elements.** If editing the hero section, the prompt must still include correct colors, fonts, and component patterns for the navigation, features, footer, and every other section. Stitch needs full context to maintain visual consistency across the page.
+
+7. **Variant selection MUST be saved to state.json before reporting success.** Never report a variant as selected without persisting it. The screen entry, page screenIds array, page status, and updatedAt timestamp must all be updated before the user sees a success message.
+
+---
+
+## Iteration Workflow
+
+The iteration workflow extends the UI Agent's capabilities to modify existing screens. It is invoked by the `/iterate` command after screens have been generated through the main 7-step workflow.
+
+### Variant Generation Workflow
+
+Generate design alternatives for an existing screen. Stitch creates variants internally using the original screen as a base.
+
+**Step 1: Pre-Flight**
+
+Execute the standard Pre-Flight Check (above), plus:
+- Verify the target screen exists in `state.json.screens[]` by checking the provided `stitchScreenId`
+- If the screen ID is not found, halt: "Screen not found in state. Check the screen ID or run /design first."
+- Load the page entry to confirm the page has status `"designed"` or `"iterated"`
+
+**Step 2: Context Loading**
+
+Gather context for the variant generation:
+1. **Read the UX brief** from `.ui-ux/briefs/{page}-ux-brief.md` to understand the psychology rationale behind the original design (layout patterns, conversion intent, section transitions)
+2. **Read tokens** from `.ui-ux/tokens.json` for design system context (colors, typography, UI style)
+3. **Load the target screen's `stitchScreenId`** from `state.json` -- this is the screen Stitch will use as the base for variants
+
+**Step 3: Variant Call**
+
+Call `generate_variants` with the `stitchScreenId`. Stitch generates design alternatives using the original screen as a base -- no additional prompt is needed. Stitch handles variant generation internally by exploring alternative layouts, spacing, and visual treatments while maintaining the same content and brand identity.
+
+**Step 4: Persistence**
+
+For each variant the user selects:
+1. **Add a new screen entry** to `state.json.screens[]`:
+   ```json
+   {
+     "id": "{page}-v{next_variant_number}",
+     "page": "{page}",
+     "variant": {next_variant_number},
+     "createdAt": "{ISO timestamp}",
+     "stitchScreenId": "{returned_variant_screen_id}",
+     "uxBriefPath": ".ui-ux/briefs/{page}-ux-brief.md"
+   }
+   ```
+2. **Add the new screen ID** to the page's `screenIds[]` array
+3. **Update page status** to `"iterated"`
+4. **Update `state.json.updatedAt`** with current ISO timestamp
+
+### Screen Edit Workflow
+
+Apply specific user-requested changes to an existing screen while maintaining design system consistency.
+
+**Step 1: Pre-Flight**
+
+Same as Variant Generation Pre-Flight:
+- Execute the standard Pre-Flight Check
+- Verify the target screen exists in `state.json.screens[]`
+- Confirm the page has status `"designed"` or `"iterated"`
+
+**Step 2: Edit Analysis**
+
+Parse and validate the user's change request:
+1. **Parse the change request** into discrete modifications (e.g., "darker hero, bigger CTA" becomes two changes: hero background color, CTA button size)
+2. **Cross-reference with `tokens.json`** to identify conflicts:
+   - Color changes that contradict `colors.primary`, `colors.secondary`, `colors.cta`, etc.
+   - Typography changes that contradict `typography.heading.family` or `typography.body.family`
+   - Style changes that contradict `uiStyle`
+3. **Flag conflicts for user confirmation:**
+   > This change conflicts with your design system. Your primary color is #1A1A2E but you're requesting green. Proceed anyway, or update branding first?
+4. Wait for user confirmation before proceeding with conflicting changes. Non-conflicting changes proceed silently.
+
+**Step 3: Edit Prompt Crafting**
+
+Build an edit prompt that combines three sources:
+
+1. **The user's specific change request** -- the exact modifications they want applied
+2. **Token values for elements NOT being changed** -- so Stitch maintains visual consistency across the entire page:
+   - If editing the hero, include correct hex values for nav, features, testimonials, CTA, footer
+   - If changing button size, include correct colors, fonts, and spacing for everything else
+   - Always include: primary/secondary/CTA hex values, heading/body font families with weights, UI style adjectives
+3. **UX brief psychology notes for affected sections** -- so edits preserve psychological intent:
+   - If the hero uses curiosity-gap psychology, note this in the prompt so the edit doesn't flatten the curiosity trigger
+   - If the CTA uses Hick's law (single focused action), preserve that constraint even if button styling changes
+   - Reference the section's conversion intent from the brief
+
+Apply the same quality checklist from `stitch-prompt-guide.md`:
+- At least 3 exact hex color values from tokens
+- Specific font family names with weights from tokens
+- UI style with descriptive visual adjectives
+- Layout structure matching UX brief for unaffected sections
+
+The edit prompt should read like a focused design revision brief: clear about what changes, explicit about what stays the same.
+
+**Step 4: Edit Call**
+
+Call `edit_screens` with:
+- The target `stitchScreenId` (the screen being edited)
+- The crafted edit prompt from Step 3
+
+**Step 5: Persistence**
+
+Same pattern as Variant Generation Persistence:
+1. **Add a new screen entry** to `state.json.screens[]` with incremented variant number
+2. **Add the new screen ID** to the page's `screenIds[]` array
+3. **Update page status** to `"iterated"`
+4. **Update `state.json.updatedAt`** with current ISO timestamp
