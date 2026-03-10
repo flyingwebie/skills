@@ -76,11 +76,11 @@ Plans:
   2. User can iterate on screens via Stitch `edit_screens` with specific change requests that respect design tokens
   3. Each page design includes animation choreography specs (entrance animations, scroll behaviors, page transitions) as a deliverable
   4. Animation specs reference concrete library APIs (Framer Motion, GSAP + ScrollTrigger, Swup.js, Lenis) with timing values, easing functions, and implementation notes
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — /iterate command with variant generation and screen editing via Stitch MCP
+- [ ] 04-02-PLAN.md — Animation choreography skill with per-page specs referencing Framer Motion, GSAP, Swup.js, Lenis
 
 ### Phase 5: Video-to-Website
 **Goal**: Users can generate scroll-driven animated site specifications that transform video content into interactive web experiences
