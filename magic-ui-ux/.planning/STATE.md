@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-03-10T16:47:36.889Z"
-last_activity: 2026-03-10 -- Completed Plan 04-02 (Animation choreography skill)
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-10T17:00:40.460Z"
+last_activity: 2026-03-10 -- Completed Plan 05-01 (Video-to-website skill)
 progress:
   total_phases: 5
-  completed_phases: 4
-  total_plans: 9
-  completed_plans: 9
+  completed_phases: 5
+  total_plans: 10
+  completed_plans: 10
   percent: 100
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-10)
 
 **Core value:** Every page designed through this plugin is psychologically informed and visually premium -- not generic AI output, but design that understands why users click, scroll, and convert.
-**Current focus:** Phase 4 complete, ready for Phase 5
+**Current focus:** All 5 phases complete -- milestone v1.0 delivered
 
 ## Current Position
 
-Phase: 4 of 5 (Design Iteration and Animation) -- COMPLETE
-Plan: 2 of 2 in current phase
-Status: Phase 04 complete, all plans finished
-Last activity: 2026-03-10 -- Completed Plan 04-02 (Animation choreography skill)
+Phase: 5 of 5 (Video to Website) -- COMPLETE
+Plan: 1 of 1 in current phase
+Status: All phases complete, milestone v1.0 delivered
+Last activity: 2026-03-10 -- Completed Plan 05-01 (Video-to-website skill)
 
 Progress: [██████████] 100%
 
@@ -56,6 +56,7 @@ Progress: [██████████] 100%
 | Phase 03 P03 | 3min | 2 tasks | 2 files |
 | Phase 04 P01 | 2min | 2 tasks | 3 files |
 | Phase 04 P02 | 3min | 2 tasks | 3 files |
+| Phase 05 P01 | 3min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -96,6 +97,10 @@ Recent decisions affecting current work:
 - [04-02]: Animation intensity driven by UI style tokens (restrained/moderate/expressive)
 - [04-02]: Per-section choreography with independent viewport triggers, not cross-section sequencing
 - [04-02]: Reduced motion fallback mandatory for every animation spec
+- [05-01]: Canvas frame rendering only -- no video elements for scroll-controlled playback
+- [05-01]: Maximum 3 video sequences per page to cap load times
+- [05-01]: Mobile fallback required -- reduced frame count or static image replacement
+- [05-01]: Lenis duration 1.4-1.8s for expressive scroll-video (longer than standard animation)
 
 ### Pending Todos
 
@@ -109,6 +114,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-10T16:43:40Z
-Stopped at: Completed 04-02-PLAN.md
+Last session: 2026-03-10T17:00:40.458Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None
