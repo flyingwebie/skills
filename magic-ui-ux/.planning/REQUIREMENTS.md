@@ -25,7 +25,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **PAGE-01**: `/design <pages>` generates Google Stitch screens for specified pages (asks user which pages if not specified)
 - [x] **PAGE-02**: UX Agent applies selected psychology skills to produce a layout brief (`{page}-ux-brief.md`) before UI Agent generates visuals
 - [x] **PAGE-03**: UI Agent crafts Stitch prompts incorporating design system tokens, layout brief, and animation specs to generate screens
-- [ ] **PAGE-04**: User can generate variants via Stitch `generate_variants` and iterate via `edit_screens` with design system constraints
+- [x] **PAGE-04**: User can generate variants via Stitch `generate_variants` and iterate via `edit_screens` with design system constraints
 - [x] **PAGE-05**: Copy generation produces page text based on niche/project with human-in-the-loop approval before use in designs
 
 ### Animation
@@ -81,7 +81,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PAGE-01 | Phase 3 | Complete |
 | PAGE-02 | Phase 3 | Complete |
 | PAGE-03 | Phase 3 | Complete |
-| PAGE-04 | Phase 4 | Pending |
+| PAGE-04 | Phase 4 | Complete |
 | PAGE-05 | Phase 3 | Complete |
 | ANIM-01 | Phase 4 | Pending |
 | ANIM-02 | Phase 4 | Pending |
