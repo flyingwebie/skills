@@ -15,9 +15,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Branding
 
-- [ ] **BRAND-01**: `/branding` command generates design system (colors, typography, spacing, component patterns) from project niche/industry using industry design rules
+- [x] **BRAND-01**: `/branding` command generates design system (colors, typography, spacing, component patterns) from project niche/industry using industry design rules
 - [ ] **BRAND-02**: `/branding` reverse-engineers design system from reference URL, Dribbble screenshot, or Awwwards site into structured design tokens
-- [ ] **BRAND-03**: Design system persists in `.ui-ux/branding.md` (human-readable) + `.ui-ux/tokens.json` (machine-readable) with exact values
+- [x] **BRAND-03**: Design system persists in `.ui-ux/branding.md` (human-readable) + `.ui-ux/tokens.json` (machine-readable) with exact values
 - [ ] **BRAND-04**: Agent reads `.ui-ux/` before every design operation to enforce cross-page consistency
 
 ### Page Design
@@ -74,9 +74,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-01 | Phase 1 | Complete |
 | FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
-| BRAND-01 | Phase 2 | Pending |
+| BRAND-01 | Phase 2 | Complete |
 | BRAND-02 | Phase 2 | Pending |
-| BRAND-03 | Phase 2 | Pending |
+| BRAND-03 | Phase 2 | Complete |
 | BRAND-04 | Phase 2 | Pending |
 | PAGE-01 | Phase 3 | Pending |
 | PAGE-02 | Phase 3 | Pending |
