@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "fws-skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Claude Code plugins and agent skills for product, development, and agency workflows — by Flying Web Solutions",
   "owner": {
     "name": "Flying Web Solutions",
@@ -28,6 +28,13 @@
       "version": "1.1.0",
       "source": "./git-master",
       "category": "developer-tools"
+    },
+    {
+      "name": "magic-ui-ux",
+      "description": "Psychology-driven UI/UX design plugin — combines cognitive psychology skills with Google Stitch MCP to generate premium, conversion-optimized page designs",
+      "version": "1.0.0",
+      "source": "./magic-ui-ux",
+      "category": "design"
     }
   ]
 }

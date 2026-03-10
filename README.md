@@ -9,6 +9,7 @@ Claude Code plugins and agent skills for product, development, and agency workfl
 | [`prd-builder`](./prd-builder/)                   | Plugin | Generate full PRDs by analyzing existing products and recommending a modern tech stack               |
 | [`fws-client-discovery`](./fws-client-discovery/) | Plugin | Complete client discovery — sitemap, competitors, personas, keywords, copy, and 90-day content plan  |
 | [`git-master`](./git-master/)                     | Plugin | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management  |
+| [`magic-ui-ux`](./magic-ui-ux/)                   | Plugin | Psychology-driven UI/UX design — combines cognitive psychology skills with Google Stitch MCP         |
 
 > **Plugins** add slash commands, hooks, and bundled skills — they are Claude Code-specific.
 > **Skills** (`SKILL.md` files) are cross-tool — they work in Claude Code, Gemini CLI, and OpenAI Codex CLI without modification.
@@ -187,6 +188,7 @@ skill-name/
 ├── prd-builder/             # Plugin
 ├── fws-client-discovery/    # Plugin
 ├── git-master/              # Plugin
+├── magic-ui-ux/             # Plugin
 └── README.md
 ```
 
