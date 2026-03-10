@@ -55,6 +55,16 @@
           "specPath": { "type": "string" }
         }
       }
+    },
+    "scrollVideoSpecs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": { "type": "string" },
+          "specPath": { "type": "string" }
+        }
+      }
     }
   },
   "required": ["projectName", "niche", "createdAt"]
