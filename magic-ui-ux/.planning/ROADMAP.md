@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .ui-ux/ persistence layer, and psychology skill router (completed 2026-03-10)
 - [x] **Phase 2: Branding Pipeline** - /branding command generates design systems from scratch or by reverse-engineering reference sites (completed 2026-03-10)
 - [x] **Phase 3: Page Design Engine** - /design command runs UX Agent (psychology) into UI Agent (Stitch) pipeline with copy generation (completed 2026-03-10)
-- [ ] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs
+- [x] **Phase 4: Design Iteration and Animation** - Variant exploration, screen editing, and per-page animation choreography specs (completed 2026-03-10)
 - [ ] **Phase 5: Video-to-Website** - Scroll-driven animated site specs with canvas frame rendering and section choreography
 
 ## Phase Details
@@ -79,8 +79,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — /iterate command with variant generation and screen editing via Stitch MCP
-- [ ] 04-02-PLAN.md — Animation choreography skill with per-page specs referencing Framer Motion, GSAP, Swup.js, Lenis
+- [x] 04-01-PLAN.md — /iterate command with variant generation and screen editing via Stitch MCP
+- [x] 04-02-PLAN.md — Animation choreography skill with per-page specs referencing Framer Motion, GSAP, Swup.js, Lenis
 
 ### Phase 5: Video-to-Website
 **Goal**: Users can generate scroll-driven animated site specifications that transform video content into interactive web experiences
@@ -104,5 +104,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Plugin Foundation and Persistence | 2/2 | Complete   | 2026-03-10 |
 | 2. Branding Pipeline | 2/2 | Complete   | 2026-03-10 |
 | 3. Page Design Engine | 3/3 | Complete | 2026-03-10 |
-| 4. Design Iteration and Animation | 1/2 | In Progress|  |
+| 4. Design Iteration and Animation | 2/2 | Complete | 2026-03-10 |
 | 5. Video-to-Website | 0/1 | Not started | - |
