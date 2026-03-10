@@ -245,23 +245,153 @@ Design system generated for "{niche}":
 
 ## From Reference
 
-> **See Plan 02-02 for implementation.**
-
-Reverse-engineer a design system from an existing website or screenshot.
+Reverse-engineer a design system from an existing website or screenshot. Produces the same output as From Scratch (tokens.json, branding.md, state.json update).
 
 ### From URL (`--from-url <url>`)
-Given a live URL (landing page, Dribbble shot, Awwwards site), fetch and analyze:
-- Extract color palette from CSS/visual analysis
-- Identify typography from font declarations
-- Analyze spacing patterns and layout structure
-- Determine component styles and interaction patterns
+
+Given a live URL (landing page, Dribbble shot, Awwwards site), extract a complete design system.
+
+#### Step 1: Load extraction guide
+
+Read `skills/branding/references/reference-extraction-guide.md` for the full extraction methodology.
+
+#### Step 2: Fetch reference content
+
+Use **WebFetch** to load the reference URL content. WebFetch returns structured markdown -- exact CSS values may not be available.
+
+#### Step 3: Analyze for design signals
+
+From the fetched content, extract:
+- **Colors**: CSS custom properties, brand colors in headers/CTAs/backgrounds, dominant palette
+- **Typography**: Font-family declarations, Google Fonts links, weight patterns
+- **Spacing**: Content density, whitespace usage, section rhythm
+- **UI style**: Classify the overall aesthetic (Minimalism, Glassmorphism, Neubrutalism, Soft UI, Editorial, Gradient-Rich, Dark Mode Premium)
+- **Component patterns**: Header style, hero approach, CTA treatment, footer layout
+
+#### Step 4: Handle design showcase sources
+
+If the reference is a **Dribbble shot**, **Awwwards site**, or **Behance project**:
+- Prioritize visual design cues over textual content
+- The visual language is the primary signal -- not the copy or content structure
+- Component patterns may be more experimental than standard sites
+
+#### Step 5: Load output format
+
+Read `skills/branding/references/token-generation-guide.md` for the exact output structure and validation rules.
+
+#### Step 6: Generate tokens.json
+
+Assemble extracted values into `.ui-ux/tokens.json`:
+- Use directly extracted values where available
+- Fill gaps with industry-appropriate defaults from `skills/branding/references/industry-design-rules.md`
+- All colors as 6-digit hex codes, all fonts as real Google Fonts names
+- Validate: all 5 required color fields, both heading and body typography, uiStyle and industry populated
+
+#### Step 7: Write tokens.json
+
+Write `.ui-ux/tokens.json` with the generated design tokens.
+
+#### Step 8: Write branding.md
+
+Generate `.ui-ux/branding.md` using the template from the token generation guide:
+- Title uses project name from state.json
+- Include `**Extracted from:** {url}` in the header
+- Note `(inferred)` next to any values that were filled from defaults rather than extracted
+- All hex codes and font names must match tokens.json exactly
+
+#### Step 9: Archive reference source
+
+Save the reference URL to `.ui-ux/references/source-url.txt` for future re-extraction or comparison.
+
+#### Step 10: Update state.json
+
+Update `.ui-ux/state.json`:
+- Set `brandingComplete` to `true`
+- Set `niche` to the inferred industry/niche from the reference site
+- Update `updatedAt` to current ISO 8601 timestamp
+
+#### Step 11: Present to user
+
+Show the extracted design system summary (same format as From Scratch) and note which values were directly extracted vs inferred. Ask if any adjustments are needed.
+
+---
 
 ### From Screenshot (`--from-screenshot <path>`)
-Given a screenshot or design image, analyze visually:
-- Extract dominant and accent colors
-- Identify typeface characteristics
-- Analyze whitespace and grid patterns
-- Document component styles
 
-### Output
-Same as From Scratch: produces `.ui-ux/tokens.json`, `.ui-ux/branding.md`, and updates `.ui-ux/state.json`.
+Given a screenshot or design image, analyze visually and extract a complete design system.
+
+#### Step 1: Load extraction guide
+
+Read `skills/branding/references/reference-extraction-guide.md` for the full extraction methodology.
+
+#### Step 2: Read the screenshot
+
+Read the screenshot image file using the Read tool. Claude can natively analyze images -- no external vision API needed.
+
+Supported formats: PNG, JPG, JPEG, WebP, GIF.
+
+#### Step 3: Analyze visual elements
+
+From the screenshot image, extract:
+- **Colors**: Dominant, secondary, CTA, background, and text colors. Estimate hex values from visual analysis.
+- **Typography**: Serif vs sans-serif, weight, approximate font identification. Match to closest Google Fonts.
+- **Spacing**: Whitespace density, grid structure, section rhythm
+- **UI style**: Classify the aesthetic (same 7 options as URL path)
+- **Component patterns**: Describe visible header, hero, CTA, footer styles
+
+#### Step 4: Load output format
+
+Read `skills/branding/references/token-generation-guide.md` for the exact output structure and validation rules.
+
+#### Step 5: Generate tokens.json
+
+Compile visual analysis into concrete token values:
+- Every color as a 6-digit hex code (best-effort color matching from visual analysis)
+- Font families as real Google Fonts names (closest match to what's visible)
+- UI style as one of the 7 standard options
+- Component patterns as standard pattern names
+- Validate all required fields before writing
+
+#### Step 6: Write tokens.json
+
+Write `.ui-ux/tokens.json` with the generated design tokens.
+
+#### Step 7: Write branding.md
+
+Generate `.ui-ux/branding.md` using the template from the token generation guide:
+- Title uses project name from state.json
+- Include `**Extracted from:** {screenshot filename}` in the header
+- All hex codes and font names must match tokens.json exactly
+
+#### Step 8: Archive reference
+
+Note the screenshot path in `.ui-ux/references/source-screenshot.txt` for future reference.
+
+#### Step 9: Update state.json
+
+Update `.ui-ux/state.json`:
+- Set `brandingComplete` to `true`
+- Set `niche` to the inferred industry/niche from the screenshot's visual style
+- Update `updatedAt` to current ISO 8601 timestamp
+
+#### Step 10: Present to user
+
+Show the extracted design system summary and invite review. Since screenshot extraction relies on visual estimation:
+- Encourage the user to adjust hex values if they have exact brand colors
+- Suggest running the generated design through a contrast checker
+- Offer to refine any values that look off
+
+---
+
+### Hybrid Approach
+
+Users can combine generation and extraction for iterative refinement:
+
+1. **Start from niche**: Run `/branding SaaS fintech` to generate a baseline design system
+2. **Refine from reference**: Run `/branding --from-url https://stripe.com` to overwrite with extracted values from a reference they admire
+
+The second run will trigger the overwrite confirmation (from Pre-flight step 2). This lets users start with an industry-appropriate baseline, then refine toward a specific reference aesthetic.
+
+Users can also go the other direction:
+1. **Start from reference**: Extract from a site they like
+2. **Adjust manually**: Edit `.ui-ux/tokens.json` directly to tweak specific values
