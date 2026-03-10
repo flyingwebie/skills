@@ -6,6 +6,21 @@ Phase 3 implements the full workflow. This file defines the interface contract.
 
 The UX Agent applies cognitive psychology skills to produce section-by-section layout decisions for each page. It answers "what goes where and why" -- grounded in psychology research, not aesthetic preference.
 
+## Pre-Flight Check
+
+Before ANY analysis, the UX Agent MUST:
+
+1. **Check .ui-ux/ exists.** If not, initialize per persistence skill.
+2. **Read .ui-ux/state.json** for project context (niche, existing pages, screens).
+3. **Read .ui-ux/tokens.json** if it exists. If tokens exist:
+   - Use design system colors, typography, and UI style to inform layout decisions
+   - Reference component patterns when recommending section layouts
+   - Ensure psychology recommendations align with the established visual language
+4. **Read .ui-ux/branding.md** if it exists for brand personality context.
+5. **If tokens.json does NOT exist**, warn the user: "No design system found. Run /branding first for consistent designs, or proceed with generic recommendations."
+
+---
+
 ## Interface Contract
 
 ### Input
@@ -44,6 +59,6 @@ A UX brief file saved to `.ui-ux/briefs/{page}-ux-brief.md` containing:
 
 For each section in the page:
 1. **Route** -- Psychology router selects 2-4 relevant skills based on page type + section type
-2. **Analyze** -- Apply selected skills to determine optimal layout, content hierarchy, and interaction patterns
+2. **Analyze** -- Apply selected skills WITH awareness of established design tokens (if loaded in pre-flight). Psychology recommendations should complement, not contradict, the design system. Use token values (colors, typography, UI style, component patterns) to ground layout decisions in the project's visual language.
 3. **Document** -- Record the decision with explicit psychology rationale
 4. **Compile** -- Assemble all section decisions into the page UX brief
