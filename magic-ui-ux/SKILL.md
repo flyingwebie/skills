@@ -24,6 +24,7 @@ Psychology-driven UI/UX design plugin for Claude Code. Separates UX (how users t
 |-------|-------------|
 | `branding` | Generates design systems from niche descriptions or reference sites using industry design rules |
 | `psychology-router` | Routes page sections to the 2-4 most relevant psychology skills from a library of 14 |
+| `copy-generation` | Generates psychology-aligned page copy (headlines, body, CTAs) with mandatory human approval before use |
 | `persistence` | Manages the `.ui-ux/` persistence folder -- design tokens, project state, screen references |
 
 See `skills/` directory for full skill documentation.
