@@ -15,11 +15,17 @@ Before ANY screen generation, the UI Agent MUST:
 4. **Read .ui-ux/state.json** for existing screens, project info, Stitch project ID.
 5. **Verify tokens are complete**: Check that colors.primary, colors.secondary, colors.cta, colors.background, colors.text, typography.heading.family, and typography.body.family all have values.
 
-All Stitch prompts MUST incorporate:
-- Exact hex color values from tokens
-- Font family names from tokens
-- UI style from tokens
-- Component patterns from tokens
+**For initial generation prompts:**
+- Color mood and vibe descriptions (NOT hex codes)
+- Font style descriptions (NOT family names)
+- UI style with descriptive adjectives
+- Actual approved copy text
+- Section layout structure from UX brief
+
+**For edit prompts:**
+- Exact hex codes and font names for targeted brand-specific changes
+- Focused instruction targeting one component
+- UI/UX keywords Stitch understands
 
 ---
 
@@ -33,6 +39,8 @@ All Stitch prompts MUST incorporate:
 | `tokens` | object | Yes | Design tokens from `.ui-ux/tokens.json` |
 | `branding` | file | Yes | Human-readable design system from `.ui-ux/branding.md` |
 | `copy` | file | No | Approved page copy (if provided or generated) |
+| `imageSpec` | file | No | Image spec from `.ui-ux/briefs/{page}-image-spec.json` |
+| `deviceType` | string | No | Target device type from state.json (`MOBILE`, `DESKTOP`, `TABLET`) |
 
 ### Output
 
@@ -42,12 +50,12 @@ All Stitch prompts MUST incorporate:
 
 ### Stitch MCP Tools Used
 
-| Tool | When |
-|------|------|
-| `create_project` | First screen generation (no existing project) |
-| `generate_screen_from_text` | Generate new page screens from prompts |
-| `edit_screens` | Iterate on existing screens with changes |
-| `generate_variants` | Explore alternative designs for a screen |
+| Tool | Required Params | Optional Params | When |
+|------|----------------|-----------------|------|
+| `mcp__stitch__create_project` | *(none)* | `title` | First screen generation (no existing project) |
+| `mcp__stitch__generate_screen_from_text` | `projectId`, `prompt` | `deviceType`, `modelId` | Generate new page screens from prompts |
+| `mcp__stitch__edit_screens` | `projectId`, `selectedScreenIds[]`, `prompt` | `deviceType`, `modelId` | Iterate on existing screens with changes |
+| `mcp__stitch__generate_variants` | `projectId`, `selectedScreenIds[]`, `prompt`, `variantOptions` | `deviceType`, `modelId` | Explore alternative designs for a screen |
 
 ---
 
@@ -75,46 +83,62 @@ Read and parse the UX brief to extract all design-relevant information.
 
 ### Step 3: Prompt Crafting
 
-Build the Stitch prompt by combining UX brief structure with design token values. Reference `skills/branding/references/stitch-prompt-guide.md` for prompt structure and section-specific templates.
+Build the Stitch prompt using a two-phase approach. Reference `skills/branding/references/stitch-prompt-guide.md` for templates and style guidance.
 
-**For each section in the UX brief, build a prompt fragment:**
+**Phase A: Initial Generation Prompts (`generate_screen_from_text`)**
+
+Use Stitch's recommended formula: **Idea + Theme/Vibe + Content + Image guidance**
+
+1. **Idea**: Describe the page and its purpose
+   - "A {page_type} for a {niche} brand that {conversion_intent}"
+
+2. **Theme/Vibe**: Use mood language from branding.md, NOT exact token values
+   - Colors as mood: "deep navy primary with warm orange accents" (NOT "#1A1A2E with #FF6B35")
+   - Fonts as style: "clean geometric sans-serif headings" (NOT "Inter Bold 700")
+   - UI style with adjectives: "{uiStyle} aesthetic — {style_modifier_adjectives}"
+   - Overall mood: "professional yet approachable" or "bold and energetic"
+
+3. **Content**: Section-by-section from approved copy (exact text — no paraphrasing)
+   - Map each UX brief section to its approved copy
+   - Include all headlines, body text, CTAs, and lists verbatim
+
+4. **Image guidance**: Check if `.ui-ux/briefs/{page}-image-spec.json` exists.
+   - **If image spec exists:** Read the spec's pre-translated `guidanceText` from `state.json.imageSpecs[]` (matching the page). Use as the "Image style:" content. This provides rich, photography-informed descriptions that dramatically improve Stitch's image rendering.
+   - **If no image spec:** Fall back to simple patterns based on niche ("Abstract geometric shapes" for tech, "Lifestyle photography with warm tones" for wellness, "Professional photography with clean lighting" for finance, etc.)
+
+**Combine into a full-page prompt:**
 
 ```
-[Section Layout from brief]
-+ [Visual Style from tokens.uiStyle with style modifier adjectives]
-+ [Colors: exact hex values from tokens.colors]
-+ [Typography: family names and weights from tokens.typography]
-+ [Copy: exact text from approved copy]
-+ [Component Patterns: pattern names from tokens.componentPatterns]
-+ [Interaction hints: psychology notes from UX brief sections]
+A {page_type} for a {niche} brand.
+
+Theme: {vibe_adjectives from branding.md}. {uiStyle} aesthetic. {color_mood} palette.
+
+Navigation: {nav_items}, CTA button "{nav_cta_text}"
+
+Hero: {layout_pattern} layout.
+Headline: "{headline_text}"
+Subheading: "{subheading_text}"
+CTA: "{cta_text}"
+{psychology_visual_cues}
+
+[...additional sections in top-to-bottom order with actual copy...]
+
+Footer: {footer_description}
+
+Image style: {image_guidance}
 ```
 
-**Combine all section prompts into a full-page prompt.** Stitch `generate_screen_from_text` works best with complete pages that establish visual cohesion across all sections. Structure as:
+**Phase B: Edit Prompts (`edit_screens`)**
 
-```
-Design a complete {page_type} page for a {niche} brand.
+Use Stitch's targeted edit pattern: **Target + Instruction + UI/UX Keyword**
 
-Navigation: [nav fragment]
+- **Target** the specific component: "the hero section CTA button"
+- **Give a specific instruction**: "make it larger with rounded corners"
+- **Use UI/UX keywords** Stitch understands
+- Include exact token values (hex codes, font names) ONLY for brand-specific changes
+- Do NOT include token values for unchanged elements — Stitch already knows the screen's current state
 
-Hero: [hero fragment]
-
-[...additional sections in top-to-bottom order...]
-
-Footer: [footer fragment]
-
-Overall style: {uiStyle} with consistent color and typography throughout.
-```
-
-**Apply the prompt quality checklist** (from stitch-prompt-guide.md) before proceeding:
-- At least 3 exact hex color values from tokens
-- Specific font family names from tokens
-- UI style with descriptive visual adjectives
-- Actual copy text (not placeholder)
-- Layout structure matching UX brief
-- Component patterns where applicable
-- Mobile adaptation notes for hero and navigation
-
-The final prompt should read like a detailed design brief that a senior designer could execute without asking clarifying questions.
+Apply the prompt quality checklist (from stitch-prompt-guide.md) before proceeding.
 
 ### Step 4: Stitch Project Management
 
@@ -134,8 +158,12 @@ The final prompt should read like a detailed design brief that a senior designer
 
 ### Step 5: Screen Generation
 
-1. Call `generate_screen_from_text` with the full-page prompt crafted in Step 3
-2. The prompt is the complete combined prompt -- all sections in one call for visual cohesion
+1. Call `mcp__stitch__generate_screen_from_text` with:
+   - `projectId` from `state.json.stitch.projectId`
+   - `prompt`: the full-page prompt crafted in Step 3 (Phase A)
+   - `deviceType` from `state.json.deviceType` (when available)
+   - `modelId` when specified (default: omit to let Stitch choose)
+2. The prompt is the complete combined prompt — all sections in one call for visual cohesion
 3. Capture the returned screen ID from the Stitch response
 
 ### Step 6: Persistence
@@ -176,49 +204,46 @@ Report the results to the user:
 
 ## Prompt Assembly Example
 
-A complete worked example showing how UX brief + tokens + copy become a Stitch prompt.
+### Example 1: Initial Generation (Vibe-First)
 
-### Given Inputs
+**Given Inputs:**
+- Page: Homepage for a SaaS project management tool
+- UX Brief Hero: centered-stack layout, curiosity-gap headline, single CTA (Hick's law)
+- Branding: Professional, modern, trustworthy. Clean geometric aesthetic. Deep navy and warm orange palette.
+- UI Style: Minimalism
+- Copy: "Stop managing projects. Start finishing them." / "The project tool that gets out of your way so your team ships faster." / "Start Free Trial"
 
-**Page:** Homepage for a SaaS project management tool
-
-**UX Brief Hero Section:**
-- Layout: centered-stack
-- Psychology: curiosity-gap headline, single focused CTA (Hick's law)
-- Elements: headline, subheading, CTA button, subtle scroll indicator
-
-**Tokens:**
-- colors.primary: #1A1A2E
-- colors.cta: #FF6B35
-- colors.background: #FAFAFA
-- colors.text: #2D2D3A
-- typography.heading: Inter, weight 700
-- typography.body: Inter, weight 400
-- uiStyle: Minimalism
-- componentPatterns: ["subtle-shadow-card", "rounded-cta"]
-
-**Approved Copy:**
-- Headline: "Stop managing projects. Start finishing them."
-- Subheading: "The project tool that gets out of your way so your team ships faster."
-- CTA: "Start Free Trial"
-
-### Resulting Prompt Fragment
+**Resulting Prompt:**
 
 ```
-Hero section: Centered layout with generous whitespace above and below.
-Deep navy (#1A1A2E) headline "Stop managing projects. Start finishing them." in
-Inter Bold 48px centered. Supporting subtext "The project tool that gets out of
-your way so your team ships faster." in Inter Regular 18px #2D2D3A with reduced
-opacity, centered below headline with 1.5rem gap. Single prominent CTA button
-"Start Free Trial" in #FF6B35 with white (#FFFFFF) text, rounded corners (rounded-cta
-pattern), centered below subtext with 2rem gap. Clean #FAFAFA background.
-Minimalist style -- no decorative elements, let typography and whitespace create
-hierarchy. Subtle scroll indicator (thin line or chevron) at bottom of section in
-#2D2D3A at 30% opacity.
-Mobile: Stack headline (36px), subheading, and CTA vertically with full-width button.
+A homepage for a SaaS project management tool that converts visitors into trial signups.
+
+Theme: Professional and trustworthy with a clean, modern edge. Minimalist aesthetic. Deep navy primary with warm orange accents on a crisp light background.
+
+Navigation: Logo left, links center (Features, Pricing, About), CTA button "Start Free Trial" right.
+
+Hero: Centered layout with generous whitespace.
+Headline: "Stop managing projects. Start finishing them."
+Subheading: "The project tool that gets out of your way so your team ships faster."
+CTA: "Start Free Trial" — prominent, warm orange, rounded corners.
+Subtle scroll indicator at bottom. Clean, typography-driven hierarchy — no decorative elements.
+
+[...additional sections...]
+
+Image style: Abstract geometric shapes, subtle and muted.
 ```
 
-This fragment would be combined with similar fragments for features, testimonials, CTA, and footer sections to form the full-page prompt.
+### Example 2: Screen Edit (Targeted + Exact Values)
+
+**User request:** "Make the hero CTA button larger and change its color to our secondary blue"
+
+**Resulting Edit Prompt:**
+
+```
+Make the hero section CTA button larger (increase padding and font size) and change its background color to #16213E. Keep the white button text.
+```
+
+Note: The edit prompt is focused on ONE component with specific changes. Exact hex value is used because this is a brand-specific color change. No need to describe unchanged elements.
 
 ---
 
@@ -262,7 +287,7 @@ These rules are non-negotiable for every Stitch prompt the UI Agent generates:
 
 5. **Layout structure must follow the UX brief.** If the brief specifies a centered-stack hero, the prompt describes a centered-stack hero. Do not improvise alternative layouts -- the UX Agent chose layouts for psychological reasons.
 
-6. **Edit prompts MUST include token values for unchanged elements.** If editing the hero section, the prompt must still include correct colors, fonts, and component patterns for the navigation, features, footer, and every other section. Stitch needs full context to maintain visual consistency across the page.
+6. **Edit prompts should be focused and specific.** Target one component with one clear change. Include exact token values (hex codes, font names) only when the change involves brand-specific values like colors or fonts. Do NOT repeat token values for unchanged elements — Stitch already knows the screen's current state.
 
 7. **Variant selection MUST be saved to state.json before reporting success.** Never report a variant as selected without persisting it. The screen entry, page screenIds array, page status, and updatedAt timestamp must all be updated before the user sees a success message.
 
@@ -292,7 +317,19 @@ Gather context for the variant generation:
 
 **Step 3: Variant Call**
 
-Call `generate_variants` with the `stitchScreenId`. Stitch generates design alternatives using the original screen as a base -- no additional prompt is needed. Stitch handles variant generation internally by exploring alternative layouts, spacing, and visual treatments while maintaining the same content and brand identity.
+1. **Construct a variant prompt** from the user's intent and branding context:
+   - If user provided direction, incorporate it into the prompt
+   - If no direction, use: "Explore alternative designs for this {page_type} page. Maintain {brand_personality} identity with {uiStyle} aesthetic."
+2. **Build `variantOptions`**:
+   - `creativeRange`: default `EXPLORE` (or user-specified: `REFINE` for subtle changes, `REIMAGINE` for dramatic)
+   - `variantCount`: default 3 (1-5 range)
+   - `aspects`: optional — focus on `LAYOUT`, `COLOR_SCHEME`, `IMAGES`, `TEXT_FONT`, or `TEXT_CONTENT` if user specified
+3. **Call `mcp__stitch__generate_variants`** with:
+   - `projectId` from `state.json.stitch.projectId`
+   - `selectedScreenIds: [stitchScreenId]` (the target screen)
+   - `prompt` (constructed above)
+   - `variantOptions` (constructed above)
+   - `deviceType` from `state.json.deviceType` (when available)
 
 **Step 4: Persistence**
 
@@ -359,9 +396,11 @@ The edit prompt should read like a focused design revision brief: clear about wh
 
 **Step 4: Edit Call**
 
-Call `edit_screens` with:
-- The target `stitchScreenId` (the screen being edited)
-- The crafted edit prompt from Step 3
+Call `mcp__stitch__edit_screens` with:
+- `projectId` from `state.json.stitch.projectId`
+- `selectedScreenIds: [targetStitchScreenId]` (the screen being edited)
+- `prompt`: the crafted edit prompt from Step 3
+- `deviceType` from `state.json.deviceType` (when available)
 
 **Step 5: Persistence**
 

@@ -32,7 +32,7 @@
     {
       "name": "magic-ui-ux",
       "description": "Psychology-driven UI/UX design plugin — combines cognitive psychology skills with Google Stitch MCP to generate premium, conversion-optimized page designs",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": "./magic-ui-ux",
       "category": "design"
     }

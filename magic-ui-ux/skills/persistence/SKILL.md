@@ -41,9 +41,11 @@ When `.ui-ux/` does not exist, initialize it:
      "updatedAt": "<ISO 8601 timestamp>",
      "screens": [],
      "pages": [],
+     "deviceType": null,
      "brandingComplete": false,
      "animationSpecs": [],
-     "scrollVideoSpecs": []
+     "scrollVideoSpecs": [],
+     "imageSpecs": []
    }
    ```
 

@@ -1,6 +1,6 @@
 ---
 description: "Design one or more pages with psychology-driven UX and Stitch-generated UI"
-allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, google_stitch_create_project, google_stitch_generate_screen_from_text
+allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__create_project, mcp__stitch__generate_screen_from_text
 argument-hint: "<pages> [--copy <file>]"
 ---
 
@@ -67,6 +67,37 @@ Before doing anything, read the project's persistence layer.
 
 - **If `--copy <file>` provided:** Read the specified file. Skip copy generation for ALL pages in this run. The file should contain section-labeled copy.
 - **If no `--copy` flag:** Copy generation runs per page (Step 3 in the pipeline below).
+
+### Device Type Flag
+
+- **If `--device <type>` provided:** Map the value to Stitch device types:
+  - `web` or `desktop` → `DESKTOP`
+  - `app` or `mobile` → `MOBILE`
+  - `tablet` → `TABLET`
+
+  ```
+  /magic-ui-ux:design homepage --device web
+  /magic-ui-ux:design homepage --device app
+  ```
+
+- **If no `--device` flag:** Ask the user:
+  > **App (mobile-first) or Web (desktop-first)?**
+  >
+  > This determines the target device for Stitch screen generation.
+
+  Save the selected device type to `state.json.deviceType` so subsequent commands inherit it.
+
+### Design Mode Flag
+
+- **If `--mode <mode>` provided:** Map to Stitch model IDs:
+  - `pro` → `GEMINI_3_PRO` (complex, production-quality screens)
+  - `fast` → `GEMINI_3_FLASH` (wireframing, quick iteration)
+
+  ```
+  /magic-ui-ux:design homepage --mode fast
+  ```
+
+- **If no `--mode` flag:** Default silently to `GEMINI_3_PRO`. Do NOT ask the user.
 
 ---
 
@@ -144,6 +175,28 @@ The copy generation skill:
 
 **CRITICAL: Never pass unapproved copy to the UI Agent.**
 
+### Step 3.5: Image Specification
+
+Invoke the image generation skill (`skills/image-generation/SKILL.md`) in pipeline mode:
+
+1. **Read the UX brief** to identify sections needing imagery (hero, about, testimonials, services, portfolio, features, contact, team)
+2. **Skip sections** that don't need photographic content (pricing, FAQ, forms, footer, newsletter)
+3. **Generate the JSON spec** with per-section photography context via `panel_specifications`
+4. **Translate to natural language** -- the `guidanceText` output is what the UI Agent will consume
+
+| Parameter | Value |
+|-----------|-------|
+| `page` | Current page name |
+| `uxBrief` | `.ui-ux/briefs/{page}-ux-brief.md` (produced in Step 2) |
+| `tokens` | `.ui-ux/tokens.json` (loaded in pre-flight) |
+
+After image spec completes:
+- Spec saved to `.ui-ux/briefs/{page}-image-spec.json`
+- Entry added to `state.json.imageSpecs[]` with `guidanceText`
+- The translated guidance text is passed to the UI Agent in Step 4
+
+**This step is automatic -- no user approval needed.** Image specs are technical photography parameters, not brand content.
+
 ### Step 4: UI Agent
 
 Invoke the UI Agent (`agents/ui-agent.md`) with:
@@ -154,6 +207,9 @@ Invoke the UI Agent (`agents/ui-agent.md`) with:
 | `tokens` | `.ui-ux/tokens.json` |
 | `branding` | `.ui-ux/branding.md` |
 | `copy` | `.ui-ux/briefs/{page}-copy.md` (or user-provided copy file) |
+| `imageSpec` | `.ui-ux/briefs/{page}-image-spec.json` (produced in Step 3.5) |
+| `deviceType` | Device type from `--device` flag or `state.json.deviceType` |
+| `modelId` | Design mode from `--mode` flag (default: omit to let Stitch choose) |
 
 The UI Agent:
 1. Reads all inputs (UX brief, tokens, branding, copy)
@@ -198,18 +254,19 @@ After all pages are processed, present a summary:
 ```
 Design Complete
 
-| Page | Status | UX Brief | Copy | Screens | Animation |
-|------|--------|----------|------|---------|-----------|
-| homepage | designed | .ui-ux/briefs/homepage-ux-brief.md | .ui-ux/briefs/homepage-copy.md | 3 screens | .ui-ux/briefs/homepage-animation-spec.md |
-| services | designed | .ui-ux/briefs/services-ux-brief.md | .ui-ux/briefs/services-copy.md | 2 screens | .ui-ux/briefs/services-animation-spec.md |
+| Page | Status | Device | UX Brief | Copy | Image Spec | Screens | Animation |
+|------|--------|--------|----------|------|------------|---------|-----------|
+| homepage | designed | DESKTOP | .ui-ux/briefs/homepage-ux-brief.md | .ui-ux/briefs/homepage-copy.md | .ui-ux/briefs/homepage-image-spec.json | 3 screens | .ui-ux/briefs/homepage-animation-spec.md |
+| services | designed | DESKTOP | .ui-ux/briefs/services-ux-brief.md | .ui-ux/briefs/services-copy.md | .ui-ux/briefs/services-image-spec.json | 2 screens | .ui-ux/briefs/services-animation-spec.md |
 
 Stitch Project: [project URL]
 
 Next steps:
 - Run /magic-ui-ux:design to design additional pages
+- Run /magic-ui-ux:image to generate or refine image specs standalone
 - Run /magic-ui-ux:video for scroll-driven video-style page specs
-- Use Stitch edit_screens to refine any screen
-- Use Stitch generate_variants to explore alternative designs
+- Run /magic-ui-ux:iterate <page> --edit "changes" to refine any screen
+- Run /magic-ui-ux:iterate <page> --variants to explore alternative designs
 ```
 
 ---

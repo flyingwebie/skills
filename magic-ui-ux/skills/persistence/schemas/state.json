@@ -7,6 +7,11 @@
     "niche": { "type": "string" },
     "createdAt": { "type": "string", "format": "date-time" },
     "updatedAt": { "type": "string", "format": "date-time" },
+    "deviceType": {
+      "type": "string",
+      "enum": ["MOBILE", "DESKTOP", "TABLET", "AGNOSTIC"],
+      "description": "Target device type for Stitch generation calls"
+    },
     "stitch": {
       "type": "object",
       "properties": {
@@ -24,7 +29,10 @@
           "variant": { "type": "integer", "default": 0 },
           "createdAt": { "type": "string", "format": "date-time" },
           "stitchScreenId": { "type": "string" },
-          "uxBriefPath": { "type": "string" }
+          "uxBriefPath": { "type": "string" },
+          "deviceType": { "type": "string", "description": "Device type used for this screen generation" },
+          "creativeRange": { "type": "string", "description": "Creative range used if this screen is a variant" },
+          "modelId": { "type": "string", "description": "Stitch model ID used for generation" }
         },
         "required": ["id", "page"]
       }
@@ -63,6 +71,17 @@
         "properties": {
           "page": { "type": "string" },
           "specPath": { "type": "string" }
+        }
+      }
+    },
+    "imageSpecs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": { "type": "string" },
+          "specPath": { "type": "string" },
+          "guidanceText": { "type": "string", "description": "Pre-translated natural language for Stitch prompts" }
         }
       }
     }

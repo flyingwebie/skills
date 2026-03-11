@@ -28,10 +28,12 @@ magic-ui-ux/
     branding.md           # /branding command -- generate or reverse-engineer design systems
     design.md             # /design command -- psychology-driven page design via Stitch
     iterate.md            # /iterate command -- generate variants or edit existing screens
+    image.md              # /image command -- generate rich image specs from text/images
     video.md              # /video command -- scroll-driven video-style site specs
   skills/
     persistence/          # .ui-ux/ folder management (tokens, state, briefs)
     psychology-router/    # Routes sections to relevant psychology skills
+    image-generation/     # JSON visual specs → natural-language image guidance for Stitch
     animation/            # Per-page animation choreography specs
     video-to-website/     # Scroll-driven video-style site specs
   agents/
@@ -83,9 +85,9 @@ The plugin draws from 14 cognitive psychology skills:
 ## MCP Dependencies
 
 **Google Stitch** (required for screen generation):
-- `create_project` -- Initialize a new Stitch design project
-- `generate_screen_from_text` -- Generate screens from text prompts
-- `edit_screens` -- Modify existing screens with change requests
-- `generate_variants` -- Create design variants of existing screens
+- `create_project` -- Initialize a new Stitch design project (optional: `title`)
+- `generate_screen_from_text` -- Generate screens from text prompts (required: `projectId`, `prompt`; optional: `deviceType`, `modelId`)
+- `edit_screens` -- Modify existing screens (required: `projectId`, `selectedScreenIds[]`, `prompt`; optional: `deviceType`, `modelId`)
+- `generate_variants` -- Create design variants (required: `projectId`, `selectedScreenIds[]`, `prompt`, `variantOptions`; optional: `deviceType`, `modelId`)
 
 **Note:** The `/video` command does **not** require Stitch MCP. It produces scroll-driven animation specs (GSAP ScrollTrigger, canvas frame sequences, Lenis integration) -- not visual screens.
