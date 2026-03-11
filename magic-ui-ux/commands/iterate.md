@@ -1,6 +1,6 @@
 ---
 description: "Iterate on existing designs -- generate variants or edit screens with change requests"
-allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, google_stitch_edit_screens, google_stitch_generate_variants
+allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__edit_screens, mcp__stitch__generate_variants
 argument-hint: "<page> [--variants | --edit <changes>]"
 ---
 
@@ -54,6 +54,10 @@ Before doing anything, read the project's persistence layer.
 | `--variants` | Variant Mode | Generate design alternatives based on the existing screen |
 | `--edit "<changes>"` | Edit Mode | Apply specific changes to an existing screen |
 | *(no flag)* | Variant Mode | Default to variant generation when no flag provided |
+| `--count N` | Variant Mode | Number of variants to generate (1-5, default 3) |
+| `--range <refine\|explore\|reimagine>` | Variant Mode | Creative range for variants (default: explore) |
+| `--focus <layout\|colors\|images\|fonts\|content>` | Variant Mode | Focus variant exploration on specific aspects |
+| `--prompt "direction"` | Variant Mode | Optional prompt direction for variants |
 
 ---
 
@@ -83,7 +87,19 @@ Default to the most recent screen (highest variant number). If the page has only
 
 1. **Read the page's existing screen** from `state.json` -- get the `stitchScreenId` for the selected screen.
 2. **Read the page's UX brief** from `.ui-ux/briefs/{page}-ux-brief.md` for context on psychology rationale and layout decisions.
-3. **Call `generate_variants`** with the existing `stitchScreenId`. Stitch generates design alternatives using the original screen as a base.
+3. **Construct variant prompt and options:**
+   - If `--prompt` flag provided, use that as the variant prompt
+   - If no `--prompt`, construct a default prompt from branding context: "Explore alternative designs for this {page_type} page. Maintain {brand_personality} brand identity with {uiStyle} aesthetic."
+   - Build `variantOptions`:
+     - `creativeRange`: from `--range` flag → `REFINE`, `EXPLORE`, or `REIMAGINE` (default: `EXPLORE`)
+     - `variantCount`: from `--count` flag (default: 3)
+     - `aspects`: from `--focus` flag → map to `LAYOUT`, `COLOR_SCHEME`, `IMAGES`, `TEXT_FONT`, `TEXT_CONTENT` (optional, omit if no focus specified)
+   - Call `mcp__stitch__generate_variants` with:
+     - `projectId` from `state.json.stitch.projectId`
+     - `selectedScreenIds: [stitchScreenId]` (the selected screen)
+     - `prompt` (constructed above)
+     - `variantOptions` (constructed above)
+     - `deviceType` from `state.json.deviceType` (when available)
 4. **User selects** their preferred variant or requests more variants.
 5. **Save selected variant** to `state.json`:
    - Add a new screen entry with incremented variant number:
@@ -119,18 +135,19 @@ Default to the most recent screen (highest variant number). If the page has only
    - Wait for user confirmation before proceeding with conflicting changes
    - If no conflict, proceed silently
 
-3. **Craft an edit prompt** that incorporates:
-   - **The user's specific change request** -- the exact changes they want
-   - **Token values for unchanged elements** -- so Stitch maintains consistency for everything NOT being edited (e.g., if editing the hero, include correct colors/fonts for navigation, features, footer)
-   - **UX brief psychology rationale** for affected sections -- so edits don't break the psychological intent (e.g., if the hero uses curiosity-gap psychology, the edit prompt preserves that intent)
+3. **Craft a focused edit prompt** using Stitch's targeted edit pattern:
+   - **Target** the specific component: "the hero section CTA button"
+   - **Give a specific instruction**: "make it larger with rounded corners"
+   - **Use UI/UX keywords** Stitch understands (e.g., "more whitespace", "bolder typography", "higher contrast")
+   - Include exact token values (hex codes, font names) ONLY when the change involves brand-specific values like colors or fonts
+   - Do NOT include token values for unchanged elements -- Stitch already knows the screen's current state
+   - Reference the UX brief's psychology rationale for the affected section to preserve intent
 
-   Apply the quality checklist from `stitch-prompt-guide.md`:
-   - At least 3 exact hex color values from tokens
-   - Specific font family names from tokens
-   - UI style with descriptive visual adjectives
-   - Reference to the layout structure from the UX brief
-
-4. **Call `edit_screens`** with the target `stitchScreenId` and the crafted edit prompt.
+4. **Call `mcp__stitch__edit_screens`** with:
+   - `projectId` from `state.json.stitch.projectId`
+   - `selectedScreenIds: [targetStitchScreenId]` (the screen being edited)
+   - `prompt`: the crafted edit prompt from Step 3
+   - `deviceType` from `state.json.deviceType` (when available)
 
 5. **Save the edited screen** to `state.json`:
    - Add a new screen entry with incremented variant number (same pattern as variant mode)

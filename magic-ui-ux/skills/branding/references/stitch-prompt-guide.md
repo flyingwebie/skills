@@ -1,336 +1,320 @@
 # Stitch Prompt Crafting Guide
 
-How to translate UX briefs and design tokens into effective Google Stitch `generate_screen_from_text` prompts that produce premium, brand-consistent screens.
+How to translate UX briefs and design tokens into effective Stitch MCP prompts. This guide covers two distinct prompting approaches: **vibe-first for initial generation** and **targeted for edits**.
 
 ## Prompt Structure Formula
 
-Every Stitch prompt follows this structure. Each component is required unless marked optional.
+Every Stitch prompt follows this core formula:
 
 ```
-[Page Context] + [Section Layout] + [Visual Style] + [Color Specification] + [Typography Specification] + [Content] + [Component Patterns] + [Mood/Feel]
+[Idea] + [Theme/Vibe] + [Content] + [Image (optional)]
 ```
 
-Build each component from the corresponding source:
+| Component | Source | Purpose |
+|-----------|--------|---------|
+| Idea | Page type, niche, conversion intent from UX brief | What you're building and why |
+| Theme/Vibe | Brand personality, UI style, color mood from branding.md | How it should feel |
+| Content | Approved copy from `{page}-copy.md`, section layout from UX brief | What it says and how it's arranged |
+| Image | Optional image style guidance | Visual imagery direction |
 
-| Component | Source |
-|-----------|--------|
-| Page Context | Page type, niche, conversion intent from UX brief strategy section |
-| Section Layout | Layout pattern and element arrangement from each UX brief section |
-| Visual Style | `tokens.uiStyle` with descriptive visual adjectives (see UI Style Modifiers) |
-| Color Specification | Exact hex values from `tokens.colors` |
-| Typography Specification | Font family names and weights from `tokens.typography` |
-| Content | Approved copy from `{page}-copy.md`, or UX brief placeholder text |
-| Component Patterns | Pattern names from `tokens.componentPatterns` |
-| Mood/Feel | Interaction hints and psychology notes from UX brief sections |
+## Two-Phase Token Strategy
 
-## Token Embedding Rules
+Stitch responds differently to vibe language vs exact values depending on the operation.
 
-Stitch generates better results when given exact design values instead of vague descriptions.
+### Phase A: Initial Generation (`generate_screen_from_text`)
 
-**ALWAYS include exact hex values:**
-- "Primary color: #1A1A2E" -- not "use a dark color"
-- "CTA button in #FF6B35 with white (#FFFFFF) text" -- not "use an orange button"
+Use **mood and vibe language**. Stitch interprets creative direction better when given atmosphere rather than specifications.
 
-**ALWAYS include font family names:**
-- "Headings in Inter Bold 600, body in Inter Regular 400" -- not "use a clean font"
-- Include the weight number for precision
+| Token Type | DO (Vibe Language) | DON'T (Exact Values) |
+|------------|-------------------|---------------------|
+| Colors | "deep navy primary with warm orange accents" | "#1A1A2E with #FF6B35 accents" |
+| Colors | "crisp light background with dark readable text" | "#FAFAFA background, #2D2D3A text" |
+| Fonts | "clean geometric sans-serif headings, readable body text" | "Inter Bold 700 headings, Inter Regular 400 body" |
+| Fonts | "elegant serif headings with modern sans-serif body" | "Playfair Display 600, Open Sans 400" |
+| Spacing | "generous whitespace, breathing room between sections" | "2rem gaps, 1.5rem padding" |
+| Style | "minimalist with subtle shadows and clean lines" | "box-shadow: 0 2px 4px rgba(0,0,0,0.1)" |
 
-**ALWAYS include UI style with visual adjectives:**
-- "Minimalist design style with generous whitespace and subtle shadows" -- not "make it clean"
-- See UI Style Modifiers section for the right adjectives per style
+**How to translate tokens to vibe language:**
 
-**Include component patterns by name:**
-- "Use glass-card pattern for feature cards" -- not "make the cards look modern"
-- Reference tokens.componentPatterns values directly
+- `colors.primary: #1A1A2E` → "deep navy" or "dark midnight blue"
+- `colors.cta: #FF6B35` → "warm orange" or "vibrant tangerine"
+- `colors.background: #FAFAFA` → "crisp light" or "clean off-white"
+- `typography.heading.family: Inter` → "clean geometric sans-serif"
+- `typography.heading.family: Playfair Display` → "elegant classic serif"
+- `uiStyle: Minimalism` → "minimalist with generous whitespace and typography-driven hierarchy"
 
-**Include spacing intent from tokens.spacing:**
-- "Use generous spacing (1.5rem-2rem between sections)" -- not "add some space"
-- Reference the spacing scale values from tokens
+### Phase B: Edits and Refinements (`edit_screens`)
 
-## Section-Specific Prompt Templates
+Use **exact token values** for targeted brand-specific changes. Stitch needs precision when modifying existing designs.
 
-Use these templates when building prompt fragments for each section in a UX brief. Replace `{placeholders}` with actual values from tokens, UX brief, and approved copy.
+| Change Type | Prompt Approach |
+|-------------|----------------|
+| Color change | "Change the CTA button to #FF6B35" |
+| Font change | "Update headings to Playfair Display semibold" |
+| Layout change | "Switch to a two-column split layout" (no exact values needed) |
+| Size change | "Make the hero CTA button larger" (no exact values needed) |
+| Spacing change | "Add more whitespace between hero and features" (no exact values needed) |
 
-### Hero
+**Edit prompt formula: Target + Instruction + UI/UX Keyword**
 
+- Target: "the hero section CTA button"
+- Instruction: "make it larger with more padding"
+- UI/UX keyword: "rounded corners, high contrast"
+
+## Section Templates
+
+### For Initial Generation (Vibe-First)
+
+Use these templates when building full-page prompts for `generate_screen_from_text`.
+
+**Hero:**
 ```
-Design a {layout_pattern} hero section for a {niche} {page_type}.
+Hero: {layout_pattern} layout with {spacing_feel}.
 Headline: "{headline_text}"
 Subheading: "{subheading_text}"
-CTA button: "{cta_text}"
-Primary color: {colors.primary}, CTA color: {colors.cta}, Background: {colors.background}, Text: {colors.text}
-Heading font: {typography.heading.family} {typography.heading.weights[0]}, Body font: {typography.body.family}
-Style: {uiStyle} -- {style_specific_notes}
-{component_pattern_notes}
+CTA: "{cta_text}" — prominent, {cta_color_mood}, {component_pattern_description}.
 {psychology_visual_cues}
-Mobile: Stack headline, subheading, and CTA vertically with full-width button.
 ```
 
-### Features / Benefits
-
+**Features / Benefits:**
 ```
-Features section displaying {number_of_features} items in a {layout_pattern} grid.
-Each feature has: icon area, title, description.
-{feature_titles_and_descriptions}
-Card style: {component_pattern} pattern with {colors.background} background.
-Accent color: {colors.secondary} for icons, heading font: {typography.heading.family}, body: {typography.body.family} in {colors.text}.
-Style: {uiStyle} -- {style_specific_notes}
+Features: {number} items in {layout_pattern} grid.
+{feature_titles_and_descriptions_verbatim}
+Card style: {component_feel_description}. Accent color for icons.
 {progressive_disclosure_notes}
 ```
 
-### Pricing
-
+**Pricing:**
 ```
-Pricing section with {number_of_tiers} tiers in horizontal card layout.
-{tier_names_prices_features}
-Recommended tier highlighted with {colors.cta} border or background accent.
-Card background: {colors.background}, text: {colors.text}, price in {typography.heading.family} bold.
-Feature list in {typography.body.family} with checkmarks in {colors.semantic.success}.
-CTA buttons: recommended tier uses {colors.cta}, others use {colors.secondary} or outlined.
-Style: {uiStyle} -- {style_specific_notes}
+Pricing: {number} tiers in horizontal cards.
+{tier_names_prices_features_verbatim}
+Recommended tier visually highlighted. Feature list with checkmarks.
 {anchoring_notes}
 ```
 
-### Testimonials / Social Proof
-
+**Testimonials:**
 ```
-Testimonials section with {layout_pattern} layout showing {number} customer quotes.
-Each testimonial: quote text, customer name, role/company, avatar placeholder.
-Quote text in {typography.body.family} italic, name in {typography.heading.family} semibold.
-Text color: {colors.text}, subtle accent: {colors.secondary}.
-Background: {colors.background} with card or quote-mark styling using {component_pattern}.
-Style: {uiStyle} -- {style_specific_notes}
+Testimonials: {layout_pattern} with {number} customer quotes.
+{quote_text_name_role_verbatim}
+Quote styling with subtle accent. Avatar placeholders.
 {trust_psychology_notes}
 ```
 
-### CTA / Conversion
-
+**CTA / Conversion:**
 ```
-Call-to-action section with {layout_pattern} layout.
+CTA section: {layout_pattern}.
 Headline: "{cta_headline}"
-Supporting text: "{cta_body}"
-Button: "{cta_button_text}" in {colors.cta} with white text, large and prominent.
-Background: {colors.primary} or gradient from {colors.primary} to {colors.secondary}.
-Text in white or {colors.background} for contrast.
-Heading font: {typography.heading.family}, body: {typography.body.family}.
-Style: {uiStyle} -- {style_specific_notes}
+Body: "{cta_body}"
+Button: "{cta_button_text}" — large, prominent, {cta_color_mood}.
+Dark or gradient background for contrast.
 {urgency_or_scarcity_notes}
 ```
 
-### About / Team
-
+**Navigation:**
 ```
-About section with {layout_pattern} layout for a {niche} brand.
-Heading: "{about_heading}"
-Body text: "{about_body}"
-Team members: {team_grid_or_list_description}
-Photo placeholders with names in {typography.heading.family}, roles in {typography.body.family}.
-Colors: text {colors.text}, background {colors.background}, accent {colors.secondary}.
-Style: {uiStyle} -- {style_specific_notes}
-{trust_and_credibility_notes}
+Navigation: Logo left, links {center/right}, CTA button "{nav_cta_text}" right.
+{nav_items_list}
+{component_pattern_description}. Mobile: hamburger menu.
 ```
 
-### FAQ
-
+**Footer:**
 ```
-FAQ section with {number} questions in expandable accordion layout.
-{questions_and_answers}
-Question text: {typography.heading.family} medium weight in {colors.text}.
-Answer text: {typography.body.family} regular in {colors.text} at reduced opacity.
-Expand/collapse icons using {colors.secondary}.
-Background: {colors.background}, subtle dividers between items.
-Style: {uiStyle} -- {style_specific_notes}
-{cognitive_load_notes}
-```
-
-### Contact / Form
-
-```
-Contact section with {layout_pattern} layout.
-Form fields: {field_list}
-Submit button: "{submit_text}" in {colors.cta} with white text.
-Labels in {typography.body.family} medium, inputs with {colors.text} text on {colors.background}.
-Input borders: subtle gray, focus state: {colors.primary}.
-Optional: contact info (email, phone, address) alongside form.
-Style: {uiStyle} -- {style_specific_notes}
-{form_friction_reduction_notes}
-```
-
-### Footer
-
-```
-Footer section with {layout_pattern} layout.
-Columns: {column_descriptions} (e.g., navigation links, company info, social icons, newsletter signup).
-Background: {colors.primary} or dark variant, text in white or {colors.background}.
-Link hover color: {colors.cta} or {colors.secondary}.
-Font: {typography.body.family} at smaller size.
+Footer: {layout_pattern} with columns for {column_descriptions}.
+Dark background with light text. Subtle link hover accents.
 Copyright line at bottom.
-Style: {uiStyle} -- {style_specific_notes}
 ```
 
-### Navigation / Header
+### For Edits (Targeted)
+
+Use these patterns when crafting `edit_screens` prompts.
 
 ```
-Navigation bar with {component_pattern} header pattern.
-Logo area (left), navigation links (center or right), CTA button (right).
-Links: {nav_items}
-CTA: "{nav_cta_text}" button in {colors.cta}.
-Background: {colors.background} (or transparent for overlay style).
-Text: {colors.text}, active link accent: {colors.primary}.
-Font: {typography.body.family} medium weight.
-Style: {uiStyle} -- {style_specific_notes}
-Mobile: hamburger menu icon, slide-out or dropdown navigation.
+Make the hero headline larger and bolder.
 ```
 
-### Portfolio / Gallery
-
 ```
-Portfolio section with {layout_pattern} grid layout showing {number} items.
-Each item: image placeholder, project title, category tag.
-Title in {typography.heading.family}, category in {typography.body.family} small.
-Hover effect: overlay with {colors.primary} at 80% opacity showing project details.
-Background: {colors.background}, accent: {colors.secondary}.
-Style: {uiStyle} -- {style_specific_notes}
-{visual_hierarchy_notes}
+Change the CTA button color to #FF6B35 with white text.
 ```
 
-### Comparison
-
 ```
-Comparison section with {layout_pattern} table or card layout.
-Comparing: {comparison_items}
-{feature_rows_with_checkmarks_and_crosses}
-Highlight column: {recommended_option} with {colors.cta} header or border.
-Checkmarks in {colors.semantic.success}, crosses in {colors.semantic.error}.
-Font: headers in {typography.heading.family}, rows in {typography.body.family}.
-Background: {colors.background}, alternating row shading for readability.
-Style: {uiStyle} -- {style_specific_notes}
-{anchoring_and_framing_notes}
+Add more whitespace between the features section and testimonials.
 ```
 
-### Blog / Content
-
 ```
-Blog listing section with {layout_pattern} layout showing {number} article cards.
-Each card: featured image placeholder, category tag, title, excerpt, author, date.
-Title in {typography.heading.family} medium, excerpt in {typography.body.family}.
-Category tag: {colors.secondary} background with white text, small rounded pill.
-Text: {colors.text}, background: {colors.background}.
-Card style: {component_pattern} pattern.
-Style: {uiStyle} -- {style_specific_notes}
+Replace the 3-column features grid with a 2-column layout with larger cards.
 ```
 
-### Onboarding / Steps
-
 ```
-Onboarding section showing {number} steps in {layout_pattern} layout.
-{step_titles_and_descriptions}
-Step numbers or icons in {colors.primary}, connecting line or arrow between steps.
-Active/current step highlighted with {colors.cta}.
-Title: {typography.heading.family}, description: {typography.body.family}.
-Background: {colors.background}, step indicators: {colors.secondary}.
-Style: {uiStyle} -- {style_specific_notes}
-{progressive_disclosure_notes}
-```
-
-### Notification / Alert
-
-```
-Notification component for {alert_type} messages.
-Success: {colors.semantic.success} accent with checkmark icon.
-Warning: {colors.semantic.warning} accent with warning icon.
-Error: {colors.semantic.error} accent with error icon.
-Info: {colors.semantic.info} accent with info icon.
-Text in {typography.body.family}, dismiss button subtle.
-Rounded corners, subtle background tint of the accent color.
-Style: {uiStyle} -- {style_specific_notes}
+Make the pricing cards more visually distinct — increase the highlight on the recommended tier.
 ```
 
 ## UI Style Modifiers
 
-How each of the 7 UI styles affects prompt language. Include these descriptors when specifying the style in prompts.
+### Core Styles (from tokens.uiStyle)
 
-### Minimalism
-Clean lines, generous whitespace, subtle shadows, restrained color palette. Typography-driven hierarchy. Flat or near-flat elements. No decorative flourishes. Let content breathe.
+**Minimalism:** Clean lines, generous whitespace, subtle shadows, restrained color palette. Typography-driven hierarchy. Flat or near-flat elements. No decorative flourishes.
 
-### Glassmorphism
-Frosted glass panels, background blur effects, translucent layers, light semi-transparent borders. Layered depth with see-through cards. Vibrant background gradients visible through glass elements.
+**Glassmorphism:** Frosted glass panels, background blur effects, translucent layers, semi-transparent borders. Layered depth. Vibrant background gradients visible through glass elements.
 
-### Neubrutalism
-Bold black outlines (2-4px), raw geometric shapes, high contrast, offset drop shadows, chunky elements. Bright accent colors against stark backgrounds. Intentionally "unpolished" aesthetic.
+**Neubrutalism:** Bold black outlines (2-4px), raw geometric shapes, high contrast, offset drop shadows, chunky elements. Bright accents against stark backgrounds.
 
-### Soft UI (Neumorphism)
-Subtle inner and outer shadows creating extruded/embossed effect, rounded corners, pastel or muted tones, gentle depth perception. Elements appear to push out of or sink into the background. Monochromatic shadow pairs (light + dark).
+**Soft UI (Neumorphism):** Subtle inner and outer shadows creating extruded/embossed effect, rounded corners, pastel or muted tones. Elements push out of or sink into the background.
 
-### Editorial
-Large dramatic typography, generous whitespace, magazine-inspired grid layouts, typography-first hierarchy. Serif fonts prominent. Strong contrast between heading and body text sizes. Content as visual element.
+**Editorial:** Large dramatic typography, generous whitespace, magazine-inspired grids. Serif fonts prominent. Strong contrast between heading and body sizes.
 
-### Gradient-Rich
-Smooth gradient backgrounds, gradient text accents, vibrant color transitions between primary and secondary. Gradient overlays on images. Modern SaaS aesthetic with depth through color transitions rather than shadows.
+**Gradient-Rich:** Smooth gradient backgrounds, gradient text accents, vibrant color transitions. Modern SaaS aesthetic with depth through color rather than shadows.
 
-### Dark Mode Premium
-Deep dark backgrounds (#0A0A0F to #1A1A2E range), high-contrast text (white or near-white), accent glow effects around interactive elements, card elevation through subtle lighter backgrounds. Luminous CTA buttons.
+**Dark Mode Premium:** Deep dark backgrounds (#0A0A0F to #1A1A2E range), high-contrast text, accent glow effects. Card elevation through subtle lighter backgrounds. Luminous CTA buttons.
 
-## Prompt Quality Checklist
+### Stitch Style Word Bank (Supplementary)
 
-Before sending any prompt to Stitch via `generate_screen_from_text`, verify every item:
+Use these alongside core styles for more specific direction:
 
-- [ ] Contains at least 3 exact hex color values from tokens
-- [ ] Names specific font families from tokens (heading and body)
-- [ ] Specifies UI style with descriptive visual adjectives (not just the style name)
-- [ ] Includes actual copy text from approved copy (not placeholder "Lorem ipsum")
-- [ ] Describes layout structure matching UX brief section patterns
-- [ ] Mentions component patterns from tokens if applicable to the section
-- [ ] Includes mobile adaptation notes for hero and navigation sections
-- [ ] References psychology or interaction notes from UX brief where relevant
+| Category | Keywords |
+|----------|----------|
+| Layout | Bento Grid, Editorial, Swiss Style, Split-Screen, Asymmetric, Card-Based |
+| Texture | Glassmorphism, Claymorphism, Skeuomorphic, Grainy/Noise, Paper Texture |
+| Atmosphere | Brutalist, Cyberpunk, Y2K, Retro-Futurism, Organic, Playful |
+| Color | Duotone, Monochromatic, Pastel Goth, Dark Mode OLED, Earth Tones, Neon |
 
-## Multi-Section vs Single-Section Prompts
+**Mapping to core styles:**
+- Bento Grid → works with Minimalism, Neubrutalism
+- Swiss Style → works with Minimalism, Editorial
+- Glassmorphism → IS the Glassmorphism core style
+- Brutalist → close to Neubrutalism
+- Dark Mode OLED → IS the Dark Mode Premium core style
 
-### Full-Page Prompts (Recommended)
+## Device Type Guidance
 
-For complete page designs, combine all sections into one prompt for visual cohesion. List sections top to bottom with clear delineation:
+Pass `deviceType` to control the target viewport:
 
-```
-Design a complete {page_type} page for a {niche} brand.
+| Value | When to Use | Characteristics |
+|-------|------------|-----------------|
+| `DESKTOP` | Marketing sites, dashboards, content-heavy pages | Wide layouts, multi-column grids, hover states |
+| `MOBILE` | Mobile apps, mobile-first sites | Single column, touch targets, bottom navigation |
+| `TABLET` | Tablet-optimized apps | Hybrid layouts, sidebar + content |
 
-Navigation: [nav prompt fragment]
+**Default behavior:** If omitted, Stitch infers from the prompt content. Explicitly passing `deviceType` produces more accurate results.
 
-Hero: [hero prompt fragment]
+## Design Mode Guidance
 
-Features: [features prompt fragment]
+Pass `modelId` to control generation quality vs speed:
 
-Testimonials: [testimonials prompt fragment]
+| Value | When to Use | Characteristics |
+|-------|------------|-----------------|
+| `GEMINI_3_PRO` | Production screens, final designs, complex layouts | Higher quality, more detail, slower |
+| `GEMINI_3_FLASH` | Wireframing, quick exploration, early iteration | Faster, good enough for structure validation |
 
-CTA: [cta prompt fragment]
+**Default:** Omit to let Stitch choose (typically PRO).
 
-Footer: [footer prompt fragment]
+## Image Guidance
 
-Overall style: {uiStyle} with consistent {colors.primary} and {colors.secondary} accents throughout.
-Typography: {typography.heading.family} for all headings, {typography.body.family} for all body text.
-```
+Include optional image direction in generation prompts:
 
-Stitch `generate_screen_from_text` works best with full-page prompts that establish complete visual context. Sections designed together share visual rhythm and consistent spacing.
+**Patterns:**
+- "Abstract geometric shapes, subtle and muted" — for tech/SaaS
+- "Lifestyle photography with warm, natural tones" — for wellness/lifestyle
+- "Bold illustrations with flat colors" — for creative/agency
+- "Professional headshots and office environments" — for corporate/B2B
+- "No images — typography and whitespace only" — for ultra-minimalist
 
-### Single-Section Iteration
+**For edits targeting images:**
+- "Replace the hero image with a lifestyle photo showing people collaborating"
+- "Make the feature icons more colorful and playful"
 
-For iterating on individual sections (e.g., redesigning just the hero), focus the prompt on one section but reference adjacent sections for context:
+## Variant Prompting
 
-```
-Redesign the hero section of a {page_type} page. The section below is a features grid with {description}.
-[hero prompt fragment with full detail]
-Ensure visual continuity with the rest of the page using {colors.primary}, {typography.heading.family}, and {uiStyle} style.
-```
+When calling `mcp__stitch__generate_variants`, both `prompt` and `variantOptions` are **required**.
+
+### Writing Variant Prompts
+
+The prompt should describe the direction for exploration:
+
+- "Explore more dramatic color contrast and bolder typography"
+- "Try a more playful, rounded aesthetic while keeping the same content"
+- "Explore alternative hero layouts — try split-screen and asymmetric options"
+
+### Creative Range Guidance
+
+| Range | Effect | When to Use |
+|-------|--------|-------------|
+| `REFINE` | Subtle variations — spacing, sizing, minor color shifts | Polish an already-good design |
+| `EXPLORE` | Moderate changes — layout alternatives, different visual weight | Default — good for comparing approaches |
+| `REIMAGINE` | Dramatic redesign — completely different layout and visual treatment | Starting fresh or looking for bold alternatives |
+
+### Aspect Focusing
+
+Optionally narrow variant exploration to specific aspects:
+
+| Aspect | What Changes |
+|--------|-------------|
+| `LAYOUT` | Grid, alignment, section arrangement |
+| `COLOR_SCHEME` | Color palette variations |
+| `IMAGES` | Image style, placement, treatment |
+| `TEXT_FONT` | Typography choices and sizing |
+| `TEXT_CONTENT` | Text arrangement and hierarchy |
+
+## Prompt Quality Checklists
+
+### Initial Generation Checklist
+
+Before sending a `generate_screen_from_text` prompt:
+
+- [ ] Describes the page idea and purpose clearly
+- [ ] Includes vibe adjectives and color mood (NOT hex codes)
+- [ ] Specifies font style description (NOT family names)
+- [ ] Names UI style with descriptive adjectives
+- [ ] Includes actual copy text from approved copy (NOT placeholder)
+- [ ] Describes layout structure matching UX brief
+- [ ] Includes image guidance if applicable
+- [ ] Notes mobile adaptation for hero and navigation
+
+### Edit Checklist
+
+Before sending an `edit_screens` prompt:
+
+- [ ] Targets a specific component or section
+- [ ] Gives one clear, specific instruction
+- [ ] Uses UI/UX keywords Stitch understands
+- [ ] Includes exact token values ONLY for brand-specific changes (colors, fonts)
+- [ ] Does NOT repeat token values for unchanged elements
+- [ ] Limits to one major change per edit call
 
 ## Common Prompt Anti-Patterns
 
-Avoid these patterns that produce inconsistent or low-quality Stitch output:
-
 | Anti-Pattern | Problem | Fix |
 |-------------|---------|-----|
-| "Make it look professional" | Too vague -- Stitch guesses style | Specify UI style + exact colors + font families |
-| Missing color values | Stitch invents colors, breaking brand consistency | Always include 3+ hex values from tokens |
-| "Lorem ipsum" placeholder text | Generic filler text produces generic designs | Use real approved copy from `{page}-copy.md` |
-| Ignoring UX brief layout decisions | Defeats the psychology-informed design process | Match section layout patterns from UX brief exactly |
-| Over-specifying pixel dimensions | Stitch handles responsive layout internally | Describe spatial relationships and proportions instead |
-| Listing only section names | "Hero, Features, Pricing, Footer" gives no design direction | Include content, colors, typography, and style for each section |
-| Single-word style descriptors | "Modern" or "clean" mean different things to everyone | Use full style modifier descriptions from this guide |
+| "Make it look professional" | Too vague — Stitch guesses style | Specify UI style + vibe adjectives |
+| Hex codes in initial prompts | Over-constrains Stitch's interpretation | Use color mood language instead |
+| "Lorem ipsum" placeholder | Generic filler produces generic designs | Use real approved copy |
+| Ignoring UX brief layouts | Defeats psychology-informed design | Match section layout patterns from UX brief |
+| Over-specifying pixels | Stitch handles responsive layout | Describe proportions and spatial relationships |
+| Listing only section names | No design direction | Include content, mood, and style per section |
+| Token dump in edit prompts | Confuses the edit intent | Target one component, give one instruction |
+| "Change everything" edits | Too broad for Stitch to execute well | One major change per edit call |
+| Missing prompt in variants | `prompt` is required, not optional | Always provide a direction for exploration |
+
+## Full-Page Prompt Template
+
+For complete page designs, use this structure:
+
+```
+A {page_type} for a {niche} brand that {conversion_intent}.
+
+Theme: {vibe_adjectives}. {uiStyle} aesthetic. {color_mood} palette.
+
+Navigation: {nav_description}
+
+Hero: {layout_pattern}.
+{hero_content_verbatim}
+{psychology_notes}
+
+Features: {layout_pattern}.
+{features_content_verbatim}
+
+[...additional sections...]
+
+Footer: {footer_description}
+
+Image style: {image_guidance}
+```

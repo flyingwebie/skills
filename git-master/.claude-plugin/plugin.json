@@ -1,6 +1,6 @@
 {
   "name": "git-master",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Best-practice git workflow manager for feature-branch development on GitHub. Gitmoji + Conventional Commits, PR creation, releases, branch hygiene, and safety hooks.",
   "author": {
     "name": "Flying Web Solutions",
