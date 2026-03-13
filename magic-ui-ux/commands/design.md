@@ -1,6 +1,6 @@
 ---
 description: "Design one or more pages with psychology-driven UX and Stitch-generated UI"
-allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__create_project, mcp__stitch__generate_screen_from_text
+allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__create_project, mcp__stitch__generate_screen_from_text, mcp__stitch__list_screens
 argument-hint: "<pages> [--copy <file>]"
 ---
 
@@ -27,6 +27,11 @@ Before doing anything, read the project's persistence layer.
    - Verify tokens are complete: `colors.primary`, `colors.secondary`, `colors.cta`, `colors.background`, `colors.text`, `typography.heading.family`, `typography.body.family` must all have values.
 
 4. **Read `.ui-ux/branding.md`** for brand personality context (tone, style, personality traits).
+
+5. **Stitch project sync check** (if `stitch.projectId` exists):
+   - Call `mcp__stitch__list_screens` with the `projectId` to verify the project is accessible
+   - If the call fails, warn: "Stitch project {projectId} is not accessible. A new project will be created during design."
+   - If it succeeds, log the current screen count for context (helps detect drift early)
 
 ---
 

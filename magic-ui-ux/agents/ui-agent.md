@@ -56,6 +56,7 @@ Before ANY screen generation, the UI Agent MUST:
 | `mcp__stitch__generate_screen_from_text` | `projectId`, `prompt` | `deviceType`, `modelId` | Generate new page screens from prompts |
 | `mcp__stitch__edit_screens` | `projectId`, `selectedScreenIds[]`, `prompt` | `deviceType`, `modelId` | Iterate on existing screens with changes |
 | `mcp__stitch__generate_variants` | `projectId`, `selectedScreenIds[]`, `prompt`, `variantOptions` | `deviceType`, `modelId` | Explore alternative designs for a screen |
+| `mcp__stitch__get_screen` | `projectId`, `screenId` | *(none)* | Verify screen creation succeeded (Step 5.5) |
 
 ---
 
@@ -83,7 +84,7 @@ Read and parse the UX brief to extract all design-relevant information.
 
 ### Step 3: Prompt Crafting
 
-Build the Stitch prompt using a two-phase approach. Reference `skills/branding/references/stitch-prompt-guide.md` for templates and style guidance.
+Build the Stitch prompt using a two-phase approach. Reference `skills/branding/references/stitch-prompt-guide.md` for templates and style guidance, and `skills/branding/references/theme-mapping-guide.md` for translating token values into vibe-language that Stitch interprets well.
 
 **Phase A: Initial Generation Prompts (`generate_screen_from_text`)**
 
@@ -165,6 +166,22 @@ Apply the prompt quality checklist (from stitch-prompt-guide.md) before proceedi
    - `modelId` when specified (default: omit to let Stitch choose)
 2. The prompt is the complete combined prompt — all sections in one call for visual cohesion
 3. Capture the returned screen ID from the Stitch response
+
+### Step 5.5: Screen Verification
+
+After generation, verify the screen was created successfully and capture any available screenshot data.
+
+1. **Call `mcp__stitch__get_screen`** with the `projectId` and the returned `stitchScreenId` from Step 5
+2. **If the call succeeds:**
+   - Screen creation is verified
+   - If the response contains a screenshot URL or image data:
+     - Save the screenshot URL to the screen entry as `screenshotUrl`
+     - If image data is directly available, save it to `.ui-ux/references/{page}-v{variant}.png` and record the path as `screenshotPath`
+   - If no screenshot data in response: proceed without — this is expected until `getImage` is exposed as an MCP tool
+3. **If the call fails:**
+   - Log a warning: "Screen verification failed for {stitchScreenId}. The screen may still exist — check Stitch directly."
+   - Do NOT halt the pipeline. Proceed to persistence with the screen ID from Step 5.
+   - The screen entry will be saved without verification metadata
 
 ### Step 6: Persistence
 

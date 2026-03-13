@@ -30,6 +30,8 @@ magic-ui-ux/
     iterate.md            # /iterate command -- generate variants or edit existing screens
     image.md              # /image command -- generate rich image specs from text/images
     video.md              # /video command -- scroll-driven video-style site specs
+    sync.md               # /sync command -- reconcile local state with Stitch project
+    export.md             # /export command -- extract screen data and metadata from Stitch
   skills/
     persistence/          # .ui-ux/ folder management (tokens, state, briefs)
     psychology-router/    # Routes sections to relevant psychology skills
@@ -89,5 +91,9 @@ The plugin draws from 14 cognitive psychology skills:
 - `generate_screen_from_text` -- Generate screens from text prompts (required: `projectId`, `prompt`; optional: `deviceType`, `modelId`)
 - `edit_screens` -- Modify existing screens (required: `projectId`, `selectedScreenIds[]`, `prompt`; optional: `deviceType`, `modelId`)
 - `generate_variants` -- Create design variants (required: `projectId`, `selectedScreenIds[]`, `prompt`, `variantOptions`; optional: `deviceType`, `modelId`)
+- `get_project` -- Retrieve project metadata (required: `projectId`). Used by `/sync` and `/export` for project verification.
+- `list_screens` -- List all screens in a project (required: `projectId`). Used by `/sync` for drift detection and `/design` for pre-flight checks.
+- `get_screen` -- Get screen details and metadata (required: `projectId`, `screenId`). Used by `/export` for data extraction, `/iterate` for pre-flight verification, and UI Agent Step 5.5 for post-generation verification.
+- `list_projects` -- List all Stitch projects. Available for project discovery.
 
 **Note:** The `/video` command does **not** require Stitch MCP. It produces scroll-driven animation specs (GSAP ScrollTrigger, canvas frame sequences, Lenis integration) -- not visual screens.

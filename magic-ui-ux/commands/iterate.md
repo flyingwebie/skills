@@ -1,6 +1,6 @@
 ---
 description: "Iterate on existing designs -- generate variants or edit screens with change requests"
-allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__edit_screens, mcp__stitch__generate_variants
+allowed-tools: Read, Write, Edit, Bash(ls:*,cat:*,mkdir:*), Task, mcp__stitch__edit_screens, mcp__stitch__generate_variants, mcp__stitch__get_screen
 argument-hint: "<page> [--variants | --edit <changes>]"
 ---
 
@@ -56,12 +56,18 @@ Before doing anything, read the project's persistence layer.
 | *(no flag)* | Variant Mode | Default to variant generation when no flag provided |
 | `--count N` | Variant Mode | Number of variants to generate (1-5, default 3) |
 | `--range <refine\|explore\|reimagine>` | Variant Mode | Creative range for variants (default: explore) |
-| `--focus <layout\|colors\|images\|fonts\|content>` | Variant Mode | Focus variant exploration on specific aspects |
+| `--focus <layout\|colors\|images\|fonts\|content>` | Variant Mode | Focus variant exploration on specific aspects (comma-separated) |
 | `--prompt "direction"` | Variant Mode | Optional prompt direction for variants |
 
 ---
 
 ## Screen Selection
+
+Before presenting screen options, verify the target screen still exists in Stitch:
+
+1. **Call `mcp__stitch__get_screen`** with the `projectId` and the most recent `stitchScreenId` for the page
+2. **If the call fails:** Warn the user: "Screen {stitchScreenId} may have been deleted from Stitch. Run `/sync` to reconcile, or choose a different screen."
+3. **If it succeeds:** Proceed with screen selection
 
 If a page has multiple screens in `state.json`, present a numbered list and let the user select which screen to iterate on:
 
@@ -93,7 +99,17 @@ Default to the most recent screen (highest variant number). If the page has only
    - Build `variantOptions`:
      - `creativeRange`: from `--range` flag → `REFINE`, `EXPLORE`, or `REIMAGINE` (default: `EXPLORE`)
      - `variantCount`: from `--count` flag (default: 3)
-     - `aspects`: from `--focus` flag → map to `LAYOUT`, `COLOR_SCHEME`, `IMAGES`, `TEXT_FONT`, `TEXT_CONTENT` (optional, omit if no focus specified)
+     - `aspects`: from `--focus` flag, mapped per the table below (optional, omit if no focus specified). Supports comma-separated values: `--focus layout,colors`
+
+   **Focus → Aspects Mapping:**
+
+   | `--focus` value | Stitch `aspects` value |
+   |----------------|----------------------|
+   | `layout` | `LAYOUT` |
+   | `colors` | `COLOR_SCHEME` |
+   | `images` | `IMAGES` |
+   | `fonts` | `TEXT_FONT` |
+   | `content` | `TEXT_CONTENT` |
    - Call `mcp__stitch__generate_variants` with:
      - `projectId` from `state.json.stitch.projectId`
      - `selectedScreenIds: [stitchScreenId]` (the selected screen)
@@ -115,6 +131,7 @@ Default to the most recent screen (highest variant number). If the page has only
      ```
    - Add the new screen ID to the page's `screenIds[]` array
    - Update page status to `"iterated"`
+   - Persist `creativeRange` to the screen entry (e.g., `"creativeRange": "EXPLORE"`) so the creative range used is recorded for future reference
    - Update `state.json.updatedAt` timestamp
 
 ---

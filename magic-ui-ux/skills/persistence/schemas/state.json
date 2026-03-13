@@ -32,7 +32,10 @@
           "uxBriefPath": { "type": "string" },
           "deviceType": { "type": "string", "description": "Device type used for this screen generation" },
           "creativeRange": { "type": "string", "description": "Creative range used if this screen is a variant" },
-          "modelId": { "type": "string", "description": "Stitch model ID used for generation" }
+          "modelId": { "type": "string", "description": "Stitch model ID used for generation" },
+          "screenshotUrl": { "type": "string", "description": "Screenshot URL from Stitch get_screen response" },
+          "screenshotPath": { "type": "string", "description": "Local path to saved screenshot image" },
+          "syncStatus": { "type": "string", "enum": ["synced", "stale", "imported"], "description": "Sync status from /sync command" }
         },
         "required": ["id", "page"]
       }
@@ -71,6 +74,17 @@
         "properties": {
           "page": { "type": "string" },
           "specPath": { "type": "string" }
+        }
+      }
+    },
+    "exports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "page": { "type": "string" },
+          "exportedAt": { "type": "string", "format": "date-time" },
+          "exportPath": { "type": "string" }
         }
       }
     },

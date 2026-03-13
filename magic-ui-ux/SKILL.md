@@ -20,6 +20,8 @@ Psychology-driven UI/UX design plugin for Claude Code. Separates UX (how users t
 | `/magic-ui-ux:iterate` | Iterate on existing designs -- generate variants or edit screens |
 | `/magic-ui-ux:image` | Generate rich image specifications from text descriptions, reference images, or both |
 | `/magic-ui-ux:video` | Generate scroll-driven video-style site specs for designed pages |
+| `/magic-ui-ux:sync` | Reconcile local state with Stitch project -- detect drift, sync screens |
+| `/magic-ui-ux:export` | Export screen data and metadata from Stitch project |
 
 ## Skills
 
