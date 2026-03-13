@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Etch Component Registry",
+  "description": "Schema for .etch-components/registry.json — the master catalog of generated Etch components and page compositions.",
+  "type": "object",
+  "required": ["projectName", "createdAt", "updatedAt", "components"],
+  "additionalProperties": false,
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "description": "Human-readable project name, set on first use"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 datetime when the registry was initialized"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 datetime of the last registry modification"
+    },
+    "components": {
+      "type": "array",
+      "description": "All generated components in this project",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "files", "createdAt"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Kebab-case component name matching the folder name"
+          },
+          "description": {
+            "type": "string",
+            "description": "Natural language description of the component"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["section", "card", "form", "nav", "footer", "hero", "custom"],
+            "description": "Component type for Etch convention selection"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Descriptive tags for search and filtering"
+          },
+          "files": {
+            "type": "object",
+            "description": "Relative paths to the component output files",
+            "additionalProperties": false,
+            "properties": {
+              "html": {
+                "type": "string",
+                "description": "Relative path to index.html"
+              },
+              "css": {
+                "type": "string",
+                "description": "Relative path to style.css"
+              },
+              "js": {
+                "type": ["string", "null"],
+                "description": "Relative path to script.js, or null if no JS was generated"
+              }
+            }
+          },
+          "hasJs": {
+            "type": "boolean",
+            "description": "Whether JavaScript was generated for this component"
+          },
+          "variants": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Named variants of this component (e.g. light, dark, compact)"
+          },
+          "acssTokensUsed": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "ACSS custom property names referenced in the generated CSS and HTML"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 datetime when this component was generated"
+          }
+        }
+      }
+    },
+    "pages": {
+      "type": "array",
+      "description": "Page compositions created with the /page command",
+      "items": {
+        "type": "object",
+        "required": ["name", "sections", "createdAt"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Page name (e.g. homepage, about, pricing)"
+          },
+          "sections": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Ordered list of component names that make up this page"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 datetime when this page was composed"
+          }
+        }
+      }
+    }
+  }
+}
