@@ -1,0 +1,10 @@
+{
+  "name": "etch-component-gen",
+  "version": "0.1.0",
+  "description": "Generates production-ready Etch + AutomaticCSS components with correct BEM naming, ACSS token usage, semantic HTML, and vanilla JavaScript.",
+  "author": {
+    "name": "Flying Web Solutions",
+    "url": "https://www.flyingweb.ie"
+  },
+  "keywords": ["etch", "acss", "component", "generator", "bem", "accessibility"]
+}
