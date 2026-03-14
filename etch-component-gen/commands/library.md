@@ -20,34 +20,46 @@ The `/library` command provides read-only access to the component registry at `.
 - `--tag <tag>`: filter by tag
 - `--paste <component-name>`: output the full HTML, CSS, and JS for a named component as a ready-to-paste block
 
-## Operations
+## Pipeline
 
-**List all:**
-Read `.etch-components/registry.json`. Format components as a table with columns: Name, Type, Description, Tags, Has JS, Created. Show total component count.
+### Step 1 — Read Registry
 
-**Search by name/description:**
-Filter registry `components` array where `name` or `description` contains the search term (case-insensitive). Display matching components as a table. Show match count.
+1. Read `@${CLAUDE_PLUGIN_ROOT}/skills/persistence/SKILL.md`
+2. Initialize `.etch-components/` if it does not exist (follow the persistence skill's Initialization flow)
+3. Read `.etch-components/registry.json` and parse the JSON content
+4. If the JSON is malformed, report: "`.etch-components/registry.json` appears to be corrupted. Please review or delete it and re-run the command to reinitialize." and stop.
+5. If the `components` array is empty, display: "No components in the library yet. Use `/generate` to create your first component." and stop.
 
-**Filter by type or tag:**
-Filter registry `components` array by `type` or `tags` field. Display matching components as a table.
+### Step 2 — Parse Arguments
 
-**Paste a component:**
-Look up the component in the registry by exact name. Read the files at the paths stored in the `files` field (`html`, `css`, `js`). Output each file's content in a labeled code block:
-```
-### components/pricing-table/index.html
-[html content]
+Parse `$ARGUMENTS` to determine the operation mode and extract filters:
 
-### components/pricing-table/style.css
-[css content]
+1. If `$ARGUMENTS` is empty → mode is **list-all**
+2. If `$ARGUMENTS` contains `--paste <name>` → mode is **paste** (handled in Step 5, added by Plan 02)
+3. If `$ARGUMENTS` contains `--type <type>`:
+   - Extract the type value
+   - Validate it against the type enum: `section`, `card`, `form`, `nav`, `footer`, `hero`, `custom`
+   - If the type value is not in the enum, display: "Invalid type '{value}'. Valid types: section, card, form, nav, footer, hero, custom" and stop.
+   - Any remaining non-flag text becomes the search term
+4. If `$ARGUMENTS` contains `--tag <tag>`:
+   - Extract the tag value
+   - Any remaining non-flag text becomes the search term
+5. If `$ARGUMENTS` is a plain string with no flags → mode is **search**, the entire string is the search term
 
-### components/pricing-table/script.js
-[js content — if hasJs is true]
-```
+**Note:** Search term, `--type`, and `--tag` can all be combined in a single invocation. When combined, apply intersection logic — all conditions must match for a component to be included.
 
-## Not Yet Implemented
+### Step 3 — Filter Components
 
-This command is a **Phase 4 deliverable**. The operation definitions above describe the intent. Phase 4 will add:
-- Full registry read and formatting logic
-- Search and filter implementation
-- Paste output formatting with syntax-highlighted code blocks
-- Error handling for missing registry, missing component, and corrupted JSON
+Filter the `components` array based on the parsed mode from Step 2:
+
+**List all:** Use the full `components` array unfiltered.
+
+**Search:** Filter where `name` OR `description` contains the search term as a case-insensitive substring match.
+
+**Filter by type:** Filter where `type` equals the provided type value (case-insensitive comparison).
+
+**Filter by tag:** Filter where `tags` array contains an entry matching the provided tag (case-insensitive comparison).
+
+**Combined:** Apply all active filters as an intersection — a component must match ALL provided criteria (search term AND type AND tag, whichever are present).
+
+After filtering, if no components match, display: "No components match your search." and stop.
