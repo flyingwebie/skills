@@ -242,7 +242,161 @@ Use `width >=` syntax (modern range syntax). Breakpoint thresholds are component
 }
 ```
 
-Include this rule whenever the component has CSS transitions or animations. Ensure all interactive elements have `:focus-visible` styles (added in Step 5 for CTAs).
+Include this rule whenever the component has CSS transitions or animations. Ensure all interactive elements have `:focus-visible` styles (added in Step 5 for CTAs). Also add `:focus-visible` on any interactive elements that are part of JS-driven interactions (toggle buttons, carousel buttons, dot indicators) — see Interactive Component CSS Patterns section below.
+
+---
+
+## Interactive Component CSS Patterns
+
+These patterns are only added when the component has JavaScript interactivity (Level 1+ per js-generation skill classification). They supplement the standard 8-step algorithm.
+
+### Pattern 1 — Toggle button styling (for pricing toggle)
+
+```css
+&__toggle {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-block-end: var(--space-xl);
+}
+
+&__toggle-btn {
+  padding: var(--space-xs) var(--space-m);
+  background: transparent;
+  color: var(--text-color);
+  border: var(--border-size) solid var(--neutral-light);
+  border-radius: var(--btn-radius);
+  font-size: var(--text-s);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  &--active {
+    background: var(--primary);
+    color: var(--neutral-ultra-light);
+    border-color: var(--primary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+```
+
+### Pattern 2 — Carousel CSS (for testimonials scroll-snap)
+
+```css
+&__grid {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: var(--grid-gap);
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+&__item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+@container (width >= 600px) {
+  &__item {
+    flex: 0 0 calc(50% - var(--grid-gap) / 2);
+  }
+}
+
+@container (width >= 900px) {
+  &__item {
+    flex: 0 0 calc(33.333% - var(--grid-gap) * 2 / 3);
+  }
+}
+```
+
+### Pattern 3 — Carousel navigation styling
+
+```css
+&__carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-m);
+  margin-block-start: var(--space-l);
+}
+
+&__prev,
+&__next {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs);
+  background: transparent;
+  border: var(--border-size) solid var(--neutral-light);
+  border-radius: var(--radius);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+
+&__dots {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+&__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--neutral-light);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease;
+
+  &--active {
+    background: var(--primary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+```
+
+### Pattern 4 — Mobile nav :focus-visible (for header)
+
+```css
+&__mobile-toggle {
+  /* ... existing mobile toggle styles ... */
+
+  &:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+
+&__mobile-link {
+  &:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
+```
 
 ---
 
@@ -256,6 +410,7 @@ Avoid these errors — they produce broken or non-portable output:
 - **NEVER** use old ACSS 3.x tokens: no `--space-xxl` (use `--space-2xl`), no `--primary-trans-20` (use `color-mix()`)
 - **NEVER** use grandchild BEM nesting: `.block__parent__child` — use `.block__child` (flat)
 - **NEVER** forget `:focus-visible` on interactive elements (CTAs, links, buttons)
+- **NEVER** forget `:focus-visible` on interactive elements added for JS interactivity (toggle buttons, carousel nav, dot indicators) — same pattern as CTA focus-visible
 - Layout-specific raw values ARE acceptable: `grid-template-columns: repeat(3, 1fr)`, `aspect-ratio: 16/9`, `z-index: 10`
 
 ---
