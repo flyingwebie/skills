@@ -63,3 +63,32 @@ Filter the `components` array based on the parsed mode from Step 2:
 **Combined:** Apply all active filters as an intersection — a component must match ALL provided criteria (search term AND type AND tag, whichever are present).
 
 After filtering, if no components match, display: "No components match your search." and stop.
+
+### Step 4 — Display Results
+
+If the mode was search or filter (not list-all), display a context line above the table describing the active filters. Examples:
+- "Showing results for: 'hero'" (search term only)
+- "Showing results for: type = hero" (type filter only)
+- "Showing results for: tag = interactive" (tag filter only)
+- "Showing results for: 'pricing' + type = section" (search + type combined)
+- "Showing results for: 'pricing' + type = section + tag = interactive" (all three combined)
+
+Format the filtered components as a markdown table with these columns:
+
+| Name | Type | Description | Has JS | Created |
+|------|------|-------------|--------|---------|
+
+Column formatting rules:
+- **Name:** The component's `name` field as-is (kebab-case)
+- **Type:** The component's `type` field
+- **Description:** The component's `description` field, truncated to 50 characters with "..." appended if longer than 50 characters
+- **Has JS:** "Yes" if `hasJs` is `true`, "No" if `false`
+- **Created:** The `createdAt` field formatted as date only (YYYY-MM-DD), not the full ISO timestamp
+
+After the table, display the count: "**{N} component(s) found.**"
+
+## Notes
+
+- This command is **read-only**. It never modifies files or the registry.
+- Component file paths in the registry are relative to the project root.
+- Use `/generate` to create new components or overwrite existing ones.
