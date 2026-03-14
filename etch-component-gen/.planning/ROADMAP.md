@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .etch-components/ persistence layer, ACSS token references, and Etch conventions skill (completed 2026-03-13)
 - [x] **Phase 2: HTML and CSS Generation** - /generate command producing BEM-only semantic HTML and BEM-scoped CSS with ACSS token references (completed 2026-03-14)
 - [x] **Phase 3: JS Generation and Interactive Components** - JavaScript generation skill with interactivity classification, event delegation, and accessibility for interactive components (completed 2026-03-14)
-- [ ] **Phase 4: Component Library** - /library command for searching, filtering, and copy-pasting generated components
+- [x] **Phase 4: Component Library** - /library command for searching, filtering, and copy-pasting generated components (completed 2026-03-14)
 
 ## Phase Details
 
@@ -77,8 +77,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — /library command with listing, search, and filter capabilities
-- [ ] 04-02-PLAN.md — Quick-paste output formatting for Etch copy-paste workflow
+- [x] 04-01-PLAN.md — /library command with listing, search, and filter capabilities
+- [x] 04-02-PLAN.md — Quick-paste output formatting for Etch copy-paste workflow
 
 ## Progress
 
@@ -90,4 +90,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Plugin Foundation and Persistence | 2/2 | Complete   | 2026-03-13 |
 | 2. HTML and CSS Generation | 3/3 | Complete   | 2026-03-14 |
 | 3. JS Generation and Interactive Components | 2/2 | Complete   | 2026-03-14 |
-| 4. Component Library | 1/2 | In Progress|  |
+| 4. Component Library | 2/2 | Complete   | 2026-03-14 |

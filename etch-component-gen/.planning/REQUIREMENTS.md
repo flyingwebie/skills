@@ -27,7 +27,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **LIB-01**: `/library` command lists all generated components from registry.json with name, type, description, and file paths
 - [x] **LIB-02**: `/library` supports search by name and filter by component type (section, hero, nav, footer, custom)
-- [ ] **LIB-03**: `/library --paste <name>` outputs full HTML/CSS/JS content of a component for copy-paste into Etch
+- [x] **LIB-03**: `/library --paste <name>` outputs full HTML/CSS/JS content of a component for copy-paste into Etch
 
 ### Quality
 
@@ -98,7 +98,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | GEN-06 | Phase 2 | Complete |
 | LIB-01 | Phase 4 | Complete |
 | LIB-02 | Phase 4 | Complete |
-| LIB-03 | Phase 4 | Pending |
+| LIB-03 | Phase 4 | Complete |
 | QUAL-01 | Phase 2 | Complete |
 | QUAL-02 | Phase 3 | Complete |
 | QUAL-03 | Phase 2 | Complete |
