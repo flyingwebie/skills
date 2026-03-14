@@ -13,7 +13,7 @@ This roadmap delivers a Claude Code plugin that generates production-ready Etch 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .etch-components/ persistence layer, ACSS token references, and Etch conventions skill (completed 2026-03-13)
-- [ ] **Phase 2: HTML and CSS Generation** - /generate command producing semantic HTML with ACSS utilities and BEM-scoped CSS with ACSS token references
+- [ ] **Phase 2: HTML and CSS Generation** - /generate command producing BEM-only semantic HTML and BEM-scoped CSS with ACSS token references
 - [ ] **Phase 3: JS Generation and Interactive Components** - JavaScript generation skill with interactivity classification, event delegation, and accessibility for interactive components
 - [ ] **Phase 4: Component Library** - /library command for searching, filtering, and copy-pasting generated components
 
@@ -32,24 +32,24 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Plugin scaffolding and .etch-components/ persistence layer with registry.json
-- [ ] 01-02-PLAN.md — ACSS 4.x token reference files and Etch conventions skill
+- [x] 01-02-PLAN.md — ACSS 4.x token reference files and Etch conventions skill
 
 ### Phase 2: HTML and CSS Generation
-**Goal**: Users can generate complete HTML and CSS components via `/generate` that follow Etch best practices -- semantic markup with ACSS utility classes, BEM-scoped styles with ACSS token references, and correct section structures for all 7 layout types
+**Goal**: Users can generate complete HTML and CSS components via `/generate` that follow Etch best practices -- BEM-only semantic markup with all styling in CSS via ACSS custom properties, and correct section structures for all 7 layout types
 **Depends on**: Phase 1
 **Requirements**: GEN-01, GEN-02, GEN-03, GEN-05 (HTML/CSS sections), GEN-06, QUAL-01, QUAL-03, QUAL-04
 **Success Criteria** (what must be TRUE):
   1. `/generate` command accepts a component name and description, producing `components/{name}/index.html` and `style.css` in the project directory
-  2. Generated HTML uses semantic landmarks (`<section>`, `<nav>`, `<header>`, `<footer>`), correct heading hierarchy, ACSS utility classes for spacing/typography/colors, and `alt` text patterns
+  2. Generated HTML uses semantic landmarks (`<section>`, `<nav>`, `<header>`, `<footer>`), correct heading hierarchy, BEM-only classes (no ACSS utility classes in markup), and `alt` text patterns
   3. Generated CSS uses BEM naming with `&__`/`&--` stemming (Etch CSS panel compatible), references only ACSS custom properties for color/spacing/typography values -- zero hardcoded values
-  4. All 7 section types (hero, features grid, testimonials, pricing, CTA, footer, header/nav) generate with correct Etch Section > Container structure and container-query responsive behavior
-  5. Pre-flight check reads registry.json before generation, warns on existing component overwrite, and loads project ACSS context
+  4. All 7 section types (hero, features grid, testimonials, pricing, CTA, footer, header/nav) generate with correct Etch Section > Container structure and container-query responsive behavior via `:has(> &)` pattern
+  5. Pre-flight check reads registry.json before generation, warns on existing component overwrite (no confirmation prompt), and loads project ACSS context
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — /generate command orchestration and pre-flight checks
-- [ ] 02-02-PLAN.md — HTML generation skill with semantic markup, ACSS utilities, and 7 section types
-- [ ] 02-03-PLAN.md — CSS generation skill with BEM scoping, ACSS token references, and container queries
+- [ ] 02-01-PLAN.md — /generate command orchestration with pre-flight checks and output presentation
+- [ ] 02-02-PLAN.md — HTML generation skill with BEM-only semantic markup and 7 section type templates
+- [ ] 02-03-PLAN.md — CSS generation skill with BEM scoping, ACSS token references, and :has(> &) container queries
 
 ### Phase 3: JS Generation and Interactive Components
 **Goal**: Components that need interactivity receive production-quality vanilla JavaScript with event delegation, async patterns, state management, and full keyboard/ARIA accessibility
