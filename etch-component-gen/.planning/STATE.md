@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-03-PLAN.md (CSS generation skill)
-last_updated: "2026-03-14T00:38:26.154Z"
+stopped_at: Completed 02-02-PLAN.md (HTML generation skill and BEM-only section templates)
+last_updated: "2026-03-14T00:39:16.024Z"
 last_activity: 2026-03-13 -- Completed plan 01-01 (plugin scaffolding and persistence layer)
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
   percent: 11
 ---
 
@@ -53,6 +53,7 @@ Progress: [█░░░░░░░░░] 11%
 | Phase 01-plugin-foundation-and-persistence P02 | 6 | 2 tasks | 5 files |
 | Phase 02-html-and-css-generation P01 | 8 | 2 tasks | 2 files |
 | Phase 02-html-and-css-generation P03 | 2 min | 2 tasks | 3 files |
+| Phase 02-html-and-css-generation P02 | 3 min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 02-01]: Generate pipeline uses 10 steps; Step 7 JS always skipped in Phase 2 with forward note for component types needing interactivity
 - [Phase 02-html-and-css-generation]: :has(> &) container query pattern standardized across css-generation, etch-conventions, and CLAUDE.md for portability
 - [Phase 02-html-and-css-generation]: Complete button styling in CSS (no ACSS utility classes in generated HTML) — all CTA appearance defined via BEM elements
+- [Phase 02-html-and-css-generation]: BEM-only in HTML markup: all ACSS utility classes moved entirely to CSS -- HTML only carries semantic structure and BEM class names
+- [Phase 02-html-and-css-generation]: placehold.co as standard image placeholder: consistent dimensions per content type (1920x1080 hero, 64x64 avatar, 120x40 logo)
+- [Phase 02-html-and-css-generation]: No HTML comments in output: BEM class names are self-documenting; comments add noise to copy-paste output
 
 ### Pending Todos
 
@@ -91,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-14T00:38:26.152Z
-Stopped at: Completed 02-03-PLAN.md (CSS generation skill)
+Last session: 2026-03-14T00:39:16.022Z
+Stopped at: Completed 02-02-PLAN.md (HTML generation skill and BEM-only section templates)
 Resume file: None

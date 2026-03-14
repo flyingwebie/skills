@@ -13,7 +13,7 @@ This roadmap delivers a Claude Code plugin that generates production-ready Etch 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Plugin Foundation and Persistence** - Scaffold plugin structure, .etch-components/ persistence layer, ACSS token references, and Etch conventions skill (completed 2026-03-13)
-- [ ] **Phase 2: HTML and CSS Generation** - /generate command producing BEM-only semantic HTML and BEM-scoped CSS with ACSS token references
+- [x] **Phase 2: HTML and CSS Generation** - /generate command producing BEM-only semantic HTML and BEM-scoped CSS with ACSS token references (completed 2026-03-14)
 - [ ] **Phase 3: JS Generation and Interactive Components** - JavaScript generation skill with interactivity classification, event delegation, and accessibility for interactive components
 - [ ] **Phase 4: Component Library** - /library command for searching, filtering, and copy-pasting generated components
 
@@ -88,6 +88,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Plugin Foundation and Persistence | 2/2 | Complete   | 2026-03-13 |
-| 2. HTML and CSS Generation | 2/3 | In Progress|  |
+| 2. HTML and CSS Generation | 3/3 | Complete   | 2026-03-14 |
 | 3. JS Generation and Interactive Components | 0/2 | Not started | - |
 | 4. Component Library | 0/2 | Not started | - |
