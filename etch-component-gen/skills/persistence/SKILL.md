@@ -111,8 +111,8 @@ Before generating a component, check whether a component with the same name alre
 1. Read the registry (see Read Registry above)
 2. Search the `components` array for an entry with `name` matching the requested component name (case-insensitive, after normalizing to kebab-case)
 3. If a match is found:
-   - Warn the user: "A component named `{name}` already exists (created {createdAt}). Generating will overwrite the existing files."
-   - Ask for confirmation before proceeding
+   - Display a warning message: "Warning: Component '{name}' already exists (created {createdAt}). Overwriting."
+   - Do NOT prompt for confirmation -- proceed with generation automatically (warn-but-proceed behavior)
 4. If no match is found, proceed with generation
 
 ## Register Page
