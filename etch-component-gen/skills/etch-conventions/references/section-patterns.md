@@ -182,6 +182,23 @@ Social proof with customer quotes.
       </article>
 
     </div>
+    <div class="testimonials__carousel-nav" role="group" aria-label="Testimonial navigation">
+      <button class="testimonials__prev" aria-label="Previous testimonial" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="testimonials__dots" role="tablist" aria-label="Testimonial slides">
+        <button class="testimonials__dot testimonials__dot--active" role="tab" aria-selected="true" aria-label="Testimonial 1" type="button"></button>
+        <button class="testimonials__dot" role="tab" aria-selected="false" aria-label="Testimonial 2" type="button"></button>
+        <button class="testimonials__dot" role="tab" aria-selected="false" aria-label="Testimonial 3" type="button"></button>
+      </div>
+      <button class="testimonials__next" aria-label="Next testimonial" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
 ```
@@ -192,6 +209,7 @@ Social proof with customer quotes.
 - `<blockquote>` for the quote, `<cite>` for the attribution name
 - `<footer>` inside `<blockquote>` is correct semantic HTML for attribution
 - Avatar images include full `alt` text with name and role
+- Carousel navigation uses `role=tablist` with `aria-selected` for dot indicators. CSS scroll-snap handles the scrolling; JavaScript (from js-generation skill) syncs dot indicators and handles keyboard navigation.
 
 ---
 
@@ -205,14 +223,19 @@ Pricing plans in a comparison layout.
     <h2 class="pricing__heading">Simple, Transparent Pricing</h2>
     <p class="pricing__subheading">Choose the plan that fits your needs</p>
 
+    <div class="pricing__toggle" role="group" aria-label="Billing period">
+      <button class="pricing__toggle-btn pricing__toggle-btn--active" data-period="monthly" aria-pressed="true" type="button">Monthly</button>
+      <button class="pricing__toggle-btn" data-period="annual" aria-pressed="false" type="button">Annual</button>
+    </div>
+
     <div class="pricing__grid">
 
       <article class="pricing__card" aria-label="Starter plan">
         <div class="pricing__card-header">
           <h3 class="pricing__plan-name">Starter</h3>
           <div class="pricing__price">
-            <span class="pricing__amount" aria-label="19 dollars per month">$19</span>
-            <span class="pricing__period" aria-hidden="true">/month</span>
+            <span class="pricing__amount" aria-label="19 dollars per month" data-monthly="$19" data-annual="$15">$19</span>
+            <span class="pricing__period" aria-hidden="true" data-monthly="/month" data-annual="/year">/month</span>
           </div>
           <p class="pricing__description">Perfect for individuals and small teams just getting started.</p>
         </div>
@@ -229,8 +252,8 @@ Pricing plans in a comparison layout.
         <div class="pricing__card-header">
           <h3 class="pricing__plan-name">Pro</h3>
           <div class="pricing__price">
-            <span class="pricing__amount" aria-label="49 dollars per month">$49</span>
-            <span class="pricing__period" aria-hidden="true">/month</span>
+            <span class="pricing__amount" aria-label="49 dollars per month" data-monthly="$49" data-annual="$39">$49</span>
+            <span class="pricing__period" aria-hidden="true" data-monthly="/month" data-annual="/year">/month</span>
           </div>
           <p class="pricing__description">For growing teams that need more power and collaboration.</p>
         </div>
@@ -272,6 +295,7 @@ Pricing plans in a comparison layout.
 - Price amounts include `aria-label` with full text for screen reader clarity
 - Feature lists use `role="list"` and `aria-label`
 - Each CTA has a descriptive `aria-label` identifying which plan
+- Toggle group uses `aria-pressed` for accessible toggle state; `data-period` attributes enable JS to switch displayed prices. JavaScript (from js-generation skill) manages the toggle interaction.
 
 ---
 
