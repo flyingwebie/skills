@@ -32,7 +32,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Quality
 
 - [x] **QUAL-01**: Every generated component includes semantic HTML landmarks (`<section>`, `<nav>`, `<header>`, `<footer>`), correct heading hierarchy, and `alt` text patterns
-- [ ] **QUAL-02**: Interactive components include keyboard navigation, `aria-expanded`/`aria-hidden` attributes, and `:focus-visible` outlines
+- [x] **QUAL-02**: Interactive components include keyboard navigation, `aria-expanded`/`aria-hidden` attributes, and `:focus-visible` outlines
 - [x] **QUAL-03**: Images use `loading="lazy"` and `decoding="async"` by default; animations respect `prefers-reduced-motion`
 - [x] **QUAL-04**: Generated CSS uses container queries (`@container`) for responsive behavior, not media query breakpoints
 
@@ -100,6 +100,6 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LIB-02 | Phase 4 | Pending |
 | LIB-03 | Phase 4 | Pending |
 | QUAL-01 | Phase 2 | Complete |
-| QUAL-02 | Phase 3 | Pending |
+| QUAL-02 | Phase 3 | Complete |
 | QUAL-03 | Phase 2 | Complete |
 | QUAL-04 | Phase 2 | Complete |
