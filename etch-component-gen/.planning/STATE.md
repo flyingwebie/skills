@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-02-PLAN.md
-last_updated: "2026-03-13T17:25:07.041Z"
+stopped_at: Completed 02-03-PLAN.md (CSS generation skill)
+last_updated: "2026-03-14T00:38:26.154Z"
 last_activity: 2026-03-13 -- Completed plan 01-01 (plugin scaffolding and persistence layer)
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 5
+  completed_plans: 4
   percent: 11
 ---
 
@@ -51,6 +51,8 @@ Progress: [█░░░░░░░░░] 11%
 
 *Updated after each plan completion*
 | Phase 01-plugin-foundation-and-persistence P02 | 6 | 2 tasks | 5 files |
+| Phase 02-html-and-css-generation P01 | 8 | 2 tasks | 2 files |
+| Phase 02-html-and-css-generation P03 | 2 min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -72,6 +74,10 @@ Recent decisions affecting current work:
 - [Phase 01-02]: ACSS breaking changes documented as prose to prevent verification false positives from old pattern references while preserving migration guidance
 - [Phase 01-02]: Section patterns use semantic HTML elements (section, nav, header, footer) as outer wrappers, mapping Etch Section element to correct HTML landmark
 - [Phase 01-02]: Accessibility attributes included as inline defaults in section templates, not optional extras
+- [Phase 02-01]: Warn-but-proceed overwrite: persistence skill warns with name+createdAt but proceeds without confirmation prompt
+- [Phase 02-01]: Generate pipeline uses 10 steps; Step 7 JS always skipped in Phase 2 with forward note for component types needing interactivity
+- [Phase 02-html-and-css-generation]: :has(> &) container query pattern standardized across css-generation, etch-conventions, and CLAUDE.md for portability
+- [Phase 02-html-and-css-generation]: Complete button styling in CSS (no ACSS utility classes in generated HTML) — all CTA appearance defined via BEM elements
 
 ### Pending Todos
 
@@ -85,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-13T17:23:52.606Z
-Stopped at: Completed 01-02-PLAN.md
+Last session: 2026-03-14T00:38:26.152Z
+Stopped at: Completed 02-03-PLAN.md (CSS generation skill)
 Resume file: None

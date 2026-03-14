@@ -16,12 +16,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Generation
 
-- [ ] **GEN-01**: `/generate` command accepts component name + description, produces `components/{name}/index.html`, `style.css`, and optionally `script.js`
+- [x] **GEN-01**: `/generate` command accepts component name + description, produces `components/{name}/index.html`, `style.css`, and optionally `script.js`
 - [ ] **GEN-02**: HTML generation skill produces semantic markup with ACSS utility classes in HTML (grid, spacing, typography) and correct Etch element mapping
-- [ ] **GEN-03**: CSS generation skill produces BEM-scoped styles with `&__`/`&--` stemming (Etch CSS panel compatible) and ACSS custom property references — zero hardcoded color/spacing/typography values
+- [x] **GEN-03**: CSS generation skill produces BEM-scoped styles with `&__`/`&--` stemming (Etch CSS panel compatible) and ACSS custom property references — zero hardcoded color/spacing/typography values
 - [ ] **GEN-04**: JS generation skill produces vanilla ES2020+ code with event delegation, async patterns, and state management — classified by interactivity level (none/interactive/dynamic)
 - [ ] **GEN-05**: 7 layout section types supported: hero, features grid, testimonials, pricing, CTA, footer, header/nav — each with correct Etch structure and ACSS patterns
-- [ ] **GEN-06**: Pre-flight check reads registry before generation, warns on existing component overwrite, loads project ACSS context
+- [x] **GEN-06**: Pre-flight check reads registry before generation, warns on existing component overwrite, loads project ACSS context
 
 ### Library
 
@@ -33,8 +33,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **QUAL-01**: Every generated component includes semantic HTML landmarks (`<section>`, `<nav>`, `<header>`, `<footer>`), correct heading hierarchy, and `alt` text patterns
 - [ ] **QUAL-02**: Interactive components include keyboard navigation, `aria-expanded`/`aria-hidden` attributes, and `:focus-visible` outlines
-- [ ] **QUAL-03**: Images use `loading="lazy"` and `decoding="async"` by default; animations respect `prefers-reduced-motion`
-- [ ] **QUAL-04**: Generated CSS uses container queries (`@container`) for responsive behavior, not media query breakpoints
+- [x] **QUAL-03**: Images use `loading="lazy"` and `decoding="async"` by default; animations respect `prefers-reduced-motion`
+- [x] **QUAL-04**: Generated CSS uses container queries (`@container`) for responsive behavior, not media query breakpoints
 
 ## v2 Requirements
 
@@ -90,16 +90,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
 | FOUND-04 | Phase 1 | Complete |
-| GEN-01 | Phase 2 | Pending |
+| GEN-01 | Phase 2 | Complete |
 | GEN-02 | Phase 2 | Pending |
-| GEN-03 | Phase 2 | Pending |
+| GEN-03 | Phase 2 | Complete |
 | GEN-04 | Phase 3 | Pending |
 | GEN-05 | Phase 2 | Pending |
-| GEN-06 | Phase 2 | Pending |
+| GEN-06 | Phase 2 | Complete |
 | LIB-01 | Phase 4 | Pending |
 | LIB-02 | Phase 4 | Pending |
 | LIB-03 | Phase 4 | Pending |
 | QUAL-01 | Phase 2 | Pending |
 | QUAL-02 | Phase 3 | Pending |
-| QUAL-03 | Phase 2 | Pending |
-| QUAL-04 | Phase 2 | Pending |
+| QUAL-03 | Phase 2 | Complete |
+| QUAL-04 | Phase 2 | Complete |
