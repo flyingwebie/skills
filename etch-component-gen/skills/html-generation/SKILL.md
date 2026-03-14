@@ -1,61 +1,126 @@
 ---
 name: html-generation
 description: >
-  Generates semantic HTML with ACSS utility classes for Etch components.
-  Handles element mapping, landmark selection, heading hierarchy, and accessibility attributes.
+  Generates semantic HTML with BEM-only classes for Etch components.
+  Handles element mapping, landmark selection, heading hierarchy, placeholder content,
+  and accessibility attributes. No ACSS utility classes in markup -- all styling goes in CSS.
 ---
 
 # HTML Generation Skill
 
-Produces semantic HTML output for Etch components. Applies ACSS utility classes directly in the HTML for spacing and typography. All structural decisions follow the Section > Container > Content hierarchy from the etch-conventions skill.
+Produces semantic HTML output for Etch components. Uses BEM-only class naming in markup. All visual styling (padding, grid layout, button appearance, typography scale) is handled exclusively in CSS via ACSS custom properties. No ACSS utility classes appear in generated HTML.
 
 ## Purpose
 
-This skill generates the `index.html` for each Etch component. It is responsible for:
-- Selecting the correct semantic HTML element for the component type (`<section>`, `<article>`, `<nav>`, `<header>`, `<footer>`, `<aside>`)
-- Applying the BEM block class and element classes to all elements
-- Adding ACSS utility classes for spacing and typography directly in the markup (not in CSS)
-- Setting accessibility attributes: `aria-label` on landmarks, `alt` on images, correct heading hierarchy
-- Adding performance attributes: `loading="lazy"` and `decoding="async"` on images
+This skill generates `index.html` for each Etch component. It is responsible for:
+
+- Selecting the correct semantic HTML element for the component type (`<section>`, `<article>`, `<nav>`, `<header>`, `<footer>`)
+- Applying BEM block and element classes ONLY -- no ACSS utility classes in markup
+- Generating contextual placeholder content from the component name and description
+- Using placehold.co URLs for all images
+- Setting accessibility attributes: `aria-label` on landmarks, `alt` on images, `role` where needed
+- Adding performance attributes: `loading="lazy" decoding="async"` on images (`loading="eager"` for hero images)
+- Producing no HTML comments in output
 
 ## Algorithm
 
 When generating HTML for a component:
 
-1. **Determine the outer semantic element** — Select based on component type:
-   - `hero`, `section`, `custom`: `<section>`
-   - `nav`: `<nav>`
-   - `footer`: `<footer>`
-   - `card`, `form`: `<article>` (if standalone) or `<div>` (if inside a grid)
-   - If uncertain, use `<section>` and add `aria-label` with the component name
+### Step 1 — Determine outer semantic element
 
-2. **Apply BEM block class** — Add the component name as the block class on the outer element: `class="pricing-table"`
+Select based on component type:
 
-3. **Add container wrapper** — Nest a `<div class="{block}__container">` inside the outer element for content width and padding
+- `hero`, `features`, `testimonials`, `pricing`, `cta`, `custom` → `<section>`
+- `header` → `<header>`
+- `footer` → `<footer>`
+- Standalone card or article → `<article>`
 
-4. **Map content to semantic elements:**
-   - Main heading: `<h2 class="{block}__heading">` (h2 assuming one h1 per page; use h1 for hero sections)
-   - Subheading/kicker: `<p class="{block}__kicker">` or `<h3 class="{block}__subheading">`
-   - Body text: `<p class="{block}__text">`
-   - Primary CTA: `<a href="#" class="{block}__cta">` — never `<button>` for navigation
-   - Secondary CTA: `<a href="#" class="{block}__link">`
-   - List: `<ul class="{block}__list"><li class="{block}__item">...</li></ul>`
-   - Image: `<img class="{block}__image" src="" alt="" loading="lazy" decoding="async">`
+Always add `aria-label` with a descriptive label derived from the component description.
 
-5. **Add ACSS utility classes** — Apply spacing and typography via ACSS utility classes alongside BEM classes. Utility classes go in HTML, component-specific layout goes in CSS.
+### Step 2 — Apply BEM block class
 
-6. **Add accessibility attributes** — Every `<section>` and `<nav>` needs `aria-label` or `aria-labelledby`. Interactive elements need appropriate roles and states.
+The component name in kebab-case becomes the block class on the outer element:
 
-## References
+```html
+<section class="pricing-table" aria-label="Pricing plans">
+```
 
-The following reference files will be added in Phase 2:
-- `skills/html-generation/references/acss-class-map.md` — ACSS 4.x utility class reference for spacing, typography, and colors
-- `skills/html-generation/references/semantic-patterns.md` — Pre-built semantic HTML patterns for common component types (hero, pricing, features, testimonials, CTA, nav, footer)
+This is the ONLY class on the outer element. Do NOT add ACSS utility classes like `section--l`.
 
-## Not Yet Implemented
+### Step 3 — Add container wrapper
 
-This skill is a **Phase 2 deliverable**. Phase 2 will add:
-- Complete ACSS 4.x utility class map (spacing, typography, color utility classes)
-- Semantic HTML pattern templates for each component type
-- Full heading hierarchy logic
-- Accessibility attribute generation rules
+Nest a `<div class="{block}__container">` inside the outer element. This div constrains content width — styling is applied in CSS, not via utility classes.
+
+```html
+<section class="pricing-table" aria-label="Pricing plans">
+  <div class="pricing-table__container">
+    ...
+  </div>
+</section>
+```
+
+### Step 4 — Map content to semantic elements using BEM element classes only
+
+| Content | HTML | Class |
+|---------|------|-------|
+| Main heading (hero) | `<h1>` | `{block}__heading` |
+| Main heading (non-hero) | `<h2>` | `{block}__heading` |
+| Subheading | `<p>` | `{block}__subheading` |
+| Body text | `<p>` | `{block}__text` |
+| Primary CTA | `<a href="#">` | `{block}__cta` |
+| Secondary CTA | `<a href="#">` | `{block}__link` or `{block}__cta-secondary` |
+| Unordered list | `<ul role="list">` | `{block}__list` |
+| List item | `<li>` | `{block}__item` |
+| Image | `<img>` | `{block}__image` |
+| Icon (SVG) | `<svg aria-hidden="true">` | `{block}__icon` |
+| Card/item wrapper | `<article>` or `<div>` | `{block}__card` or `{block}__item` |
+| Grid wrapper | `<div>` or `<ul role="list">` | `{block}__grid` or `{block}__list` |
+| Actions wrapper | `<div>` | `{block}__actions` |
+
+CRITICAL: Only BEM classes appear in HTML. No `btn--primary`, `grid--3`, `section--l`, `gap--m`, or any other ACSS utility class.
+
+### Step 5 — Generate contextual placeholder content
+
+Infer content from the component name and description:
+
+- **Headings:** Use contextual text appropriate to the section type:
+  - Pricing: "Simple, Transparent Pricing"
+  - Features: "Why Choose Us"
+  - Testimonials: "What Our Customers Say"
+  - CTA: "Ready to Get Started?"
+  - Hero: "Build Something Amazing"
+  - When no description provided or description is generic: "Everything you need to succeed"
+
+- **Images:** Always use `https://placehold.co/{width}x{height}` URLs with dimensions appropriate to context:
+  - Hero backgrounds: `https://placehold.co/1920x1080`
+  - Feature icons: use inline `<svg>` placeholders with `aria-hidden="true"` (not img)
+  - Avatars: `https://placehold.co/64x64`
+  - Card images: `https://placehold.co/600x400`
+  - Logos: `https://placehold.co/120x40`
+
+- **Pricing:** Use realistic tiers — Starter $19/mo, Pro $49/mo, Enterprise Custom
+- **Testimonials:** Use realistic names and roles — Jane Doe, CEO at Acme Corp; John Smith, Marketing Director at Example Inc; Sarah Wilson, Product Manager at Tech Co
+- **Repeating items:** Claude decides item count per section type based on what looks complete for that layout (typically 3 for features, testimonials, pricing; 4 nav columns in footer)
+
+### Step 6 — Add accessibility attributes
+
+- Every `<section>`, `<nav>`, `<header>`, `<footer>` must have `aria-label`
+- All `<img>` elements must have descriptive `alt` text (empty `alt=""` for decorative images)
+- All `<img>` elements must have `loading="lazy" decoding="async" width="{w}" height="{h}"` (hero images use `loading="eager"`)
+- Feature lists and nav lists use `role="list"` on `<ul>`
+- Price amounts use `aria-label` with full text ("19 dollars per month")
+- Mobile toggle buttons use `aria-expanded`, `aria-controls`, `aria-label`
+- Hidden content panels use `aria-hidden="true"` and `hidden` attribute
+- Icon SVGs always have `aria-hidden="true"`
+
+## Output Rules
+
+- Generated HTML must contain ZERO ACSS utility classes. All styling is handled by the CSS generation skill.
+- No HTML comments in output -- BEM class names are self-documenting.
+- Use standard `<svg>` elements with placeholder paths for icons, not `<etch:svg />` (which is builder-specific, not valid in standalone HTML).
+
+## Section Templates Reference
+
+For complete HTML templates per section type, read `@${CLAUDE_PLUGIN_ROOT}/skills/etch-conventions/references/section-patterns.md`.
+
+Templates show the exact BEM class structure, semantic elements, and accessibility attributes for each of the 7 section types: hero, features grid, testimonials, pricing, CTA, footer, and header/navigation.
