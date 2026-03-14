@@ -35,7 +35,7 @@ The `/library` command provides read-only access to the component registry at `.
 Parse `$ARGUMENTS` to determine the operation mode and extract filters:
 
 1. If `$ARGUMENTS` is empty → mode is **list-all**
-2. If `$ARGUMENTS` contains `--paste <name>` → mode is **paste** (handled in Step 5, added by Plan 02)
+2. If `$ARGUMENTS` contains `--paste <name>` → mode is **paste**. Extract the component name from the `--paste` flag value. If mode is paste, skip Steps 3-4 and proceed to Step 5.
 3. If `$ARGUMENTS` contains `--type <type>`:
    - Extract the type value
    - Validate it against the type enum: `section`, `card`, `form`, `nav`, `footer`, `hero`, `custom`
@@ -86,6 +86,43 @@ Column formatting rules:
 - **Created:** The `createdAt` field formatted as date only (YYYY-MM-DD), not the full ISO timestamp
 
 After the table, display the count: "**{N} component(s) found.**"
+
+### Step 5 — Paste Component (--paste mode)
+
+When Step 2 determined the mode is **paste**:
+
+1. Search the `components` array for an entry where `name` matches the provided component name (exact match, case-insensitive).
+2. If no matching component is found, display: "Component '{name}' not found in the registry. Run `/library` to see available components." and stop.
+3. Read the file at the path stored in `files.html`. If the file does not exist at that path, display: "File missing: {files.html}. The component files may have been moved or deleted. Use `/generate {name}` to regenerate." and stop.
+4. Read the file at the path stored in `files.css`. If the file does not exist at that path, display: "File missing: {files.css}. The component files may have been moved or deleted. Use `/generate {name}` to regenerate." and stop.
+5. If `hasJs` is `true`, read the file at the path stored in `files.js`. If the file does not exist at that path, display: "File missing: {files.js}. The component files may have been moved or deleted. Use `/generate {name}` to regenerate." and stop.
+6. Output the content in this exact format:
+
+```
+### {files.html}
+
+\`\`\`html
+{html file content}
+\`\`\`
+
+### {files.css}
+
+\`\`\`css
+{css file content}
+\`\`\`
+```
+
+7. If `hasJs` is `true`, also output:
+
+```
+### {files.js}
+
+\`\`\`javascript
+{js file content}
+\`\`\`
+```
+
+8. After the code blocks, display: "Paste each block into the corresponding Etch panel (HTML, CSS, JS)."
 
 ## Notes
 
