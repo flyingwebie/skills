@@ -25,16 +25,23 @@
     {
       "name": "git-master",
       "description": "Best-practice git workflow manager with Gitmoji + Conventional Commits, automated releases, branch hygiene, and safety hooks",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "source": "./git-master",
       "category": "developer-tools"
     },
     {
       "name": "magic-ui-ux",
       "description": "Psychology-driven UI/UX design plugin — combines cognitive psychology skills with Google Stitch MCP to generate premium, conversion-optimized page designs",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "source": "./magic-ui-ux",
       "category": "design"
+    },
+    {
+      "name": "etchwp",
+      "description": "Generates production-ready Etch + AutomaticCSS components with correct BEM naming, ACSS token usage, semantic HTML, and vanilla JavaScript",
+      "version": "1.0.0",
+      "source": "./etchwp",
+      "category": "developer-tools"
     }
   ]
 }
