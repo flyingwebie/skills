@@ -19,7 +19,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **GEN-01**: `/generate` command accepts component name + description, produces `components/{name}/index.html`, `style.css`, and optionally `script.js`
 - [x] **GEN-02**: HTML generation skill produces semantic markup with ACSS utility classes in HTML (grid, spacing, typography) and correct Etch element mapping
 - [x] **GEN-03**: CSS generation skill produces BEM-scoped styles with `&__`/`&--` stemming (Etch CSS panel compatible) and ACSS custom property references — zero hardcoded color/spacing/typography values
-- [ ] **GEN-04**: JS generation skill produces vanilla ES2020+ code with event delegation, async patterns, and state management — classified by interactivity level (none/interactive/dynamic)
+- [x] **GEN-04**: JS generation skill produces vanilla ES2020+ code with event delegation, async patterns, and state management — classified by interactivity level (none/interactive/dynamic)
 - [x] **GEN-05**: 7 layout section types supported: hero, features grid, testimonials, pricing, CTA, footer, header/nav — each with correct Etch structure and ACSS patterns
 - [x] **GEN-06**: Pre-flight check reads registry before generation, warns on existing component overwrite, loads project ACSS context
 
@@ -93,7 +93,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | GEN-01 | Phase 2 | Complete |
 | GEN-02 | Phase 2 | Complete |
 | GEN-03 | Phase 2 | Complete |
-| GEN-04 | Phase 3 | Pending |
+| GEN-04 | Phase 3 | Complete |
 | GEN-05 | Phase 2 | Complete |
 | GEN-06 | Phase 2 | Complete |
 | LIB-01 | Phase 4 | Pending |
