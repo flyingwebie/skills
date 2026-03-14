@@ -135,31 +135,33 @@ Etch uses a **container-query-first** philosophy. Do not use `@media` queries wi
 
 1. **No global breakpoints for components.** Each component adapts based on its available space, not the device viewport.
 2. Use `@container` syntax — same syntax as `@media` but scoped to the component's container context.
-3. The component's outer wrapper needs `container-type: inline-size` to enable container queries.
+3. The component declares its own container query context using the `:has(> &)` pattern, which sets `container-type: inline-size` on whatever parent wraps it.
 4. Thresholds are component-specific — a card adapts at 412px, a navigation at 322px.
 
 ### Pattern
 
 ```css
 .hero {
-  container-type: inline-size;
+  :has(> &) {
+    container-type: inline-size;
+  }
 
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@container (max-width: 600px) {
-  .hero__container {
-    grid-template-columns: 1fr;
+  @container (width >= 600px) {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 ```
 
 ### Note
 
-The exact container query behavior within Etch's CSS panel should be tested for each project. Some parent elements may need explicit `container-type` declarations. Use standard `@container` syntax — Etch supports it natively.
+The `:has(> &)` pattern is recommended by Etch documentation. It makes components portable — they work regardless of what parent element wraps them. The component self-declares its container query needs.
 
 ---
 
@@ -277,6 +279,6 @@ When generating CSS for Etch components, follow these rules without exception:
 
 4. **Read ACSS token reference for token lookup.** Consult `@${CLAUDE_PLUGIN_ROOT}/skills/css-generation/references/acss-tokens.md` for the complete token catalog. Never guess a token name — look it up.
 
-5. **Container queries for responsive.** Use `@container (min-width: X)` or `@container (max-width: X)`. Not `@media`.
+5. **Container queries for responsive.** Use `@container (width >= X)` with modern range syntax. Not `@media`. Container query context is set via `:has(> &) { container-type: inline-size; }` inside the block selector.
 
 6. **BEM flat naming.** No grandchild BEM elements. If you need to target a deeply nested element, create a flat BEM element class for it.

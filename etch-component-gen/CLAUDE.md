@@ -64,7 +64,7 @@ All cross-session state lives in `.etch-components/` at the **project root** (wh
 2. **Flatten BEM — no grandchild nesting.** Use `.card__title` not `.card__header__title`. BEM elements are direct children of the block conceptually, regardless of DOM depth. Etch's AutoBEM produces flat names; generated CSS must match.
 3. **Use `&__` and `&--` stemming in CSS.** Etch's CSS panel supports native CSS nesting with `&__element` and `&--modifier` expansion. Generated CSS should use this pattern rather than repeating the full block name.
 4. **No framework dependencies (vanilla JS only).** Generated JavaScript must run in Etch's runtime without imports, bundlers, or framework initialization. Third-party SDKs (e.g., Swiper, Lenis) may be referenced but must be declared as explicit dependencies in the component summary.
-5. **Container queries for responsive design.** Use `@container (min-width: ...)` rules for component-level responsive behavior. The component's outer wrapper needs `container-type: inline-size` to enable this.
+5. **Container queries for responsive design.** Use `@container (width >= ...)` rules for component-level responsive behavior. Declare container context via `:has(> &) { container-type: inline-size; }` inside the block selector — this makes components portable regardless of parent element.
 
 ## Available Skills
 
