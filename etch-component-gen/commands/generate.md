@@ -6,7 +6,7 @@ argument-hint: "<component-name> [description] [--type <section|card|form|nav|fo
 
 # /generate
 
-Generate a production-ready Etch + ACSS component from a name and description. Produces `index.html` and `style.css` in `components/{component-name}/` and updates the component registry.
+Generate a production-ready Etch + ACSS component from a name and description. Produces `index.html`, `style.css`, and optionally `script.js` in `components/{component-name}/` and updates the component registry.
 
 ## Purpose
 
@@ -85,18 +85,27 @@ The `/generate` command orchestrates the full component generation pipeline. It 
    - Include `:focus-visible` styles on all interactive elements (buttons, links, inputs)
    - Include `@media (prefers-reduced-motion: reduce)` rule if the component includes animations or CSS transitions
 
-### Step 7 — Generate JS (Skip in Phase 2)
+### Step 7 — Generate JS (conditional)
 
-1. If `--no-js` flag is present OR the component type does not require interactivity, skip this step
-2. For Phase 2: always skip JS generation regardless of component type — JS generation is a Phase 3 deliverable
-3. If the component type would normally benefit from JavaScript (e.g., `header` with mobile nav, `pricing` with annual/monthly toggle), note this in the output: "Note: This component type may benefit from JavaScript interactivity (available in a future update)"
+1. If `--no-js` flag is present, skip this step entirely
+2. Read `@${CLAUDE_PLUGIN_ROOT}/skills/js-generation/SKILL.md`
+3. Classify the component's interactivity level using the decision tree:
+   - `hero`, `features`, `cta`, `footer` → Level 0, skip JS generation
+   - `header` → Level 1 (mobile nav toggle)
+   - `pricing` → Level 1 (monthly/annual toggle — generate only if description mentions toggle, switch, or billing, or by default)
+   - `testimonials` → Level 1 (carousel navigation — generate by default)
+   - `custom` → Check description for keywords: toggle, menu, dropdown, carousel, slider, accordion, tab, form, filter, sort → Level 1; otherwise Level 0
+4. If Level 0, skip — no `script.js` will be generated
+5. If Level 1+, generate `script.js` following the matching pattern from js-generation SKILL.md
+6. If generating JS, also apply the "HTML Requirements for Interactive Patterns" from js-generation SKILL.md — add the required data attributes and interactive HTML elements to the HTML generated in Step 5
+7. If generating JS, also apply the "CSS Requirements for Interactive Patterns" from js-generation SKILL.md — add `:focus-visible`, active states, and scroll-snap CSS to the CSS generated in Step 6
 
 ### Step 8 — Write files
 
 1. Create `components/{component-name}/` directory
 2. Write `index.html` with the generated HTML
 3. Write `style.css` with the generated CSS
-4. Do **not** write `script.js` in Phase 2
+4. If JS was generated in Step 7, write `script.js` with the generated JavaScript
 
 ### Step 9 — Update registry
 
@@ -106,8 +115,8 @@ The `/generate` command orchestrates the full component generation pipeline. It 
    - `description`: the description used during generation
    - `type`: the resolved component type from Step 3
    - `tags`: inferred from name, description, and type (e.g., `["pricing", "comparison", "tiers"]`)
-   - `files`: object with `html` and `css` paths; `js` set to `null`
-   - `hasJs`: `false` (Phase 2 always)
+   - `files`: object with `html` and `css` paths; `js` set to `components/{component-name}/script.js` if JS was generated, `null` otherwise
+   - `hasJs`: `true` if JS was generated in Step 7, `false` otherwise
    - `acssTokensUsed`: array of all ACSS custom property names referenced in the generated CSS (e.g., `["--primary", "--space-l", "--text-m"]`)
    - `createdAt`: current ISO 8601 datetime (or keep existing value if overwriting)
 3. If overwriting an existing component, replace the matching entry in the `components` array
@@ -127,16 +136,22 @@ Present the full output in this order:
    /* generated CSS */
    ````
 
-3. **ACSS Tokens Used** — list all ACSS custom properties referenced in the CSS:
+3. **Generated JS** (if JS was generated in Step 7) — fenced code block:
+   ````javascript
+   // generated JS
+   ````
+
+4. **ACSS Tokens Used** — list all ACSS custom properties referenced in the CSS:
    ```
    --primary, --space-l, --text-m, ...
    ```
 
-4. **Files written** — show the paths:
+5. **Files written** — show the paths (include `script.js` if generated):
    ```
    components/{component-name}/index.html
    components/{component-name}/style.css
+   components/{component-name}/script.js  (if generated)
    ```
 
-5. If the component type would normally have JS but it was skipped, add:
-   > "Note: This component type may benefit from JavaScript interactivity (available in a future update)"
+6. If the component type was classified as Level 0 and no JS was generated, note:
+   > "This component type does not require JavaScript interactivity."
