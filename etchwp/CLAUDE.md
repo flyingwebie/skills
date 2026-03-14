@@ -1,4 +1,4 @@
-# etch-component-gen Plugin
+# etchwp Plugin
 
 ## What This Plugin Does
 
@@ -18,7 +18,7 @@ All output encodes Etch + ACSS best practices by default: correct Section > Cont
 ## Plugin Architecture
 
 ```
-etch-component-gen/
+etchwp/
   CLAUDE.md                        # This file — plugin context Claude Code reads first
   SKILL.md                         # Plugin index: trigger words, commands table, skills table
   .claude-plugin/

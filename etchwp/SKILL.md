@@ -1,5 +1,5 @@
 ---
-name: etch-component-gen
+name: etchwp
 description: >
   Etch + AutomaticCSS component generator. Produces production-ready HTML, CSS, and JS
   components with correct BEM naming, ACSS 4.x token usage, semantic structure, container-query
@@ -8,7 +8,7 @@ description: >
   or any component generation task.
 ---
 
-# etch-component-gen
+# etchwp
 
 Generates production-ready Etch + ACSS components with correct BEM naming, ACSS token usage, semantic HTML, vanilla JS, and container-query responsive design.
 
