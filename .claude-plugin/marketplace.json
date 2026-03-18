@@ -42,6 +42,13 @@
       "version": "1.0.0",
       "source": "./etchwp",
       "category": "developer-tools"
+    },
+    {
+      "name": "stack-agents",
+      "description": "Tech stack subagents that auto-trigger for TanStack Start, Next.js, Expo, Convex, Supabase, and Clerk — with Context7 docs, Tailwind v4, shadcn/ui, NativeWind v5, and psychology-driven UX",
+      "version": "1.0.0",
+      "source": "./stack-agents",
+      "category": "developer-tools"
     }
   ]
 }

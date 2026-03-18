@@ -11,6 +11,7 @@ Claude Code plugins and agent skills for product, development, and agency workfl
 | [`git-master`](./git-master/)                     | Plugin | Best-practice git workflow with Gitmoji + Conventional Commits, PR creation, and release management  |
 | [`magic-ui-ux`](./magic-ui-ux/)                   | Plugin | Psychology-driven UI/UX design — combines cognitive psychology skills with Google Stitch MCP         |
 | [`etchwp`](./etchwp/)                             | Plugin | Generate production-ready Etch + AutomaticCSS components with BEM naming, ACSS tokens, and vanilla JS |
+| [`stack-agents`](./stack-agents/)                 | Plugin | Auto-triggering tech stack subagents for TanStack Start, Next.js, Expo, Convex, Supabase, and Clerk  |
 
 > **Plugins** add slash commands, hooks, and bundled skills — they are Claude Code-specific.
 > **Skills** (`SKILL.md` files) are cross-tool — they work in Claude Code, Gemini CLI, and OpenAI Codex CLI without modification.
@@ -191,6 +192,7 @@ skill-name/
 ├── git-master/              # Plugin
 ├── magic-ui-ux/             # Plugin
 ├── etchwp/                  # Plugin
+├── stack-agents/            # Plugin
 └── README.md
 ```
 

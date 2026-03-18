@@ -1,0 +1,7 @@
+{
+  "name": "stack-agents",
+  "version": "1.0.0",
+  "description": "Tech stack subagents with Context7 docs, psychology-driven UX, and best practices for TanStack Start, Next.js, Expo, Convex, Supabase, and Clerk.",
+  "author": { "name": "Flying Web Solutions", "url": "https://www.flyingweb.ie" },
+  "keywords": ["tanstack", "nextjs", "expo", "convex", "supabase", "clerk", "react", "react-native", "tailwind", "shadcn"]
+}
