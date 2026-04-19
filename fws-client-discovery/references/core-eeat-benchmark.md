@@ -1,4 +1,4 @@
-# CORE-EEAT Benchmark — 80-Item Content Quality Framework
+# CORE-EEAT Benchmark, 80-Item Content Quality Framework
 
 ## Overview
 CORE-EEAT (Content Optimization for Real Expertise, Experience, Authoritativeness, and Trustworthiness) is an 80-item framework across 8 dimensions for measuring and optimizing content quality for both traditional SEO and AI engine optimization (GEO).
@@ -130,7 +130,7 @@ CORE-EEAT (Content Optimization for Real Expertise, Experience, Authoritativenes
 | T09 | Disclosure | Sponsored content, affiliates properly disclosed | |
 | T10 | Accessible | WCAG AA compliant, works on all devices | |
 
-## G: GEO — AI Engine Optimization (10 items)
+## G: GEO, AI Engine Optimization (10 items)
 
 | # | Item | Criteria | Check |
 |---|------|----------|-------|

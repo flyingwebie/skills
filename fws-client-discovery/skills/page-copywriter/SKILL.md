@@ -8,7 +8,7 @@ description: >
 version: 0.2.0
 ---
 
-# Page Copywriter — Production-Ready Website Content
+# Page Copywriter, Production-Ready Website Content
 
 ## Purpose
 Generate complete, copy-paste-ready website page content as individual markdown files. Each page is fully optimized for SEO + GEO (AI citation), written in the client's brand voice and persona tone.
@@ -40,16 +40,50 @@ Every generated markdown file follows this exact structure:
 <!-- meta_description: [150-160 chars] -->
 <!-- og_title: [Same as title or variant] -->
 <!-- og_description: [Same as meta or variant] -->
-<!-- schema_type: [WebPage|Service|FAQPage|AboutPage|ContactPage|etc.] -->
+<!-- schema_type: [WebPage|Service|FAQPage|AboutPage|ContactPage|Article|HowTo|LocalBusiness] -->
 <!-- canonical: /[url-path] -->
 <!-- primary_keyword: [target keyword] -->
 <!-- secondary_keywords: [comma-separated] -->
 
-:: Primary Keyword — 2-5 words
+<!-- GEO FRESHNESS (REQUIRED, feeds JSON-LD datePublished/dateModified) -->
+<!-- published: YYYY-MM-DD -->
+<!-- updated: YYYY-MM-DD -->
+
+<!-- AUTHOR (REQUIRED for E-E-A-T, rendered in author box + Person schema) -->
+<!-- author_name: [Full Name] -->
+<!-- author_title: [Role / Expertise] -->
+<!-- author_url: /about/[slug] -->
+<!-- author_image: /assets/authors/[slug].jpg -->
+
+<!-- ANSWER-FIRST STRUCTURE (for AI search extraction) -->
+<!-- answer_type: definitive | qualified | comparative -->
+<!-- answer_summary: [1-sentence self-contained answer to the page's primary query] -->
+
+<!-- ENTITY (REQUIRED, disambiguates "we" for LLMs and maps to Organization/LocalBusiness/Person) -->
+<!-- entity_type: Organization | LocalBusiness | Person | Place -->
+<!-- entity_name: [Exact brand/person/place name] -->
+<!-- entity_sameas: [comma-separated URLs, LinkedIn, Wikipedia, Crunchbase, etc.] -->
+
+<!-- FACT SOURCES (REQUIRED when page makes factual claims, LLM citation hooks) -->
+<!-- fact_sources:
+- claim: "Short paraphrase"
+  source_url: "https://..."
+  source_title: "..."
+  accessed: "YYYY-MM-DD"
+-->
+
+<!-- CHUNK ID (for RAG-friendly retrieval) -->
+<!-- chunk_id: [page-slug]_[section] -->
+
+:: Primary Keyword, 2-5 words
 
 # H1: [Natural, Benefit-Driven Headline With Keyword]
 
-[Hero paragraph — direct answer / value proposition in first 150 words for GEO]
+[ANSWER FIRST, 1 definitive sentence answering the page's primary query, matches answer_summary above.]
+
+[Evidence paragraph, 2-3 sentences with specific data points, names, numbers. Feeds LLM quotability.]
+
+[Context paragraph, expand scope, link to [related pillar](./...md) and [supporting pages](./...md).]
 
 ## H2: [Section heading]
 
@@ -60,7 +94,7 @@ Every generated markdown file follows this exact structure:
 [Supporting detail...]
 
 > "[Relevant quote or testimonial]"
-> — [Attribution]
+>, [Attribution]
 
 ---
 
@@ -76,6 +110,12 @@ Every generated markdown file follows this exact structure:
 
 ## [Call-to-Action Section]
 [CTA copy with clear next step]
+
+---
+
+## About the author
+
+**[Author Name]**, [Author Title]. [1-2 sentence credential statement, why this person is qualified to write this page. Link to [full profile](/about/[slug]).]
 ```
 
 ## Workflow
@@ -92,22 +132,22 @@ Read the complete `discovery-context.md` file. Extract:
 ### Step 2: Build Page Generation Queue
 Create the ordered list of pages to generate. Group by type:
 
-**Priority 1 — Core Pages** (generate first):
+**Priority 1, Core Pages** (generate first):
 1. Homepage
 2. About / Our Story
 3. Contact
 
-**Priority 2 — Service/Product Pillar Pages**:
+**Priority 2, Service/Product Pillar Pages**:
 4. Main service hub page (if multiple services)
 5. Individual service pages (one per core service)
 
-**Priority 3 — Child/Spoke Pages**:
+**Priority 3, Child/Spoke Pages**:
 6. Service sub-pages
 7. Location/area pages
 8. Comparison pages
 9. Case study pages
 
-**Priority 4 — Supporting Pages**:
+**Priority 4, Supporting Pages**:
 10. FAQ page (centralized)
 11. Testimonials/Reviews page
 12. Team page
@@ -140,10 +180,10 @@ For each page in the queue, follow the Page Generation Protocol:
 Follow the content rules:
 
 **Heading Accent** (before H1):
-- `:: keyword text` — a line starting with `::` followed by the accent text
+- `:: keyword text`, a line starting with `::` followed by the accent text
 - 2-5 words: primary keyword or keyword + location
 - Developer converts `::` lines to styled `<span>` (uppercase, small, letter-spaced)
-- NOT a heading tag — adds keyword density without semantic heading conflict
+- NOT a heading tag, adds keyword density without semantic heading conflict
 
 **Headline (H1)**:
 - One per page, includes primary keyword naturally (not just the raw keyword)
@@ -292,14 +332,14 @@ Write all pages to a `pages/` subdirectory in the client's discovery folder:
 
 ## Anti-Patterns
 - **Don't**: Write generic content that could apply to any business
-- **Don't**: Stuff keywords — every mention must read naturally
-- **Don't**: Copy competitor phrasing — differentiate always
+- **Don't**: Stuff keywords, every mention must read naturally
+- **Don't**: Copy competitor phrasing, differentiate always
 - **Don't**: Use placeholder text (except `[Client Name]` and testimonial names)
 - **Don't**: Write content for blog posts (use `/blog-content` for that)
-- **Don't**: Ignore the persona tone — a page for Decision Dave reads differently than Awareness Amy
+- **Don't**: Ignore the persona tone, a page for Decision Dave reads differently than Awareness Amy
 - **Don't**: Write FAQs that don't match the FAQ research findings
 
 ## Reference Files
-- `references/page-type-schemas.md` — Schema markup per page type
-- `references/seo-metadata-guide.md` — Title/meta best practices
-- `references/content-formatting-guide.md` — Markdown formatting standards
+- `references/page-type-schemas.md`, Schema markup per page type
+- `references/seo-metadata-guide.md`, Title/meta best practices
+- `references/content-formatting-guide.md`, Markdown formatting standards

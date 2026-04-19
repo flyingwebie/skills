@@ -84,10 +84,10 @@
 | # | Deliverable | File | Format |
 |---|-------------|------|--------|
 | 1 | Client Brief | 01-Client-Brief.md | Markdown |
-| 2 | Sitemap Report | 02-Sitemap-Report.md | Markdown + XLSX |
+| 2 | Sitemap Report | 02-Sitemap-Report.md | Markdown |
 | 3 | Competitor Report | 03-Competitor-Report.md | Markdown |
 | 4 | Buyer Personas | 04-Buyer-Personas.md | Markdown |
-| 5 | Keyword Research | 05-Keyword-Research.md | Markdown + XLSX |
+| 5 | Keyword Research | 05-Keyword-Research.md | Markdown |
 | 6 | UX/UI Research | 06-UX-UI-Research.md | Markdown |
 | 7 | FAQ Research | 07-FAQ-Research.md | Markdown + JSON |
 
@@ -99,7 +99,7 @@
 ### Content Strategy
 | # | Deliverable | File | Format |
 |---|-------------|------|--------|
-| 8 | Content Plan | 08-Content-Plan.md | Markdown + XLSX |
+| 8 | Content Plan | 08-Content-Plan.md | Markdown |
 
 ### Blog Post Content
 | # | Post | File | Words | Month |

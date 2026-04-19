@@ -1,7 +1,7 @@
-# Industry Design Rules — 100 Rules Database
+# Industry Design Rules, 100 Rules Database
 
 ## How to Use
-Find the client's industry category below. Each rule provides a specific design recommendation with reasoning. Rules are cumulative — start with Universal, then apply industry-specific.
+Find the client's industry category below. Each rule provides a specific design recommendation with reasoning. Rules are cumulative, start with Universal, then apply industry-specific.
 
 ---
 
@@ -26,7 +26,7 @@ Find the client's industry category below. Each rule provides a specific design 
 14. **Team prominence**: Individual profiles with credentials visible from main navigation.
 15. **Contact always visible**: Phone number in header, contact CTA on every page.
 16. **Case results**: Showcase specific outcomes with numbers, not vague testimonials.
-17. **Resource section**: White papers, guides, blog — demonstrate thought leadership.
+17. **Resource section**: White papers, guides, blog, demonstrate thought leadership.
 18. **Formal tone**: Interface language should be professional, not casual.
 19. **Credential display**: Certifications, memberships, awards prominently displayed.
 20. **Privacy focus**: Extra emphasis on confidentiality and data security messaging.
@@ -51,7 +51,7 @@ Find the client's industry category below. Each rule provides a specific design 
 33. **Cart always visible**: Cart icon with item count in header, persistent across pages.
 34. **Product cards**: Image, title, price, rating visible without clicking. Hover for quick-add.
 35. **Urgency signals**: Stock levels, limited-time pricing, "X people viewing" (use honestly).
-36. **Filters that work**: Price, category, size, color, rating — sidebar or top bar, ajax-updating.
+36. **Filters that work**: Price, category, size, color, rating, sidebar or top bar, ajax-updating.
 37. **Review integration**: Star ratings visible on product cards AND product pages.
 38. **Trust badges**: SSL, payment icons, money-back guarantee near checkout.
 39. **One-click checkout**: Minimize checkout steps. Guest checkout always available.

@@ -1,8 +1,8 @@
-# FWS Client Discovery — Project Context
+# FWS Client Discovery, Project Context
 
 ## What This Plugin Does
 
-This plugin runs a 9-step client discovery workflow for Flying Web Solutions (flyingweb.ie). It takes a client website URL and optionally a meeting transcription, then executes sequential research steps — each building on the previous — to produce a complete set of research reports, production-ready website copy, and a content strategy.
+This plugin runs a 9-step client discovery workflow for Flying Web Solutions (flyingweb.ie). It takes a client website URL and optionally a meeting transcription, then executes sequential research steps, each building on the previous, to produce a complete set of research reports, production-ready website copy, and a content strategy.
 
 ## Workflow Architecture
 
@@ -31,7 +31,7 @@ Plans ongoing content strategy and produces blog posts for SEO/GEO growth.
 ### Master Report
 | Output | What It Is |
 |--------|-----------|
-| `00-Discovery-Report.md` | Executive summary of all 9 steps — the first thing clients see |
+| `00-Discovery-Report.md` | Executive summary of all 9 steps, the first thing clients see |
 
 ## Context Chain
 
@@ -39,7 +39,35 @@ Every step reads and writes to `discovery-context.md`. This markdown file is the
 
 ## Output Format
 
-All outputs are **markdown (.md)** files. Markdown is the source of truth for Claude's context, developer handoff, and page content.
+All outputs are **markdown (.md)** files. Markdown is the only source of truth for Claude's context, developer handoff, and page content.
+
+**Explicitly NOT supported**: Word `.docx`, Google Docs, Excel / XLSX, Pencil `.pen` files. Pencil integration is deprecated and must never be referenced in outputs.
+
+## Writing Rules (apply to every generated file)
+
+1. **No em dashes.** Use a comma instead. Never emit `—` in prose, tables, or headings.
+2. **Internal links everywhere.** Every page and report links to related pages and reports via relative markdown links (`./04-Buyer-Personas.md`, `./pages/services.md`). Step 7 and Step 9 end with a link-audit pass.
+3. **Markdown only**, no binary formats.
+
+## Research Tool Cascade
+
+Every step that needs online research uses this order, falling through only on failure or empty result:
+
+1. **Apify (Docker MCP)**: `apify--website-content-crawler`, `apify--google-search-scraper`, `apify--rag-web-browser`
+2. **Perplexity (Docker MCP)**: `perplexity_research`, `perplexity_ask`
+3. **Built-in WebSearch / WebFetch** (final fallback)
+
+Log the source tool for each finding in `discovery-context.md` under `## Research Sources`.
+
+## Preflight (before any research)
+
+`/discovery` asks two questions up front:
+1. Current client website URL (for crawling and context)
+2. Client logo upload (feeds Step 5 color and typography extraction)
+
+## Claude Design Compatibility
+
+Step 5 UX/UI outputs must also be compatible with **Claude Design (Anthropic Labs)**. See `CLAUDE_DESIGN.md` at the plugin root for the design-token shape and prompt format Claude Design consumes.
 
 ## File Structure Per Project
 
@@ -121,7 +149,7 @@ There is no fixed pipeline. The choice depends on the project:
 | Keyword Research | Page titles, heading structure, content organization |
 | UX/UI Research | Color palette, fonts, UI style, component patterns |
 | FAQ Research | FAQ sections on pages, schema markup implementation |
-| Page Content | Actual copy for every page — headings, body, CTAs, metadata |
+| Page Content | Actual copy for every page, headings, body, CTAs, metadata |
 | Content Plan | Blog section architecture, category structure, internal linking |
 
 ---
@@ -138,7 +166,7 @@ There is no fixed pipeline. The choice depends on the project:
 
 ## Important Rules
 
-1. **Phase A does NOT generate blog content** — blog posts are Phase B only
-2. **Markdown is the only output format** — all deliverables are .md files
+1. **Phase A does NOT generate blog content**, blog posts are Phase B only
+2. **Markdown is the only output format**, all deliverables are .md files
 3. **Each step reads discovery-context.md** before starting and updates it after finishing
-4. **No step can be skipped** in the full `/discovery` flow — each builds on the previous
+4. **No step can be skipped** in the full `/discovery` flow, each builds on the previous

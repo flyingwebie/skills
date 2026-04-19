@@ -7,7 +7,7 @@ description: >
 version: 0.2.0
 ---
 
-# Buyer Persona Research — APEX Methodology
+# Buyer Persona Research, APEX Methodology
 
 ## Purpose
 Build data-driven buyer personas using the Hormozi Value Equation framework. Each persona maps Dream Outcomes to product/service features, identifies real objections, and provides actionable messaging frameworks for web design, content, and marketing.
@@ -18,10 +18,10 @@ Build data-driven buyer personas using the Hormozi Value Equation framework. Eac
 - When the team needs alignment on "who we're building for"
 
 ## Inputs Required
-1. **Meeting transcription** — client's description of their customers
-2. **Industry/niche** — from discovery context
-3. **Competitor findings** — from Step 2 (if available in discovery-context.md)
-4. **Client website** — for analyzing current messaging (if available)
+1. **Meeting transcription**, client's description of their customers
+2. **Industry/niche**, from discovery context
+3. **Competitor findings**, from Step 2 (if available in discovery-context.md)
+4. **Client website**, for analyzing current messaging (if available)
 
 ## APEX Value Equation
 

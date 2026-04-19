@@ -1,4 +1,4 @@
-# CITE Domain Rating — 40-Item Domain Authority Framework
+# CITE Domain Rating, 40-Item Domain Authority Framework
 
 ## Overview
 CITE (Credibility, Infrastructure, Trust, Engagement) is a 40-item framework for assessing a domain's overall authority and quality. Used during competitor analysis and for benchmarking the client's domain.
@@ -12,9 +12,9 @@ CITE (Credibility, Infrastructure, Trust, Engagement) is a 40-item framework for
 
 ## Veto Items
 These items, if scored 0-1, can override the total score regardless of other dimensions:
-- I03 (HTTPS/SSL) — Security is non-negotiable
-- T01 (Contact info) — No contact = no trust
-- T05 (Legal pages) — Missing privacy/terms is a compliance risk
+- I03 (HTTPS/SSL), Security is non-negotiable
+- T01 (Contact info), No contact = no trust
+- T05 (Legal pages), Missing privacy/terms is a compliance risk
 
 ---
 

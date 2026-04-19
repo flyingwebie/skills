@@ -1,4 +1,4 @@
-# Typography Pairings — Curated Combinations
+# Typography Pairings, Curated Combinations
 
 ## How to Use
 Select a pairing that matches industry, brand voice, and design style. Each pairing includes Google Fonts import URL and CSS implementation.

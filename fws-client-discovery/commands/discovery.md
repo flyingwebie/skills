@@ -1,17 +1,57 @@
 ---
 description: "Run the full discovery: provide client name, website URL, and optionally a meeting transcript file"
-allowed-tools: Read, Write, Edit, WebSearch, WebFetch, Grep, Glob, Bash(ls:*,cat:*,mkdir:*), Task
+allowed-tools: Read, Write, Edit, WebSearch, WebFetch, Grep, Glob, Bash(ls:*,cat:*,mkdir:*), Task, mcp__MCP_DOCKER__apify--website-content-crawler, mcp__MCP_DOCKER__apify--google-search-scraper, mcp__MCP_DOCKER__apify--rag-web-browser, mcp__MCP_DOCKER__perplexity_ask, mcp__MCP_DOCKER__perplexity_research, mcp__MCP_DOCKER__fetch
 argument-hint: <client-name> <client-url> [meeting-transcript-file]
 ---
 
-You are running the **FWS Client Discovery** master workflow. This orchestrates all 9 steps sequentially — Phase A builds the website (research + page content), Phase B plans and produces the content strategy (content plan + blog posts) — passing context between steps via a shared `discovery-context.md` file.
+You are running the **FWS Client Discovery** master workflow. This orchestrates all 9 steps sequentially, Phase A builds the website (research + page content), Phase B plans and produces the content strategy (content plan + blog posts), passing context between steps via a shared `discovery-context.md` file.
+
+## Research Tool Cascade
+
+For ALL online research in every step, use tools in this order. Fall through only on failure or empty result.
+
+1. **Apify (Docker MCP)**, primary
+   - `mcp__MCP_DOCKER__apify--website-content-crawler`, crawl client and competitor sites
+   - `mcp__MCP_DOCKER__apify--google-search-scraper`, SERP, PAA, keyword discovery
+   - `mcp__MCP_DOCKER__apify--rag-web-browser`, open-ended research queries
+2. **Perplexity (Docker MCP)**, fallback
+   - `mcp__MCP_DOCKER__perplexity_research`, deep topic research with citations
+   - `mcp__MCP_DOCKER__perplexity_ask`, quick lookups
+3. **Built-in WebSearch / WebFetch**, final fallback
+
+Log which tool produced each finding in `discovery-context.md` under `## Research Sources`.
+
+## Output Rules (apply to every file you write)
+
+- **Markdown only.** NO Word, NO Google Docs, NO XLSX, NO Pencil `.pen` files. Every deliverable is a plain `.md` file.
+- **No em dashes.** Use a comma instead. Never write `—` in content.
+- **Internal links between pages.** Every generated page and report must link to related pages and reports in the same project using relative markdown links (e.g. `[Buyer Personas](./04-Buyer-Personas.md)`). Run a link pass at the end of Step 7 and Step 9.
 
 ## Initial Setup
 
 ### 1. Parse Inputs
-- **Client name**: `$1` (required — used for folder naming)
-- **Client URL**: `$2` (optional — pass `none` if no existing website)
-- **Meeting transcript**: `$3` (optional — file path to transcript)
+- **Client name**: `$1` (required, used for folder naming)
+- **Client URL**: `$2` (optional, pass `none` if no existing website)
+- **Meeting transcript**: `$3` (optional, file path to transcript)
+
+### 1a. Preflight, ask the user
+
+Before running any research, ask these two questions in order. Wait for each answer.
+
+**Q1, client website**
+> "Do we have the current client's website URL? If yes, paste it now so I can crawl it for more context. If none, reply `skip`."
+
+If provided and different from `$2`, use the newer URL and note it in `discovery-context.md`.
+
+**Q2, brand logo**
+> "Do we have the client's logo? If yes, upload the file now (drag into chat or paste a path), I'll use it to extract colors and inform Step 5 UX/UI Research. If none, reply `skip`."
+
+If logo provided:
+- Save path to `discovery-context.md` under `## Brand Assets`
+- Step 5 reads the image, extracts dominant colors, shape language, typographic cues
+- Feed into UX/UI Research report
+
+If `skip`, proceed without logo analysis. Note "no logo provided" in Step 5 output.
 
 ### 2. Create Output Folder
 Create the output directory structure:
@@ -40,109 +80,37 @@ If no transcript is provided:
 
 ## Execute 9-Step Workflow
 
-Run each step sequentially. After each step, read the updated `discovery-context.md` to confirm findings were captured before proceeding.
+Run each step sequentially. After each step, re-read `discovery-context.md` to confirm findings landed, then proceed. Each step reads its own SKILL for full instructions (lazy-load: do NOT load all SKILLs up front).
 
-### Phase A: Research + Page Content (Steps 1-7)
+### Phase A, Research + Page Content (Steps 1-7)
 
-Phase A researches the client's market, audience, and competitors, then produces production-ready website page content. By the end of Phase A, the full website copy is ready.
+| # | Step | SKILL (read before starting) | Output file | Template |
+|---|------|------------------------------|-------------|----------|
+| 1 | Sitemap Analysis | `skills/sitemap-analysis/SKILL.md` | `02-Sitemap-Report.md` | `templates/sitemap-report.md` |
+| 2 | Competitor Research | `skills/competitor-research/SKILL.md` | `03-Competitor-Report.md` | `templates/competitor-report.md` |
+| 3 | Buyer Personas (APEX) | `skills/buyer-persona-research/SKILL.md` | `04-Buyer-Personas.md` | `templates/persona-card.md` |
+| 4 | Keyword Research | `skills/keyword-research/SKILL.md` | `05-Keyword-Research.md` | `templates/keyword-report.md` |
+| 5 | UX/UI Research | `skills/ux-ui-research/SKILL.md` + `CLAUDE_DESIGN.md` | `06-UX-UI-Research.md` | `templates/ux-research-report.md` |
+| 6 | FAQ Research | `skills/faq-research/SKILL.md` | `07-FAQ-Research.md` | `templates/faq-report.md` |
+| 7 | Page Copywriting | `skills/page-copywriter/SKILL.md` | `pages/*.md` | (schemas in SKILL refs) |
 
-### Step 1: Sitemap Analysis
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/sitemap-analysis/SKILL.md
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/sitemap-analysis/references/page-type-benchmarks.md
-- If client has a URL: crawl and analyze the site structure
-- If no URL: build a recommended sitemap from industry benchmarks
-- Write `02-Sitemap-Report.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/sitemap-report.md
-- Update discovery context with sitemap findings
-- **Checkpoint**: Tell user "Step 1 complete — [X] pages found, [Y] gaps identified"
+For each step:
+1. Read the SKILL end-to-end, follow its workflow. SKILL loads its own references (progressive disclosure).
+2. Run the research-tool cascade defined in `CLAUDE.md` (Apify → Perplexity → WebSearch).
+3. Write the output file, update `discovery-context.md`, emit a one-line checkpoint to the user with key counts (e.g., "Step 1, [N] pages, [M] gaps").
 
-### Step 2: Competitor Research
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/competitor-research/SKILL.md
-- Read @${CLAUDE_PLUGIN_ROOT}/references/cite-domain-rating.md
-- Identify 3-5 competitors and deep-analyze each
-- Build competitive matrix and battlecards
-- Write `03-Competitor-Report.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/competitor-report.md
-- Update discovery context with competitor findings
-- **Checkpoint**: Tell user "Step 2 complete — [X] competitors analyzed, [Y] content gaps found"
+**Step 5 special**: if logo was uploaded in preflight, run logo-analysis sub-step in the SKILL. Output MUST include a `## Claude Design Brief` section per `CLAUDE_DESIGN.md`.
 
-### Step 3: Buyer Persona Research
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/buyer-persona-research/SKILL.md
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/buyer-persona-research/references/apex-value-equation.md
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/buyer-persona-research/references/persona-interview-questions.md
-- Build 2-3 personas using APEX Value Equation methodology
-- Write `04-Buyer-Personas.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/persona-card.md
-- Update discovery context with persona findings
-- **Checkpoint**: Tell user "Step 3 complete — [X] personas created: [names]"
+**Step 7 special**: end with an internal-link audit pass (3+ relative links per page).
 
-### Step 4: Keyword Research
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/keyword-research/SKILL.md
-- Read @${CLAUDE_PLUGIN_ROOT}/references/core-eeat-benchmark.md
-- Generate persona-aware seeds, expand, classify, cluster
-- Write `05-Keyword-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/keyword-report.md
-- Update discovery context with keyword findings
-- **Checkpoint**: Tell user "Step 4 complete — [X] keywords in [Y] clusters, [Z] quick wins"
+### Phase B, Content Strategy + Blog (Steps 8-9)
 
-### Step 5: UX/UI Research
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/ux-ui-research/SKILL.md
-- Read ALL reference files in @${CLAUDE_PLUGIN_ROOT}/skills/ux-ui-research/references/
-- Generate design system recommendation matched to industry and personas
-- Write `06-UX-UI-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/ux-research-report.md
-- Update discovery context with design findings
-- **Checkpoint**: Tell user "Step 5 complete — recommended style: [X], palette: [Y], fonts: [Z]"
+| # | Step | SKILL | Output file | Template |
+|---|------|-------|-------------|----------|
+| 8 | Content Planning | `skills/content-planning/SKILL.md` | `08-Content-Plan.md` | `templates/content-plan.md` |
+| 9 | Blog Copywriting | `skills/blog-copywriter/SKILL.md` | `pages/blog/*.md` | (schemas in SKILL refs) |
 
-### Step 6: FAQ Research
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/faq-research/SKILL.md
-- Mine PAA, competitor FAQs, meeting questions, persona-driven questions
-- Write `07-FAQ-Research.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/faq-report.md
-- Update discovery context with FAQ findings
-- **Checkpoint**: Tell user "Step 6 complete — [X] FAQs identified, [Y] with schema markup"
-
-### Step 7: Page Copywriting
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/SKILL.md
-- Read ALL reference files:
-  - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/page-type-schemas.md
-  - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/seo-metadata-guide.md
-  - @${CLAUDE_PLUGIN_ROOT}/skills/page-copywriter/references/content-formatting-guide.md
-- Read CORE-EEAT benchmark: @${CLAUDE_PLUGIN_ROOT}/references/core-eeat-benchmark.md
-- Build page queue from sitemap (core → pillar → child → supporting, NO blog)
-- Generate all page markdown files with:
-  - SEO metadata block (title, meta, OG, schema, canonical)
-  - Heading accent (`:: keyword`) + H1
-  - Full SEO/GEO-optimized body content
-  - FAQ section (from Step 6 research)
-  - CTA section (persona-appropriate)
-- Run internal linking pass across all pages
-- Save all pages to `pages/` subdirectory
-- Update discovery context with page generation summary
-- **Checkpoint**: Tell user "Step 7 complete — [X] pages generated, [Y] total words, internal linking verified"
-
----
-
-### Phase B: Content Strategy + Blog (Steps 8-9)
-
-All website pages are now complete. Phase B plans the ongoing content strategy and produces blog posts to support SEO/GEO growth over 90 days.
-
-### Step 8: Content Planning
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/content-planning/SKILL.md
-- Synthesize ALL findings (Steps 1-7) into ICE-scored content plan + 90-day calendar
-- Write `08-Content-Plan.md` using template @${CLAUDE_PLUGIN_ROOT}/templates/content-plan.md
-- Update discovery context with content plan summary
-- **Checkpoint**: Tell user "Step 8 complete — [X] content pieces planned over 90 days"
-
-### Step 9: Blog Copywriting
-- Read @${CLAUDE_PLUGIN_ROOT}/skills/blog-copywriter/SKILL.md
-- Read shared formatting references (same as Step 7)
-- Build blog queue from 90-day content plan calendar (Step 8)
-- Generate blog post markdown files with:
-  - Article schema metadata (+ author, date, category, parent pillar)
-  - Heading accent (`:: keyword`) + H1
-  - Opening hook, body sections (H2 every 300-400 words), data points
-  - Key Takeaways section
-  - FAQ section (2-4 questions from Step 6)
-  - CTA linking to parent pillar + contact
-- Cross-link blog posts to pillar pages and related posts
-- Save all posts to `pages/blog/` subdirectory
-- Update discovery context with blog generation summary
-- **Checkpoint**: Tell user "Step 9 complete — [X] blog posts generated, [Y] total words, covering [Z] topic clusters"
+**Step 9 special**: every post links to parent pillar + 1 service page + related posts. End with a Related Posts cross-link pass.
 
 ---
 
@@ -159,6 +127,14 @@ All website pages are now complete. Phase B plans the ongoing content strategy a
   - Top 5 priorities across all dimensions
   - Recommended next steps
   - Deliverables checklist
+
+### Generate llms.txt + llms-full.txt (GEO, LLM crawlers)
+
+Follow @${CLAUDE_PLUGIN_ROOT}/skills/llms-txt-generator/SKILL.md.
+
+- Write `pages/llms.txt`, the short manifest: site name, one-line description, priority links (homepage, services, about, contact, FAQ, key pillars, key blog posts).
+- Write `pages/llms-full.txt`, full plain-text content dump of every generated page, concatenated with clear `# [Page Title]` separators. This is the content LLM crawlers cite.
+- Both files are markdown-compatible plain text, UTF-8, no front matter.
 
 ### Completion Summary
 Present the user with:

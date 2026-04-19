@@ -97,20 +97,20 @@
 
 For new sites with no existing content, prioritize in this order:
 
-**Phase 1 — Launch (Weeks 1-2)**:
+**Phase 1, Launch (Weeks 1-2)**:
 1. Homepage
 2. Top 3 service/product pages
 3. About page
 4. Contact page
 5. Privacy policy
 
-**Phase 2 — Foundation (Weeks 3-6)**:
+**Phase 2, Foundation (Weeks 3-6)**:
 6. Remaining service pages
 7. FAQ page
 8. 2-3 case studies / portfolio pieces
 9. Testimonials page
 
-**Phase 3 — Growth (Weeks 7-12)**:
+**Phase 3, Growth (Weeks 7-12)**:
 10. Blog (first 4-6 posts)
 11. Location/area pages
 12. Comparison or guides content

@@ -2,7 +2,7 @@
 
 ## Title Tag Rules
 - **Length**: 50-60 characters (Google truncates at ~60)
-- **Format**: `[Primary Keyword] — [Benefit/Brand] | [Company Name]`
+- **Format**: `[Primary Keyword], [Benefit/Brand] | [Company Name]`
 - **Alternatives**:
   - `[Primary Keyword] for [Audience] | [Company]`
   - `[Benefit]: [Primary Keyword] | [Company]`
@@ -10,7 +10,7 @@
 - **Rules**:
   - Primary keyword appears within first 30 characters
   - Brand name at end (after pipe or dash)
-  - No keyword stuffing — reads naturally
+  - No keyword stuffing, reads naturally
   - Each page has a UNIQUE title tag
 
 ## Meta Description Rules
@@ -22,7 +22,7 @@
   - A call-to-action verb (discover, learn, get, start, explore)
 - **Rules**:
   - Each page has a UNIQUE meta description
-  - Not a sentence from the page — write it specifically for SERP
+  - Not a sentence from the page, write it specifically for SERP
   - Include a value proposition or differentiator
   - Avoid generic phrases ("Welcome to our website")
 
@@ -36,38 +36,38 @@
 
 ### Homepage
 ```
-title: Web Design That Drives Revenue — [City] | [Company Name]
+title: Web Design That Drives Revenue, [City] | [Company Name]
 meta_description: Award-winning web design that turns visitors into customers. Trusted by 200+ businesses in [City]. Get a free consultation today.
-og_title: [Company Name] — Web Design That Drives Revenue
+og_title: [Company Name], Web Design That Drives Revenue
 ```
 
 ### Service Page
 ```
-title: [Service Name] for [Audience] — Expert [Service] | [Company]
+title: [Service Name] for [Audience], Expert [Service] | [Company]
 meta_description: Professional [service] designed to [key benefit]. [Proof point]. Get your free quote in 24 hours.
 ```
 
 ### About Page
 ```
-title: About [Company Name] — [X] Years of [Industry] Expertise
+title: About [Company Name], [X] Years of [Industry] Expertise
 meta_description: Meet the team behind [Company]. [X] years of experience, [Y]+ happy clients. Learn our story and why businesses trust us.
 ```
 
 ### Contact Page
 ```
-title: Contact [Company Name] — Get a Free [Service] Consultation
+title: Contact [Company Name], Get a Free [Service] Consultation
 meta_description: Ready to [benefit]? Contact us for a free, no-obligation consultation. Call [phone] or fill out our quick form.
 ```
 
 ### FAQ Page
 ```
-title: [Service/Industry] FAQ — Your Questions Answered | [Company]
+title: [Service/Industry] FAQ, Your Questions Answered | [Company]
 meta_description: Find answers to common questions about [service]. From pricing to process, we cover everything you need to know.
 ```
 
 ### Location Page
 ```
-title: [Service] in [City] — Local [Service] Experts | [Company]
+title: [Service] in [City], Local [Service] Experts | [Company]
 meta_description: Looking for [service] in [City]? We serve [Area] with [benefit]. [Proof point]. Contact us for a free local quote.
 ```
 

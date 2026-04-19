@@ -7,7 +7,7 @@ description: >
 version: 0.2.0
 ---
 
-# FAQ Research — PAA + Schema + GEO
+# FAQ Research, PAA + Schema + GEO
 
 ## Purpose
 Identify, organize, and optimize frequently asked questions for the client's website. Combines People Also Ask (PAA) extraction, competitor FAQ analysis, and meeting-derived questions into a structured FAQ strategy with JSON-LD schema markup and GEO optimization for AI citation.
@@ -19,11 +19,11 @@ Identify, organize, and optimize frequently asked questions for the client's web
 - When creating FAQ schema for rich results
 
 ## Inputs Required
-1. **Target keywords** — from Step 4 (discovery-context.md)
-2. **Buyer personas** — from Step 3 (what questions do they ask?)
-3. **Competitor FAQ analysis** — from Step 2 (gaps and opportunities)
-4. **Meeting transcription** — questions the client commonly receives
-5. **Industry** — from discovery context
+1. **Target keywords**, from Step 4 (discovery-context.md)
+2. **Buyer personas**, from Step 3 (what questions do they ask?)
+3. **Competitor FAQ analysis**, from Step 2 (gaps and opportunities)
+4. **Meeting transcription**, questions the client commonly receives
+5. **Industry**, from discovery context
 
 ## Workflow
 

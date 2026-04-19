@@ -66,4 +66,4 @@ See CONNECTORS.md. The plugin works standalone but benefits from:
 
 ## Version
 
-v0.1.0 — Discovery & Research phase only. Future phases (IA, Design, Development, Content, QA, Growth) planned as separate modules.
+v0.1.0, Discovery & Research phase only. Future phases (IA, Design, Development, Content, QA, Growth) planned as separate modules.

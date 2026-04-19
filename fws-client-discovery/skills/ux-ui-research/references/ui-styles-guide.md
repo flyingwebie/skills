@@ -1,4 +1,4 @@
-# UI Styles Guide — When to Use Each
+# UI Styles Guide, When to Use Each
 
 ## Style Descriptions and Applications
 

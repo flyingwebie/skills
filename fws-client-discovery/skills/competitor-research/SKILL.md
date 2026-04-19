@@ -18,10 +18,10 @@ Identify, analyze, and document the client's competitive landscape. Produce acti
 - When creating comparison pages or sales enablement content
 
 ## Inputs Required
-1. **Client website URL** — to understand current positioning
-2. **Meeting transcription** — competitors mentioned by client
-3. **Industry/niche** — from discovery context
-4. **Sitemap findings** — from Step 1 (if available in discovery-context.md)
+1. **Client website URL**, to understand current positioning
+2. **Meeting transcription**, competitors mentioned by client
+3. **Industry/niche**, from discovery context
+4. **Sitemap findings**, from Step 1 (if available in discovery-context.md)
 
 ## Workflow
 

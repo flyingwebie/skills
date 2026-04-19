@@ -18,9 +18,9 @@ Crawl and analyze a client's existing website structure to understand current pa
 - When planning a migration or content restructuring
 
 ## Inputs Required
-1. **Client website URL** — the root domain to analyze
-2. **Meeting transcription findings** — from Step 0 (services offered, target audience)
-3. **Industry** — from discovery context
+1. **Client website URL**, the root domain to analyze
+2. **Meeting transcription findings**, from Step 0 (services offered, target audience)
+3. **Industry**, from discovery context
 
 ## Workflow
 
@@ -141,7 +141,7 @@ Write findings to `02-Sitemap-Report.md` using the template.
 ## When No Website Exists
 If the client doesn't have a website yet:
 1. Skip Steps 1-3 (no site to analyze)
-2. Focus on Step 4 — build a recommended sitemap from scratch
+2. Focus on Step 4, build a recommended sitemap from scratch
 3. Use competitor sites as structure references
 4. Recommend a minimum viable sitemap based on industry and services
 5. Still assess what pages are critical for launch vs. phase 2

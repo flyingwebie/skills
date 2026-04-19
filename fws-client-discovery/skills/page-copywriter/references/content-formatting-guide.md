@@ -1,4 +1,4 @@
-# Content Formatting Guide — Markdown Standards
+# Content Formatting Guide, Markdown Standards
 
 ## Purpose
 Every page file must be production-ready markdown. This guide defines the exact formatting standards so content can be copy-pasted directly into a CMS.
@@ -17,15 +17,15 @@ Every page file must be production-ready markdown. This guide defines the exact 
 <!-- primary_keyword: ... -->
 <!-- secondary_keywords: ... -->
 
-:: Keyword-Rich Accent — 2-5 words
+:: Keyword-Rich Accent, 2-5 words
 
 # H1: Natural, Benefit-Driven Headline With Keyword
 
-Opening paragraph with primary keyword in first sentence. This paragraph serves as the GEO-optimized direct answer — keep it under 150 words, make it quotable and definitive.
+Opening paragraph with primary keyword in first sentence. This paragraph serves as the GEO-optimized direct answer, keep it under 150 words, make it quotable and definitive.
 
 ## H2: Major Section Heading
 
-Body paragraph with natural keyword inclusion. Every paragraph should serve a purpose — inform, persuade, or guide.
+Body paragraph with natural keyword inclusion. Every paragraph should serve a purpose, inform, persuade, or guide.
 
 Second paragraph in this section. Include specific data points, metrics, or examples to increase citability for AI engines.
 
@@ -38,7 +38,7 @@ Detailed content under the subsection. H3s are used for breakdowns, steps, or de
 Continue with content...
 
 > "Testimonial or expert quote goes here in blockquote format."
-> — **Name**, Title at Company
+>, **Name**, Title at Company
 
 ---
 
@@ -58,12 +58,12 @@ CTA paragraph with clear next step and persona-appropriate language.
 
 **[Primary CTA Button Text →](/contact)**
 
-*[Secondary option — e.g., "Or call us at (XXX) XXX-XXXX"]*
+*[Secondary option, e.g., "Or call us at (XXX) XXX-XXXX"]*
 ```
 
 ## Heading Accent (Pre-Title)
 
-Every page includes a short **heading accent** above the H1. In the markdown files, lines starting with `::` denote the accent text. This is NOT a heading — when rendered to HTML, the developer/CMS converts `:: text` into a styled `<span>` or `<p>` (uppercase, small, letter-spaced, accent color). It adds visual flair and keyword density without breaking semantic hierarchy.
+Every page includes a short **heading accent** above the H1. In the markdown files, lines starting with `::` denote the accent text. This is NOT a heading, when rendered to HTML, the developer/CMS converts `:: text` into a styled `<span>` or `<p>` (uppercase, small, letter-spaced, accent color). It adds visual flair and keyword density without breaking semantic hierarchy.
 
 **Format in markdown files**:
 ```markdown
@@ -74,10 +74,10 @@ Every page includes a short **heading accent** above the H1. In the markdown fil
 
 **Rules**:
 - **Syntax**: Line starts with `:: ` followed by the accent text
-- **Length**: 2-5 words maximum — punchy, not a sentence
-- **Content**: Primary keyword or keyword + location — the exact search term a user would type
+- **Length**: 2-5 words maximum, punchy, not a sentence
+- **Content**: Primary keyword or keyword + location, the exact search term a user would type
 - **Not a heading**: Developer renders as styled inline text (`<span>` or `<p>`), never `<h1>` or any heading tag
-- **Visual style**: Typically uppercase, smaller font, letter-spaced, accent color — styled via CSS, not markdown
+- **Visual style**: Typically uppercase, smaller font, letter-spaced, accent color, styled via CSS, not markdown
 - **One per page**: Placed immediately before the H1, after the SEO metadata block
 - **SEO role**: Adds natural keyword presence near the top of the page; search engines read it as body text, not a heading
 - **GEO role**: Reinforces topic relevance for AI citation engines parsing the page
@@ -98,7 +98,7 @@ Every page includes a short **heading accent** above the H1. In the markdown fil
 - Don't make the accent a full sentence
 - Don't duplicate the H1 text
 - Don't use it as a second keyword-stuffed heading
-- Don't skip it — every page gets one
+- Don't skip it, every page gets one
 
 ## Heading Rules
 
@@ -109,7 +109,7 @@ Every page includes a short **heading accent** above the H1. In the markdown fil
 | H3 | Subsections under H2 | 0-4 per H2 section. For details, steps, breakdowns. |
 | H4+ | Avoid | Keep hierarchy flat. If needed, restructure content. |
 
-**Hierarchy must be logical**: H1 → H2 → H3 (never skip levels). The heading accent is NOT part of the heading hierarchy — it's styled body text.
+**Hierarchy must be logical**: H1 → H2 → H3 (never skip levels). The heading accent is NOT part of the heading hierarchy, it's styled body text.
 
 ## Text Formatting
 
@@ -154,9 +154,9 @@ Rule: Bold lead + colon + description for benefit lists.
 ### Numbered Lists (ordered)
 Use for sequential steps or rankings:
 ```markdown
-1. **Step name** — Description of what happens in this step
-2. **Step name** — Description of what happens in this step
-3. **Step name** — Description of what happens in this step
+1. **Step name**, Description of what happens in this step
+2. **Step name**, Description of what happens in this step
+3. **Step name**, Description of what happens in this step
 ```
 
 ### Do NOT use lists for:
@@ -170,20 +170,20 @@ Use for comparison data, specifications, or structured information:
 | Feature | Basic | Pro | Enterprise |
 |---------|-------|-----|------------|
 | Feature 1 | ✓ | ✓ | ✓ |
-| Feature 2 | — | ✓ | ✓ |
-| Feature 3 | — | — | ✓ |
+| Feature 2 |, | ✓ | ✓ |
+| Feature 3 |, |, | ✓ |
 ```
 
 ## Blockquotes (Testimonials & Quotes)
 ```markdown
-> "The exact quote from the customer or expert goes here. Keep it authentic and specific — vague praise like 'great service' is worthless."
-> — **Full Name**, Job Title at Company Name
+> "The exact quote from the customer or expert goes here. Keep it authentic and specific, vague praise like 'great service' is worthless."
+>, **Full Name**, Job Title at Company Name
 ```
 
 For placeholder testimonials (when real ones aren't available yet):
 ```markdown
-> "[Testimonial placeholder — replace with real customer quote about [specific outcome/benefit]]"
-> — **[Client Name]**, [Title] at [Company]
+> "[Testimonial placeholder, replace with real customer quote about [specific outcome/benefit]]"
+>, **[Client Name]**, [Title] at [Company]
 ```
 
 ## Horizontal Rules

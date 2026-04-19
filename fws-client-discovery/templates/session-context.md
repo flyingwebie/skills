@@ -1,18 +1,18 @@
-# FWS Client Discovery Plugin — Active
+# FWS Client Discovery Plugin, Active
 
 You have the FWS Client Discovery plugin loaded. Available commands:
 
 ## Full Workflow
-- `/discovery` — Run the complete 7-step Discovery & Research workflow
+- `/discovery`, Run the complete 7-step Discovery & Research workflow
 
 ## Individual Steps (run independently or re-run specific steps)
-- `/sitemap` — Sitemap & page analysis (requires client website URL)
-- `/competitors` — Competitor research
-- `/personas` — Buyer persona research (APEX/Hormozi methodology)
-- `/keywords` — Keyword research with intent classification
-- `/ux-research` — UX/UI research + design system (add `--quick` for compatibility check only)
-- `/faqs` — FAQ research (PAA + schema markup)
-- `/content-plan` — Content plan + 90-day calendar
+- `/sitemap`, Sitemap & page analysis (requires client website URL)
+- `/competitors`, Competitor research
+- `/personas`, Buyer persona research (APEX/Hormozi methodology)
+- `/keywords`, Keyword research with intent classification
+- `/ux-research`, UX/UI research + design system (add `--quick` for compatibility check only)
+- `/faqs`, FAQ research (PAA + schema markup)
+- `/content-plan`, Content plan + 90-day calendar
 
 ## Workflow Rules
 1. Every step READS the discovery context file before executing

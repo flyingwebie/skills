@@ -1,4 +1,4 @@
-# APEX Value Equation — Detailed Scoring Guide
+# APEX Value Equation, Detailed Scoring Guide
 
 ## The Formula
 ```
@@ -45,7 +45,7 @@ How much does the buyer believe you can deliver?
 - Free trial or proof of concept
 - Certifications and credentials
 
-### Time Delay Score (Inverse — Lower is Better for Buyer)
+### Time Delay Score (Inverse, Lower is Better for Buyer)
 How long until they see results?
 
 | Score | Meaning | Buyer Tolerance |
@@ -63,7 +63,7 @@ How long until they see results?
 - "While we build, here's what you can do now"
 - Break project into visible phases
 
-### Effort & Sacrifice Score (Inverse — Lower is Better for Buyer)
+### Effort & Sacrifice Score (Inverse, Lower is Better for Buyer)
 How much work does the buyer have to do?
 
 | Score | Meaning | Buyer Experience |

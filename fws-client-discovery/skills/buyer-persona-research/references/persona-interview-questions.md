@@ -1,4 +1,4 @@
-# Persona Interview Questions — Client Meeting Framework
+# Persona Interview Questions, Client Meeting Framework
 
 ## Purpose
 Questions to extract persona data from client meetings. These can be used as a prep guide before meetings or as a framework for parsing meeting transcriptions.
@@ -13,8 +13,8 @@ Questions to extract persona data from client meetings. These can be used as a p
 5. How do they typically find you? (referral, search, social, etc.)
 
 ### Probe Deeper
-6. Think of your 3 best customers ever — what do they have in common?
-7. Think of your worst customers — what made them bad fits?
+6. Think of your 3 best customers ever, what do they have in common?
+7. Think of your worst customers, what made them bad fits?
 8. Is there a type of customer you'd love more of but can't seem to attract?
 
 ## Section 2: Pain Points & Triggers

@@ -7,7 +7,7 @@ description: >
 version: 0.2.0
 ---
 
-# Content Planning — Gap Analysis + 90-Day Calendar
+# Content Planning, Gap Analysis + 90-Day Calendar
 
 ## Purpose
 Synthesize all discovery findings into an actionable content strategy with ICE-prioritized content pieces and a 90-day execution calendar. Bridges the gap between research (what we know) and execution (what we build).
@@ -19,13 +19,13 @@ Synthesize all discovery findings into an actionable content strategy with ICE-p
 
 ## Inputs Required
 This skill uses ALL previous discovery steps:
-1. **Sitemap analysis** — existing pages, gaps, technical issues
-2. **Competitor research** — content they have that we don't
-3. **Buyer personas** — what content each persona needs at each stage
-4. **Keyword research** — topic clusters, keyword-to-page mapping
-5. **UX/UI research** — page types, design patterns
-6. **FAQ research** — questions to answer, schema opportunities
-7. **Meeting transcription** — client priorities and constraints
+1. **Sitemap analysis**, existing pages, gaps, technical issues
+2. **Competitor research**, content they have that we don't
+3. **Buyer personas**, what content each persona needs at each stage
+4. **Keyword research**, topic clusters, keyword-to-page mapping
+5. **UX/UI research**, page types, design patterns
+6. **FAQ research**, questions to answer, schema opportunities
+7. **Meeting transcription**, client priorities and constraints
 
 **Read the full `discovery-context.md` before starting this step.**
 

@@ -19,11 +19,11 @@ Generate a data-driven design system recommendation for the client's website. Ma
 - Use `--quick` flag for branding compatibility check only
 
 ## Inputs Required
-1. **Client website URL** — for current design analysis (if exists)
-2. **Industry** — from discovery context
-3. **Buyer personas** — from Step 3 (for audience-appropriate design)
-4. **Competitor UX findings** — from Step 2 (discovery-context.md)
-5. **Brand assets** — logo, existing colors, brand guidelines (if available)
+1. **Client website URL**, for current design analysis (if exists)
+2. **Industry**, from discovery context
+3. **Buyer personas**, from Step 3 (for audience-appropriate design)
+4. **Competitor UX findings**, from Step 2 (discovery-context.md)
+5. **Brand assets**, logo, existing colors, brand guidelines (if available)
 
 ## Modes
 
@@ -31,14 +31,14 @@ Generate a data-driven design system recommendation for the client's website. Ma
 Complete design system recommendation including style, colors, typography, components, accessibility, and responsive breakpoints.
 
 ### Quick Mode (`--quick`)
-Brand compatibility check only — assesses whether current branding works with recommended design direction, flags conflicts, and provides evolution path.
+Brand compatibility check only, assesses whether current branding works with recommended design direction, flags conflicts, and provides evolution path.
 
 ## Workflow
 
 ### Step 1: Industry Design Intelligence
 Look up the client's industry in the design rules database to determine:
 
-**Recommended UI Style** — Select from available styles based on industry:
+**Recommended UI Style**, Select from available styles based on industry:
 
 | Industry Category | Typical Styles | Key Reasoning |
 |------------------|---------------|---------------|
@@ -55,7 +55,7 @@ Look up the client's industry in the design rules database to determine:
 
 Reference `references/industry-design-rules.md` for the complete 100-rule database.
 
-**Anti-Patterns for Industry** — What design choices to avoid.
+**Anti-Patterns for Industry**, What design choices to avoid.
 
 ### Step 2: Color Palette Selection
 Based on industry, audience psychology, and brand positioning:
@@ -77,7 +77,7 @@ Based on industry, audience psychology, and brand positioning:
 - Large text on background: 3:1
 - UI components: 3:1
 
-Reference `references/color-palettes.md` for curated industry palettes.
+**Progressive disclosure**: read `references/color-palettes-index.md` first (small). Pick 1-2 palette IDs. Then Grep `references/color-palettes.md` for `### [ID]:` to pull only the full palette you need. Do NOT read `color-palettes.md` in full.
 
 ### Step 3: Typography Selection
 Select a font pairing based on industry, readability, and brand voice:
@@ -184,29 +184,50 @@ Assess whether the project would benefit from smooth interaction libraries. Prov
 | Library | Purpose | When to Recommend |
 |---------|---------|-------------------|
 | [Lenis](https://github.com/darkroomengineering/lenis) | Smooth, buttery scroll behavior with momentum and easing | Sites with long scrolling pages, storytelling layouts, portfolio showcases, parallax sections, or any project where scroll feel is a brand differentiator. Particularly strong for creative agencies, luxury brands, real estate, restaurants, and architecture firms. |
-| [Swup](https://github.com/swup/swup) | SPA-like page transitions without a full SPA framework | Multi-page sites that need seamless navigation feel — especially sites with strong visual identity where hard page reloads break the experience. Great for portfolios, agencies, hospitality, e-commerce product browsing, and any project where perceived speed and polish matter. |
+| [Swup](https://github.com/swup/swup) | SPA-like page transitions without a full SPA framework | Multi-page sites that need seamless navigation feel, especially sites with strong visual identity where hard page reloads break the experience. Great for portfolios, agencies, hospitality, e-commerce product browsing, and any project where perceived speed and polish matter. |
 
 **Decision Criteria**:
 | Factor | Consider Lenis | Consider Swup |
 |--------|---------------|---------------|
-| Content-heavy / long pages | ✓ | — |
-| Multiple distinct pages with visual continuity | — | ✓ |
+| Content-heavy / long pages | ✓ |, |
+| Multiple distinct pages with visual continuity |, | ✓ |
 | Portfolio / showcase site | ✓ | ✓ |
-| Performance-sensitive (mobile-first) | Assess — adds ~12KB | Assess — adds ~15KB |
+| Performance-sensitive (mobile-first) | Assess, adds ~12KB | Assess, adds ~15KB |
 | Accessibility requirement | ✓ (respects `prefers-reduced-motion`) | ✓ (maintains browser history, focus management) |
 | Static site / Jamstack | ✓ | ✓ |
 | React/Next.js SPA | Skip (use native scroll libs) | Skip (built-in routing) |
 
 **Project-Specific Recommendation Format**:
 For each library, write:
-- **Recommend / Consider / Skip** — clear verdict
+- **Recommend / Consider / Skip**, clear verdict
 - **Why**: 1-2 sentences specific to this client's project, audience, and design style
 - **Where it shines**: which pages or sections benefit most (e.g., "homepage hero → services scroll", "service page → case study transitions")
 - **Implementation note**: any considerations (e.g., "pair Lenis with GSAP ScrollTrigger for parallax hero" or "Swup works well with the recommended CSS transition style")
 
-If **both** libraries are recommended, note that they work well together — Lenis handles scroll behavior while Swup handles page transitions. They don't conflict.
+If **both** libraries are recommended, note that they work well together, Lenis handles scroll behavior while Swup handles page transitions. They don't conflict.
 
 If the project is a SPA (React/Next.js/Nuxt), skip Swup and note that Lenis can still add value for scroll feel within pages.
+
+### Step 8.5: Logo Analysis (if provided)
+
+If the `/discovery` preflight captured a logo path in `discovery-context.md` under `## Brand Assets`:
+- Read the image
+- Extract 3-5 dominant hex colors
+- Classify shape language: geometric, organic, script, wordmark
+- Note typographic cues: serif, sans, geometric, humanist
+- Bias the palette (Step 2) and typography (Step 3) toward brand continuity
+
+If no logo, write "no logo provided" in the output.
+
+### Step 8.75: Claude Design Brief (REQUIRED)
+
+Append a `## Claude Design Brief` section to `06-UX-UI-Research.md` following the schema in `CLAUDE_DESIGN.md` at the plugin root:
+1. One-paragraph plain-English prompt
+2. YAML design tokens block (color, typography, radius, spacing, breakpoints, motion, a11y, plus logo meta if available)
+3. Page hints table linking to `./02-Sitemap-Report.md`
+4. Component hints list
+
+Add relative links to `./04-Buyer-Personas.md`, `./05-Keyword-Research.md`, `./02-Sitemap-Report.md`, `./07-FAQ-Research.md`.
 
 ### Step 9: Update Discovery Context
 Append to `discovery-context.md`:
@@ -232,7 +253,8 @@ Write findings to `06-UX-UI-Research.md` using the template.
 - [ ] Discovery context updated with design findings
 
 ## Reference Files
-- `references/industry-design-rules.md` — 100 industry-specific design rules
-- `references/color-palettes.md` — Curated color palettes by industry
-- `references/font-pairings.md` — Typography combinations with Google Fonts
-- `references/ui-styles-guide.md` — Detailed UI style descriptions and when to use each
+- `references/industry-design-rules.md`, 100 industry-specific design rules
+- `references/color-palettes-index.md`, SLIM index (read first)
+- `references/color-palettes.md`, full palette bodies (Grep by ID, don't read whole file)
+- `references/font-pairings.md`, Typography combinations with Google Fonts
+- `references/ui-styles-guide.md`, Detailed UI style descriptions and when to use each

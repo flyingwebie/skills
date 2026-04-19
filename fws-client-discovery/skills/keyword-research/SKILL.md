@@ -18,11 +18,11 @@ Discover, classify, and organize target keywords into actionable topic clusters.
 - When identifying quick-win SEO opportunities
 
 ## Inputs Required
-1. **Client services/products** — from meeting transcription
-2. **Buyer personas** — from Step 3 (discovery-context.md)
-3. **Competitor keywords** — from Step 2 (discovery-context.md)
-4. **Current keyword targets** — from Step 1 sitemap (discovery-context.md)
-5. **Industry/location** — from discovery context
+1. **Client services/products**, from meeting transcription
+2. **Buyer personas**, from Step 3 (discovery-context.md)
+3. **Competitor keywords**, from Step 2 (discovery-context.md)
+4. **Current keyword targets**, from Step 1 sitemap (discovery-context.md)
+5. **Industry/location**, from discovery context
 
 ## Workflow
 
@@ -108,10 +108,10 @@ Score each keyword cluster using modified ICE:
 **Priority tiers**:
 | Tier | ICE Score | Action |
 |------|-----------|--------|
-| P1 — Quick Wins | 7+ | Build in Month 1, existing page or easy new page |
-| P2 — Strategic | 5-7 | Build in Month 2, requires new content |
-| P3 — Long-term | 3-5 | Build in Month 3, competitive or complex |
-| P4 — Backlog | <3 | Track but don't prioritize |
+| P1, Quick Wins | 7+ | Build in Month 1, existing page or easy new page |
+| P2, Strategic | 5-7 | Build in Month 2, requires new content |
+| P3, Long-term | 3-5 | Build in Month 3, competitive or complex |
+| P4, Backlog | <3 | Track but don't prioritize |
 
 ### Step 6: Keyword-to-Page Mapping
 Map each keyword to a specific page:

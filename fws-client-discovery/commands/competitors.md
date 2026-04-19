@@ -1,30 +1,15 @@
 ---
 description: "Research competitors and build battlecards: provide a client URL or describe the industry"
-allowed-tools: Read, Write, Edit, WebSearch, WebFetch, Grep, Glob, Bash(ls:*,cat:*,mkdir:*)
+allowed-tools: Read, Write, Edit, WebSearch, WebFetch, Grep, Glob, Bash(ls:*,cat:*,mkdir:*), mcp__MCP_DOCKER__apify--website-content-crawler, mcp__MCP_DOCKER__apify--google-search-scraper, mcp__MCP_DOCKER__apify--rag-web-browser, mcp__MCP_DOCKER__perplexity_research
 argument-hint: <client-url-or-industry>
 ---
 
-You are running Step 2 of the FWS Client Discovery workflow: **Competitor Research & Battlecards**.
+Step 2 of FWS Client Discovery: **Competitor Research & Battlecards**.
 
-## Setup
-1. Read the skill instructions: @${CLAUDE_PLUGIN_ROOT}/skills/competitor-research/SKILL.md
-2. Read the CITE domain rating framework: @${CLAUDE_PLUGIN_ROOT}/references/cite-domain-rating.md
-3. Read the discovery context file if it exists — use previous findings (sitemap, meeting notes) as input.
-
-## Input
-- Client URL or industry description: `$ARGUMENTS`
-
-## Execution
-Follow the full workflow in the SKILL.md:
-1. Identify 3-5 competitors (from client input, search research, and organic overlap)
-2. Deep-analyze each competitor: positioning, UX, content strategy, SEO profile, social proof
-3. Build a competitive comparison matrix
-4. Create battlecards with "how to beat them" strategies
-5. Document content gaps and positioning opportunities
-
-Use CITE framework to score each competitor's domain.
-
-## Output
-1. Write the report to `03-Competitor-Report.md` in the client's discovery output folder, using the template at @${CLAUDE_PLUGIN_ROOT}/templates/competitor-report.md
-2. Update `discovery-context.md` with competitor findings
-3. Summarize: top competitors, biggest content gaps, key differentiation opportunities.
+- Read @${CLAUDE_PLUGIN_ROOT}/skills/competitor-research/SKILL.md and follow it end-to-end.
+- Reference @${CLAUDE_PLUGIN_ROOT}/references/cite-domain-rating.md for CITE scoring.
+- Read `discovery-context.md` for prior sitemap and meeting-note findings.
+- Use research cascade (Apify → Perplexity → WebSearch) per @${CLAUDE_PLUGIN_ROOT}/CLAUDE.md.
+- Input: `$ARGUMENTS` (client URL or industry).
+- Output: `03-Competitor-Report.md` using @${CLAUDE_PLUGIN_ROOT}/templates/competitor-report.md. Update `discovery-context.md`.
+- Summarize: top competitors, biggest content gaps, key differentiation opportunities.

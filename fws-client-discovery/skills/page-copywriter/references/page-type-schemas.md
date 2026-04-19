@@ -9,7 +9,7 @@
 | Service Child | `Service` | `FAQPage`, `BreadcrumbList` |
 | About | `AboutPage` | `Organization` |
 | Contact | `ContactPage` | `Organization` (with `contactPoint`) |
-| FAQ | `FAQPage` | — |
+| FAQ | `FAQPage` |, |
 | Case Study | `Article` | `Review` or `CreativeWork` |
 | Testimonials | `WebPage` | `Review` (per testimonial) |
 | Team | `WebPage` | `Person` (per team member) |
@@ -87,7 +87,7 @@
       "name": "[Question text]",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "[Answer text — plain text, no HTML]"
+        "text": "[Answer text, plain text, no HTML]"
       }
     }
   ]
