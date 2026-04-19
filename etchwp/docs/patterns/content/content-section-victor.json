@@ -1,0 +1,388 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "core/group",
+    "attrs": {
+      "metadata": {
+        "name": "Content Section Victor",
+        "etchData": {
+          "origin": "etch",
+          "name": "Content Section Victor",
+          "styles": [
+            "etch-section-style",
+            "9pr8j0c"
+          ],
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "content-section-victor"
+          },
+          "block": {
+            "type": "html",
+            "tag": "section"
+          }
+        }
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "core/group",
+        "attrs": {
+          "metadata": {
+            "name": "Content Wrapper",
+            "etchData": {
+              "origin": "etch",
+              "name": "Content Wrapper",
+              "styles": [
+                "etch-container-style",
+                "3k03sf6"
+              ],
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "content-section-victor__content-wrapper"
+              },
+              "block": {
+                "type": "html",
+                "tag": "div"
+              }
+            }
+          }
+        },
+        "innerBlocks": [
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "Heading Group",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Heading Group",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "apbl1qv"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "content-section-victor__heading-group"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "div"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/heading",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Heading",
+                      "styles": [
+                        "l70oogu"
+                      ],
+                      "attributes": {
+                        "class": "content-section-victor__heading"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "h2"
+                      }
+                    }
+                  },
+                  "level": 2
+                },
+                "innerBlocks": [],
+                "innerHTML": "<h2 class=\"wp-block-heading\">Write a compelling headline for this section</h2>",
+                "innerContent": [
+                  "<h2 class=\"wp-block-heading\">Write a compelling headline for this section</h2>"
+                ]
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              "</div>"
+            ]
+          },
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "Text Group",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Text Group",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "33twmje",
+                    "sjd57kq"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "content-section-victor__text-group smart-spacing"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "div"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Text",
+                      "styles": [
+                        "s6qjxea"
+                      ],
+                      "attributes": {
+                        "class": "content-section-victor__text"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p> Etch helps you ship clean, scalable WordPress sites faster. Build semantic layouts, wire up dynamic data, and keep full control over your HTML and CSS. </p>",
+                "innerContent": [
+                  "<p> Etch helps you ship clean, scalable WordPress sites faster. Build semantic layouts, wire up dynamic data, and keep full control over your HTML and CSS. </p>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Text",
+                      "styles": [
+                        "s6qjxea"
+                      ],
+                      "attributes": {
+                        "class": "content-section-victor__text"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p> With Automatic.css variables and a grid-first approach, your components stay consistent, accessible, and easy to maintain—no messy overrides or hacks. </p>",
+                "innerContent": [
+                  "<p> With Automatic.css variables and a grid-first approach, your components stay consistent, accessible, and easy to maintain—no messy overrides or hacks. </p>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Text",
+                      "styles": [
+                        "s6qjxea"
+                      ],
+                      "attributes": {
+                        "class": "content-section-victor__text"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p> From templates to patterns, everything is built for performance and clarity. Focus on the work that matters while Etch handles the structure. </p>",
+                "innerContent": [
+                  "<p> From templates to patterns, everything is built for performance and clarity. Focus on the work that matters while Etch handles the structure. </p>"
+                ]
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              null,
+              null,
+              "</div>"
+            ]
+          }
+        ],
+        "innerHTML": "<div class=\"wp-block-group\"></div>",
+        "innerContent": [
+          "<div class=\"wp-block-group\">",
+          null,
+          null,
+          "</div>"
+        ]
+      },
+      {
+        "blockName": "core/image",
+        "attrs": {
+          "metadata": {
+            "name": "Media Wrapper",
+            "etchData": {
+              "origin": "etch",
+              "name": "Media Wrapper",
+              "styles": [
+                "etch-container-style",
+                "9q1ylt7",
+                "s4gkacs"
+              ],
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "content-section-victor__media-wrapper"
+              },
+              "block": {
+                "type": "html",
+                "tag": "figure"
+              },
+              "nestedData": {
+                "img": {
+                  "origin": "etch",
+                  "name": "Media",
+                  "misc": {
+                    "imageData": {
+                      "attachmentId": 34,
+                      "size": ""
+                    }
+                  },
+                  "styles": [
+                    "4na2nhf"
+                  ],
+                  "attributes": {
+                    "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                    "class": "content-section-victor__media",
+                    "alt": "Coffee Cup"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "img"
+                  }
+                }
+              }
+            }
+          },
+          "sizeSlug": "full",
+          "linkDestination": "none"
+        },
+        "innerBlocks": [],
+        "innerHTML": "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>",
+        "innerContent": [
+          "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>"
+        ]
+      }
+    ],
+    "innerHTML": "<div class=\"wp-block-group\"></div>",
+    "innerContent": [
+      "<div class=\"wp-block-group\">",
+      null,
+      null,
+      "</div>"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "9pr8j0c": {
+      "type": "class",
+      "selector": ".content-section-victor",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--container-gap, 1.5em);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "3k03sf6": {
+      "type": "class",
+      "selector": ".content-section-victor__content-wrapper",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  @media (width >= to-rem(900px)) {\n    grid-template-columns: var(--grid-2);\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "apbl1qv": {
+      "type": "class",
+      "selector": ".content-section-victor__heading-group",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "l70oogu": {
+      "type": "class",
+      "selector": ".content-section-victor__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "33twmje": {
+      "type": "class",
+      "selector": ".content-section-victor__text-group",
+      "collection": "default",
+      "css": "body :where(& > *:not(:first-child)) {\n    margin-block-start: 1em;\n  }",
+      "readonly": false
+    },
+    "sjd57kq": {
+      "type": "class",
+      "selector": ".smart-spacing",
+      "collection": "default",
+      "css": "/* \n  This is an ACSS utility class for intelligently spacing rich text content. \n  Learn more at https://automaticcss.com \n  */",
+      "readonly": false
+    },
+    "s6qjxea": {
+      "type": "class",
+      "selector": ".content-section-victor__text",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "9q1ylt7": {
+      "type": "class",
+      "selector": ".content-section-victor__media-wrapper",
+      "collection": "default",
+      "css": "order: -1;",
+      "readonly": false
+    },
+    "4na2nhf": {
+      "type": "class",
+      "selector": ".content-section-victor__media",
+      "collection": "default",
+      "css": "aspect-ratio: 16/6;\n  object-fit: cover;",
+      "readonly": false
+    }
+  }
+}

@@ -1,0 +1,2930 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Pricing Section Bravo"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "pricing-section-bravo"
+      },
+      "styles": [
+        "etch-section-style",
+        "xdu66y5"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/component",
+        "attrs": {
+          "ref": 89,
+          "attributes": {
+            "style": "Center",
+            "showLede": "{false}",
+            "showPrimaryCta": "{false}",
+            "showSecondaryCta": "{false}"
+          }
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Container"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container"
+          },
+          "styles": [
+            "etch-container-style"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3658,
+              "attributes": {
+                "eyebrow": "Sample Card",
+                "heading": "New Plan Name",
+                "currency": "$",
+                "price": "499",
+                "term": "mo",
+                "priceDescription": "flexible payment plan",
+                "buttonLink": "#",
+                "features": "{[{\"itemText\":\"Unlimited 24/7 support\",\"itemStatus\":\"included\"},{\"itemText\":\"Personalized health dashboard\",\"itemStatus\":\"included\"},{\"itemText\":\"Weekly progress reports\",\"itemStatus\":\"included\"},{\"itemText\":\"Access to certified specialists\",\"itemStatus\":\"included\"},{\"itemText\":\"Mobile app access\",\"itemStatus\":\"included\"},{\"itemText\":\"Data export & integrations\",\"itemStatus\":\"included\"},{\"itemText\":\"Family sharing (up to 5 members)\",\"itemStatus\":\"included\"},{\"itemText\":\"Concierge scheduling\",\"itemStatus\":\"excluded\"},{\"itemText\":\"Priority appointment booking\",\"itemStatus\":\"excluded\"}]}",
+                "buttonLabel": "Join the Tribe"
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/slot-content",
+                "attrs": {
+                  "name": "features"
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 3659,
+                      "attributes": {}
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Testimonial List Bravo"
+          },
+          "tag": "ul",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "testimonial-list-bravo"
+          },
+          "styles": [
+            "etch-container-style",
+            "ekxkvgy"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1451,
+                  "attributes": {
+                    "showBadge": "{false}",
+                    "starPosition": "Top",
+                    "showHeadshot": "{false}",
+                    "showName": "{false}",
+                    "showCitation": "{false}",
+                    "truncateWords": "16"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1451,
+                  "attributes": {
+                    "showBadge": "{false}",
+                    "starPosition": "Top",
+                    "showHeadshot": "{false}",
+                    "showName": "{false}",
+                    "showCitation": "{false}",
+                    "truncateWords": "16"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1451,
+                  "attributes": {
+                    "showBadge": "{false}",
+                    "starPosition": "Top",
+                    "showHeadshot": "{false}",
+                    "showName": "{false}",
+                    "showCitation": "{false}",
+                    "truncateWords": "16"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-02-11T12:44:49.832Z",
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "xdu66y5": {
+      "type": "class",
+      "selector": ".pricing-section-bravo",
+      "collection": "default",
+      "css": "--content-width: 1000px;\n  display: flex;\n  flex-direction: column;\n  gap: var(--container-gap);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-inline-size: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "vcsar64": {
+      "type": "class",
+      "selector": ".section-intro",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\n  &[data-intro-style='center' i] {\n    @container (inline-size >= to-rem(700px)) {\n      align-items: center;\n      text-align: center;\n    }\n  }\n  &[data-intro-style='two column' i] {\n    @container (inline-size >= to-rem(700px)) {\n      display: grid;\n      grid-template-columns: var(--grid-3-2);\n      align-items: center;\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "vuwo78z": {
+      "type": "class",
+      "selector": ".section-intro__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 70ch;",
+      "readonly": false
+    },
+    "xq4u8jj": {
+      "type": "class",
+      "selector": ".section-intro__heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .8em);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  font-weight: 400;",
+      "readonly": false
+    },
+    "be9rana": {
+      "type": "class",
+      "selector": ".section-intro__headline",
+      "collection": "default",
+      "css": "font-weight: var(--heading-font-weight, 700);\n  &[data-heading-level=\"h1\"] {\n    font-size: var(--h1);\n  }\n  &[data-heading-level=\"h2\"] {\n    font-size: var(--h2);\n  }",
+      "readonly": false
+    },
+    "bu9irfe": {
+      "type": "class",
+      "selector": ".section-intro__lede",
+      "collection": "default",
+      "css": "text-wrap: balance;\n  line-height: 1.6;",
+      "readonly": false
+    },
+    "z1c4l0y": {
+      "type": "class",
+      "selector": ".section-intro__cta-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1em) / 2);\n  flex-wrap: wrap;\n  max-inline-size: max-content;\n  justify-self: end;",
+      "readonly": false
+    },
+    "4yvhrzp": {
+      "type": "class",
+      "selector": ".section-intro__cta-primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "01lzq3r": {
+      "type": "class",
+      "selector": ".section-intro__cta-secondary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "c1mehy9": {
+      "type": "class",
+      "selector": ".pricing-card-bravo",
+      "collection": "default",
+      "css": "--card-gap: var(--space-m, 1rem);\n  --card-padding: 1rem;\n  padding: var(--card-padding, 1rem);\n  display: grid;\n  gap: var(--card-gap, 1rem);\n  border: var(--border, 1px solid #eee);\n  border-radius: var(--radius, 5px);\n  background-color: var(--bg-ultra-light, #eee);\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= to-rem(800px)) {\n    --card-gap: var(--space-xl);\n    --card-padding: var(--space-l);\n    display: grid;\n    grid-template-columns: var(--grid-2, repeat(2, minmax(0, 1fr)));\n  }",
+      "readonly": false
+    },
+    "vpefppc": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__content-wrapper",
+      "collection": "default",
+      "css": "display: contents;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  @container (inline-size >= to-rem(800px)) {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    min-block-size: to-rem(300px);\n  }",
+      "readonly": false
+    },
+    "pw1bf3d": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__header",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "5r6q82a": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "en5tu2m": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__eyebrow",
+      "collection": "default",
+      "css": "order: -1;",
+      "readonly": false
+    },
+    "m6w0742": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__pricing-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "vkh71zt": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bovsszi": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-currency",
+      "collection": "default",
+      "css": "font-size: var(--h1);",
+      "readonly": false
+    },
+    "gl2vd8p": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-amount",
+      "collection": "default",
+      "css": "font-size: var(--h1);",
+      "readonly": false
+    },
+    "j09p49m": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-term",
+      "collection": "default",
+      "css": "&::before {\n    content: '/';\n  }\n\n  display: inline-flex;\n  flex-direction: row;\n  gap: .25ch;\n  margin-inline-start: .25ch;",
+      "readonly": false
+    },
+    "u1qh20g": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "i3u1nzi": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__button-wrapper",
+      "collection": "default",
+      "css": "order: 1;",
+      "readonly": false
+    },
+    "53gxhmc": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__button",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "li98r7j": {
+      "type": "class",
+      "selector": ".btn--primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "z7n3mof": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  position: relative;\n  justify-content: center;\n\n  &::before {\n    content: '';\n    inline-size: 100%;\n    block-size: 1.5px;\n    background: color-mix(in oklch, var(--black, #000) 10%, transparent);\n    position: absolute;\n    left: 0;\n    top: calc(var(--card-gap) * -0.5);\n  }\n\n  @container (inline-size >= to-rem(800px)) {\n    /* # Vertical Divider Line */\n    &::before {\n      content: '';\n      block-size: calc(100% + var(--card-padding));\n      inline-size: 1.5px;\n      top: 50%;\n      translate: 0% -50%;\n      left: calc(var(--card-gap) * -0.5);\n    }\n  }",
+      "readonly": false
+    },
+    "8ym5wq5": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list-item",
+      "collection": "default",
+      "css": "--icon-color: var(--text-dark-muted);\n  --icon-size: 1em;\n  --icon-include: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20stroke%3D%22%23141B34%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M22%2012C22%206.47715%2017.5228%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022C17.5228%2022%2022%2017.5228%2022%2012Z%22%2F%3E%3Cpath%20d%3D%22M8%2012.5L10.5%2015L16%209%22%2F%3E%3C%2Fsvg%3E);\n  --icon-exclude: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20stroke%3D%22%23141B34%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22square%22%3E%3Cpath%20d%3D%22M22%2012C22%206.47715%2017.5228%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022C17.5228%2022%2022%2017.5228%2022%2012Z%22%2F%3E%3Cpath%20d%3D%22M14.9994%2015L9%209M9.00064%2015L15%209%22%2F%3E%3C%2Fsvg%3E);\n  /* # Default State */\n  &::before {\n    content: '';\n    inline-size: var(--icon-size);\n    block-size: var(--icon-size);\n    background-color: var(--icon-color);\n    mask-image: var(--icon, var(--icon-include));\n    mask-position: center;\n    mask-size: contain;\n    mask-repeat: no-repeat;\n    display: flex;\n    aspect-ratio: 1;\n    translate: 0% 0.4ex;\n  }\n\n  display: flex;\n  flex-direction: row;\n  align-items: start;\n  gap: 1ch;\n  /* # Exclusion State */\n  &[data-item-status='excluded'] {\n    --icon: var(--icon-exclude);\n    opacity: 0.6;\n    position: relative;\n  }\n  /* # Inclusion State */\n  &[data-item-status='included'] {\n  }",
+      "readonly": false
+    },
+    "6dranv5": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list-item-label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "ekxkvgy": {
+      "type": "class",
+      "selector": ".testimonial-list-bravo",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1rem);\n  @media (width >= to-rem(960px)) {\n    grid-template-columns: var(--grid-3, repeat(3, minmax(0, 1fr)));\n  }",
+      "readonly": false
+    },
+    "ov6irl6": {
+      "type": "class",
+      "selector": ".testimonial-card",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, 1lh);\n\n  &[data-star-position='bottom'] .star-rating-alpha {\n    order: 2;\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "jyw00ma": {
+      "type": "class",
+      "selector": ".star-rating-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap) / 3);\n  inline-size: 100%;\n  max-inline-size: max-content;\n  align-items: center;\n  justify-content: start;\n  font-size: var(--font-size);\n  &[data-layout='stacked' i] {\n    display: flex;\n    flex-direction: column;\n    align-items: start;\n  }",
+      "readonly": false
+    },
+    "xs3sigf": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star-group",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: .15em;",
+      "readonly": false
+    },
+    "x7gpurz": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star",
+      "collection": "default",
+      "css": "inline-size: 1em;",
+      "readonly": false
+    },
+    "1t3ud2l": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star--half",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "ge6ni9v": {
+      "type": "class",
+      "selector": ".star-rating-alpha__label",
+      "collection": "default",
+      "css": "line-height: 1;",
+      "readonly": false
+    },
+    "ki8c1ak": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__blockquote",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "h0ywt9x": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__callout",
+      "collection": "default",
+      "css": "font-weight: 700;\n  font-size: 1.15em;",
+      "readonly": false
+    },
+    "7wga5cj": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__paragraph",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "9bl25u8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__caption",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: 1ch;\n  order: 2;\n  * + & {\n    margin-block-start: 1em;\n  }\n  &[data-caption-position='top'] {\n    order: -2;\n    margin-block-start: 0;\n    margin-block-end: 1em;\n  }",
+      "readonly": false
+    },
+    "rsxlfd8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__headshot-wrapper",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "lzo3j2f": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__headshot",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: var(--headshot-size);\n  aspect-ratio: 1;\n  object-fit: cover;\n  border-radius: var(--radius, 0.5rem);",
+      "readonly": false
+    },
+    "tfrqliq": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__citation-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  line-height: 1.25;\n  gap: 0.5lh;\n\tjustify-content: center;",
+      "readonly": false
+    },
+    "eam9oe1": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__name",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "twcamw8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__citation",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "89": {
+      "id": 89,
+      "legacyId": "",
+      "name": "Section Intro",
+      "key": "SectionIntro",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Section Intro"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-intro-style": "{props.style}",
+              "class": "section-intro",
+              "data-etch-note": "Aligns left at 700px via container query"
+            },
+            "styles": [
+              "etch-container-style",
+              "vcsar64"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "section-intro__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "vuwo78z"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "{props.headingLevel}",
+                    "attributes": {
+                      "class": "section-intro__heading",
+                      "tag": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "xq4u8jj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/raw-html",
+                      "attrs": {
+                        "content": "{props.sectionHeading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Headline"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "section-intro__headline",
+                      "data-heading-level": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "be9rana"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/raw-html",
+                      "attrs": {
+                        "content": "{props.sectionHeadline}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.showLede",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showLede"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Lede"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "section-intro__lede"
+                        },
+                        "styles": [
+                          "bu9irfe"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/raw-html",
+                          "attrs": {
+                            "content": "{props.lede}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showPrimaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": "props.showSecondaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  }
+                },
+                "conditionString": "props.showPrimaryCta || props.showSecondaryCta"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "CTA Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "section-intro__cta-wrapper"
+                    },
+                    "styles": [
+                      "z1c4l0y"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showPrimaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showPrimaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Primary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.primaryCtaUrl}",
+                              "class": "section-intro__cta-primary"
+                            },
+                            "styles": [
+                              "4yvhrzp"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.primaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showSecondaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showSecondaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Secondary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.secondaryCtaUrl}",
+                              "class": "section-intro__cta-secondary"
+                            },
+                            "styles": [
+                              "01lzq3r"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.secondaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Style",
+          "key": "style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Left",
+          "selectOptionsString": "Left\nCenter\nTwo Column"
+        },
+        {
+          "name": "Section Heading",
+          "key": "sectionHeading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Section Heading"
+        },
+        {
+          "name": "Heading Level",
+          "key": "headingLevel",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "h2",
+          "selectOptionsString": "h2\nh1"
+        },
+        {
+          "name": "Section Headline",
+          "key": "sectionHeadline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Write a compelling headline."
+        },
+        {
+          "name": "Lede",
+          "key": "lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet."
+        },
+        {
+          "name": "Show Lede",
+          "key": "showLede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Primary CTA Text",
+          "key": "primaryCtaText",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary CTA"
+        },
+        {
+          "name": "Primary CTA URL",
+          "key": "primaryCtaUrl",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "name": "Show Primary CTA",
+          "key": "showPrimaryCta",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Secondary CTA Text",
+          "key": "secondaryCtaText",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Secondary CTA"
+        },
+        {
+          "name": "Secondary CTA URL",
+          "key": "secondaryCtaUrl",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "name": "Show Secondary CTA",
+          "key": "showSecondaryCta",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": ""
+    },
+    "1451": {
+      "id": 1451,
+      "legacyId": "",
+      "name": "Testimonial Card Bravo",
+      "key": "TestimonialCardBravo",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Testimonial Card Bravo"
+            },
+            "tag": "figure",
+            "attributes": {
+              "data-star-position": "{props.starPosition.toLowercase()}",
+              "class": "testimonial-card"
+            },
+            "styles": [
+              "ov6irl6",
+              "s4gkacs"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "Show Stars"
+                },
+                "condition": {
+                  "leftHand": "props.showStars",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.showStars"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/component",
+                  "attrs": {
+                    "ref": 1569,
+                    "attributes": {
+                      "rating": "{props.rating}",
+                      "fontSize": "{props.fontSize}",
+                      "showBadge": "{props.showBadge}",
+                      "layout": "{props.layout}",
+                      "nestedPropSourceId": "51n134a"
+                    }
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Blockquote"
+                },
+                "tag": "blockquote",
+                "attributes": {
+                  "class": "testimonial-card-bravo__blockquote"
+                },
+                "styles": [
+                  "ki8c1ak"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Show Callout"
+                    },
+                    "condition": {
+                      "leftHand": "props.showCallout",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showCallout"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Callout"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "testimonial-card-bravo__callout"
+                        },
+                        "styles": [
+                          "h0ywt9x"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.callout}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Paragraph"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "testimonial-card-bravo__paragraph"
+                    },
+                    "styles": [
+                      "7wga5cj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.quote.truncateWords(props.truncateWords)}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "Show Caption Elements"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showHeadshot",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": {
+                      "leftHand": "props.showName",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "operator": "||",
+                    "rightHand": {
+                      "leftHand": "props.showCitation",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    }
+                  }
+                },
+                "conditionString": "props.showHeadshot || props.showName || props.showCitation"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Caption"
+                    },
+                    "tag": "figcaption",
+                    "attributes": {
+                      "data-caption-position": "{props.captionPosition.toLowercase()}",
+                      "class": "testimonial-card-bravo__caption"
+                    },
+                    "styles": [
+                      "9bl25u8"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Show Headshot"
+                        },
+                        "condition": {
+                          "leftHand": "props.showHeadshot",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showHeadshot"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Headshot Wrapper"
+                            },
+                            "tag": "figure",
+                            "attributes": {
+                              "class": "testimonial-card-bravo__headshot-wrapper"
+                            },
+                            "styles": [
+                              "rsxlfd8"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/dynamic-image",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Headshot"
+                                },
+                                "tag": "img",
+                                "attributes": {
+                                  "class": "testimonial-card-bravo__headshot",
+                                  "mediaId": "1352",
+                                  "style": "--headshot-size: {props.headshotSize};"
+                                },
+                                "styles": [
+                                  "lzo3j2f"
+                                ]
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Show Citation Wrapper"
+                        },
+                        "condition": {
+                          "leftHand": {
+                            "leftHand": "props.showName",
+                            "operator": "isTruthy",
+                            "rightHand": null
+                          },
+                          "operator": "||",
+                          "rightHand": {
+                            "leftHand": "props.showCitation",
+                            "operator": "isTruthy",
+                            "rightHand": null
+                          }
+                        },
+                        "conditionString": "props.showName || props.showCitation"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Citation Wrapper"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "testimonial-card-bravo__citation-wrapper"
+                            },
+                            "styles": [
+                              "tfrqliq"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/condition",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Show Name"
+                                },
+                                "condition": {
+                                  "leftHand": "props.showName",
+                                  "operator": "isTruthy",
+                                  "rightHand": null
+                                },
+                                "conditionString": "props.showName"
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Name"
+                                    },
+                                    "tag": "span",
+                                    "attributes": {
+                                      "class": "testimonial-card-bravo__name"
+                                    },
+                                    "styles": [
+                                      "eam9oe1"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/text",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Text"
+                                        },
+                                        "content": "{props.name}"
+                                      },
+                                      "innerBlocks": [],
+                                      "innerHTML": "",
+                                      "innerContent": []
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/condition",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Show Citation"
+                                },
+                                "condition": {
+                                  "leftHand": "props.showCitation",
+                                  "operator": "isTruthy",
+                                  "rightHand": null
+                                },
+                                "conditionString": "props.showCitation"
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Citation"
+                                    },
+                                    "tag": "cite",
+                                    "attributes": {
+                                      "class": "testimonial-card-bravo__citation"
+                                    },
+                                    "styles": [
+                                      "twcamw8"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/text",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Text"
+                                        },
+                                        "content": "{props.citation}"
+                                      },
+                                      "innerBlocks": [],
+                                      "innerHTML": "",
+                                      "innerContent": []
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Rating",
+          "key": "rating",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5"
+        },
+        {
+          "name": "Layout",
+          "key": "layout",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nStacked"
+        },
+        {
+          "name": "Font Size",
+          "key": "fontSize",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "name": "Show Badge",
+          "key": "showBadge",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Callout",
+          "key": "callout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is a callout."
+        },
+        {
+          "name": "Quote",
+          "key": "quote",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi neque? Aliquid quibusdam nisi magni repudiandae quo nobis eligendi distinctio explicabo unde. Libero vero quibusdam atque laudantium temporibus itaque asperiores."
+        },
+        {
+          "name": "Name",
+          "key": "name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Jenny Juice"
+        },
+        {
+          "name": "Citation",
+          "key": "citation",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Publication Alpha"
+        },
+        {
+          "name": "Star Position",
+          "key": "starPosition",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Bottom",
+          "selectOptionsString": "Bottom\nTop"
+        },
+        {
+          "name": "Caption Position",
+          "key": "captionPosition",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Bottom",
+          "selectOptionsString": "Bottom\nTop"
+        },
+        {
+          "name": "Headshot Size",
+          "key": "headshotSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5rem"
+        },
+        {
+          "name": "Show Stars",
+          "key": "showStars",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Show Callout",
+          "key": "showCallout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Show Headshot",
+          "key": "showHeadshot",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Show Name",
+          "key": "showName",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Show Citation",
+          "key": "showCitation",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Truncate Words",
+          "key": "truncateWords",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "75"
+        }
+      ],
+      "description": ""
+    },
+    "1569": {
+      "id": 1569,
+      "legacyId": "",
+      "name": "Star Rating Alpha",
+      "key": "StarRatingAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Star Rating Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "role": "img",
+              "aria-label": "{props.rating} star rating",
+              "data-layout": "{props.layout}",
+              "style": "--font-size: {props.fontSize};",
+              "class": "star-rating-alpha"
+            },
+            "styles": [
+              "jyw00ma"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Star Group"
+                },
+                "tag": "div",
+                "attributes": {
+                  "role": "none",
+                  "aria-hidden": "true",
+                  "class": "star-rating-alpha__star-group"
+                },
+                "styles": [
+                  "xs3sigf"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 1
+                    },
+                    "conditionString": "props.rating >= 1"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 2
+                    },
+                    "conditionString": "props.rating >= 2"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 3
+                    },
+                    "conditionString": "props.rating >= 3"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 4
+                    },
+                    "conditionString": "props.rating >= 4"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 5
+                    },
+                    "conditionString": "props.rating >= 5"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": {
+                        "leftHand": "props.rating.includes('.')",
+                        "operator": "isTruthy",
+                        "rightHand": null
+                      },
+                      "operator": "&&",
+                      "rightHand": {
+                        "leftHand": "props.rating.endsWith('.0')",
+                        "operator": "isFalsy",
+                        "rightHand": null
+                      }
+                    },
+                    "conditionString": "props.rating.includes('.') && !props.rating.endsWith('.0')"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12.1965%201.27048C12.651%201.36378%2012.9772%201.7638%2012.9772%202.22779V18.4504L5.13033%2022.6354C4.77743%2022.8237%204.34546%2022.7778%204.03989%2022.5198C3.73433%2022.2617%203.61684%2021.8435%203.74332%2021.4641L6.00551%2014.6775L1.50414%209.72605C1.24393%209.43983%201.17704%209.02706%201.33353%208.67331C1.49002%208.31956%201.84044%208.0914%202.22726%208.0914H8.42375L11.1017%201.84283C11.2845%201.41635%2011.7419%201.17719%2012.1965%201.27048Z%22%20fill%3D%22currentColor%22%20%2F%3E%3Cpath%20d%3D%22M15.4112%207.70643L15.5762%208.0914H21.7727C22.1595%208.0914%2022.5099%208.31956%2022.6664%208.67331C22.8229%209.02706%2022.756%209.43983%2022.4958%209.72605L17.9944%2014.6775L20.2566%2021.4641C20.3831%2021.8435%2020.2656%2022.2617%2019.96%2022.5198C19.6545%2022.7778%2019.2225%2022.8237%2018.8696%2022.6354L14.5%2020.305V18.342H14.9728L17.6276%2019.7579L15.7782%2014.2097L19.5635%2010.0459H14.5V7.70643H15.4112Z%22%20fill%3D%22currentColor%22%20%2F%3E%3C%2Fsvg%3E",
+                          "class": "star-rating-alpha__star star-rating-alpha__star--half"
+                        },
+                        "styles": [
+                          "x7gpurz",
+                          "1t3ud2l"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "props.showBadge",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.showBadge"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "class": "star-rating-alpha__label"
+                    },
+                    "styles": [
+                      "ge6ni9v"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.rating} Star Rating"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Rating",
+          "key": "rating",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "3.25"
+        },
+        {
+          "name": "Layout",
+          "key": "layout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nStacked"
+        },
+        {
+          "name": "Font Size",
+          "key": "fontSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "name": "Show Badge",
+          "key": "showBadge",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": ""
+    },
+    "3658": {
+      "id": 3658,
+      "legacyId": "",
+      "name": "Pricing Card Bravo",
+      "key": "PricingCardBravo",
+      "properties": [
+        {
+          "name": "Eyebrow",
+          "key": "eyebrow",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "HSA/FSA Eligible"
+        },
+        {
+          "name": "Heading",
+          "key": "heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Function Membership"
+        },
+        {
+          "name": "Currency",
+          "key": "currency",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "$"
+        },
+        {
+          "name": "Price",
+          "key": "price",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1"
+        },
+        {
+          "name": "Term",
+          "key": "term",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "day"
+        },
+        {
+          "name": "Price Description",
+          "key": "priceDescription",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "charged annually at $365"
+        },
+        {
+          "name": "Button Label",
+          "key": "buttonLabel",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Join Function"
+        },
+        {
+          "name": "Button Link",
+          "key": "buttonLink",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Features",
+          "key": "features",
+          "keyTouched": false,
+          "type": {
+            "primitive": "object"
+          },
+          "default": [
+            {
+              "itemText": "Feature 1",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 2",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 3",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 4",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 5",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 6",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 7",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 8",
+              "itemStatus": "excluded"
+            },
+            {
+              "itemText": "Feature 9",
+              "itemStatus": "excluded"
+            }
+          ]
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Pricing Card Bravo"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "pricing-card-bravo"
+            },
+            "styles": [
+              "c1mehy9"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "class": "pricing-card-bravo__content-wrapper"
+                },
+                "styles": [
+                  "vpefppc"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Header"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__header"
+                    },
+                    "styles": [
+                      "pw1bf3d"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Heading"
+                        },
+                        "tag": "h2",
+                        "attributes": {
+                          "class": "pricing-card-bravo__heading"
+                        },
+                        "styles": [
+                          "5r6q82a"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.heading}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Eyebrow"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__eyebrow"
+                        },
+                        "styles": [
+                          "en5tu2m"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.eyebrow}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Pricing Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__pricing-wrapper"
+                    },
+                    "styles": [
+                      "m6w0742"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__price"
+                        },
+                        "styles": [
+                          "vkh71zt"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Currency"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-currency"
+                            },
+                            "styles": [
+                              "bovsszi"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.currency}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Amount"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-amount"
+                            },
+                            "styles": [
+                              "gl2vd8p"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.price}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Term"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-term"
+                            },
+                            "styles": [
+                              "j09p49m"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.term}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price Description"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__price-description"
+                        },
+                        "styles": [
+                          "u1qh20g"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.priceDescription}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Button Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__button-wrapper"
+                    },
+                    "styles": [
+                      "i3u1nzi"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Button"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "{props.buttonLink}",
+                          "class": "pricing-card-bravo__button btn--primary"
+                        },
+                        "styles": [
+                          "53gxhmc",
+                          "li98r7j"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.buttonLabel}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List"
+                },
+                "tag": "ul",
+                "attributes": {
+                  "class": "pricing-card-bravo__list"
+                },
+                "styles": [
+                  "z7n3mof"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "features"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    },
+    "3659": {
+      "id": 3659,
+      "legacyId": "",
+      "name": "Pricing Card Bravo List Item",
+      "key": "PricingCardBravoListItem",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "List Item"
+            },
+            "tag": "li",
+            "attributes": {
+              "class": "pricing-card-bravo__list-item",
+              "data-item-status": "{props.status.toLowercase()}"
+            },
+            "styles": [
+              "8ym5wq5"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List Item Label"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "pricing-card-bravo__list-item-label"
+                },
+                "styles": [
+                  "6dranv5"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "{props.label}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Label",
+          "key": "label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum dolor."
+        },
+        {
+          "name": "Status",
+          "key": "status",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Included",
+          "selectOptionsString": "Included\nExcluded"
+        }
+      ],
+      "description": ""
+    }
+  }
+}

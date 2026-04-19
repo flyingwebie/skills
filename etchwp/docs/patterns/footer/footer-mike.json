@@ -1,0 +1,2147 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 1995,
+      "attributes": {
+        "minimalist": "{false}"
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "msh0idy": {
+      "type": "class",
+      "selector": ".footer-mike",
+      "collection": "default",
+      "css": "gap: var(--container-gap, 2rem);\n  background: var(--neutral-ultra-light, #eee);\n  &[data-minimalist=\"true\" i] {\n    padding-block: var(--space-xs, .8rem);\n  }",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "ajhw284": {
+      "type": "class",
+      "selector": ".footer-mike__inner",
+      "collection": "default",
+      "css": "gap: var(--content-gap);\n  @media (width >= to-rem(1000px)) {\n    display: grid;\n    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);\n    align-items: stretch;\n  }",
+      "readonly": false
+    },
+    "br5c2o5": {
+      "type": "class",
+      "selector": ".footer-mike__nav",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\tjustify-content: center;",
+      "readonly": false
+    },
+    "18aukj6": {
+      "type": "class",
+      "selector": ".footer-mike__nav-row",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  flex-wrap: wrap;\n  @media (width <= to-rem(680px)) {\n    flex-direction: column;\n    align-items: start;\n  }",
+      "readonly": false
+    },
+    "dea0rh2": {
+      "type": "class",
+      "selector": ".footer-mike__nav-row-heading",
+      "collection": "default",
+      "css": "font-size: var(--h4, 1rem);",
+      "readonly": false
+    },
+    "tl70j34": {
+      "type": "class",
+      "selector": ".footer-mike__nav-list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  align-items: center;\n  flex-wrap: wrap;",
+      "readonly": false
+    },
+    "p6um0mg": {
+      "type": "class",
+      "selector": ".footer-mike__nav-item",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "qpu9isu": {
+      "type": "class",
+      "selector": ".footer-mike__nav-link",
+      "collection": "default",
+      "css": "color: var(--text-dark-muted);\n  text-wrap: nowrap;",
+      "readonly": false
+    },
+    "h6x7f6j": {
+      "type": "class",
+      "selector": ".footer-mike__cta",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  padding: var(--space-l, 1.25rem);\n  background-color: var(--white, #fff);\n  border-radius: var(--radius, 0.5rem);\n  border: var(--border, 1px solid #ddd);",
+      "readonly": false
+    },
+    "2ve3j7t": {
+      "type": "class",
+      "selector": ".footer-mike__cta-heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "zz51fb4": {
+      "type": "class",
+      "selector": ".footer-mike__cta-description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "o5fz2gz": {
+      "type": "class",
+      "selector": ".footer-mike__cta-link",
+      "collection": "default",
+      "css": "margin-block-start: auto;",
+      "readonly": false
+    },
+    "10k0uci": {
+      "type": "class",
+      "selector": ".footer-mike__lower",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: var(--content-gap, 1rem);\n  flex-wrap: wrap;\n  @media (width <= to-rem(640px)) {\n    gap: calc(var(--content-gap, 1rem) / 2);\n  }",
+      "readonly": false
+    },
+    "klrtaus": {
+      "type": "class",
+      "selector": ".footer-mike__copyright-text",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "rt8st66": {
+      "type": "class",
+      "selector": ".footer-mike__legal",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: var(--content-gap, 1rem);\n  flex-wrap: wrap;",
+      "readonly": false
+    },
+    "zhlh16f": {
+      "type": "class",
+      "selector": ".footer-mike__legal-link",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "1995": {
+      "id": 1995,
+      "name": "Footer Mike",
+      "key": "FooterMike",
+      "properties": [
+        {
+          "key": "ctaHeading",
+          "name": "CTA Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "A compelling call to action goes here."
+        },
+        {
+          "key": "ctaDescription",
+          "name": "CTA Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla quisquam, eveniet nisi atque repellendus ab."
+        },
+        {
+          "key": "ctaLinkText",
+          "name": "CTA Link Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Call to action"
+        },
+        {
+          "key": "ctaLink",
+          "name": "CTA Link\n",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "/"
+        },
+        {
+          "key": "minimalist",
+          "name": "Minimalist",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Footer Mike"
+            },
+            "tag": "section",
+            "attributes": {
+              "data-etch-element": "section",
+              "class": "footer-mike",
+              "data-minimalist": "{props.minimalist}"
+            },
+            "styles": [
+              "etch-section-style",
+              "msh0idy"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "props.minimalist",
+                  "operator": "isFalsy",
+                  "rightHand": null
+                },
+                "conditionString": "!props.minimalist"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Inner"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "container",
+                      "class": "footer-mike__inner"
+                    },
+                    "styles": [
+                      "etch-container-style",
+                      "ajhw284"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Nav"
+                        },
+                        "tag": "nav",
+                        "attributes": {
+                          "class": "footer-mike__nav",
+                          "aria-label": "footer"
+                        },
+                        "styles": [
+                          "br5c2o5"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Nav Row"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "footer-mike__nav-row"
+                            },
+                            "styles": [
+                              "18aukj6"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav Row Heading"
+                                },
+                                "tag": "h2",
+                                "attributes": {
+                                  "class": "footer-mike__nav-row-heading"
+                                },
+                                "styles": [
+                                  "dea0rh2"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/text",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Text"
+                                    },
+                                    "content": "About"
+                                  },
+                                  "innerBlocks": [],
+                                  "innerHTML": "",
+                                  "innerContent": []
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav List"
+                                },
+                                "tag": "ul",
+                                "attributes": {
+                                  "class": "footer-mike__nav-list"
+                                },
+                                "styles": [
+                                  "tl70j34"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n\n\n\n\n\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Nav Row"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "footer-mike__nav-row"
+                            },
+                            "styles": [
+                              "18aukj6"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav Row Heading"
+                                },
+                                "tag": "h2",
+                                "attributes": {
+                                  "class": "footer-mike__nav-row-heading"
+                                },
+                                "styles": [
+                                  "dea0rh2"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/text",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Text"
+                                    },
+                                    "content": "Features"
+                                  },
+                                  "innerBlocks": [],
+                                  "innerHTML": "",
+                                  "innerContent": []
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav List"
+                                },
+                                "tag": "ul",
+                                "attributes": {
+                                  "class": "footer-mike__nav-list"
+                                },
+                                "styles": [
+                                  "tl70j34"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n\n\n\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Nav Row"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "footer-mike__nav-row"
+                            },
+                            "styles": [
+                              "18aukj6"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav Row Heading"
+                                },
+                                "tag": "h2",
+                                "attributes": {
+                                  "class": "footer-mike__nav-row-heading"
+                                },
+                                "styles": [
+                                  "dea0rh2"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/text",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Text"
+                                    },
+                                    "content": "Support"
+                                  },
+                                  "innerBlocks": [],
+                                  "innerHTML": "",
+                                  "innerContent": []
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav List"
+                                },
+                                "tag": "ul",
+                                "attributes": {
+                                  "class": "footer-mike__nav-list"
+                                },
+                                "styles": [
+                                  "tl70j34"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n\n\n\n\n\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Nav Row"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "footer-mike__nav-row"
+                            },
+                            "styles": [
+                              "18aukj6"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav Row Heading"
+                                },
+                                "tag": "h2",
+                                "attributes": {
+                                  "class": "footer-mike__nav-row-heading"
+                                },
+                                "styles": [
+                                  "dea0rh2"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/text",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Text"
+                                    },
+                                    "content": "Resources"
+                                  },
+                                  "innerBlocks": [],
+                                  "innerHTML": "",
+                                  "innerContent": []
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav List"
+                                },
+                                "tag": "ul",
+                                "attributes": {
+                                  "class": "footer-mike__nav-list"
+                                },
+                                "styles": [
+                                  "tl70j34"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n\n\n\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Nav Row"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "footer-mike__nav-row"
+                            },
+                            "styles": [
+                              "18aukj6"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav Row Heading"
+                                },
+                                "tag": "h2",
+                                "attributes": {
+                                  "class": "footer-mike__nav-row-heading"
+                                },
+                                "styles": [
+                                  "dea0rh2"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/text",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Text"
+                                    },
+                                    "content": "Social"
+                                  },
+                                  "innerBlocks": [],
+                                  "innerHTML": "",
+                                  "innerContent": []
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav List"
+                                },
+                                "tag": "ul",
+                                "attributes": {
+                                  "class": "footer-mike__nav-list"
+                                },
+                                "styles": [
+                                  "tl70j34"
+                                ]
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Third Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Another Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                },
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav Item"
+                                    },
+                                    "tag": "li",
+                                    "attributes": {
+                                      "class": "footer-mike__nav-item"
+                                    },
+                                    "styles": [
+                                      "p6um0mg"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/element",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Link"
+                                        },
+                                        "tag": "a",
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "footer-mike__nav-link"
+                                        },
+                                        "styles": [
+                                          "qpu9isu"
+                                        ]
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "etch/text",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Text"
+                                            },
+                                            "content": "Sample Link"
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "",
+                                          "innerContent": []
+                                        }
+                                      ],
+                                      "innerHTML": "\n\n",
+                                      "innerContent": [
+                                        "\n",
+                                        null,
+                                        "\n"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n\n\n\n\n\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "CTA"
+                        },
+                        "tag": "div",
+                        "attributes": {
+                          "class": "footer-mike__cta"
+                        },
+                        "styles": [
+                          "h6x7f6j"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Heading"
+                            },
+                            "tag": "h2",
+                            "attributes": {
+                              "class": "footer-mike__cta-heading"
+                            },
+                            "styles": [
+                              "2ve3j7t"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.ctaHeading}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Description"
+                            },
+                            "tag": "p",
+                            "attributes": {
+                              "class": "footer-mike__cta-description"
+                            },
+                            "styles": [
+                              "zz51fb4"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.ctaDescription}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Link"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "#",
+                              "class": "footer-mike__cta-link"
+                            },
+                            "styles": [
+                              "o5fz2gz"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.ctaLinkText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Lower"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "container",
+                  "class": "footer-mike__lower"
+                },
+                "styles": [
+                  "etch-container-style",
+                  "10k0uci"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Copyright Text"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "footer-mike__copyright-text"
+                    },
+                    "styles": [
+                      "klrtaus"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Copyright {site.currentDate.format('Y')} © {site.name}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Legal"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "footer-mike__legal"
+                    },
+                    "styles": [
+                      "rt8st66"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Legal Link"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "#",
+                          "class": "footer-mike__legal-link"
+                        },
+                        "styles": [
+                          "zhlh16f"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Privacy Policy"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Legal Link"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "#",
+                          "class": "footer-mike__legal-link"
+                        },
+                        "styles": [
+                          "zhlh16f"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Disclaimer"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Legal Link"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "#",
+                          "class": "footer-mike__legal-link"
+                        },
+                        "styles": [
+                          "zhlh16f"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Terms of Use"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

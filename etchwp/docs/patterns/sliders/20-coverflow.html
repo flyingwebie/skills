@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      :root {
+        --swiper-navigation-color: rgba(192, 0, 250, 1);
+
+        --swiper-pagination-color: rgba(192, 0, 250, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(192, 0, 250, 1);
+      }
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 60%;
+
+        padding: 48px 0px;
+
+        font-family: Exo;
+        font-synthesis-weight: none;
+        font-synthesis-style: none;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-b3c1 {
+        background-color: rgba(51, 51, 51, 1);
+        border: 4px solid rgba(192, 0, 250, 1);
+        border-radius: 12px;
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-db52 {
+        padding: 24px 24px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      .swiper-slide-block-d3ac {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 640px;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: rgba(40, 5, 53, 0.78);
+        border-radius: 16px;
+        padding: 24px 24px;
+      }
+      .swiper-slide-text-f12a {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-text-5e13 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-tomato-marissa-610">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/e85/e851f527ab0658519436342ee73da191.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Ghostwire: Tokyo
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                After strange disappearances hit Tokyo's population, it's up to
+                you to uncover the source and purge the city of a strange, new
+                evil
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/4b3/4b3f6c745e2cea93b4a92f69638f2e9f.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">Stray</div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Lost, alone, and separated from family, a stray cat must
+                untangle an ancient mystery to escape a long-forgotten cybercity
+                and find the way home
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/3e8/3e81585ecda204d4f4b80a041b069adb.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                S.T.A.L.K.E.R. 2
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                S.T.A.L.K.E.R. 2 is a brand-new entry in the legendary series,
+                enjoyed by millions of players worldwide
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/85d/85dc9149fe3d2c9fed5d0d73cd9940f7.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Senua's Saga: Hellblade II
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Senua's Saga: Hellblade II - the next entry in the Hellblade
+                franchise from developer Ninja Theory
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/ba8/ba82c971336adfd290e4c0eab6504fcf.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Starfield
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Starfield is the first new universe in 25 years from Bethesda
+                Game Studios
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/1c3/1c305096502c475c00276c827f0fd697.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                God of War: Ragnarök
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Kratos and Atreus must journey to each of the Nine Realms in
+                search of answers as they prepare for the prophesied battle that
+                will end the world
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/580/580515de11a1b996918fa3ac118210bc.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Teardown
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Plan the perfect heist using creative problem solving, brute
+                force and everything around you
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/400/4002e3aa52cf33d184f0f74cc2348134.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Forspoken
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Project Athia is the culmination of Luminous Productions'
+                philosophy to create a completely new and fresh gaming
+                experiences
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/bde/bdef96f7782fba0ff62dabc37ff4b1f0.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                V Rising
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                A Vampire Survival Experience Awaken as a weakened vampire after
+                centuries of slumber
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-b3c1">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            loading="lazy"
+            src="https://api.rawg.io/media/resize/1280/-/games/1ae/1ae48966d4c59da2224fe769e93c3af6.jpg/"
+          />
+
+          <div class="swiper-lazy-preloader"></div>
+
+          <div class="swiper-slide-content swiper-slide-content-db52">
+            <div class="swiper-slide-block swiper-slide-block-d3ac">
+              <div class="swiper-slide-text swiper-slide-text-f12a">
+                Hogwarts Legacy
+              </div>
+              <div class="swiper-slide-text swiper-slide-text-5e13">
+                Hogwarts Legacy is an immersive, open-world action RPG set in
+                the world first introduced in the Harry Potter books
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        effect: "coverflow",
+        coverflowEffect: { stretch: 100 },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        pagination: { el: ".swiper-pagination" },
+        lazy: { enabled: true },
+        watchSlidesProgress: true,
+      });
+    </script>
+  </body>
+</html>

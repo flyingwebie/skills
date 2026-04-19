@@ -1,0 +1,771 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "core/group",
+    "attrs": {
+      "metadata": {
+        "name": "Hero Victor",
+        "etchData": {
+          "origin": "etch",
+          "name": "Hero Victor",
+          "styles": [
+            "etch-section-style",
+            "9hsnspf"
+          ],
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "hero-victor"
+          },
+          "block": {
+            "type": "html",
+            "tag": "section"
+          }
+        }
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "core/group",
+        "attrs": {
+          "metadata": {
+            "name": "Main",
+            "etchData": {
+              "origin": "etch",
+              "name": "Main",
+              "styles": [
+                "etch-container-style",
+                "bdu6ypp"
+              ],
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "hero-victor__main"
+              },
+              "block": {
+                "type": "html",
+                "tag": "div"
+              }
+            }
+          }
+        },
+        "innerBlocks": [
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Content Wrapper",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "tri7sum"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "hero-victor__content-wrapper"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "div"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/heading",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Heading",
+                      "styles": [
+                        "w9bc08o"
+                      ],
+                      "attributes": {
+                        "class": "hero-victor__heading"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "h1"
+                      }
+                    }
+                  },
+                  "level": 1
+                },
+                "innerBlocks": [],
+                "innerHTML": "<h1 class=\"wp-block-heading\">A compelling headline goes here.</h1>",
+                "innerContent": [
+                  "<h1 class=\"wp-block-heading\">A compelling headline goes here.</h1>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Text",
+                      "styles": [
+                        "4g3jni2"
+                      ],
+                      "attributes": {
+                        "class": "hero-victor__text"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil! In suscipit necessitatibus cupiditate veniam?</p>",
+                "innerContent": [
+                  "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, nihil! In suscipit necessitatibus cupiditate veniam?</p>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Anchor",
+                    "etchData": {
+                      "removeWrapper": true,
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      },
+                      "origin": "etch",
+                      "name": "Anchor",
+                      "nestedData": {
+                        "qtb8vct": {
+                          "origin": "etch",
+                          "name": "Anchor",
+                          "styles": [
+                            "8cxemjh"
+                          ],
+                          "attributes": {
+                            "href": "#",
+                            "class": "hero-victor__anchor"
+                          },
+                          "block": {
+                            "type": "html",
+                            "tag": "a"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p><a data-etch-ref=\"qtb8vct\">Call to action</a></p>",
+                "innerContent": [
+                  "<p><a data-etch-ref=\"qtb8vct\">Call to action</a></p>"
+                ]
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              null,
+              null,
+              "</div>"
+            ]
+          },
+          {
+            "blockName": "core/image",
+            "attrs": {
+              "metadata": {
+                "name": "Media Wrapper",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Media Wrapper",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "dcrfn03",
+                    "s4gkacs"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "hero-victor__media-wrapper"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "figure"
+                  },
+                  "nestedData": {
+                    "img": {
+                      "origin": "etch",
+                      "name": "Image",
+                      "misc": {
+                        "imageData": {
+                          "attachmentId": 34,
+                          "size": "large"
+                        }
+                      },
+                      "styles": [
+                        "b9eb80y"
+                      ],
+                      "attributes": {
+                        "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp",
+                        "alt": "Coffee Cup",
+                        "class": "hero-victor__image",
+                        "srcset": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp 1024w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-300x200.webp 300w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-768x513.webp 768w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1536x1026.webp 1536w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp 1920w",
+                        "sizes": "(max-width: 1024px) 100vw, 1024px"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "img"
+                      }
+                    }
+                  }
+                }
+              },
+              "sizeSlug": "full",
+              "linkDestination": "none"
+            },
+            "innerBlocks": [],
+            "innerHTML": "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp\" alt=\"Coffee Cup\" srcset=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp 1024w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-300x200.webp 300w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-768x513.webp 768w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1536x1026.webp 1536w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>",
+            "innerContent": [
+              "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp\" alt=\"Coffee Cup\" srcset=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp 1024w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-300x200.webp 300w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-768x513.webp 768w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1536x1026.webp 1536w, https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp 1920w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>"
+            ]
+          }
+        ],
+        "innerHTML": "<div class=\"wp-block-group\"></div>",
+        "innerContent": [
+          "<div class=\"wp-block-group\">",
+          null,
+          null,
+          "</div>"
+        ]
+      },
+      {
+        "blockName": "core/group",
+        "attrs": {
+          "metadata": {
+            "name": "List",
+            "etchData": {
+              "origin": "etch",
+              "name": "List",
+              "styles": [
+                "etch-container-style",
+                "b369c0t"
+              ],
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "hero-victor__list"
+              },
+              "block": {
+                "type": "html",
+                "tag": "ul"
+              }
+            }
+          }
+        },
+        "innerBlocks": [
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "List Item",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "List Item",
+                  "styles": [
+                    "f3p3mnz"
+                  ],
+                  "attributes": {
+                    "class": "hero-victor__list-item"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "li"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/block",
+                "attrs": {
+                  "metadata": {
+                    "etchData": {
+                      "origin": "etch",
+                      "attributes": {
+                        "hasIcon": "{false}",
+                        "heading": "Selling Point 1",
+                        "description": "This is a description of the selling point. It shouldn't be very long."
+                      },
+                      "block": {
+                        "type": "component",
+                        "component": 593,
+                        "innerBlocks": []
+                      }
+                    }
+                  },
+                  "ref": 593
+                },
+                "innerBlocks": [],
+                "innerHTML": "",
+                "innerContent": []
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              "</div>"
+            ]
+          },
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "List Item",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "List Item",
+                  "styles": [
+                    "f3p3mnz"
+                  ],
+                  "attributes": {
+                    "class": "hero-victor__list-item"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "li"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/block",
+                "attrs": {
+                  "metadata": {
+                    "etchData": {
+                      "origin": "etch",
+                      "attributes": {
+                        "heading": "Selling Point 2",
+                        "description": "This is a description of the selling point. It shouldn't be very long.",
+                        "hasIcon": "{false}"
+                      },
+                      "block": {
+                        "type": "component",
+                        "component": 593,
+                        "innerBlocks": []
+                      }
+                    }
+                  },
+                  "ref": 593
+                },
+                "innerBlocks": [],
+                "innerHTML": "",
+                "innerContent": []
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              "</div>"
+            ]
+          },
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "List Item",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "List Item",
+                  "styles": [
+                    "f3p3mnz"
+                  ],
+                  "attributes": {
+                    "class": "hero-victor__list-item"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "li"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/block",
+                "attrs": {
+                  "metadata": {
+                    "etchData": {
+                      "origin": "etch",
+                      "attributes": {
+                        "heading": "Selling Point 3",
+                        "description": "This is a description of the selling point. It shouldn't be very long.",
+                        "hasIcon": "{false}"
+                      },
+                      "block": {
+                        "type": "component",
+                        "component": 593,
+                        "innerBlocks": []
+                      }
+                    }
+                  },
+                  "ref": 593
+                },
+                "innerBlocks": [],
+                "innerHTML": "",
+                "innerContent": []
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              "</div>"
+            ]
+          }
+        ],
+        "innerHTML": "<div class=\"wp-block-group\"></div>",
+        "innerContent": [
+          "<div class=\"wp-block-group\">",
+          null,
+          null,
+          null,
+          "</div>"
+        ]
+      }
+    ],
+    "innerHTML": "<div class=\"wp-block-group\"></div>",
+    "innerContent": [
+      "<div class=\"wp-block-group\">",
+      null,
+      null,
+      "</div>"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "9hsnspf": {
+      "type": "class",
+      "selector": ".hero-victor",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1.5em);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "bdu6ypp": {
+      "type": "class",
+      "selector": ".hero-victor__main",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  @media (width >= rem(900px)) {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "tri7sum": {
+      "type": "class",
+      "selector": ".hero-victor__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 40ch;\n  justify-content: center;",
+      "readonly": false
+    },
+    "w9bc08o": {
+      "type": "class",
+      "selector": ".hero-victor__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "4g3jni2": {
+      "type": "class",
+      "selector": ".hero-victor__text",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "8cxemjh": {
+      "type": "class",
+      "selector": ".hero-victor__anchor",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "dcrfn03": {
+      "type": "class",
+      "selector": ".hero-victor__media-wrapper",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "b9eb80y": {
+      "type": "class",
+      "selector": ".hero-victor__image",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "b369c0t": {
+      "type": "class",
+      "selector": ".hero-victor__list",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  @media (width >= rem(900px)) {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }",
+      "readonly": false
+    },
+    "f3p3mnz": {
+      "type": "class",
+      "selector": ".hero-victor__list-item",
+      "collection": "default",
+      "css": "padding-block-start: 1em;\n  border-block-start: 1.5px solid var(--black, #000);",
+      "readonly": false
+    },
+    "wqsxr3a": {
+      "type": "class",
+      "selector": ".feature-card-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, .5em);",
+      "readonly": false
+    },
+    "vdz15sz": {
+      "type": "class",
+      "selector": ".feature-card-alpha__icon",
+      "collection": "default",
+      "css": "inline-size: var(--icon-size, 38px);",
+      "readonly": false
+    },
+    "yafaqwj": {
+      "type": "class",
+      "selector": ".feature-card-alpha__heading",
+      "collection": "default",
+      "css": "font-size: var(--h3, 22px);",
+      "readonly": false
+    },
+    "3sawohi": {
+      "type": "class",
+      "selector": ".feature-card-alpha__description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "593": {
+      "id": 593,
+      "name": "Feature Card Alpha",
+      "key": "FeatureCardAlpha",
+      "blocks": [
+        {
+          "blockName": "core/group",
+          "attrs": {
+            "metadata": {
+              "name": "Feature Card Alpha",
+              "etchData": {
+                "origin": "etch",
+                "name": "Feature Card Alpha",
+                "styles": [
+                  "etch-flex-div-style",
+                  "wqsxr3a"
+                ],
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "feature-card-alpha"
+                },
+                "block": {
+                  "type": "html",
+                  "tag": "article"
+                }
+              }
+            }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/group",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)",
+                  "etchData": {
+                    "origin": "etch",
+                    "name": "If (Condition)",
+                    "block": {
+                      "type": "condition",
+                      "condition": {
+                        "leftHand": "props.hasIcon",
+                        "operator": "isTruthy",
+                        "rightHand": null
+                      },
+                      "conditionString": "props.hasIcon"
+                    }
+                  }
+                }
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "core/group",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Icon",
+                      "etchData": {
+                        "origin": "etch",
+                        "name": "Icon",
+                        "styles": [
+                          "vdz15sz"
+                        ],
+                        "attributes": {
+                          "aria-hidden": "true",
+                          "src": "{props.icon}",
+                          "class": "feature-card-alpha__icon"
+                        },
+                        "block": {
+                          "type": "html",
+                          "tag": "svg",
+                          "specialized": "svg"
+                        }
+                      }
+                    }
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "<div class=\"wp-block-group\"></div>",
+                  "innerContent": [
+                    "<div class=\"wp-block-group\">",
+                    "</div>"
+                  ]
+                }
+              ],
+              "innerHTML": "<div class=\"wp-block-group\"></div>",
+              "innerContent": [
+                "<div class=\"wp-block-group\">",
+                null,
+                "</div>"
+              ]
+            },
+            {
+              "blockName": "core/heading",
+              "attrs": {
+                "metadata": {
+                  "name": "Heading",
+                  "etchData": {
+                    "origin": "etch",
+                    "name": "Heading",
+                    "styles": [
+                      "yafaqwj"
+                    ],
+                    "attributes": {
+                      "class": "feature-card-alpha__heading"
+                    },
+                    "block": {
+                      "type": "html",
+                      "tag": "h2"
+                    }
+                  }
+                },
+                "level": 2
+              },
+              "innerBlocks": [],
+              "innerHTML": "<h2 class=\"wp-block-heading\">{props.heading}</h2>",
+              "innerContent": [
+                "<h2 class=\"wp-block-heading\">{props.heading}</h2>"
+              ]
+            },
+            {
+              "blockName": "core/paragraph",
+              "attrs": {
+                "metadata": {
+                  "name": "Description",
+                  "etchData": {
+                    "origin": "etch",
+                    "name": "Description",
+                    "styles": [
+                      "3sawohi"
+                    ],
+                    "attributes": {
+                      "class": "feature-card-alpha__description"
+                    },
+                    "block": {
+                      "type": "html",
+                      "tag": "p"
+                    }
+                  }
+                }
+              },
+              "innerBlocks": [],
+              "innerHTML": "<p>{props.description}</p>",
+              "innerContent": [
+                "<p>{props.description}</p>"
+              ]
+            }
+          ],
+          "innerHTML": "<div class=\"wp-block-group\"></div>",
+          "innerContent": [
+            "<div class=\"wp-block-group\">",
+            null,
+            null,
+            null,
+            "</div>"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "hasIcon",
+          "name": "hasIcon",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "icon",
+          "name": "Icon\n",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          }
+        },
+        {
+          "key": "heading",
+          "name": "Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Insert your heading here..."
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Insert your text here..."
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

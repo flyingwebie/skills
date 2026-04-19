@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      :root {
+        --swiper-pagination-color: rgba(255, 255, 255, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 1);
+      }
+
+      :root {
+        --swiper-pagination-right: 10px;
+        --swiper-pagination-left: auto;
+      }
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: visible;
+        width: 350px;
+
+        height: 210px;
+
+        padding: 0px 0px;
+
+        font-family: Roboto Mono;
+        font-synthesis-weight: none;
+        font-synthesis-style: none;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-0e9f {
+        background-color: rgba(33, 33, 46, 1);
+        border: 1px solid rgba(51, 51, 69, 1);
+        border-radius: 12px;
+      }
+      .swiper-slide-content-13de {
+        padding: 24px 24px;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .swiper-slide-block-186e {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 0px;
+      }
+      .swiper-slide-text-db97 {
+        color: rgba(171, 199, 255, 1);
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .swiper-slide-image-760b {
+        max-width: 100%;
+        min-width: 0;
+        object-fit: contain;
+        opacity: 1;
+        filter: blur(0px);
+        height: 32px;
+      }
+      .swiper-slide-text-78dc {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-692d {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: row;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0px 0px;
+      }
+      .swiper-slide-text-0e62 {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .swiper-slide-block-00a5 {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 0px;
+      }
+      .swiper-slide-text-d046 {
+        color: rgba(255, 255, 255, 0.5);
+        text-align: left;
+        font-size: 7px;
+        line-height: 1.5;
+      }
+      .swiper-slide-text-5e13 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-severe-luke-skywalker-575">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-0e9f">
+          <div class="swiper-slide-content swiper-slide-content-13de">
+            <div class="swiper-slide-block swiper-slide-block-186e">
+              <div class="swiper-slide-text swiper-slide-text-db97">
+                SwipeBank
+              </div>
+              <img
+                class="swiper-slide-image swiper-slide-image-760b"
+                src="/images/logo.svg"
+              />
+            </div>
+
+            <div class="swiper-slide-text swiper-slide-text-78dc">
+              1234 5678 9101 2131
+            </div>
+
+            <div class="swiper-slide-block swiper-slide-block-692d">
+              <div class="swiper-slide-text swiper-slide-text-0e62">
+                JOHN DOE
+              </div>
+              <div class="swiper-slide-block swiper-slide-block-00a5">
+                <div class="swiper-slide-text swiper-slide-text-d046">
+                  VALID<br />THRU
+                </div>
+                <div class="swiper-slide-text swiper-slide-text-5e13">
+                  12/28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-0e9f">
+          <div class="swiper-slide-content swiper-slide-content-13de">
+            <div class="swiper-slide-block swiper-slide-block-186e">
+              <div class="swiper-slide-text swiper-slide-text-db97">
+                SwipeBank
+              </div>
+              <img
+                class="swiper-slide-image swiper-slide-image-760b"
+                src="/images/logo.svg"
+              />
+            </div>
+
+            <div class="swiper-slide-text swiper-slide-text-78dc">
+              1234 5678 9101 2131
+            </div>
+
+            <div class="swiper-slide-block swiper-slide-block-692d">
+              <div class="swiper-slide-text swiper-slide-text-0e62">
+                VLADIMIR K.
+              </div>
+              <div class="swiper-slide-block swiper-slide-block-00a5">
+                <div class="swiper-slide-text swiper-slide-text-d046">
+                  VALID<br />THRU
+                </div>
+                <div class="swiper-slide-text swiper-slide-text-5e13">
+                  12/28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-0e9f">
+          <div class="swiper-slide-content swiper-slide-content-13de">
+            <div class="swiper-slide-block swiper-slide-block-186e">
+              <div class="swiper-slide-text swiper-slide-text-db97">
+                SwipeBank
+              </div>
+              <img
+                class="swiper-slide-image swiper-slide-image-760b"
+                src="/images/logo.svg"
+              />
+            </div>
+
+            <div class="swiper-slide-text swiper-slide-text-78dc">
+              1234 5678 9101 2131
+            </div>
+
+            <div class="swiper-slide-block swiper-slide-block-692d">
+              <div class="swiper-slide-text swiper-slide-text-0e62">
+                HELEN DOE
+              </div>
+              <div class="swiper-slide-block swiper-slide-block-00a5">
+                <div class="swiper-slide-text swiper-slide-text-d046">
+                  VALID<br />THRU
+                </div>
+                <div class="swiper-slide-text swiper-slide-text-5e13">
+                  12/28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-0e9f">
+          <div class="swiper-slide-content swiper-slide-content-13de">
+            <div class="swiper-slide-block swiper-slide-block-186e">
+              <div class="swiper-slide-text swiper-slide-text-db97">
+                SwipeBank
+              </div>
+              <img
+                class="swiper-slide-image swiper-slide-image-760b"
+                src="/images/logo.svg"
+              />
+            </div>
+
+            <div class="swiper-slide-text swiper-slide-text-78dc">
+              1234 5678 9101 2131
+            </div>
+
+            <div class="swiper-slide-block swiper-slide-block-692d">
+              <div class="swiper-slide-text swiper-slide-text-0e62">
+                MARY SWIPEROVICH
+              </div>
+              <div class="swiper-slide-block swiper-slide-block-00a5">
+                <div class="swiper-slide-text swiper-slide-text-d046">
+                  VALID<br />THRU
+                </div>
+                <div class="swiper-slide-text swiper-slide-text-5e13">
+                  12/28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-0e9f">
+          <div class="swiper-slide-content swiper-slide-content-13de">
+            <div class="swiper-slide-block swiper-slide-block-186e">
+              <div class="swiper-slide-text swiper-slide-text-db97">
+                SwipeBank
+              </div>
+              <img
+                class="swiper-slide-image swiper-slide-image-760b"
+                src="/images/logo.svg"
+              />
+            </div>
+
+            <div class="swiper-slide-text swiper-slide-text-78dc">
+              1234 5678 9101 2131
+            </div>
+
+            <div class="swiper-slide-block swiper-slide-block-692d">
+              <div class="swiper-slide-text swiper-slide-text-0e62">
+                SWIPER STUDIDI
+              </div>
+              <div class="swiper-slide-block swiper-slide-block-00a5">
+                <div class="swiper-slide-text swiper-slide-text-d046">
+                  VALID<br />THRU
+                </div>
+                <div class="swiper-slide-text swiper-slide-text-5e13">
+                  12/28
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 24,
+        effect: "cards",
+        pagination: {
+          clickable: true,
+          dynamicBullets: true,
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

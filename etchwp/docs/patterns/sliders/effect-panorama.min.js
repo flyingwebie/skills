@@ -1,0 +1,16 @@
+/**
+ * UI Initiative Panorama Slider
+ *
+ * Infinite 3D panorama slider
+ *
+ * https://uiinitiative.com
+ *
+ * Copyright 2023 UI Initiative
+ *
+ * Released under the UI Initiative Regular License
+ *
+ * October 25, 2023
+ */
+
+!function(e,a){"object"==typeof exports&&"undefined"!=typeof module?module.exports=a():"function"==typeof define&&define.amd?define(a):(e="undefined"!=typeof globalThis?globalThis:e||self).EffectPanorama=a()}(this,(function(){"use strict";return"undefined"!=typeof window&&window.SwiperElementRegisterParams&&window.SwiperElementRegisterParams(["panoramaEffect"]),function({swiper:e,extendParams:a,on:s}){a({panoramaEffect:{depth:200,rotate:30}}),s("beforeInit",(()=>{if("panorama"!==e.params.effect)return;e.classNames.push(`${e.params.containerModifierClass}panorama`),e.classNames.push(`${e.params.containerModifierClass}3d`);const a={watchSlidesProgress:!0};Object.assign(e.params,a),Object.assign(e.originalParams,a)})),s("progress",(()=>{if("panorama"!==e.params.effect)return;const a=e.slidesSizesGrid,{depth:s=200,rotate:t=30}=e.params.panoramaEffect,r=t*Math.PI/180/2,n=1/(180/t);for(let i=0;i<e.slides.length;i+=1){const o=e.slides[i],f=o.progress,p=a[i],d=f+(e.params.centeredSlides?0:.5*(e.params.slidesPerView-1)),m=1-Math.cos(d*n*Math.PI),l=d*(p/3)*m+"px",c=d*t,u=.5*p/Math.sin(r)*m-s+"px";o.style.transform="horizontal"===e.params.direction?`translateX(${l}) translateZ(${u}) rotateY(${c}deg)`:`translateY(${l}) translateZ(${u}) rotateX(${-c}deg)`}})),s("setTransition",((a,s)=>{"panorama"===e.params.effect&&e.slides.forEach((e=>{e.style.transitionDuration=`${s}ms`}))}))}}));
+//# sourceMappingURL=effect-panorama.min.js.map

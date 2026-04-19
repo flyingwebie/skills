@@ -1,0 +1,684 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Hero Fizzy"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "hero-fizzy"
+      },
+      "styles": [
+        "etch-section-style",
+        "cvx4hd7"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/component",
+        "attrs": {
+          "ref": 89,
+          "attributes": {
+            "style": "Center",
+            "sectionHeading": "Hero Fizzy",
+            "headingLevel": "h1",
+            "sectionHeadline": "This is designed to be a big, attention-grabbing headline.",
+            "showLede": "{true}",
+            "showPrimaryCta": "{true}",
+            "showSecondaryCta": "{true}"
+          }
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Media Wrapper"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "hero-fizzy__media-wrapper"
+          },
+          "styles": [
+            "etch-container-style",
+            "cnbpt49"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Media"
+              },
+              "options": {
+                "imageData": {
+                  "attachmentId": 1580,
+                  "size": "full"
+                }
+              },
+              "tag": "img",
+              "attributes": {
+                "src": "https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed.webp",
+                "class": "hero-fizzy__media",
+                "alt": "",
+                "srcset": "https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed.webp 1920w, https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed-300x168.webp 300w, https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed-1024x575.webp 1024w, https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed-768x431.webp 768w, https://patterns.etchwp.com/wp-content/uploads/premium_photo-1756131937396-1493e5b17049-squashed-1536x862.webp 1536w",
+                "sizes": "(max-width: 1920px) 100vw, 1920px"
+              },
+              "styles": [
+                "nq6x4p7"
+              ]
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "cvx4hd7": {
+      "type": "class",
+      "selector": ".hero-fizzy",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--container-gap, 1.5rem);\n  padding-block-start: 0;\n  /* Begin Content Grid */\n  & {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0 !important;\n    column-gap: 0 !important;\n    display: grid;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width))\n      [feature-start]\n      minmax(0, var(--feature-width))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width))\n      [feature-end]\n      minmax(0, var(--feature-max-width))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n\n    /* For Gutenberg @post-content Rendering - Remove if Unnecessary */\n    [data-type='core/post-content'] {\n      display: contents !important;\n      grid-column: full;\n      > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n        grid-column: content;\n      }\n    }\n    /* End For Gutenberg Rendering */\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "vcsar64": {
+      "type": "class",
+      "selector": ".section-intro",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\n  &[data-intro-style='center' i] {\n    @container (inline-size >= to-rem(700px)) {\n      align-items: center;\n      text-align: center;\n    }\n  }\n  &[data-intro-style='two column' i] {\n    @container (inline-size >= to-rem(700px)) {\n      display: grid;\n      grid-template-columns: var(--grid-3-2);\n      align-items: center;\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "vuwo78z": {
+      "type": "class",
+      "selector": ".section-intro__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 60ch;",
+      "readonly": false
+    },
+    "xq4u8jj": {
+      "type": "class",
+      "selector": ".section-intro__heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .8em);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  font-weight: 400;",
+      "readonly": false
+    },
+    "be9rana": {
+      "type": "class",
+      "selector": ".section-intro__headline",
+      "collection": "default",
+      "css": "font-weight: var(--heading-font-weight, 700);\n  &[data-heading-level=\"h1\"] {\n    font-size: var(--h1);\n  }\n  &[data-heading-level=\"h2\"] {\n    font-size: var(--h2);\n  }",
+      "readonly": false
+    },
+    "bu9irfe": {
+      "type": "class",
+      "selector": ".section-intro__lede",
+      "collection": "default",
+      "css": "text-wrap: balance;\n  line-height: 1.6;",
+      "readonly": false
+    },
+    "z1c4l0y": {
+      "type": "class",
+      "selector": ".section-intro__cta-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1em) / 2);\n  flex-wrap: wrap;\n  max-inline-size: max-content;\n  justify-self: end;",
+      "readonly": false
+    },
+    "4yvhrzp": {
+      "type": "class",
+      "selector": ".section-intro__cta-primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "01lzq3r": {
+      "type": "class",
+      "selector": ".section-intro__cta-secondary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "cnbpt49": {
+      "type": "class",
+      "selector": ".hero-fizzy__media-wrapper",
+      "collection": "default",
+      "css": "grid-column: feature-max;\n  order: -1;",
+      "readonly": false
+    },
+    "nq6x4p7": {
+      "type": "class",
+      "selector": ".hero-fizzy__media",
+      "collection": "default",
+      "css": "aspect-ratio: 16/6;\n  object-fit: cover;\n  inline-size: 100%;\n  max-inline-size: 100%;\n  /* Begin Fade Bottom */\n  --fade-amount: 50%;\n  -webkit-mask-image: linear-gradient(to top, transparent 0%, black var(--fade-amount));\n  mask-image: linear-gradient(to top, transparent 0%, black var(--fade-amount));\n  /* End Fade Bottom */",
+      "readonly": false
+    }
+  },
+  "components": {
+    "89": {
+      "id": 89,
+      "name": "Section Intro",
+      "key": "SectionIntro",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Section Intro"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-intro-style": "{props.style}",
+              "class": "section-intro"
+            },
+            "styles": [
+              "etch-container-style",
+              "vcsar64"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "section-intro__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "vuwo78z"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "{props.headingLevel}",
+                    "attributes": {
+                      "class": "section-intro__heading",
+                      "tag": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "xq4u8jj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Headline"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "section-intro__headline",
+                      "data-heading-level": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "be9rana"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/raw-html",
+                      "attrs": {
+                        "content": "{props.sectionHeadline}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.showLede",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showLede"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Lede"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "section-intro__lede"
+                        },
+                        "styles": [
+                          "bu9irfe"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/raw-html",
+                          "attrs": {
+                            "content": "{props.lede}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showPrimaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": "props.showSecondaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  }
+                },
+                "conditionString": "props.showPrimaryCta || props.showSecondaryCta"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "CTA Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "section-intro__cta-wrapper"
+                    },
+                    "styles": [
+                      "z1c4l0y"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showPrimaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showPrimaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Primary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.primaryCtaUrl}",
+                              "class": "section-intro__cta-primary"
+                            },
+                            "styles": [
+                              "4yvhrzp"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.primaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showSecondaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showSecondaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Secondary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.secondaryCtaUrl}",
+                              "class": "section-intro__cta-secondary"
+                            },
+                            "styles": [
+                              "01lzq3r"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.secondaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "style",
+          "name": "Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "selectOptionsString": "Left\nCenter\nTwo Column",
+          "default": "Left"
+        },
+        {
+          "key": "sectionHeading",
+          "name": "Section Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Section Heading"
+        },
+        {
+          "key": "headingLevel",
+          "name": "Heading Level",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "h2",
+          "selectOptionsString": "h2\nh1"
+        },
+        {
+          "key": "sectionHeadline",
+          "name": "Section Headline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Write a compelling headline."
+        },
+        {
+          "key": "lede",
+          "name": "Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet."
+        },
+        {
+          "key": "showLede",
+          "name": "Show Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "primaryCtaText",
+          "name": "Primary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary CTA"
+        },
+        {
+          "key": "primaryCtaUrl",
+          "name": "Primary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showPrimaryCta",
+          "name": "Show Primary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "secondaryCtaText",
+          "name": "Secondary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Secondary CTA"
+        },
+        {
+          "key": "secondaryCtaUrl",
+          "name": "Secondary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showSecondaryCta",
+          "name": "Show Secondary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

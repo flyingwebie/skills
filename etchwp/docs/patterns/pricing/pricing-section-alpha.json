@@ -1,0 +1,1830 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Pricing Section Alpha"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "pricing-section-alpha"
+      },
+      "styles": [
+        "etch-section-style",
+        "9cnjov7"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/component",
+        "attrs": {
+          "ref": 89,
+          "attributes": {
+            "style": "Center",
+            "sectionHeading": "Pricing",
+            "sectionHeadline": "Choose a Plan",
+            "showPrimaryCta": "{false}",
+            "showSecondaryCta": "{false}"
+          }
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Pricing List"
+          },
+          "tag": "ul",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "pricing-section-alpha__pricing-list"
+          },
+          "styles": [
+            "etch-container-style",
+            "maujrzt"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1975,
+                  "attributes": {
+                    "term": "per month",
+                    "heading": "Bronze"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "Features"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {
+                            "rowType": "Exclude"
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1975,
+                  "attributes": {
+                    "price": "75",
+                    "term": "per month",
+                    "heading": "Silver",
+                    "isFeatured": "{true}",
+                    "featuredText": "Best Value"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "Features"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {
+                            "rowType": "Exclude"
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1975,
+                  "attributes": {
+                    "price": "99",
+                    "term": "per month",
+                    "buttonText": "Buy now"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "Features"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1975,
+                  "attributes": {
+                    "price": "199",
+                    "term": "per month",
+                    "buttonText": "Buy now",
+                    "heading": "Platinum",
+                    "isFeatured": "{false}"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "Features"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 1979,
+                          "attributes": {}
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "9cnjov7": {
+      "type": "class",
+      "selector": ".pricing-section-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n\tgap: var(--container-gap, 2rem);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "vcsar64": {
+      "type": "class",
+      "selector": ".section-intro",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\n  &[data-intro-style='center' i] {\n    @container (inline-size >= to-rem(700px)) {\n      align-items: center;\n      text-align: center;\n    }\n  }\n  &[data-intro-style='two column' i] {\n    @container (inline-size >= to-rem(700px)) {\n      display: grid;\n      grid-template-columns: var(--grid-3-2);\n      align-items: center;\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "vuwo78z": {
+      "type": "class",
+      "selector": ".section-intro__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 60ch;",
+      "readonly": false
+    },
+    "xq4u8jj": {
+      "type": "class",
+      "selector": ".section-intro__heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .8em);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  font-weight: 400;",
+      "readonly": false
+    },
+    "be9rana": {
+      "type": "class",
+      "selector": ".section-intro__headline",
+      "collection": "default",
+      "css": "font-weight: var(--heading-font-weight, 700);\n  &[data-heading-level=\"h1\"] {\n    font-size: var(--h1);\n  }\n  &[data-heading-level=\"h2\"] {\n    font-size: var(--h2);\n  }",
+      "readonly": false
+    },
+    "bu9irfe": {
+      "type": "class",
+      "selector": ".section-intro__lede",
+      "collection": "default",
+      "css": "text-wrap: balance;\n  line-height: 1.6;",
+      "readonly": false
+    },
+    "z1c4l0y": {
+      "type": "class",
+      "selector": ".section-intro__cta-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1em) / 2);\n  flex-wrap: wrap;\n  max-inline-size: max-content;\n  justify-self: end;",
+      "readonly": false
+    },
+    "4yvhrzp": {
+      "type": "class",
+      "selector": ".section-intro__cta-primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "01lzq3r": {
+      "type": "class",
+      "selector": ".section-intro__cta-secondary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "maujrzt": {
+      "type": "class",
+      "selector": ".pricing-section-alpha__pricing-list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  @media (width >= to-rem(1080px)) {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }\n  > :nth-child(4) {\n    grid-column: 1 / -1;\n  }",
+      "readonly": false
+    },
+    "fli9puv": {
+      "type": "class",
+      "selector": ".pricing-card-alpha",
+      "collection": "default",
+      "css": "--heading-size: var(--h3, to-rem(32px));\n  --price-size: to-rem(60px);\n  --inline-sidebar-gap: 4ex;\n  li:has(> &) {\n    display: flex;\n  }\n  padding: var(--space-m, 1rem);\n  border: var(--border, 1px solid black);\n  border-radius: var(--radius, 0.5rem);\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n  flex: 1;\n  isolation: isolate;\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= to-rem(800px)) {\n    --price-size: to-rem(80px);\n    display: grid;\n    align-items: stretch;\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n    grid-template-areas:\n      'header side'\n      'features side';\n    grid-template-rows: 1fr;\n    &::after {\n      content: '';\n      background: var(--neutral-ultra-light);\n      inline-size: 60%;\n      block-size: 100%;\n      top: 0;\n      right: 0;\n      display: flex;\n      position: absolute;\n      z-index: -1;\n      /* Begin Fade Left */\n      --fade-amount: 25%;\n      -webkit-mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount));\n      mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount));\n      /* End Fade Left */\n    }\n  }",
+      "readonly": false
+    },
+    "fjq1z64": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__header",
+      "collection": "default",
+      "css": "grid-area: header;\n  inline-size: 100%;",
+      "readonly": false
+    },
+    "zm463pe": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__heading",
+      "collection": "default",
+      "css": "font-size: var(--heading-size);",
+      "readonly": false
+    },
+    "we52h0x": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__price-wrapper",
+      "collection": "default",
+      "css": "grid-area: side;\n  display: flex;\n  flex-direction: row;\n  line-height: 1;\n  align-items: start;\n  color: var(--text-dark-muted, #333);\n  inline-size: 100%;\n  gap: 0.25ch;\n  @container (inline-size >= to-rem(800px)) {\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    height: max-content;\n    position: absolute;\n    top: calc(50% - var(--inline-sidebar-gap));\n    translate: 0 -50%;\n  }",
+      "readonly": false
+    },
+    "9pj6e8f": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__price",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  line-height: 1;\n  align-items: start;\n  color: var(--text-dark-muted, #333);\n  inline-size: 100%;\n  max-inline-size: max-content;\n  gap: 0.25ch;",
+      "readonly": false
+    },
+    "xebpc0m": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__price-currency",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "s0g5rju": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__price-amount",
+      "collection": "default",
+      "css": "font-size: var(--price-size, to-rem(60px));\n  font-weight: 700;\n  color: var(--text-dark, #000);\n  line-height: 0.75;",
+      "readonly": false
+    },
+    "o48ifdq": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__price-term",
+      "collection": "default",
+      "css": "align-self: end;",
+      "readonly": false
+    },
+    "hsv6zj2": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__details-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: inherit;\n  @container (inline-size >= to-rem(800px)) {\n    display: contents;\n  }",
+      "readonly": false
+    },
+    "y56wkq3": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__description",
+      "collection": "default",
+      "css": "grid-area: header;\n  inline-size: 100%;\n  @container (inline-size >= to-rem(800px)) {\n    display: flex;\n    flex-direction: column;\n    inline-size: 100%;\n    max-inline-size: 30ch;\n    margin-block-start: calc(var(--heading-size) + var(--content-gap));\n  }",
+      "readonly": false
+    },
+    "6jja847": {
+      "type": "class",
+      "selector": ".pricing-features-alpha",
+      "collection": "default",
+      "css": "grid-area: features;\n  display: flex;\n  flex-direction: column;\n  gap: calc(var(--card-gap, 0.8rem) / 2);\n  inline-size: 100%;\n  max-inline-size: 40ch;\n  justify-content: center;\n  &:empty {\n    display: none;\n  }\n  @container (inline-size >= to-rem(800px)) {\n    padding: var(--space-m, 1rem);\n    background: var(--neutral-ultra-light);\n    border-radius: var(--radius);\n  }",
+      "readonly": false
+    },
+    "ochom99": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__footer",
+      "collection": "default",
+      "css": "grid-area: side;\n  margin-block-start: auto;\n  @container (inline-size >= to-rem(800px)) {\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    order: 1;\n    justify-content: center;\n    height: max-content;\n    position: absolute;\n    top: calc(50% + var(--inline-sidebar-gap));\n    translate: 0 -50%;\n  }",
+      "readonly": false
+    },
+    "avnmpk1": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__anchor",
+      "collection": "default",
+      "css": "margin-block-start: 1em;\n  inline-size: 100%;\n  max-inline-size: 100%;\n  @container (inline-size >= to-rem(800px)) {\n    margin: 0;\n    inline-size: max-content;\n    margin-inline: auto;\n  }",
+      "readonly": false
+    },
+    "awuvulc": {
+      "type": "class",
+      "selector": ".pricing-card-alpha__ribbon",
+      "collection": "default",
+      "css": "/* Feat: Corner Ribbons */\n  :has(> &) {\n    position: relative;\n    overflow: clip;\n  }\n  position: absolute;\n  display: block;\n  padding: var(--ribbon-padding, 0.5em 1em);\n  background-color: var(--ribbon-background-color, var(--primary));\n  box-shadow: var(--ribbon-shadow, 0 5px 10px var(--neutral-trans-10));\n  text-align: center;\n  font-size: var(--ribbon-text-size, var(--text-xs));\n  color: var(--ribbon-text-color, var(--white));\n  inline-size: var(--ribbon-width, 300px);\n  line-height: 1.2;\n  text-transform: uppercase;\n  /* Positioning */\n  inset-block-start: var(--ribbon-offset, -2em);\n    inset-inline-end: var(--ribbon-offset, -2em);\n    transform: var(--ribbon-transform, translateY(-100%) rotate(90deg) translateX(70.71067811865476%) rotate(-45deg));\n    transform-origin: var(--ribbon-transform-origin, bottom right);\n\n  &[data-ribbon-position='top-left'] {\n    --ribbon-transform: translateY(-100%) rotate(90deg) translateX(70.71067811865476%) rotate(-135deg);\n    --ribbon-transform-origin: bottom left;\n    inset-block-start: var(--ribbon-offset);\n    inset-inline-start: var(--ribbon-offset);\n    transform: var(--ribbon-transform);\n    transform-origin: var(--ribbon-transform-origin);\n  }",
+      "readonly": false
+    },
+    "4e6yqg6": {
+      "type": "class",
+      "selector": ".pricing-features-alpha__feature-row",
+      "collection": "default",
+      "css": "--icon-include: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M12%2022.75C6.06294%2022.75%201.25%2017.9371%201.25%2012C1.25%206.06294%206.06294%201.25%2012%201.25C17.9371%201.25%2022.75%206.06294%2022.75%2012C22.75%2017.9371%2017.9371%2022.75%2012%2022.75ZM15.2473%207.93933L10.453%2013.1694L8.69156%2011.4079L7.27734%2012.8222L10.5159%2016.0607L16.7216%209.29078L15.2473%207.93933Z%22%20fill%3D%22currentColor%22%20%2F%3E%3C%2Fsvg%3E');\n  --icon-exclude: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.25C17.9371%201.25%2022.75%206.06294%2022.75%2012C22.75%2017.9371%2017.9371%2022.75%2012%2022.75C6.06294%2022.75%201.25%2017.9371%201.25%2012C1.25%206.06294%206.06294%201.25%2012%201.25ZM9.63086%208.22461C9.2381%207.90427%208.65909%207.92689%208.29297%208.29297C7.92698%208.65909%207.90429%209.23813%208.22461%209.63086L8.29297%209.70703L10.5859%2012L8.29395%2014.293C7.90357%2014.6835%207.90344%2015.3166%208.29395%2015.707C8.68447%2016.0972%209.31758%2016.0974%209.70801%2015.707L12%2013.4141L14.292%2015.707L14.3682%2015.7754C14.7608%2016.0957%2015.3399%2016.0729%2015.7061%2015.707C16.0721%2015.3411%2016.0954%2014.7619%2015.7754%2014.3691L15.7061%2014.293L13.4131%2012L15.707%209.70703L15.7754%209.63086C16.0957%209.23812%2016.073%208.65909%2015.707%208.29297C15.3409%207.92689%2014.7619%207.90427%2014.3691%208.22461L14.293%208.29297L12%2010.5859L9.70703%208.29297L9.63086%208.22461Z%22%20fill%3D%22currentColor%22%20%2F%3E%3C%2Fsvg%3E');\n  --icon: var(--icon-include);\n  display: flex;\n  flex-direction: row;\n  line-height: 1.2;\n  gap: 1ch;\n  &::before {\n    content: '';\n    inline-size: 1em;\n    block-size: 1em;\n    aspect-ratio: 1;\n    background: var(--feature-icon-color, var(--primary));\n    translate: 0% 10%;\n    position: relative;\n    mask-image: var(--icon);\n    mask-size: cover;\n    mask-repeat: no-repeat;\n  }\n  &[data-row-type='exclude' i] {\n    --icon: var(--icon-exclude);\n    opacity: var(--row-exclude-opacity, 0.5);\n  }",
+      "readonly": false
+    },
+    "elfs45y": {
+      "type": "class",
+      "selector": ".pricing-features-alpha__feature-row-label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "89": {
+      "id": 89,
+      "name": "Section Intro",
+      "key": "SectionIntro",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Section Intro"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-intro-style": "{props.style}",
+              "class": "section-intro"
+            },
+            "styles": [
+              "etch-container-style",
+              "vcsar64"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "section-intro__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "vuwo78z"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "{props.headingLevel}",
+                    "attributes": {
+                      "class": "section-intro__heading",
+                      "tag": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "xq4u8jj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Headline"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "section-intro__headline",
+                      "data-heading-level": "{props.headingLevel}"
+                    },
+                    "styles": [
+                      "be9rana"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/raw-html",
+                      "attrs": {
+                        "content": "{props.sectionHeadline}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.showLede",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showLede"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Lede"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "section-intro__lede"
+                        },
+                        "styles": [
+                          "bu9irfe"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/raw-html",
+                          "attrs": {
+                            "content": "{props.lede}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showPrimaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": "props.showSecondaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  }
+                },
+                "conditionString": "props.showPrimaryCta || props.showSecondaryCta"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "CTA Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "section-intro__cta-wrapper"
+                    },
+                    "styles": [
+                      "z1c4l0y"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showPrimaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showPrimaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Primary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.primaryCtaUrl}",
+                              "class": "section-intro__cta-primary"
+                            },
+                            "styles": [
+                              "4yvhrzp"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.primaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showSecondaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showSecondaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Secondary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.secondaryCtaUrl}",
+                              "class": "section-intro__cta-secondary"
+                            },
+                            "styles": [
+                              "01lzq3r"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.secondaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "style",
+          "name": "Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "selectOptionsString": "Left\nCenter\nTwo Column",
+          "default": "Left"
+        },
+        {
+          "key": "sectionHeading",
+          "name": "Section Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Section Heading"
+        },
+        {
+          "key": "headingLevel",
+          "name": "Heading Level",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "h2",
+          "selectOptionsString": "h2\nh1"
+        },
+        {
+          "key": "sectionHeadline",
+          "name": "Section Headline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Write a compelling headline."
+        },
+        {
+          "key": "lede",
+          "name": "Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet."
+        },
+        {
+          "key": "showLede",
+          "name": "Show Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "primaryCtaText",
+          "name": "Primary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary CTA"
+        },
+        {
+          "key": "primaryCtaUrl",
+          "name": "Primary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showPrimaryCta",
+          "name": "Show Primary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "secondaryCtaText",
+          "name": "Secondary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Secondary CTA"
+        },
+        {
+          "key": "secondaryCtaUrl",
+          "name": "Secondary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showSecondaryCta",
+          "name": "Show Secondary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "1975": {
+      "id": 1975,
+      "name": "Pricing Card Alpha",
+      "key": "PricingCardAlpha",
+      "properties": [
+        {
+          "key": "heading",
+          "name": "Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Gold"
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus illum dolorum corrupti error aliquid."
+        },
+        {
+          "key": "price",
+          "name": "Price",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "50"
+        },
+        {
+          "key": "currency",
+          "name": "Currency",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "$"
+        },
+        {
+          "key": "term",
+          "name": "Term",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "mo"
+        },
+        {
+          "key": "buttonText",
+          "name": "Button Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Buy now"
+        },
+        {
+          "key": "buttonUrl",
+          "name": "Button URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "buttonClasses",
+          "name": "Button Classes",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "btn--primary"
+        },
+        {
+          "key": "featureListTag",
+          "name": "Feature List Tag",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "ul",
+          "selectOptionsString": "ul\nol\ndiv"
+        },
+        {
+          "key": "isFeatured",
+          "name": "Is Featured",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        },
+        {
+          "key": "featuredText",
+          "name": "Featured Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Featured"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Pricing Card Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "flex-div",
+              "class": "pricing-card-alpha",
+              "data-featured": "{props.isFeatured}"
+            },
+            "styles": [
+              "etch-flex-div-style",
+              "fli9puv"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Header"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "pricing-card-alpha__header"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "fjq1z64"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "h3",
+                    "attributes": {
+                      "class": "pricing-card-alpha__heading"
+                    },
+                    "styles": [
+                      "zm463pe"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.heading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Price Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "pricing-card-alpha__price-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "we52h0x"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Price"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "pricing-card-alpha__price"
+                    },
+                    "styles": [
+                      "9pj6e8f"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price Currency"
+                        },
+                        "tag": "span",
+                        "attributes": {
+                          "class": "pricing-card-alpha__price-currency"
+                        },
+                        "styles": [
+                          "xebpc0m"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.currency}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price Amount"
+                        },
+                        "tag": "span",
+                        "attributes": {
+                          "class": "pricing-card-alpha__price-amount"
+                        },
+                        "styles": [
+                          "s0g5rju"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.price}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price Term"
+                        },
+                        "tag": "span",
+                        "attributes": {
+                          "class": "pricing-card-alpha__price-term"
+                        },
+                        "styles": [
+                          "o48ifdq"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.term}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Details Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "pricing-card-alpha__details-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "hsv6zj2"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Description"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "pricing-card-alpha__description"
+                    },
+                    "styles": [
+                      "y56wkq3"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.description}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/dynamic-element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Pricing Features Alpha"
+                    },
+                    "tag": "{props.featureListTag}",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "pricing-features-alpha",
+                      "tag": "{props.featureListTag}"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "6jja847"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/slot-placeholder",
+                      "attrs": {
+                        "name": "Features"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Footer"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "pricing-card-alpha__footer"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "ochom99"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Anchor"
+                    },
+                    "tag": "a",
+                    "attributes": {
+                      "href": "{props.buttonUrl}",
+                      "class": "{props.buttonClasses} pricing-card-alpha__anchor"
+                    },
+                    "styles": [
+                      "avnmpk1"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.buttonText}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "props.isFeatured",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.isFeatured"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Ribbon"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "pricing-card-alpha__ribbon"
+                    },
+                    "styles": [
+                      "awuvulc"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.featuredText}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    },
+    "1979": {
+      "id": 1979,
+      "name": "Pricing Feature Row Alpha",
+      "key": "PricingFeatureRowAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/dynamic-element",
+          "attrs": {
+            "metadata": {
+              "name": "Feature Row "
+            },
+            "tag": "{props.rowTag}",
+            "attributes": {
+              "data-etch-element": "flex-div",
+              "class": "pricing-features-alpha__feature-row",
+              "data-row-type": "{props.rowType}",
+              "tag": "{props.rowTag}"
+            },
+            "styles": [
+              "etch-flex-div-style",
+              "4e6yqg6"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Feature Row Label"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "pricing-features-alpha__feature-row-label"
+                },
+                "styles": [
+                  "elfs45y"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "{props.label}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "label",
+          "name": "Label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "A feature of this plan"
+        },
+        {
+          "key": "rowType",
+          "name": "Row Type",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Include",
+          "selectOptionsString": "Include\nExclude"
+        },
+        {
+          "key": "rowTag",
+          "name": "Row Tag",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "li",
+          "selectOptionsString": "li\ndiv"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

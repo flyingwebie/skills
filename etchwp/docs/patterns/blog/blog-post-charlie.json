@@ -1,0 +1,2019 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Blog Post Charlie"
+      },
+      "tag": "article",
+      "attributes": {
+        "class": "blog-post-charlie"
+      },
+      "styles": [
+        "3g7z5ng"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Blog Post Charlie Header"
+          },
+          "tag": "header",
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "blog-post-charlie-header"
+          },
+          "styles": [
+            "etch-section-style",
+            "a2g2xxy"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Structure"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "blog-post-charlie-header__structure"
+              },
+              "styles": [
+                "etch-container-style",
+                "71r9s82"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Inner"
+                  },
+                  "tag": "div",
+                  "attributes": {
+                    "class": "blog-post-charlie-header__inner"
+                  },
+                  "styles": [
+                    "kprieiw"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Title"
+                      },
+                      "tag": "h1",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__title"
+                      },
+                      "styles": [
+                        "5owfkzg"
+                      ]
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Title of the post"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Lede"
+                      },
+                      "tag": "p",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__lede"
+                      },
+                      "styles": [
+                        "bpjafep"
+                      ]
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus tenetur vel veritatis deleniti, aperiam ab, minus quibusdam culpa voluptatem, officiis delectus amet asperiores dicta molestias incidunt doloribus aspernatur molestiae!"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Author Info"
+                      },
+                      "tag": "div",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__author-info"
+                      },
+                      "styles": [
+                        "xhhj1pn"
+                      ]
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/dynamic-image",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Author Avatar"
+                          },
+                          "tag": "img",
+                          "attributes": {
+                            "class": "blog-post-charlie-header__author-avatar",
+                            "maximumSize": "thumbnail",
+                            "mediaId": "1352"
+                          },
+                          "styles": [
+                            "918t7u4"
+                          ]
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Author Name"
+                          },
+                          "tag": "span",
+                          "attributes": {
+                            "class": "blog-post-charlie-header__author-name"
+                          },
+                          "styles": [
+                            "1g0nfel"
+                          ]
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/text",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Text"
+                              },
+                              "content": "Author Name"
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "",
+                            "innerContent": []
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Date"
+                      },
+                      "tag": "span",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__date"
+                      },
+                      "styles": [
+                        "1zri9e3"
+                      ]
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Jan 01, 2060"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Featured Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "blog-post-charlie-header__featured-image-wrapper"
+                  },
+                  "styles": [
+                    "6n4m1uq",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Featured Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__featured-image",
+                        "mediaId": "2664"
+                      },
+                      "styles": [
+                        "pi2ro5z"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Overlay"
+                      },
+                      "tag": "div",
+                      "attributes": {
+                        "class": "blog-post-charlie-header__featured-image-overlay"
+                      },
+                      "styles": [
+                        "67qo96s"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Blog Post Charlie Middle"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "blog-post-charlie-middle"
+          },
+          "styles": [
+            "etch-section-style",
+            "rhuqmxx"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Inner"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "blog-post-charlie-middle__inner smart-spacing"
+              },
+              "styles": [
+                "etch-container-style",
+                "2u6ta30",
+                "sjd57kq"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Getting Started with Indoor Gardening"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Indoor gardening has become increasingly popular among urban dwellers and anyone looking to bring a touch of nature into their living spaces. Whether you have a sprawling apartment or a cozy studio, there's always room for a few plants to brighten your day and purify your air."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "The beauty of indoor gardening lies in its accessibility. You don't need a green thumb or years of experience to get started. With a little knowledge and some basic supplies, you can create your own thriving indoor oasis."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Figure"
+                  },
+                  "tag": "figure",
+                  "attributes": {},
+                  "styles": [
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Blockquote"
+                      },
+                      "tag": "blockquote",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Paragraph"
+                          },
+                          "tag": "p",
+                          "attributes": {}
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/text",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Text"
+                              },
+                              "content": "The only way to do great work is to love what you do."
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "",
+                            "innerContent": []
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Caption"
+                      },
+                      "tag": "figcaption",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Name"
+                          },
+                          "tag": "span",
+                          "attributes": {}
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/text",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Text"
+                              },
+                              "content": "Steve Jobs"
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "",
+                            "innerContent": []
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Citation"
+                          },
+                          "tag": "cite",
+                          "attributes": {}
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/text",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Text"
+                              },
+                              "content": "Stanford Commencement Speech, 2005"
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "",
+                            "innerContent": []
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h3",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Choosing the Right Plants"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Not all plants are suited for indoor environments. When selecting your first plants, consider factors like the amount of natural light in your space, your schedule for watering, and the humidity levels in your home. Some plants thrive on neglect while others require daily attention."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "For beginners, we recommend starting with hardy varieties that can tolerate inconsistent care. Once you've built confidence, you can graduate to more demanding species."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Essential Supplies You'll Need"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Before bringing home your first plant, make sure you have these basics on hand:"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Unordered List"
+                  },
+                  "tag": "ul",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Quality potting soil appropriate for your plant type"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Containers with drainage holes"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "A watering can with a narrow spout for precision"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Plant saucers to protect your surfaces"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "A small trowel or spoon for repotting"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Having these supplies ready will make the transition smoother for both you and your new plants."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h3",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Understanding Light Requirements"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Light is perhaps the most critical factor in indoor plant success. Most homes fall into one of three categories when it comes to natural light availability."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Ordered List"
+                  },
+                  "tag": "ol",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Low light spaces receive no direct sunlight and are often north-facing or far from windows"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Medium light areas get bright, indirect light for several hours daily"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "List Item"
+                      },
+                      "tag": "li",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "High light spots receive direct sunlight for four or more hours each day"
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Matching your plants to your available light will save you frustration and keep your plants healthy for years to come."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Common Mistakes to Avoid"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Even experienced gardeners make mistakes, but knowing what to watch out for can help you avoid the most common pitfalls. Overwatering remains the number one killer of houseplants, followed closely by inadequate drainage and placing plants in unsuitable light conditions."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h3",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Watering Wisdom"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "The temptation to water on a strict schedule is strong, but plants don't operate on our calendars. Instead of watering every Sunday, learn to check the soil moisture and water only when needed. Your plants will thank you with lush, healthy growth."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text"
+                  },
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Remember that indoor gardening is a journey, not a destination. Each plant teaches you something new, and even failures provide valuable lessons for future success."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Blog Post Charlie Footer"
+          },
+          "tag": "footer",
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "blog-post-charlie-footer"
+          },
+          "styles": [
+            "etch-section-style",
+            "6a3xe1z"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Inner"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "blog-post-charlie-footer__inner"
+              },
+              "styles": [
+                "etch-container-style",
+                "h4guxt4"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1455,
+                  "attributes": {
+                    "name": "Author Name",
+                    "description": "Editor in Chief",
+                    "avatarSize": "min(10rem, 15vmin)"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Author Bio"
+                  },
+                  "tag": "div",
+                  "attributes": {
+                    "class": "blog-post-charlie-footer__author-bio"
+                  },
+                  "styles": [
+                    "h8focfs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/raw-html",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Author Bio"
+                      },
+                      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis id distinctio in obcaecati placeat iure repudiandae, velit minima quod fugiat, quidem a harum sapiente vel laboriosam amet ad ipsam modi!"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA"
+                  },
+                  "tag": "a",
+                  "attributes": {
+                    "href": "#",
+                    "class": "blog-post-charlie-footer__cta"
+                  },
+                  "styles": [
+                    "nn7k006"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Call to action"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "3g7z5ng": {
+      "type": "class",
+      "selector": ".blog-post-charlie",
+      "collection": "default",
+      "css": "background-color: var(--neutral-ultra-light, #eee);\n  padding-block-end: var(--section-space-m, 1.5rem);\n  /* Programmatic Border Radius */\n  > :first-child > * {\n    border-radius: var(--radius) var(--radius) 0 0;\n    overflow: clip;\n  }\n  > :last-child > * {\n    border-radius: 0 0 var(--radius) var(--radius);\n    overflow: clip;\n  }",
+      "readonly": false
+    },
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "a2g2xxy": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header",
+      "collection": "default",
+      "css": "background-color: var(--neutral-light, #ddd);\n  /* Begin Content Grid */\n  & {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0 !important;\n    column-gap: 0 !important;\n    display: grid;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width))\n      [feature-start]\n      minmax(0, var(--feature-width))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width))\n      [feature-end]\n      minmax(0, var(--feature-max-width))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n\n    /* For Gutenberg @post-content Rendering - Remove if Unnecessary */\n    [data-type='core/post-content'] {\n      display: contents !important;\n      grid-column: full;\n      > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n        grid-column: content;\n      }\n    }\n    /* End For Gutenberg Rendering */\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "71r9s82": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__structure",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  padding-block: var(--section-space-xl-to-m, 3rem);\n  padding-inline: var(--gutter, 16px);\n  position: relative;\n  margin-block-start: var(--section-space-m, 1.5rem);\n  @media (width >= to-rem(720px)) {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "kprieiw": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__inner",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  inline-size: 100%;\n  max-inline-size: 70ch;\n  color: var(--text-light, #eee);\n  @media (width >= to-rem(720px)) {\n    align-items: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "5owfkzg": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__title",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bpjafep": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__lede",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "xhhj1pn": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__author-info",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 1ch;\n  inline-size: 100%;\n  max-inline-size: max-content;\n  margin-block-start: 1em;",
+      "readonly": false
+    },
+    "918t7u4": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__author-avatar",
+      "collection": "default",
+      "css": "block-size: 3rem;\n  inline-size: 3rem;\n  aspect-ratio: 1;\n  border-radius: 50vw;",
+      "readonly": false
+    },
+    "1g0nfel": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__author-name",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "1zri9e3": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__date",
+      "collection": "default",
+      "css": "order: -1;",
+      "readonly": false
+    },
+    "6n4m1uq": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__featured-image-wrapper",
+      "collection": "default",
+      "css": ":has(> &) {\n    position: relative;\n    isolation: isolate;\n  }\n  position: var(--bg-position, absolute);\n  inset: var(--bg-inset, 0);\n  inline-size: var(--bg-width, 100%);\n  block-size: var(--bg-height, 100%);\n  border-radius: var(--bg-radius, 0);\n  object-fit: var(--bg-object-fit, cover);\n  object-position: var(--bg-object-position, center);\n  z-index: var(--bg-z-index, -2); /* Compatibility with overlays that use -1 */\n  border-radius: var(--bg-radius, 0);\n  pointer-events: none;\n  > img {\n    object-fit: var(--bg-object-fit, cover);\n    object-position: var(--bg-object-position, center);\n    inline-size: var(--bg-width, 100%);\n    block-size: var(--bg-height, 100%);\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "pi2ro5z": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__featured-image",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "67qo96s": {
+      "type": "class",
+      "selector": ".blog-post-charlie-header__featured-image-overlay",
+      "collection": "default",
+      "css": "position: var(--bg-position, absolute);\n  inset: var(--bg-inset, 0);\n  border-radius: var(--bg-radius, 0);\n  object-fit: var(--bg-object-fit, cover);\n  object-position: var(--bg-object-position, center);\n  z-index: var(--bg-z-index, -2);\n  border-radius: var(--bg-radius, 0);\n  pointer-events: none;\n  background-color: oklch(from var(--neutral) l c h / 0.5);\n  z-index: 1;",
+      "readonly": false
+    },
+    "rhuqmxx": {
+      "type": "class",
+      "selector": ".blog-post-charlie-middle",
+      "collection": "default",
+      "css": "/* Begin Content Grid */\n  & {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0 !important;\n    column-gap: 0 !important;\n    display: grid;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width))\n      [feature-start]\n      minmax(0, var(--feature-width))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width))\n      [feature-end]\n      minmax(0, var(--feature-max-width))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n\n    /* For Gutenberg @post-content Rendering - Remove if Unnecessary */\n    [data-type='core/post-content'] {\n      display: contents !important;\n      grid-column: full;\n      > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n        grid-column: content;\n      }\n    }\n    /* End For Gutenberg Rendering */\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "2u6ta30": {
+      "type": "class",
+      "selector": ".blog-post-charlie-middle__inner",
+      "collection": "default",
+      "css": "padding-block: var(--section-space-m);\n  background-color: var(--white);\n  --content-width: 70ch;\n  /* Begin Content Grid */\n  & {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0 !important;\n    column-gap: 0 !important;\n    display: grid;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width))\n      [feature-start]\n      minmax(0, var(--feature-width))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width))\n      [feature-end]\n      minmax(0, var(--feature-max-width))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n\n    /* For Gutenberg @post-content Rendering - Remove if Unnecessary */\n    [data-type='core/post-content'] {\n      display: contents !important;\n      grid-column: full;\n      > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n        grid-column: content;\n      }\n    }\n    /* End For Gutenberg Rendering */\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "sjd57kq": {
+      "type": "class",
+      "selector": ".smart-spacing",
+      "collection": "default",
+      "css": "/* This is an ACSS utility class for intelligently spacing rich text content. Learn more at https://automaticcss.com. If you don't have ACSS, you'll need to space this content yourself. */",
+      "readonly": false
+    },
+    "6a3xe1z": {
+      "type": "class",
+      "selector": ".blog-post-charlie-footer",
+      "collection": "default",
+      "css": "/* Begin Content Grid */\n  & {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0 !important;\n    column-gap: 0 !important;\n    display: grid;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width))\n      [feature-start]\n      minmax(0, var(--feature-width))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width))\n      [feature-end]\n      minmax(0, var(--feature-max-width))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n\n    /* For Gutenberg @post-content Rendering - Remove if Unnecessary */\n    [data-type='core/post-content'] {\n      display: contents !important;\n      grid-column: full;\n      > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n        grid-column: content;\n      }\n    }\n    /* End For Gutenberg Rendering */\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "h4guxt4": {
+      "type": "class",
+      "selector": ".blog-post-charlie-footer__inner",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  padding: var(--section-space-m, 1.5rem);\n  gap: var(--content-gap, 1rem);\n  background-color: var(--bg-ultra-dark, #222);\n  color: var(--text-light);\n\n  @media (width >= to-rem(720px)) {\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "6f9vr1z": {
+      "type": "class",
+      "selector": ".avatar-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  max-inline-size: max-content;\n  align-items: center;\n  gap: calc(var(--content-gap, 1em) / 2);\n\n  &[data-layout=\"center\" i] {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "jtrz8jn": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-wrapper",
+      "collection": "default",
+      "css": "max-inline-size: max-content;",
+      "readonly": false
+    },
+    "sf4lf2f": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar",
+      "collection": "default",
+      "css": "max-inline-size: var(--avatar-size);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  object-fit: cover;",
+      "readonly": false
+    },
+    "40aaz7e": {
+      "type": "class",
+      "selector": ".avatar-alpha__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 4);\n  font-size: var(--font-size, 1rem);",
+      "readonly": false
+    },
+    "5kj2p2d": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-name",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-weight: 700;",
+      "readonly": false
+    },
+    "0igzogo": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-description",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-size: 85%;",
+      "readonly": false
+    },
+    "h8focfs": {
+      "type": "class",
+      "selector": ".blog-post-charlie-footer__author-bio",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: 50ch;",
+      "readonly": false
+    },
+    "nn7k006": {
+      "type": "class",
+      "selector": ".blog-post-charlie-footer__cta",
+      "collection": "default",
+      "css": "color: var(--text-light, #eee);",
+      "readonly": false
+    }
+  },
+  "components": {
+    "1455": {
+      "id": 1455,
+      "name": "Avatar Alpha",
+      "key": "AvatarAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Avatar Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "avatar-alpha",
+              "data-layout": "{props.layout}"
+            },
+            "styles": [
+              "6f9vr1z"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Avatar Wrapper"
+                },
+                "tag": "figure",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__avatar-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "jtrz8jn",
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar"
+                    },
+                    "options": {
+                      "imageData": {
+                        "attachmentId": 1352,
+                        "size": ""
+                      }
+                    },
+                    "tag": "img",
+                    "attributes": {
+                      "src": "{props.avatar}",
+                      "alt": "{props.altText}",
+                      "class": "avatar-alpha__avatar",
+                      "style": "--avatar-size: {props.avatarSize}"
+                    },
+                    "styles": [
+                      "sf4lf2f"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__content-wrapper",
+                  "style": "--font-size: {props.fontSize}"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "40aaz7e"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Name"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-name"
+                    },
+                    "styles": [
+                      "5kj2p2d"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.name}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Description"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-description"
+                    },
+                    "styles": [
+                      "0igzogo"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.description}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "layout",
+          "name": "Layout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "left",
+          "selectOptionsString": "left\ncenter\n"
+        },
+        {
+          "key": "avatar",
+          "name": "Avatar",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://patterns.etchwp.com/wp-content/uploads/headshot.webp"
+        },
+        {
+          "key": "altText",
+          "name": "Alt Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Avatar Name"
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Description goes here"
+        },
+        {
+          "key": "avatarSize",
+          "name": "Avatar Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5rem"
+        },
+        {
+          "key": "fontSize",
+          "name": "Font Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--text-m, 1rem)"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

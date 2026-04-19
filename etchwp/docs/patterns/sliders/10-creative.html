@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 100%;
+
+        padding: 16px 16px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-a8bc {
+        background-color: rgba(51, 51, 51, 1);
+        border-radius: 16px;
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-peaceful-tion-medon-579">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-a8bc">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/01.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-2f5e"></div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-a8bc">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/02.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-2f5e"></div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-a8bc">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/03.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-2f5e"></div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-a8bc">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/04.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-2f5e"></div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-a8bc">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/05.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-2f5e"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        effect: "creative",
+        creativeEffect: {
+          prev: { translate: ["-150%", "0%", -800], rotate: [0, 0, -90] },
+          next: { translate: ["150%", "0%", -800], rotate: [0, 0, 90] },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "metadata": {
+        "name": "Alpha"
+      },
+      "ref": 3020,
+      "attributes": {}
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "vdgercu": {
+      "type": "class",
+      "selector": ".skip-link-alpha",
+      "collection": "default",
+      "css": "&:not(.etch-builder-block[data-preview=\"true\"]) {\n      /* Skip Link */\n    position: absolute !important;\n    inset-block-start: 1rem !important;\n    inset-inline-start: 1rem !important;\n    transform: translateY(-250%) !important;\n    z-index: 100 !important;\n    &:focus-visible {\n      transform: translateY(0) !important;\n    }\n    /* End Skip Link */\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3020": {
+      "id": 3020,
+      "legacyId": "",
+      "name": "Skip Link",
+      "key": "SkipLink",
+      "properties": [
+        {
+          "name": "Label",
+          "key": "label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Skip to Main"
+        },
+        {
+          "name": "Anchor (#)",
+          "key": "anchor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "main"
+        },
+        {
+          "key": "classes",
+          "name": "Classes",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Preview in Builder",
+          "key": "preview",
+          "keyTouched": true,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Skip Link Alpha"
+            },
+            "tag": "a",
+            "attributes": {
+              "href": "#{props.anchor}",
+              "data-preview": "{props.preview}",
+              "class": "skip-link-alpha {props.classes}"
+            },
+            "styles": [
+              "vdgercu"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/text",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "content": "{props.label}"
+              },
+              "innerBlocks": [],
+              "innerHTML": "",
+              "innerContent": []
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

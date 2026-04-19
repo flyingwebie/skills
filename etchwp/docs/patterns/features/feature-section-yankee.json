@@ -1,0 +1,1659 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Feature Section Yankee"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "feature-section-yankee"
+      },
+      "styles": [
+        "etch-section-style",
+        "heqfhdr"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Section Wrapper"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "feature-section-yankee__section-wrapper"
+          },
+          "styles": [
+            "etch-container-style",
+            "zeqgm4y"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 89,
+              "attributes": {
+                "style": "Center",
+                "showLede": "{true}",
+                "showPrimaryCta": "{false}",
+                "showSecondaryCta": "{false}"
+              }
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Badge Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "class": "feature-section-yankee__badge-wrapper"
+              },
+              "styles": [
+                "rf9okkk"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1495,
+                  "attributes": {}
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1495,
+                  "attributes": {}
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Feature List"
+          },
+          "tag": "ul",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "feature-section-yankee__feature-list"
+          },
+          "styles": [
+            "etch-container-style",
+            "n0s9s3j"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {
+                "class": "feature-section-yankee__list-item"
+              },
+              "styles": [
+                "2wfixvc"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1527,
+                  "attributes": {}
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {
+                "class": "feature-section-yankee__list-item"
+              },
+              "styles": [
+                "2wfixvc"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1527,
+                  "attributes": {
+                    "talkingPointPosition": "25",
+                    "talkingPointText": "My awesome talking point"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "List Item"
+              },
+              "tag": "li",
+              "attributes": {
+                "class": "feature-section-yankee__list-item"
+              },
+              "styles": [
+                "2wfixvc"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1527,
+                  "attributes": {
+                    "talkingPointPosition": "45"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "heqfhdr": {
+      "type": "class",
+      "selector": ".feature-section-yankee",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--container-gap, 2rem);\n  background-color: var(--neutral-ultra-light, #ddd);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "zeqgm4y": {
+      "type": "class",
+      "selector": ".feature-section-yankee__section-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  justify-content: center;\n  align-items: center;\n  @media (width <= to-rem(795px)) {\n    justify-content: start;\n    align-items: start;\n  }",
+      "readonly": false
+    },
+    "vcsar64": {
+      "type": "class",
+      "selector": ".section-intro",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\n  &[data-intro-style='center' i] {\n    @container (inline-size >= to-rem(700px)) {\n      align-items: center;\n      text-align: center;\n    }\n  }\n  &[data-intro-style='two column' i] {\n    @container (inline-size >= to-rem(700px)) {\n      display: grid;\n      grid-template-columns: var(--grid-3-2);\n      align-items: center;\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "vuwo78z": {
+      "type": "class",
+      "selector": ".section-intro__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 60ch;",
+      "readonly": false
+    },
+    "xq4u8jj": {
+      "type": "class",
+      "selector": ".section-intro__heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .8em);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  font-weight: 400;",
+      "readonly": false
+    },
+    "be9rana": {
+      "type": "class",
+      "selector": ".section-intro__headline",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "f46yuji": {
+      "type": "class",
+      "selector": ".h1",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bu9irfe": {
+      "type": "class",
+      "selector": ".section-intro__lede",
+      "collection": "default",
+      "css": "text-wrap: balance;",
+      "readonly": false
+    },
+    "z1c4l0y": {
+      "type": "class",
+      "selector": ".section-intro__cta-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1em) / 2);\n  flex-wrap: wrap;\n  max-inline-size: max-content;\n  justify-self: end;",
+      "readonly": false
+    },
+    "4yvhrzp": {
+      "type": "class",
+      "selector": ".section-intro__cta-primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "01lzq3r": {
+      "type": "class",
+      "selector": ".section-intro__cta-secondary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "rf9okkk": {
+      "type": "class",
+      "selector": ".feature-section-yankee__badge-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n\tgap: var(--content-gap, 1rem);",
+      "readonly": false
+    },
+    "dooh2kp": {
+      "type": "class",
+      "selector": ".rating-badge-alpha",
+      "collection": "default",
+      "css": "display: inline-flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 0.5ch;\n  inline-size: max-content;\n  max-inline-size: 100%;\n  font-size: var(--font-size);",
+      "readonly": false
+    },
+    "v9p7276": {
+      "type": "class",
+      "selector": ".rating-badge-alpha__icon-wrapper",
+      "collection": "default",
+      "css": "&::after {\n    content: var(--rating);\n    display: flex;\n  }\n\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 0.5ch;\n  line-heihgt: 1;\n  padding: 0.25em 0.5em;\n  border-radius: var(--radius, 2px);\n  background-color: color-mix(in oklch, var(--neutral-light, #eee) 50%, transparent);",
+      "readonly": false
+    },
+    "ueys9oj": {
+      "type": "class",
+      "selector": ".rating-badge-alpha__icon",
+      "collection": "default",
+      "css": "inline-size: 1em;",
+      "readonly": false
+    },
+    "hysie0u": {
+      "type": "class",
+      "selector": ".rating-badge-alpha__description",
+      "collection": "default",
+      "css": "line-height: 1;",
+      "readonly": false
+    },
+    "n0s9s3j": {
+      "type": "class",
+      "selector": ".feature-section-yankee__feature-list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  padding: var(--space-l, 1.5rem);\n  background: var(--white, #fff);\n  border-radius: var(--radius, 0.5rem);\n\n  @container (width >= to-rem(1100px)) {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    grid-template-rows: 1fr;\n    gap: calc(var(--grid-gap, 1.5rem) * 2);\n  }\n  :has(> &) {\n    container-type: inline-size;\n  }",
+      "readonly": false
+    },
+    "2wfixvc": {
+      "type": "class",
+      "selector": ".feature-section-yankee__list-item",
+      "collection": "default",
+      "css": "display: flex;\n  flex: 1;",
+      "readonly": false
+    },
+    "rarj81o": {
+      "type": "class",
+      "selector": ".feature-card-yankee",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= to-rem(670px)) {\n    display: grid;\n    grid-template-columns: minmax(0, 1.5fr) minmax(0, 2fr);\n    align-items: center;\n    gap: calc(var(--card-gap) * 3);\n  }",
+      "readonly": false
+    },
+    "9e30wo5": {
+      "type": "class",
+      "selector": ".feature-card-yankee__talking-points-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: 0;\n  /* Begin Fade Block */\n  --fade-amount: 25%;\n  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent 100%);\n  mask-image: linear-gradient(to bottom, transparent 0%, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent 100%);\n  /* End Fade Block */\n  > *:nth-child(1) {\n    order: 10;\n  }\n  > *:nth-child(2) {\n    order: 20;\n  }\n  > *:nth-child(3) {\n    order: 30;\n  }\n  > *:nth-child(4) {\n    order: 40;\n  }\n  > *:nth-child(5) {\n    order: 50;\n  }",
+      "readonly": false
+    },
+    "7fzb97p": {
+      "type": "class",
+      "selector": ".feature-card-yankee__talking-points-row",
+      "collection": "default",
+      "css": "--positive-icon: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M11.4743%2017.3058C14.4874%2014.0819%2017.3962%2011.8949%2021.0501%208.79776C22.1437%207.87072%2022.3126%206.24578%2021.4547%205.09453C20.5429%203.87098%2018.8103%203.62642%2017.6376%204.59913C14.2907%207.37521%2011.6868%2010.0482%209.21679%2012.9051C9.08718%2013.055%209.02237%2013.13%208.95511%2013.1722C8.78453%2013.2792%208.57138%2013.2803%208.3997%2013.1751C8.33199%2013.1336%208.26707%2013.0601%208.13722%2012.9131L6.82103%2011.4229C5.6201%2010.0631%203.46608%2010.2137%202.46339%2011.7274C1.76171%2012.7867%201.86569%2014.1905%202.71567%2015.1334L4.7796%2017.4229C6.32334%2019.1353%207.09521%2019.9916%208.02185%2019.9999C8.94849%2020.0083%209.79043%2019.1075%2011.4743%2017.3058Z%22/%3E%3C/svg%3E');\n  --negative-icon: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%20%3Cpath%20d%3D%22M5.43212%2018.5679C6.00828%2019.144%206.94243%2019.144%207.51859%2018.5679L12.0003%2014.0863L16.4814%2018.5672C17.0573%2019.1431%2017.9909%2019.1434%2018.5672%2018.5679C19.144%2017.9919%2019.1443%2017.0573%2018.5679%2016.4809L14.0868%2012L18.5679%207.51913C19.1438%206.94326%2019.1441%206.0097%2018.5686%205.43346C17.9925%204.85669%2017.0578%204.85638%2016.4814%205.43278L12.0003%209.91365L7.51859%205.4321C6.94243%204.85597%206.00828%204.85597%205.43212%205.4321C4.85596%206.00823%204.85596%206.94232%205.43212%207.51845L9.91387%2012L5.43212%2016.4816C4.85596%2017.0577%204.85596%2017.9918%205.43212%2018.5679Z%22%20/%3E%20%3C/svg%3E');\n  --icon: var(--negative-icon);\n  opacity: 0.5;\n  padding: 0.35em 0.65em;\n  display: flex;\n  flex-direction: row;\n  gap: 0.5em;\n  align-items: center;\n  color: var(--neutral-dark);\n  inline-size: 100%;\n  max-inline-size: max-content;\n\n  &::before {\n    content: '';\n    display: flex;\n    background: currentColor;\n    inline-size: 1em;\n    block-size: 1em;\n    mask-image: var(--icon);\n    mask-size: cover;\n    mask-repeat: no-repeat;\n  }\n  &[data-row-type='positive'] {\n    --icon: var(--positive-icon);\n    opacity: 1;\n    background: var(--success-light, #caf2d3);\n    border-radius: var(--radius, 0.5rem);\n    border: var(--border, 1px solid black);\n    order: var(--talking-point-position, 40) !important;\n    color: var(--success-dark);\n  }",
+      "readonly": false
+    },
+    "453htmz": {
+      "type": "class",
+      "selector": ".feature-card-yankee__talking-points-text",
+      "collection": "default",
+      "css": "line-height: 1.1;\n  font-size: var(--text-s, 0.8rem);",
+      "readonly": false
+    },
+    "o8wc8tf": {
+      "type": "class",
+      "selector": ".feature-card-yankee__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, 1rem);",
+      "readonly": false
+    },
+    "yfg4l9q": {
+      "type": "class",
+      "selector": ".feature-card-yankee__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "ri7cbw8": {
+      "type": "class",
+      "selector": ".feature-card-yankee__description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "89": {
+      "id": 89,
+      "name": "Section Intro",
+      "key": "SectionIntro",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Section Intro"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-intro-style": "{props.style}",
+              "class": "section-intro"
+            },
+            "styles": [
+              "etch-container-style",
+              "vcsar64"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "section-intro__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "vuwo78z"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "h2",
+                    "attributes": {
+                      "class": "section-intro__heading"
+                    },
+                    "styles": [
+                      "xq4u8jj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Headline"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "section-intro__headline h1"
+                    },
+                    "styles": [
+                      "be9rana",
+                      "f46yuji"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeadline}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.showLede",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showLede"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Lede"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "section-intro__lede"
+                        },
+                        "styles": [
+                          "bu9irfe"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.lede}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showPrimaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": "props.showSecondaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  }
+                },
+                "conditionString": "props.showPrimaryCta || props.showSecondaryCta"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "CTA Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "section-intro__cta-wrapper"
+                    },
+                    "styles": [
+                      "z1c4l0y"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showPrimaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showPrimaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Primary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.primaryCtaUrl}",
+                              "class": "section-intro__cta-primary"
+                            },
+                            "styles": [
+                              "4yvhrzp"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.primaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showSecondaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showSecondaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Secondary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.secondaryCtaUrl}",
+                              "class": "section-intro__cta-secondary"
+                            },
+                            "styles": [
+                              "01lzq3r"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.secondaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "style",
+          "name": "Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "selectOptionsString": "Left\nCenter\nTwo Column",
+          "default": "Left"
+        },
+        {
+          "key": "sectionHeading",
+          "name": "Section Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Section Heading"
+        },
+        {
+          "key": "sectionHeadline",
+          "name": "Section Headline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Write a compelling headline."
+        },
+        {
+          "key": "lede",
+          "name": "Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet."
+        },
+        {
+          "key": "showLede",
+          "name": "Show Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "primaryCtaText",
+          "name": "Primary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary CTA"
+        },
+        {
+          "key": "primaryCtaUrl",
+          "name": "Primary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showPrimaryCta",
+          "name": "Show Primary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "secondaryCtaText",
+          "name": "Secondary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Secondary CTA"
+        },
+        {
+          "key": "secondaryCtaUrl",
+          "name": "Secondary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showSecondaryCta",
+          "name": "Show Secondary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "1495": {
+      "id": 1495,
+      "name": "Rating Badge Alpha",
+      "key": "RatingBadgeAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Rating Badge Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "flex-div",
+              "style": "--rating: {props.rating}; --font-size: {props.fontSize};",
+              "role": "img",
+              "aria-label": "{props.rating} rating on {props.platform}",
+              "class": "rating-badge-alpha"
+            },
+            "styles": [
+              "etch-flex-div-style",
+              "dooh2kp"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Icon Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "class": "rating-badge-alpha__icon-wrapper"
+                },
+                "styles": [
+                  "v9p7276"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Icon"
+                    },
+                    "tag": "svg",
+                    "attributes": {
+                      "xmlns": "http://www.w3.org/2000/svg",
+                      "viewBox": "0 0 24 24",
+                      "width": "24",
+                      "height": "24",
+                      "color": "currentColor",
+                      "fill": "none",
+                      "class": "rating-badge-alpha__icon"
+                    },
+                    "styles": [
+                      "ueys9oj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "path",
+                        "attributes": {
+                          "d": "M12 1.75C12.311 1.75 12.5898 1.94201 12.7007 2.23263L15.0587 8.41234L21.5366 8.72913C21.8418 8.74406 22.1074 8.94263 22.2081 9.23111C22.3088 9.5196 22.2244 9.84032 21.9947 10.0419L17.0648 14.3695L18.8767 21.3106C18.9558 21.6135 18.8383 21.9338 18.5821 22.1137C18.3258 22.2937 17.9848 22.2956 17.7266 22.1183L12 18.1875L6.27335 22.1183C6.01519 22.2956 5.67409 22.2937 5.41785 22.1137C5.1616 21.9338 5.04413 21.6135 5.12323 21.3106L6.93517 14.3695L2.0052 10.0419C1.77557 9.84032 1.69118 9.5196 1.79186 9.23111C1.89253 8.94263 2.15815 8.74406 2.46334 8.72913L8.94127 8.41234L11.2992 2.23263C11.4101 1.94201 11.6889 1.75 12 1.75Z",
+                          "fill": "currentColor"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Description"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "rating-badge-alpha__description"
+                },
+                "styles": [
+                  "hysie0u"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "{props.platform}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "rating",
+          "name": "Rating (in Quotes)",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "\"4.9\""
+        },
+        {
+          "key": "platform",
+          "name": "Platform",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Google"
+        },
+        {
+          "key": "fontSize",
+          "name": "Font Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "1527": {
+      "id": 1527,
+      "name": "Feature Card Yankee",
+      "key": "FeatureCardYankee",
+      "properties": [
+        {
+          "key": "talkingPointPosition",
+          "name": "Talking Point Position",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "15",
+          "selectOptionsString": "2 : 15\n3 : 25\n4 : 45"
+        },
+        {
+          "key": "talkingPointText",
+          "name": "Talking Point Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Positive Talking Point"
+        },
+        {
+          "key": "negativePoint1",
+          "name": "Negative Point 1",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Negative point 1"
+        },
+        {
+          "key": "negativePoint2",
+          "name": "Negative Point 2",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Negative point 2"
+        },
+        {
+          "key": "negativePoint3",
+          "name": "Negative Point 3",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Negative point 3"
+        },
+        {
+          "key": "negativePoint4",
+          "name": "Negative Point 4",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Negative point 4"
+        },
+        {
+          "key": "heading",
+          "name": "Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Feature Heading"
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsum veniam esse optio odio sunt quod numquam ratione dignissimos tenetur?"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Feature Card Yankee"
+            },
+            "tag": "article",
+            "attributes": {
+              "data-etch-element": "flex-div",
+              "class": "feature-card-yankee",
+              "style": "--talking-point-position: {props.talkingPointPosition}"
+            },
+            "styles": [
+              "etch-flex-div-style",
+              "rarj81o"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Talking Points Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "feature-card-yankee__talking-points-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "9e30wo5"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Talking Points Row"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "feature-card-yankee__talking-points-row",
+                      "role": "none",
+                      "aria-hidden": "true"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "7fzb97p"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Talking Points Text"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "feature-card-yankee__talking-points-text"
+                        },
+                        "styles": [
+                          "453htmz"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.negativePoint1}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Talking Points Row"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "feature-card-yankee__talking-points-row",
+                      "role": "none",
+                      "aria-hidden": "true"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "7fzb97p"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Talking Points Text"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "feature-card-yankee__talking-points-text"
+                        },
+                        "styles": [
+                          "453htmz"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.negativePoint2}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Positive Talking Points Row"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "feature-card-yankee__talking-points-row",
+                      "data-row-type": "positive"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "7fzb97p"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Talking Points Text"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "feature-card-yankee__talking-points-text"
+                        },
+                        "styles": [
+                          "453htmz"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.talkingPointText}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Talking Points Row"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "feature-card-yankee__talking-points-row",
+                      "role": "none",
+                      "aria-hidden": "true"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "7fzb97p"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Talking Points Text"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "feature-card-yankee__talking-points-text"
+                        },
+                        "styles": [
+                          "453htmz"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.negativePoint3}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Talking Points Row"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "feature-card-yankee__talking-points-row",
+                      "role": "none",
+                      "aria-hidden": "true"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "7fzb97p"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Talking Points Text"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "feature-card-yankee__talking-points-text"
+                        },
+                        "styles": [
+                          "453htmz"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.negativePoint4}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "feature-card-yankee__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "o8wc8tf"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "h3",
+                    "attributes": {
+                      "class": "feature-card-yankee__heading"
+                    },
+                    "styles": [
+                      "yfg4l9q"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.heading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Description"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "feature-card-yankee__description"
+                    },
+                    "styles": [
+                      "ri7cbw8"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.description}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

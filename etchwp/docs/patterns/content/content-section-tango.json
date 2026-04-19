@@ -1,0 +1,522 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "core/group",
+    "attrs": {
+      "metadata": {
+        "name": "Content Section Tango",
+        "etchData": {
+          "origin": "etch",
+          "name": "Content Section Tango",
+          "styles": [
+            "etch-section-style",
+            "80xgt1p"
+          ],
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "content-section-tango"
+          },
+          "block": {
+            "type": "html",
+            "tag": "section"
+          }
+        }
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "core/group",
+        "attrs": {
+          "metadata": {
+            "name": "Inner",
+            "etchData": {
+              "origin": "etch",
+              "name": "Inner",
+              "styles": [
+                "etch-container-style",
+                "m361rr9"
+              ],
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "content-section-tango__inner"
+              },
+              "block": {
+                "type": "html",
+                "tag": "div"
+              }
+            }
+          }
+        },
+        "innerBlocks": [
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Content Wrapper",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "ob8ecyy"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "content-section-tango__content-wrapper"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "div"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/heading",
+                "attrs": {
+                  "metadata": {
+                    "name": "Section Heading",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Section Heading",
+                      "styles": [
+                        "hep349o",
+                        "0uetwk5"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__section-heading accent-heading"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "h2"
+                      }
+                    }
+                  },
+                  "level": 2
+                },
+                "innerBlocks": [],
+                "innerHTML": "<h2 class=\"wp-block-heading\">section heading</h2>",
+                "innerContent": [
+                  "<h2 class=\"wp-block-heading\">section heading</h2>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Headline",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Headline",
+                      "styles": [
+                        "8rynu0y"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__headline"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p>A compelling headline goes here.</p>",
+                "innerContent": [
+                  "<p>A compelling headline goes here.</p>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "Lede",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Lede",
+                      "styles": [
+                        "oeou6qy"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__lede"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora aspernatur, nisi hic repellat fugiat blanditiis magni placeat totam atque?</p>",
+                "innerContent": [
+                  "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora aspernatur, nisi hic repellat fugiat blanditiis magni placeat totam atque?</p>"
+                ]
+              },
+              {
+                "blockName": "core/paragraph",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA",
+                    "etchData": {
+                      "removeWrapper": true,
+                      "block": {
+                        "type": "html",
+                        "tag": "p"
+                      },
+                      "origin": "etch",
+                      "name": "CTA",
+                      "nestedData": {
+                        "irp9bpg": {
+                          "origin": "etch",
+                          "name": "CTA",
+                          "styles": [
+                            "lv4ekd7"
+                          ],
+                          "attributes": {
+                            "href": "#",
+                            "class": "content-section-tango__cta"
+                          },
+                          "block": {
+                            "type": "html",
+                            "tag": "a"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<p><a data-etch-ref=\"irp9bpg\">Call to action</a></p>",
+                "innerContent": [
+                  "<p><a data-etch-ref=\"irp9bpg\">Call to action</a></p>"
+                ]
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              null,
+              null,
+              null,
+              "</div>"
+            ]
+          },
+          {
+            "blockName": "core/group",
+            "attrs": {
+              "metadata": {
+                "name": "Image Group",
+                "etchData": {
+                  "origin": "etch",
+                  "name": "Image Group",
+                  "styles": [
+                    "etch-flex-div-style",
+                    "w58jj48"
+                  ],
+                  "attributes": {
+                    "data-etch-element": "flex-div",
+                    "class": "content-section-tango__image-group"
+                  },
+                  "block": {
+                    "type": "html",
+                    "tag": "div"
+                  }
+                }
+              }
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/image",
+                "attrs": {
+                  "metadata": {
+                    "name": "Figure",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Figure",
+                      "styles": [
+                        "lvtokau",
+                        "s4gkacs"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__figure"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "figure"
+                      },
+                      "nestedData": {
+                        "img": {
+                          "origin": "etch",
+                          "name": "Image",
+                          "misc": {
+                            "imageData": {
+                              "attachmentId": 34,
+                              "size": ""
+                            }
+                          },
+                          "styles": [
+                            "036ejm9"
+                          ],
+                          "attributes": {
+                            "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                            "class": "content-section-tango__image",
+                            "alt": "Coffee Cup"
+                          },
+                          "block": {
+                            "type": "html",
+                            "tag": "img"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "sizeSlug": "full",
+                  "linkDestination": "none"
+                },
+                "innerBlocks": [],
+                "innerHTML": "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>",
+                "innerContent": [
+                  "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>"
+                ]
+              },
+              {
+                "blockName": "core/image",
+                "attrs": {
+                  "metadata": {
+                    "name": "Figure",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Figure",
+                      "styles": [
+                        "lvtokau",
+                        "s4gkacs"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__figure"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "figure"
+                      },
+                      "nestedData": {
+                        "img": {
+                          "origin": "etch",
+                          "name": "Image",
+                          "misc": {
+                            "imageData": {
+                              "attachmentId": 34,
+                              "size": ""
+                            }
+                          },
+                          "styles": [
+                            "036ejm9"
+                          ],
+                          "attributes": {
+                            "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                            "class": "content-section-tango__image",
+                            "alt": "Coffee Cup"
+                          },
+                          "block": {
+                            "type": "html",
+                            "tag": "img"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "sizeSlug": "full",
+                  "linkDestination": "none"
+                },
+                "innerBlocks": [],
+                "innerHTML": "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>",
+                "innerContent": [
+                  "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>"
+                ]
+              },
+              {
+                "blockName": "core/image",
+                "attrs": {
+                  "metadata": {
+                    "name": "Figure",
+                    "etchData": {
+                      "origin": "etch",
+                      "name": "Figure",
+                      "styles": [
+                        "lvtokau",
+                        "s4gkacs"
+                      ],
+                      "attributes": {
+                        "class": "content-section-tango__figure"
+                      },
+                      "block": {
+                        "type": "html",
+                        "tag": "figure"
+                      },
+                      "nestedData": {
+                        "img": {
+                          "origin": "etch",
+                          "name": "Image",
+                          "misc": {
+                            "imageData": {
+                              "attachmentId": 34,
+                              "size": ""
+                            }
+                          },
+                          "styles": [
+                            "036ejm9"
+                          ],
+                          "attributes": {
+                            "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                            "class": "content-section-tango__image",
+                            "alt": "Coffee Cup"
+                          },
+                          "block": {
+                            "type": "html",
+                            "tag": "img"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "sizeSlug": "full",
+                  "linkDestination": "none"
+                },
+                "innerBlocks": [],
+                "innerHTML": "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>",
+                "innerContent": [
+                  "<figure class=\"wp-block-image size-full\"><img src=\"https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp\" alt=\"Coffee Cup\" /></figure>"
+                ]
+              }
+            ],
+            "innerHTML": "<div class=\"wp-block-group\"></div>",
+            "innerContent": [
+              "<div class=\"wp-block-group\">",
+              null,
+              null,
+              null,
+              "</div>"
+            ]
+          }
+        ],
+        "innerHTML": "<div class=\"wp-block-group\"></div>",
+        "innerContent": [
+          "<div class=\"wp-block-group\">",
+          null,
+          null,
+          "</div>"
+        ]
+      }
+    ],
+    "innerHTML": "<div class=\"wp-block-group\"></div>",
+    "innerContent": [
+      "<div class=\"wp-block-group\">",
+      null,
+      "</div>"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "80xgt1p": {
+      "type": "class",
+      "selector": ".content-section-tango",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "m361rr9": {
+      "type": "class",
+      "selector": ".content-section-tango__inner",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  @media (width >= rem(930px)) {\n    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);\n    gap: calc(var(--content-gap, 1em) * 2);\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "ob8ecyy": {
+      "type": "class",
+      "selector": ".content-section-tango__content-wrapper",
+      "collection": "default",
+      "css": "justify-content: center;\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1em);",
+      "readonly": false
+    },
+    "hep349o": {
+      "type": "class",
+      "selector": ".content-section-tango__section-heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "0uetwk5": {
+      "type": "class",
+      "selector": ".accent-heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, 16px);\n  font-weight: 400;\n  text-transform: uppercase;\n  margin-block-end: -1em;",
+      "readonly": false
+    },
+    "8rynu0y": {
+      "type": "class",
+      "selector": ".content-section-tango__headline",
+      "collection": "default",
+      "css": "font-size: var(--h2, 38px);\n  line-height: 1.25;\n  font-weight: var(--heading-font-weight, 700);",
+      "readonly": false
+    },
+    "oeou6qy": {
+      "type": "class",
+      "selector": ".content-section-tango__lede",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "lv4ekd7": {
+      "type": "class",
+      "selector": ".content-section-tango__cta",
+      "collection": "default",
+      "css": "margin-block-start: 1em;",
+      "readonly": false
+    },
+    "w58jj48": {
+      "type": "class",
+      "selector": ".content-section-tango__image-group",
+      "collection": "default",
+      "css": "display: grid;\n  grid-template-columns: repeat(4, minmax(0, 1fr));\n  grid-template-areas:\n    'one one one one'\n    'two two three three';\n  gap: 0.75em;\n  img {\n    inline-size: 100%;\n  }\n  @media (width >= rem(930px)) {\n    order: -1;\n  }",
+      "readonly": false
+    },
+    "lvtokau": {
+      "type": "class",
+      "selector": ".content-section-tango__figure",
+      "collection": "default",
+      "css": "display: flex;\n  position: relative;\n  &:nth-child(1) {\n    grid-area: one;\n    inline-size: 100%;\n    justify-self: end;\n    aspect-ratio: 16/9;\n    @media (width >= rem(930px)) {\n      inline-size: 95%;\n    }\n  }\n  &:nth-child(2) {\n    grid-area: two;\n    aspect-ratio: 16/9;\n  }\n  &:nth-child(3) {\n    grid-area: three;\n    aspect-ratio: 5/3.25;\n  }",
+      "readonly": false
+    },
+    "036ejm9": {
+      "type": "class",
+      "selector": ".content-section-tango__image",
+      "collection": "default",
+      "css": "object-fit: cover;\n  position: absolute;\n  inset: 0;\n  inline-size: 100%;\n  block-size: 100%;",
+      "readonly": false
+    }
+  }
+}

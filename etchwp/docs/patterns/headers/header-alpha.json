@@ -1,0 +1,1040 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 600,
+      "attributes": {}
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "nav"
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 2171,
+              "attributes": {}
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/slot-content",
+                "attrs": {
+                  "name": "topLevel"
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 2181,
+                      "attributes": {
+                        "itemLabel": "Home",
+                        "itemLink": "/"
+                      }
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 2163,
+                      "attributes": {
+                        "dropdownTag": "ul"
+                      }
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/slot-content",
+                        "attrs": {
+                          "name": "menuContent"
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/component",
+                            "attrs": {
+                              "ref": 2181,
+                              "attributes": {
+                                "itemLabel": "Dropdown Item",
+                                "itemLink": "#"
+                              }
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "\n\n",
+                            "innerContent": [
+                              "\n",
+                              "\n"
+                            ]
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/component",
+                    "attrs": {
+                      "ref": 2181,
+                      "attributes": {
+                        "itemLabel": "Contact",
+                        "itemLink": "#"
+                      }
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "66gyl2j": {
+      "type": "class",
+      "selector": ".header-alpha",
+      "collection": "default",
+      "css": "padding-block: var(--space-s, 0.9rem);\n  padding-inline: var(--gutter, 1rem);\n  background: var(--neutral-ultra-light, #eee);\n  &[data-header-position=\"fixed\"] {\n    position: fixed;\n    inset-block-start: calc(0px + var(--wp-admin--admin-bar--height));\n    inset-inline-start: 0;\n  }",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "dbgg833": {
+      "type": "class",
+      "selector": ".header-alpha__inner",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  gap: var(--content-gap, 1em);",
+      "readonly": false
+    },
+    "976a4kv": {
+      "type": "class",
+      "selector": ".etch-skip-link",
+      "collection": "default",
+      "css": "position: absolute !important;\n  inset-block-start: 1rem !important;\n  inset-inline-start: 1rem !important;\n  transform: translateY(-250%) !important;\n  z-index: 100 !important;\n\n  &:focus-visible {\n    transform: translateY(0) !important;\n  }",
+      "readonly": false
+    },
+    "htznoin": {
+      "type": "class",
+      "selector": ".header-alpha__logo-link-wrapper",
+      "collection": "default",
+      "css": "flex-shrink: 0;",
+      "readonly": false
+    },
+    "rqjqwr5": {
+      "type": "class",
+      "selector": ".header-alpha__logo",
+      "collection": "default",
+      "css": "inline-size: to-rem(160px);\n  color: var(--text-dark, #111);\n  flex-shrink: 0;",
+      "readonly": false
+    },
+    "5wf7uwp": {
+      "type": "class",
+      "selector": ".flex-mobile-trigger",
+      "collection": "default",
+      "css": "--burger-size: 24px;\n  --burger-line-height: 1.5px;\n  --burger-gap: 6px;\n  --burger-offset: calc(var(--burger-gap) + var(--burger-line-height));\n\n  display: var(--flex-nav-trigger-display, none);\n  flex-direction: column;\n  justify-content: center;\n  block-size: var(--burger-size);\n  inline-size: var(--burger-size);\n  aspect-ratio: 1;\n  padding: 0;\n  margin: 0;\n  gap: var(--burger-gap);\n  z-index: 99999;\n  &[aria-expanded='true'] {\n    position: absolute;\n    top: 1em;\n    right: 1em;\n    span:nth-child(1) {\n      transform: translateY(var(--burger-offset)) rotate(45deg);\n    }\n    span:nth-child(2) {\n      opacity: 0;\n    }\n    span:nth-child(3) {\n      transform: translateY(calc(var(--burger-offset) * -1)) rotate(-45deg);\n    }\n  }",
+      "readonly": false
+    },
+    "hv9v8g0": {
+      "type": "class",
+      "selector": ".nav-burger-line",
+      "collection": "default",
+      "css": "min-width: 0;\n  min-height: 0;\n  block-size: var(--burger-line-height);\n  inline-size: 100%;\n  background: var(--black);\n  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;",
+      "readonly": false
+    },
+    "avk5fki": {
+      "type": "class",
+      "selector": ".flex-nav--custom",
+      "collection": "default",
+      "css": "--mobile-nav-header: 'Navigation';\n  &[data-flex-nav-status='desktop' i] {\n    --flex-nav-background: transparent;\n    --flex-nav-padding-block: 0;\n    --flex-nav-padding-inline: 0;\n    .flex-nav-item--custom {\n    }\n    .flex-nav-dropdown--custom {\n      --panel-background: var(--white, #fff);\n    }\n  }\n  &[data-flex-nav-status='mobile' i] {\n    --flex-nav-background: var(--white, #fff);\n    --flex-nav-padding-block: var(--section-space-m, 1.5em);\n    --flex-nav-padding-inline: var(--gutter, 1em);\n    .flex-nav-item--custom {\n    }\n    .flex-nav-dropdown--custom {\n      --panel-background: transparent;\n    }\n  }\n:has(> &) {\n\tcontainer-type: inline-size;\n}",
+      "readonly": false
+    },
+    "g28rrsl": {
+      "type": "class",
+      "selector": ".flex-nav",
+      "collection": "default",
+      "css": "position: relative;\n  /* Reset Position if Full Dropdown */\n  &:has([data-panel-alignment='full' i]) {\n    position: static;\n  }\n  /* Fix Header Position if Nav is Full */\n  header[data-header-detected-position='static']:has(&) {\n    position: relative;\n  }\n  /* End Positioning */\n  display: var(--nav-display, flex);\n  flex-direction: row;\n  align-items: center;\n  inline-size: 100%;\n  max-inline-size: 100%;\n  z-index: 9999;\n  /* Desktop Specific */\n  &[data-flex-nav-status='desktop'] {\n    ul {\n      justify-content: end;\n    }\n  }\n  /* Mobile Styling */\n  &[data-flex-nav-status='mobile'] {\n    --nav-direction: column;\n    --nav-background: var(--white);\n    position: absolute;\n    inset-block-start: 0;\n    inset-inline-start: 0;\n    overflow: auto;\n  }\n  /* Conditional Item Display */\n  &[data-flex-nav-status='desktop' i] [data-display-item-on='mobile' i] {\n    display: none;\n  }\n\n  &[data-flex-nav-status='mobile' i] [data-display-item-on='desktop' i] {\n    display: none;\n  }\n  /* Reset List Styles */\n  :where(ul, li) {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n  }",
+      "readonly": false
+    },
+    "3flfxeu": {
+      "type": "class",
+      "selector": ".flex-nav__list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: var(--flex-nav-direction, row);\n  gap: var(--content-gap, 1rem);\n  align-items: stretch;\n  inline-size: 100%;\n  padding: var(--flex-nav-padding-block) var(--flex-nav-padding-inline);\n  background: var(--flex-nav-background, transparent);\n\n  /* Mobile Nav Heading */\n  [data-flex-nav-status='mobile'] & {\n    &::before {\n      content: var(--mobile-nav-header);\n      font-weight: bold;\n      text-transform: uppercase;\n      font-size: var(--text-s, 0.8rem);\n    }\n  }",
+      "readonly": false
+    },
+    "udmsc0h": {
+      "type": "class",
+      "selector": ".flex-nav__list-item",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: var(--nav-direction, row);\n  align-items: var(--nav-item-alignment, center);\n  justify-content: start;\n  &[data-has-dropdown-style='standard' i] {\n    position: relative;\n  }\n  [data-flex-nav-status='mobile'] & {\n    --nav-item-alignment: start;\n  }",
+      "readonly": false
+    },
+    "fp5g9w9": {
+      "type": "class",
+      "selector": ".flex-nav-item--custom",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "95yktag": {
+      "type": "class",
+      "selector": ".flex-nav__link",
+      "collection": "default",
+      "css": "line-height: 1.2;\n  color: inherit;\n  text-decoration: inherit;",
+      "readonly": false
+    },
+    "pg0be3v": {
+      "type": "class",
+      "selector": ".flex-nav__dropdown-trigger",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 0.5em;\n  :where(&) {\n    padding: 0;\n    margin: 0;\n  }\n  svg {\n    inline-size: 1em;\n    color: currentColor;\n    transition: rotate .2s ease-in-out;\n  }\n  &[aria-expanded=\"true\"] {\n    svg {\n      rotate: 180deg;\n    }\n  }",
+      "readonly": false
+    },
+    "e3z517e": {
+      "type": "class",
+      "selector": ".flex-nav-dropdown--custom",
+      "collection": "default",
+      "css": "> * {\n      box-shadow: 0 0 15px -5px hsl(from black h s l / 0.15);\n  }",
+      "readonly": false
+    },
+    "3uv15xv": {
+      "type": "class",
+      "selector": ".flex-nav__dropdown",
+      "collection": "default",
+      "css": "--panel-block-padding: 1em;\n  --panel-inline-padding: 1em;\n  position: var(--panel-position, absolute);\n  interpolate-size: allow-keywords;\n  top: 100%;\n  display: flex;\n  visibility: hidden;\n  /* Is Standard */\n  &[data-dropdown-style='standard' i] {\n    width: auto;\n    inline-size: max-content;\n    max-inline-size: 300px;\n    min-inline-size: 200px;\n    left: 0;\n    right: auto;\n  }\n  /* Positions */\n  &[data-panel-alignment='right' i] {\n    left: auto;\n    right: 0;\n  }\n  [data-flex-nav-status='desktop' i] &[data-panel-alignment='center' i] {\n    left: 50%;\n    translate: -50% 0;\n  }\n  [data-flex-nav-status='desktop' i] &[data-panel-alignment='full' i] {\n    left: 0;\n    top: 100%;\n    inline-size: 100dvw;\n    max-inline-size: 100dvw;\n    min-inline-size: 100dvw;\n    [data-flex-nav-inner] {\n      border-radius: 0;\n    }\n  }\n  /* End Positions */\n  width: 100%;\n  max-inline-size: var(--panel-width);\n  flex-direction: column;\n  /* Preview in Builder */\n  &[data-preview='true'].etch-builder-block {\n    block-size: auto !important;\n    visibiliy: visible !important;\n    opacity: 1 !important;\n    [data-flex-nav-inner] {\n      visibility: visible !important;\n      opacity: 1 !important;\n      block-size: auto !important;\n    }\n  }\n  /* End Preview in Builder */\n  [data-flex-nav-status='mobile'] & {\n    --panel-inline-padding: 1em 0;\n    --panel-offset-block: 0;\n    display: grid;\n    grid-template-rows: 0fr;\n    min-block-size: 0;\n    block-size: 0;\n    transition:\n      grid-template-rows 0.2s ease,\n      block-size 0.2s ease;\n  }\n  [data-flex-nav-status='mobile'] &[data-open='true'] {\n    grid-template-rows: 1fr;\n    block-size: auto;\n  }",
+      "readonly": false
+    },
+    "wc1hhym": {
+      "type": "class",
+      "selector": ".flex-nav__dropdown-inner",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--panel-content-gap, 0.5em);\n  inline-size: 100%;\n  max-inline-size: 100%;\n  position: relative;\n  top: var(--panel-offset-block, 0);\n  padding: var(--panel-block-padding, 1em) var(--panel-inline-padding, 1em);\n  background: var(--panel-background);\n  border-radius: var(--radius, 0.5rem);\n  &[data-flex-nav-inner] {\n    opacity: 0;\n    min-block-size: 0;\n    visibility: hidden;\n    transform: scaleY(0.95);\n    transform-origin: top;\n    overflow: hidden;\n    transition:\n      opacity 0.2s ease,\n      transform 0.2s ease,\n      visibility 0.2s;\n  }\n\n  [data-dropdown-panel][data-open='true'] & {\n    opacity: 1;\n    visibility: visible;\n    transform: scaleY(1);\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "600": {
+      "id": 600,
+      "name": "Header Alpha",
+      "key": "HeaderAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Header Alpha"
+            },
+            "tag": "header",
+            "attributes": {
+              "data-etch-element": "section",
+              "data-header-position": "{props.position.toLowercase()}",
+              "class": "header-alpha"
+            },
+            "styles": [
+              "etch-section-style",
+              "66gyl2j"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Inner"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "container",
+                  "class": "header-alpha__inner"
+                },
+                "styles": [
+                  "etch-container-style",
+                  "dbgg833"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If Skip LInk"
+                    },
+                    "condition": {
+                      "leftHand": "props.includeSkipLink",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.includeSkipLink"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Skip Link"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "#main",
+                          "class": "etch-skip-link"
+                        },
+                        "styles": [
+                          "976a4kv"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Skip to Main"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Logo Link Wrapper"
+                    },
+                    "tag": "a",
+                    "attributes": {
+                      "href": "{props.logoLink}",
+                      "class": "header-alpha__logo-link-wrapper"
+                    },
+                    "styles": [
+                      "htznoin"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Logo"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "header-alpha__logo",
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/etch-logo.svg"
+                        },
+                        "styles": [
+                          "rqjqwr5"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "nav"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "position",
+          "name": "Position",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "static",
+          "selectOptionsString": "Static : static\nFixed (Sticky) : fixed"
+        },
+        {
+          "key": "includeSkipLink",
+          "name": "Include Skip Link",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "2163": {
+      "id": 2163,
+      "name": "Flex Nav Dropdown",
+      "key": "FlexNavDropdown",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "List Item"
+            },
+            "tag": "li",
+            "attributes": {
+              "class": "flex-nav__list-item flex-nav-item--custom",
+              "data-has-dropdown-style": "{props.dropdownStyle}",
+              "data-display-item-on": "{props.displayOn}"
+            },
+            "styles": [
+              "udmsc0h",
+              "fp5g9w9"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dropdown Trigger"
+                },
+                "tag": "button",
+                "attributes": {
+                  "class": "flex-nav__dropdown-trigger",
+                  "data-dropdown-trigger": "",
+                  "aria-expanded": "false",
+                  "aria-haspopup": "true"
+                },
+                "styles": [
+                  "pg0be3v"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "content": "{props.label}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "etch/svg",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Arrow"
+                    },
+                    "tag": "svg",
+                    "attributes": {
+                      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5.99977 9.00005L11.9998 15L17.9998 9' stroke-miterlimit='16'/%3E%3C/svg%3E",
+                      "stripColors": "true"
+                    }
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dropdown"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-dropdown-panel": "",
+                  "aria-expanded": "false",
+                  "data-dropdown-style": "{props.dropdownStyle}",
+                  "style": "--panel-width: {props.panelWidthMega}; --panel-content-gap: {props.panelContentGap};",
+                  "data-preview": "{props.previewInEtch}",
+                  "data-panel-alignment": "{props.panelAlignment}",
+                  "class": "flex-nav-dropdown--custom flex-nav__dropdown"
+                },
+                "styles": [
+                  "e3z517e",
+                  "3uv15xv"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Dropdown Inner"
+                    },
+                    "tag": "{props.dropdownTag}",
+                    "attributes": {
+                      "data-flex-nav-inner": "data-flex-nav-inner",
+                      "class": "flex-nav__dropdown-inner",
+                      "tag": "{props.dropdownTag}"
+                    },
+                    "styles": [
+                      "wc1hhym"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/slot-placeholder",
+                      "attrs": {
+                        "name": "menuContent"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "previewInEtch",
+          "name": "Preview in Etch",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        },
+        {
+          "key": "label",
+          "name": "Label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Dropdown"
+        },
+        {
+          "key": "dropdownStyle",
+          "name": "Dropdown Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Standard",
+          "selectOptionsString": "Standard\nMega"
+        },
+        {
+          "key": "panelWidthMega",
+          "name": "Panel Width (Mega)",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "100vw"
+        },
+        {
+          "key": "panelAlignment",
+          "name": "Panel Alignment",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Left",
+          "selectOptionsString": "Left\nRight\nCenter\nFull"
+        },
+        {
+          "key": "dropdownTag",
+          "name": "Dropdown Tag",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "ul",
+          "selectOptionsString": "ul\ndiv"
+        },
+        {
+          "key": "panelContentGap",
+          "name": "Panel Content Gap",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "key": "displayOn",
+          "name": "Display On",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Always",
+          "selectOptionsString": "Always\nDesktop\nMobile"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "2171": {
+      "id": 2171,
+      "name": "Flex Nav",
+      "key": "FlexNav",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Mobile Trigger"
+            },
+            "tag": "button",
+            "attributes": {
+              "aria-expanded": "false",
+              "data-flex-nav-trigger": "{props.navName}",
+              "class": "flex-mobile-trigger",
+              "aria-label": "Open {props.navName} Navigation"
+            },
+            "styles": [
+              "5wf7uwp"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "tag": "span",
+                "attributes": {
+                  "class": "nav-burger-line"
+                },
+                "styles": [
+                  "hv9v8g0"
+                ]
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "tag": "span",
+                "attributes": {
+                  "class": "nav-burger-line"
+                },
+                "styles": [
+                  "hv9v8g0"
+                ]
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "tag": "span",
+                "attributes": {
+                  "class": "nav-burger-line"
+                },
+                "styles": [
+                  "hv9v8g0"
+                ]
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        },
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Flex Nav"
+            },
+            "script": {
+              "code": "Y2xhc3MgTW9kdWxhck5hdiB7CiAgY29uc3RydWN0b3IobmF2KSB7CiAgICB0aGlzLm5hdiA9IG5hdjsKICAgIHRoaXMubmF2SWQgPSBuYXYuZGF0YXNldC5mbGV4TmF2OwogICAgdGhpcy5icmVha3BvaW50ID0gbmF2LmRhdGFzZXQubmF2QnJlYWtwb2ludDsKICAgIHRoaXMuYmVoYXZpb3IgPSBuYXYuZGF0YXNldC5kcm9wZG93bkJlaGF2aW9yPy50b0xvd2VyQ2FzZSgpIHx8ICdob3Zlcic7CiAgICB0aGlzLm5hdlRyaWdnZXIgPSB0aGlzLm5hdklkID8gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihgW2RhdGEtZmxleC1uYXYtdHJpZ2dlcj0iJHt0aGlzLm5hdklkfSJdYCkgOiBudWxsOwogICAgdGhpcy5vcGVuUGFuZWwgPSBudWxsOwogICAgdGhpcy5vcGVuVHJpZ2dlciA9IG51bGw7CiAgICB0aGlzLmlzTW9iaWxlID0gZmFsc2U7CiAgICAKICAgIHRoaXMuZGV0ZWN0SGVhZGVyUG9zaXRpb24oKTsKICAgIAogICAgaWYgKHRoaXMuYnJlYWtwb2ludCkgewogICAgICB0aGlzLm1lZGlhUXVlcnkgPSB3aW5kb3cubWF0Y2hNZWRpYShgKG1heC13aWR0aDogJHt0aGlzLmJyZWFrcG9pbnR9KWApOwogICAgICB0aGlzLmhhbmRsZVJlc2l6ZSgpOwogICAgICB0aGlzLm1lZGlhUXVlcnkuYWRkRXZlbnRMaXN0ZW5lcignY2hhbmdlJywgKCkgPT4gdGhpcy5oYW5kbGVSZXNpemUoKSk7CiAgICB9CgogICAgaWYgKHRoaXMubmF2VHJpZ2dlcikgewogICAgICB0aGlzLm5hdlRyaWdnZXIuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiB0aGlzLnRvZ2dsZU1lbnUoKSk7CiAgICB9CiAgICAKICAgIG5hdi5xdWVyeVNlbGVjdG9yQWxsKCdbZGF0YS1kcm9wZG93bi10cmlnZ2VyXScpLmZvckVhY2goKHRyaWdnZXIsIGluZGV4KSA9PiB7CiAgICAgIGNvbnN0IHBhcmVudCA9IHRyaWdnZXIucGFyZW50RWxlbWVudDsKICAgICAgY29uc3QgcGFuZWwgPSBwYXJlbnQucXVlcnlTZWxlY3RvcignW2RhdGEtZHJvcGRvd24tcGFuZWxdJyk7CiAgICAgIAogICAgICBpZiAoIXBhbmVsKSByZXR1cm47CgogICAgICBjb25zdCBpZCA9IGBkcm9wZG93bi1wYW5lbC0ke0RhdGUubm93KCl9LSR7aW5kZXh9YDsKICAgICAgcGFuZWwuaWQgPSBpZDsKICAgICAgdHJpZ2dlci5zZXRBdHRyaWJ1dGUoJ2FyaWEtY29udHJvbHMnLCBpZCk7CgogICAgICBwYXJlbnQuYWRkRXZlbnRMaXN0ZW5lcignbW91c2VlbnRlcicsICgpID0+IHsKICAgICAgICBpZiAoIXRoaXMuaXNNb2JpbGUgJiYgdGhpcy5iZWhhdmlvciA9PT0gJ2hvdmVyJykgdGhpcy5vcGVuKHRyaWdnZXIsIHBhbmVsKTsKICAgICAgfSk7CiAgICAgIHBhcmVudC5hZGRFdmVudExpc3RlbmVyKCdtb3VzZWxlYXZlJywgKCkgPT4gewogICAgICAgIGlmICghdGhpcy5pc01vYmlsZSAmJiB0aGlzLmJlaGF2aW9yID09PSAnaG92ZXInKSB0aGlzLmNsb3NlKHRyaWdnZXIsIHBhbmVsKTsKICAgICAgfSk7CiAgICAgIAogICAgICB0cmlnZ2VyLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgKCkgPT4gdGhpcy50b2dnbGUodHJpZ2dlciwgcGFuZWwpKTsKICAgICAgdHJpZ2dlci5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgZSA9PiB0aGlzLmhhbmRsZVRyaWdnZXJLZXlkb3duKGUsIHRyaWdnZXIsIHBhbmVsKSk7CiAgICAgIHBhbmVsLmFkZEV2ZW50TGlzdGVuZXIoJ2tleWRvd24nLCBlID0+IHRoaXMuaGFuZGxlUGFuZWxLZXlkb3duKGUsIHRyaWdnZXIsIHBhbmVsKSk7CiAgICB9KTsKCiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGUgPT4gdGhpcy5oYW5kbGVDbGlja091dHNpZGUoZSkpOwogIH0KCiAgZGV0ZWN0SGVhZGVyUG9zaXRpb24oKSB7CiAgICBjb25zdCBoZWFkZXIgPSB0aGlzLm5hdi5jbG9zZXN0KCdoZWFkZXInKTsKICAgIGlmIChoZWFkZXIpIHsKICAgICAgY29uc3QgcG9zaXRpb24gPSBnZXRDb21wdXRlZFN0eWxlKGhlYWRlcikucG9zaXRpb247CiAgICAgIGlmIChwb3NpdGlvbiA9PT0gJ3N0YXRpYycpIHsKICAgICAgICBoZWFkZXIuZGF0YXNldC5oZWFkZXJEZXRlY3RlZFBvc2l0aW9uID0gJ3N0YXRpYyc7CiAgICAgIH0KICAgIH0KICB9CgogIGhhbmRsZVJlc2l6ZSgpIHsKICAgIHRoaXMuaXNNb2JpbGUgPSB0aGlzLm1lZGlhUXVlcnkubWF0Y2hlczsKICAgIAogICAgaWYgKHRoaXMuaXNNb2JpbGUpIHsKICAgICAgdGhpcy5uYXYuZGF0YXNldC5mbGV4TmF2U3RhdHVzID0gJ21vYmlsZSc7CiAgICAgIHRoaXMubmF2VHJpZ2dlcj8uc3R5bGUuc2V0UHJvcGVydHkoJy0tZmxleC1uYXYtdHJpZ2dlci1kaXNwbGF5JywgJ2ZsZXgnKTsKICAgICAgdGhpcy5uYXYuc3R5bGUuc2V0UHJvcGVydHkoJy0tbmF2LWRpc3BsYXknLCAnbm9uZScpOwogICAgICB0aGlzLm5hdi5zdHlsZS5zZXRQcm9wZXJ0eSgnLS1wYW5lbC1wb3NpdGlvbicsICdyZWxhdGl2ZScpOwogICAgICB0aGlzLm5hdi5zdHlsZS5zZXRQcm9wZXJ0eSgnLS1mbGV4LW5hdi1kaXJlY3Rpb24nLCAnY29sdW1uJyk7CiAgICAgIHRoaXMubmF2VHJpZ2dlcj8uc2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJywgJ2ZhbHNlJyk7CiAgICB9IGVsc2UgewogICAgICB0aGlzLm5hdi5kYXRhc2V0LmZsZXhOYXZTdGF0dXMgPSAnZGVza3RvcCc7CiAgICAgIHRoaXMubmF2VHJpZ2dlcj8uc3R5bGUuc2V0UHJvcGVydHkoJy0tZmxleC1uYXYtdHJpZ2dlci1kaXNwbGF5JywgJ25vbmUnKTsKICAgICAgdGhpcy5uYXYuc3R5bGUuc2V0UHJvcGVydHkoJy0tbmF2LWRpc3BsYXknLCAnYmxvY2snKTsKICAgICAgdGhpcy5uYXYuc3R5bGUuc2V0UHJvcGVydHkoJy0tcGFuZWwtcG9zaXRpb24nLCAnYWJzb2x1dGUnKTsKICAgICAgdGhpcy5uYXYuc3R5bGUuc2V0UHJvcGVydHkoJy0tZmxleC1uYXYtZGlyZWN0aW9uJywgJ3JvdycpOwogICAgICB0aGlzLmNsb3NlTWVudSgpOwogICAgfQogIH0KCiAgdG9nZ2xlTWVudSgpIHsKICAgIGNvbnN0IGlzT3BlbiA9IHRoaXMubmF2VHJpZ2dlci5nZXRBdHRyaWJ1dGUoJ2FyaWEtZXhwYW5kZWQnKSA9PT0gJ3RydWUnOwogICAgaXNPcGVuID8gdGhpcy5jbG9zZU1lbnUoKSA6IHRoaXMub3Blbk1lbnUoKTsKICB9CgogIG9wZW5NZW51KCkgewogICAgdGhpcy5uYXZUcmlnZ2VyLnNldEF0dHJpYnV0ZSgnYXJpYS1leHBhbmRlZCcsICd0cnVlJyk7CiAgICB0aGlzLm5hdi5zdHlsZS5zZXRQcm9wZXJ0eSgnLS1uYXYtZGlzcGxheScsICdibG9jaycpOwogIH0KCiAgY2xvc2VNZW51KCkgewogICAgdGhpcy5uYXZUcmlnZ2VyPy5zZXRBdHRyaWJ1dGUoJ2FyaWEtZXhwYW5kZWQnLCAnZmFsc2UnKTsKICAgIGlmICh0aGlzLmlzTW9iaWxlKSB7CiAgICAgIHRoaXMubmF2LnN0eWxlLnNldFByb3BlcnR5KCctLW5hdi1kaXNwbGF5JywgJ25vbmUnKTsKICAgIH0KICB9CgogIG9wZW4odHJpZ2dlciwgcGFuZWwpIHsKICAgIGlmICh0aGlzLm9wZW5QYW5lbCAmJiB0aGlzLm9wZW5QYW5lbCAhPT0gcGFuZWwpIHsKICAgICAgdGhpcy5jbG9zZSh0aGlzLm9wZW5UcmlnZ2VyLCB0aGlzLm9wZW5QYW5lbCk7CiAgICB9CiAgICAKICAgIHRyaWdnZXIuc2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJywgJ3RydWUnKTsKICAgIHBhbmVsLmRhdGFzZXQub3BlbiA9ICd0cnVlJzsKICAgIHRoaXMub3BlblBhbmVsID0gcGFuZWw7CiAgICB0aGlzLm9wZW5UcmlnZ2VyID0gdHJpZ2dlcjsKICB9CgogIGNsb3NlKHRyaWdnZXIsIHBhbmVsKSB7CiAgICB0cmlnZ2VyLnNldEF0dHJpYnV0ZSgnYXJpYS1leHBhbmRlZCcsICdmYWxzZScpOwogICAgZGVsZXRlIHBhbmVsLmRhdGFzZXQub3BlbjsKICAgIAogICAgaWYgKHRoaXMub3BlblBhbmVsID09PSBwYW5lbCkgewogICAgICB0aGlzLm9wZW5QYW5lbCA9IG51bGw7CiAgICAgIHRoaXMub3BlblRyaWdnZXIgPSBudWxsOwogICAgfQogIH0KCiAgdG9nZ2xlKHRyaWdnZXIsIHBhbmVsKSB7CiAgICBjb25zdCBpc09wZW4gPSB0cmlnZ2VyLmdldEF0dHJpYnV0ZSgnYXJpYS1leHBhbmRlZCcpID09PSAndHJ1ZSc7CiAgICBpc09wZW4gPyB0aGlzLmNsb3NlKHRyaWdnZXIsIHBhbmVsKSA6IHRoaXMub3Blbih0cmlnZ2VyLCBwYW5lbCk7CiAgfQoKICBoYW5kbGVDbGlja091dHNpZGUoZSkgewogICAgaWYgKCF0aGlzLm9wZW5QYW5lbCkgcmV0dXJuOwogICAgCiAgICBjb25zdCBpc0luUGFuZWwgPSB0aGlzLm9wZW5QYW5lbC5jb250YWlucyhlLnRhcmdldCk7CiAgICBjb25zdCBpc0luVHJpZ2dlciA9IHRoaXMub3BlblRyaWdnZXIuY29udGFpbnMoZS50YXJnZXQpOwogICAgCiAgICBpZiAoIWlzSW5QYW5lbCAmJiAhaXNJblRyaWdnZXIpIHsKICAgICAgdGhpcy5jbG9zZSh0aGlzLm9wZW5UcmlnZ2VyLCB0aGlzLm9wZW5QYW5lbCk7CiAgICB9CiAgfQoKICBoYW5kbGVUcmlnZ2VyS2V5ZG93bihlLCB0cmlnZ2VyLCBwYW5lbCkgewogICAgaWYgKGUua2V5ID09PSAnRW50ZXInIHx8IGUua2V5ID09PSAnICcpIHsKICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgICB0aGlzLm9wZW4odHJpZ2dlciwgcGFuZWwpOwogICAgICB0aGlzLmZvY3VzRmlyc3RFbGVtZW50KHBhbmVsKTsKICAgIH0KICAgIAogICAgaWYgKGUua2V5ID09PSAnRXNjYXBlJykgewogICAgICB0aGlzLmNsb3NlKHRyaWdnZXIsIHBhbmVsKTsKICAgIH0KICB9CgogIGhhbmRsZVBhbmVsS2V5ZG93bihlLCB0cmlnZ2VyLCBwYW5lbCkgewogICAgaWYgKGUua2V5ID09PSAnRXNjYXBlJykgewogICAgICB0aGlzLmNsb3NlKHRyaWdnZXIsIHBhbmVsKTsKICAgICAgdHJpZ2dlci5mb2N1cygpOwogICAgfQoKICAgIGlmIChlLmtleSA9PT0gJ1RhYicpIHsKICAgICAgY29uc3QgZm9jdXNhYmxlID0gcGFuZWwucXVlcnlTZWxlY3RvckFsbCgnYSwgYnV0dG9uLCBpbnB1dCwgW3RhYmluZGV4XTpub3QoW3RhYmluZGV4PSItMSJdKScpOwogICAgICBjb25zdCBsYXN0ID0gZm9jdXNhYmxlW2ZvY3VzYWJsZS5sZW5ndGggLSAxXTsKICAgICAgY29uc3QgZmlyc3QgPSBmb2N1c2FibGVbMF07CgogICAgICBpZiAoZS5zaGlmdEtleSAmJiBkb2N1bWVudC5hY3RpdmVFbGVtZW50ID09PSBmaXJzdCkgewogICAgICAgIHRoaXMuY2xvc2UodHJpZ2dlciwgcGFuZWwpOwogICAgICB9IGVsc2UgaWYgKCFlLnNoaWZ0S2V5ICYmIGRvY3VtZW50LmFjdGl2ZUVsZW1lbnQgPT09IGxhc3QpIHsKICAgICAgICB0aGlzLmNsb3NlKHRyaWdnZXIsIHBhbmVsKTsKICAgICAgfQogICAgfQogIH0KCiAgZm9jdXNGaXJzdEVsZW1lbnQocGFuZWwpIHsKICAgIGNvbnN0IGZvY3VzYWJsZSA9IHBhbmVsLnF1ZXJ5U2VsZWN0b3IoJ2EsIGJ1dHRvbiwgaW5wdXQsIFt0YWJpbmRleF06bm90KFt0YWJpbmRleD0iLTEiXSknKTsKICAgIGlmIChmb2N1c2FibGUpIGZvY3VzYWJsZS5mb2N1cygpOwogIH0KfQoKZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnW2RhdGEtZmxleC1uYXZdJykuZm9yRWFjaChuYXYgPT4gbmV3IE1vZHVsYXJOYXYobmF2KSk7",
+              "id": "572cqay"
+            },
+            "tag": "nav",
+            "attributes": {
+              "data-flex-nav": "{props.navName}",
+              "aria-label": "{props.ariaLabel}",
+              "style": "--panel-offset-block: {props.panelOffsetBlock};",
+              "data-nav-breakpoint": "{props.mobileBreakpoint}",
+              "data-dropdown-behavior": "{props.dropdownBehavior}",
+              "data-flex-nav-status": "desktop",
+              "class": "flex-nav--custom flex-nav"
+            },
+            "styles": [
+              "avk5fki",
+              "g28rrsl"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List"
+                },
+                "tag": "ul",
+                "attributes": {
+                  "class": "flex-nav__list"
+                },
+                "styles": [
+                  "3flfxeu"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "topLevel"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "navName",
+          "name": "Nav Name",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary"
+        },
+        {
+          "key": "panelOffsetBlock",
+          "name": "Panel Offset (Block)",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": ".5em"
+        },
+        {
+          "key": "mobileBreakpoint",
+          "name": "Mobile Breakpoint",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "900px"
+        },
+        {
+          "key": "dropdownBehavior",
+          "name": "Dropdown Behavior",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Click",
+          "selectOptionsString": "Click\nHover"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "2181": {
+      "id": 2181,
+      "name": "Flex Nav Item",
+      "key": "FlexNavItem",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "List Item"
+            },
+            "tag": "li",
+            "attributes": {
+              "data-display-item-on": "{props.displayOn}",
+              "class": "flex-nav__list-item flex-nav-item--custom"
+            },
+            "styles": [
+              "udmsc0h",
+              "fp5g9w9"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Link"
+                },
+                "tag": "a",
+                "attributes": {
+                  "href": "{props.itemLink}",
+                  "class": "{props.itemClasses} flex-nav__link"
+                },
+                "styles": [
+                  "95yktag"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "{props.itemLabel}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "itemLabel",
+          "name": "Item Label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Click me"
+        },
+        {
+          "key": "itemLink",
+          "name": "Item Link",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Item Link"
+        },
+        {
+          "key": "itemClasses",
+          "name": "Item Classes",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "displayOn",
+          "name": "Display On",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Always",
+          "selectOptionsString": "Always\nDesktop\nMobile"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

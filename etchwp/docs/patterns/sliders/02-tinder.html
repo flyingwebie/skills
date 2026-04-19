@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./effect-tinder.min.css" />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 100%;
+
+        padding: 16px 16px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-4e1b {
+        background-color: rgba(60, 60, 60, 1);
+        border-radius: 16px;
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-94be {
+        padding: 32px 16px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      .swiper-slide-text-66a3 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-content-901a {
+        padding: 32px 16px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-text-de0f {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-azure-leia-organa-997">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-4e1b">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/05.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-94be">
+            <div class="swiper-slide-text swiper-slide-text-66a3">Sabrina</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4e1b">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/06.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-94be">
+            <div class="swiper-slide-text swiper-slide-text-66a3">Jane</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4e1b">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/07.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-94be">
+            <div class="swiper-slide-text swiper-slide-text-66a3">Jessica</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4e1b">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            src="https://studio.swiperjs.com/demo-images/models/08.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-94be">
+            <div class="swiper-slide-text swiper-slide-text-66a3">Kate</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4e1b">
+          <div class="swiper-slide-content swiper-slide-content-901a">
+            <div class="swiper-slide-text swiper-slide-text-de0f">
+              There are no more recommendations
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./effect-tinder.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        modules: [EffectTinder],
+        effect: "tinder",
+      });
+    </script>
+  </body>
+</html>

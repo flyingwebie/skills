@@ -1,0 +1,219 @@
+{
+  "heading": {
+    "type": "class",
+    "selector": ".heading",
+    "collection": "default",
+    "css": "font-family: var(--heading-font-family);\n  font-weight: var(--heading-font-weight);\n  line-height: 1.2;\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "headline": {
+    "type": "class",
+    "selector": ".headline",
+    "collection": "default",
+    "css": "font-family: var(--heading-font-family);\n  font-weight: var(--heading-font-weight);\n  line-height: 1.3;\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "eyebrow": {
+    "type": "class",
+    "selector": ".eyebrow",
+    "collection": "default",
+    "css": "font-size: var(--text-s);\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--primary);",
+    "readonly": false
+  },
+  "lede": {
+    "type": "class",
+    "selector": ".lede",
+    "collection": "default",
+    "css": "font-size: var(--text-l);\n  line-height: 1.6;\n  color: var(--text-dark-muted);\n  max-width: 65ch;",
+    "readonly": false
+  },
+  "text": {
+    "type": "class",
+    "selector": ".text",
+    "collection": "default",
+    "css": "font-size: var(--text-m);\n  line-height: 1.6;\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "label": {
+    "type": "class",
+    "selector": ".label",
+    "collection": "default",
+    "css": "font-size: var(--text-s);\n  color: var(--text-dark-muted);",
+    "readonly": false
+  },
+  "caption": {
+    "type": "class",
+    "selector": ".caption",
+    "collection": "default",
+    "css": "font-size: var(--text-s);\n  color: var(--text-dark-muted);\n  margin-block-start: var(--space-xs);",
+    "readonly": false
+  },
+  "blockquote-text": {
+    "type": "class",
+    "selector": ".blockquote-text",
+    "collection": "default",
+    "css": "font-size: var(--text-l);\n  font-style: italic;\n  line-height: 1.6;\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "citation": {
+    "type": "class",
+    "selector": ".citation",
+    "collection": "default",
+    "css": "font-size: var(--text-s);\n  font-style: normal;\n  color: var(--text-dark-muted);",
+    "readonly": false
+  },
+  "intro": {
+    "type": "class",
+    "selector": ".intro",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--space-s);",
+    "readonly": false
+  },
+  "content-wrapper": {
+    "type": "class",
+    "selector": ".content-wrapper",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);",
+    "readonly": false
+  },
+  "media-wrapper": {
+    "type": "class",
+    "selector": ".media-wrapper",
+    "collection": "default",
+    "css": "display: flex;\n  overflow: hidden;\n  border-radius: var(--radius);",
+    "readonly": false
+  },
+  "card": {
+    "type": "class",
+    "selector": ".card",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, var(--space-m));\n  padding: var(--card-padding, var(--space-l));\n  border-radius: var(--radius);\n  background: var(--white);\n  border: 1px solid var(--border);",
+    "readonly": false
+  },
+  "card-body": {
+    "type": "class",
+    "selector": ".card-body",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--space-s);",
+    "readonly": false
+  },
+  "card-header": {
+    "type": "class",
+    "selector": ".card-header",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--space-xs);",
+    "readonly": false
+  },
+  "card-footer": {
+    "type": "class",
+    "selector": ".card-footer",
+    "collection": "default",
+    "css": "display: flex;\n  align-items: center;\n  gap: var(--space-s);\n  margin-block-start: auto;",
+    "readonly": false
+  },
+  "grid": {
+    "type": "class",
+    "selector": ".grid",
+    "collection": "default",
+    "css": "display: grid;\n  gap: var(--grid-gap, var(--space-l));",
+    "readonly": false
+  },
+  "cta-group": {
+    "type": "class",
+    "selector": ".cta-group",
+    "collection": "default",
+    "css": "display: flex;\n  flex-wrap: wrap;\n  gap: var(--space-s);\n  align-items: center;",
+    "readonly": false
+  },
+  "list": {
+    "type": "class",
+    "selector": ".list",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--space-s);\n  list-style: none;\n  padding: 0;\n  margin: 0;",
+    "readonly": false
+  },
+  "list-item": {
+    "type": "class",
+    "selector": ".list-item",
+    "collection": "default",
+    "css": "display: flex;\n  align-items: flex-start;\n  gap: var(--space-xs);",
+    "readonly": false
+  },
+  "overlay": {
+    "type": "class",
+    "selector": ".overlay",
+    "collection": "default",
+    "css": ":has(> &) { position: relative; isolation: isolate; }\n  position: absolute;\n  inset: 0;\n  z-index: -1;\n  pointer-events: none;",
+    "readonly": false
+  },
+  "divider": {
+    "type": "class",
+    "selector": ".divider",
+    "collection": "default",
+    "css": "width: 100%;\n  height: 1px;\n  background: var(--border);",
+    "readonly": false
+  },
+  "button": {
+    "type": "class",
+    "selector": ".button",
+    "collection": "default",
+    "css": "display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0.5em;\n  cursor: pointer;\n  text-decoration: none;\n  border: none;\n  transition: all var(--transition);",
+    "readonly": false
+  },
+  "link": {
+    "type": "class",
+    "selector": ".link",
+    "collection": "default",
+    "css": "color: var(--primary);\n  text-decoration: underline;\n  text-underline-offset: 0.2em;\n  transition: color var(--transition);\n  &:hover { color: var(--primary-dark, var(--primary)); }",
+    "readonly": false
+  },
+  "badge": {
+    "type": "class",
+    "selector": ".badge",
+    "collection": "default",
+    "css": "display: inline-flex;\n  align-items: center;\n  padding: var(--space-xxs) var(--space-xs);\n  font-size: var(--text-s);\n  font-weight: 600;\n  border-radius: 100vw;\n  background: var(--neutral-ultra-light);\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "tag": {
+    "type": "class",
+    "selector": ".tag",
+    "collection": "default",
+    "css": "display: inline-flex;\n  align-items: center;\n  padding: var(--space-xxs) var(--space-xs);\n  font-size: var(--text-s);\n  border-radius: var(--radius);\n  background: var(--neutral-ultra-light);\n  color: var(--text-dark);",
+    "readonly": false
+  },
+  "avatar": {
+    "type": "class",
+    "selector": ".avatar",
+    "collection": "default",
+    "css": "border-radius: 50%;\n  object-fit: cover;\n  aspect-ratio: 1;",
+    "readonly": false
+  },
+  "icon": {
+    "type": "class",
+    "selector": ".icon",
+    "collection": "default",
+    "css": "flex-shrink: 0;\n  width: 1.5em;\n  height: 1.5em;",
+    "readonly": false
+  },
+  "nav-link": {
+    "type": "class",
+    "selector": ".nav-link",
+    "collection": "default",
+    "css": "color: var(--text-dark);\n  text-decoration: none;\n  transition: color var(--transition);\n  &:hover { color: var(--primary); }",
+    "readonly": false
+  },
+  "form-field": {
+    "type": "class",
+    "selector": ".form-field",
+    "collection": "default",
+    "css": "display: flex;\n  flex-direction: column;\n  gap: var(--space-xxs);",
+    "readonly": false
+  },
+  "input": {
+    "type": "class",
+    "selector": ".input",
+    "collection": "default",
+    "css": "padding: var(--space-xs) var(--space-s);\n  border: 1px solid var(--border);\n  border-radius: var(--radius);\n  font-size: var(--text-m);\n  transition: border-color var(--transition);\n  &:focus { border-color: var(--primary); outline: var(--focus-width) solid var(--focus-color); outline-offset: var(--focus-offset); }",
+    "readonly": false
+  }
+}

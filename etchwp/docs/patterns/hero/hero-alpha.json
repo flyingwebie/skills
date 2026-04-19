@@ -1,0 +1,325 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Hero Alpha"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "hero-alpha"
+      },
+      "styles": [
+        "etch-section-style",
+        "jcttper"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Inner"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "hero-alpha__inner"
+          },
+          "styles": [
+            "etch-container-style",
+            "i6ad4p6"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "flex-div",
+                "class": "hero-alpha__content-wrapper"
+              },
+              "styles": [
+                "etch-flex-div-style",
+                "i0g1ras"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h1",
+                  "attributes": {
+                    "class": "hero-alpha__heading"
+                  },
+                  "styles": [
+                    "uqtjfxj"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "A compelling headline goes here"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Lede"
+                  },
+                  "tag": "p",
+                  "attributes": {
+                    "class": "hero-alpha__lede"
+                  },
+                  "styles": [
+                    "qkh5w0e"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quas neque saepe eligendi maxime distinctio illo placeat animi, cum ex!"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA"
+                  },
+                  "tag": "a",
+                  "attributes": {
+                    "href": "#",
+                    "class": "hero-alpha__cta"
+                  },
+                  "styles": [
+                    "9ewsf9u"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Call to action"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Media Wrapper"
+              },
+              "tag": "figure",
+              "attributes": {
+                "data-etch-element": "flex-div",
+                "class": "hero-alpha__media-wrapper"
+              },
+              "styles": [
+                "etch-flex-div-style",
+                "fv258ub",
+                "s4gkacs"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/dynamic-image",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image"
+                  },
+                  "tag": "img",
+                  "attributes": {
+                    "class": "hero-alpha__media",
+                    "mediaId": "2783"
+                  },
+                  "styles": [
+                    "8r5eo97"
+                  ]
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "jcttper": {
+      "type": "class",
+      "selector": ".hero-alpha",
+      "collection": "default",
+      "css": "background: var(--bg-ultra-light);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "i6ad4p6": {
+      "type": "class",
+      "selector": ".hero-alpha__inner",
+      "collection": "default",
+      "css": "display: grid;\n  gap: calc(var(--content-gap, 1em) * 2);\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size > to-rem(800px)) {\n    grid-template-columns: var(--grid-2);\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "i0g1ras": {
+      "type": "class",
+      "selector": ".hero-alpha__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: var(--content-gap, 1em);",
+      "readonly": false
+    },
+    "uqtjfxj": {
+      "type": "class",
+      "selector": ".hero-alpha__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "qkh5w0e": {
+      "type": "class",
+      "selector": ".hero-alpha__lede",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "9ewsf9u": {
+      "type": "class",
+      "selector": ".hero-alpha__cta",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "fv258ub": {
+      "type": "class",
+      "selector": ".hero-alpha__media-wrapper",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "8r5eo97": {
+      "type": "class",
+      "selector": ".hero-alpha__media",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  }
+}

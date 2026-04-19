@@ -1,0 +1,212 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3482,
+      "attributes": {
+        "rangeEnd": "cover 80%",
+        "rangeStart": "cover 20%"
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "SingleTextElement"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "6iiubd9": {
+      "type": "class",
+      "selector": ".fill-text-alpha",
+      "collection": "default",
+      "css": "> * {\n    display: inline !important;\n    /* Base Color - Must Be Transparent */\n    color: oklch(from var(--base-color, black) l c h / var(--base-color-opacity, 0.2));\n    /* Fill Color */\n    background: linear-gradient(to right, var(--fill-color, black), var(--fill-color, black));\n    background-clip: text;\n    -webkit-background-clip: text;\n    background-repeat: no-repeat;\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3482": {
+      "name": "Fill Text Alpha",
+      "key": "FillTextAlpha",
+      "properties": [
+        {
+          "key": "baseColor",
+          "name": "Base Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "black"
+        },
+        {
+          "key": "baseColorOpacity",
+          "name": "Base Color Opacity",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": ".2"
+        },
+        {
+          "key": "fillColor",
+          "name": "Fill Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "black"
+        },
+        {
+          "key": "behavior",
+          "name": "Behavior",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "view",
+          "selectOptionsString": "View : view\nScroll : scroll"
+        },
+        {
+          "key": "rangeStart",
+          "name": "Starting Offset",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "cover 0%",
+          "selectOptionsString": "0% : cover 0%\n10% : cover 10%\n20% : cover 20%\n30% : cover 30%\n40% : cover 40%\n50% : cover 50%"
+        },
+        {
+          "key": "rangeEnd",
+          "name": "Ending Offset",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "cover 50%",
+          "selectOptionsString": "50% : cover 50%\n60% : cover 60%\n70% : cover 70%\n80% : cover 80%\n90% : cover 90%\n100% : cover 100%"
+        }
+      ],
+      "id": 3482,
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Fill Text Alpha"
+            },
+            "script": {
+              "code": "ZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsICgpID0+IHsKICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdbZGF0YS1maWxsLXRleHQtYWxwaGFdJykuZm9yRWFjaCgoZWwsIGluZGV4KSA9PiB7CiAgICBjb25zdCBjaGlsZCA9IGVsLmNoaWxkcmVuWzBdOwogICAgaWYgKCFjaGlsZCkgcmV0dXJuOwoKICAgIGNvbnN0IGJlaGF2aW9yID0gZWwuZGF0YXNldC5iZWhhdmlvciB8fCAndmlldyc7CiAgICBjb25zdCByYW5nZVN0YXJ0ID0gZWwuZGF0YXNldC5yYW5nZVN0YXJ0IHx8ICdjb3ZlciAyMCUnOwogICAgY29uc3QgcmFuZ2VFbmQgPSBlbC5kYXRhc2V0LnJhbmdlRW5kIHx8ICdjb3ZlciA4MCUnOwoKICAgIGNvbnN0IGFuaW1OYW1lID0gYGZpbGxUZXh0LSR7aW5kZXh9YDsKCiAgICBjb25zdCBzdHlsZSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3N0eWxlJyk7CiAgICBzdHlsZS50ZXh0Q29udGVudCA9IGAKICAgICAgQGtleWZyYW1lcyAke2FuaW1OYW1lfSB7CiAgICAgICAgZnJvbSB7IGJhY2tncm91bmQtc2l6ZTogMCUgMTAwJTsgfQogICAgICAgIHRvIHsgYmFja2dyb3VuZC1zaXplOiAxMDAlIDEwMCU7IH0KICAgICAgfQogICAgYDsKICAgIGRvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoc3R5bGUpOwoKICAgIGNoaWxkLnN0eWxlLmFuaW1hdGlvbiA9IGAke2FuaW1OYW1lfSBsaW5lYXIgYm90aGA7CiAgICBjaGlsZC5zdHlsZS5hbmltYXRpb25UaW1lbGluZSA9IGJlaGF2aW9yID09PSAnc2Nyb2xsJyA/ICdzY3JvbGwoKScgOiAndmlldygpJzsKICAgIGNoaWxkLnN0eWxlLmFuaW1hdGlvblJhbmdlU3RhcnQgPSByYW5nZVN0YXJ0OwogICAgY2hpbGQuc3R5bGUuYW5pbWF0aW9uUmFuZ2VFbmQgPSByYW5nZUVuZDsKICB9KTsKfSk7",
+              "id": "5lveyg0"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-fill-text-alpha": "",
+              "style": "--base-color:{props.baseColor}; --base-color-opacity:{props.baseColorOpacity}; --fill-color:{props.fillColor};",
+              "data-behavior": "{props.behavior}",
+              "class": "fill-text-alpha",
+              "data-range-start": "{props.rangeStart}",
+              "data-range-end": "{props.rangeEnd}"
+            },
+            "styles": [
+              "6iiubd9"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/slot-placeholder",
+              "attrs": {
+                "name": "SingleTextElement"
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "slots.SingleTextElement.empty",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "slots.SingleTextElement.empty"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "h2",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "This component accepts a single text element (paragraph or heading). The text will \"fill\" as the user scrolls. You have multiple control points for text color and scroll behavior, but it's imperative that you only use one text element per component instance. You'll also need to use custom offset timeline values if you place this component near the top or bottom of the page as this affects scrolling range."
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,927 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3658,
+      "attributes": {}
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "features"
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 3659,
+              "attributes": {}
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-02-11T12:45:43.443Z",
+  "styles": {
+    "c1mehy9": {
+      "type": "class",
+      "selector": ".pricing-card-bravo",
+      "collection": "default",
+      "css": "--card-gap: var(--space-m, 1rem);\n  --card-padding: 1rem;\n  padding: var(--card-padding, 1rem);\n  display: grid;\n  gap: var(--card-gap, 1rem);\n  border: var(--border, 1px solid #eee);\n  border-radius: var(--radius, 5px);\n  background-color: var(--bg-ultra-light, #eee);\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= to-rem(800px)) {\n    --card-gap: var(--space-xl);\n    --card-padding: var(--space-l);\n    display: grid;\n    grid-template-columns: var(--grid-2, repeat(2, minmax(0, 1fr)));\n  }",
+      "readonly": false
+    },
+    "vpefppc": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__content-wrapper",
+      "collection": "default",
+      "css": "display: contents;\n  flex-direction: column;\n  gap: var(--content-gap, 1rem);\n  @container (inline-size >= to-rem(800px)) {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    min-block-size: to-rem(300px);\n  }",
+      "readonly": false
+    },
+    "pw1bf3d": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__header",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "5r6q82a": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "en5tu2m": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__eyebrow",
+      "collection": "default",
+      "css": "order: -1;",
+      "readonly": false
+    },
+    "m6w0742": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__pricing-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "vkh71zt": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bovsszi": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-currency",
+      "collection": "default",
+      "css": "font-size: var(--h1);",
+      "readonly": false
+    },
+    "gl2vd8p": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-amount",
+      "collection": "default",
+      "css": "font-size: var(--h1);",
+      "readonly": false
+    },
+    "j09p49m": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-term",
+      "collection": "default",
+      "css": "&::before {\n    content: '/';\n  }\n\n  display: inline-flex;\n  flex-direction: row;\n  gap: .25ch;\n  margin-inline-start: .25ch;",
+      "readonly": false
+    },
+    "u1qh20g": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__price-description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "i3u1nzi": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__button-wrapper",
+      "collection": "default",
+      "css": "order: 1;",
+      "readonly": false
+    },
+    "53gxhmc": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__button",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "li98r7j": {
+      "type": "class",
+      "selector": ".btn--primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "z7n3mof": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1rem) / 2);\n  position: relative;\n  justify-content: center;\n\n  &::before {\n    content: '';\n    inline-size: 100%;\n    block-size: 1.5px;\n    background: color-mix(in oklch, var(--black, #000) 10%, transparent);\n    position: absolute;\n    left: 0;\n    top: calc(var(--card-gap) * -0.5);\n  }\n\n  @container (inline-size >= to-rem(800px)) {\n    /* # Vertical Divider Line */\n    &::before {\n      content: '';\n      block-size: calc(100% + var(--card-padding));\n      inline-size: 1.5px;\n      top: 50%;\n      translate: 0% -50%;\n      left: calc(var(--card-gap) * -0.5);\n    }\n  }",
+      "readonly": false
+    },
+    "8ym5wq5": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list-item",
+      "collection": "default",
+      "css": "--icon-color: var(--text-dark-muted);\n  --icon-size: 1em;\n  --icon-include: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20stroke%3D%22%23141B34%22%20stroke-width%3D%221.5%22%3E%3Cpath%20d%3D%22M22%2012C22%206.47715%2017.5228%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022C17.5228%2022%2022%2017.5228%2022%2012Z%22%2F%3E%3Cpath%20d%3D%22M8%2012.5L10.5%2015L16%209%22%2F%3E%3C%2Fsvg%3E);\n  --icon-exclude: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%20stroke%3D%22%23141B34%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22square%22%3E%3Cpath%20d%3D%22M22%2012C22%206.47715%2017.5228%202%2012%202C6.47715%202%202%206.47715%202%2012C2%2017.5228%206.47715%2022%2012%2022C17.5228%2022%2022%2017.5228%2022%2012Z%22%2F%3E%3Cpath%20d%3D%22M14.9994%2015L9%209M9.00064%2015L15%209%22%2F%3E%3C%2Fsvg%3E);\n  /* # Default State */\n  &::before {\n    content: '';\n    inline-size: var(--icon-size);\n    block-size: var(--icon-size);\n    background-color: var(--icon-color);\n    mask-image: var(--icon, var(--icon-include));\n    mask-position: center;\n    mask-size: contain;\n    mask-repeat: no-repeat;\n    display: flex;\n    aspect-ratio: 1;\n    translate: 0% 0.4ex;\n  }\n\n  display: flex;\n  flex-direction: row;\n  align-items: start;\n  gap: 1ch;\n  /* # Exclusion State */\n  &[data-item-status='excluded'] {\n    --icon: var(--icon-exclude);\n    opacity: 0.6;\n    position: relative;\n  }\n  /* # Inclusion State */\n  &[data-item-status='included'] {\n  }",
+      "readonly": false
+    },
+    "6dranv5": {
+      "type": "class",
+      "selector": ".pricing-card-bravo__list-item-label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3658": {
+      "id": 3658,
+      "legacyId": "",
+      "name": "Pricing Card Bravo",
+      "key": "PricingCardBravo",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Pricing Card Bravo"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "pricing-card-bravo"
+            },
+            "styles": [
+              "c1mehy9"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "class": "pricing-card-bravo__content-wrapper"
+                },
+                "styles": [
+                  "vpefppc"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Header"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__header"
+                    },
+                    "styles": [
+                      "pw1bf3d"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Heading"
+                        },
+                        "tag": "h2",
+                        "attributes": {
+                          "class": "pricing-card-bravo__heading"
+                        },
+                        "styles": [
+                          "5r6q82a"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.heading}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Eyebrow"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__eyebrow"
+                        },
+                        "styles": [
+                          "en5tu2m"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.eyebrow}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Pricing Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__pricing-wrapper"
+                    },
+                    "styles": [
+                      "m6w0742"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__price"
+                        },
+                        "styles": [
+                          "vkh71zt"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Currency"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-currency"
+                            },
+                            "styles": [
+                              "bovsszi"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.currency}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Amount"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-amount"
+                            },
+                            "styles": [
+                              "gl2vd8p"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.price}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Price Term"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "pricing-card-bravo__price-term"
+                            },
+                            "styles": [
+                              "j09p49m"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.term}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Price Description"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "pricing-card-bravo__price-description"
+                        },
+                        "styles": [
+                          "u1qh20g"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.priceDescription}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Button Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "pricing-card-bravo__button-wrapper"
+                    },
+                    "styles": [
+                      "i3u1nzi"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Button"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "{props.buttonLink}",
+                          "class": "pricing-card-bravo__button btn--primary"
+                        },
+                        "styles": [
+                          "53gxhmc",
+                          "li98r7j"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.buttonLabel}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List"
+                },
+                "tag": "ul",
+                "attributes": {
+                  "class": "pricing-card-bravo__list"
+                },
+                "styles": [
+                  "z7n3mof"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "features"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Eyebrow",
+          "key": "eyebrow",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "HSA/FSA Eligible"
+        },
+        {
+          "name": "Heading",
+          "key": "heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Function Membership"
+        },
+        {
+          "name": "Currency",
+          "key": "currency",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "$"
+        },
+        {
+          "name": "Price",
+          "key": "price",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1"
+        },
+        {
+          "name": "Term",
+          "key": "term",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "day"
+        },
+        {
+          "name": "Price Description",
+          "key": "priceDescription",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "charged annually at $365"
+        },
+        {
+          "name": "Button Label",
+          "key": "buttonLabel",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Join Function"
+        },
+        {
+          "name": "Button Link",
+          "key": "buttonLink",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Features",
+          "key": "features",
+          "keyTouched": false,
+          "type": {
+            "primitive": "object"
+          },
+          "default": [
+            {
+              "itemText": "Feature 1",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 2",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 3",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 4",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 5",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 6",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 7",
+              "itemStatus": "included"
+            },
+            {
+              "itemText": "Feature 8",
+              "itemStatus": "excluded"
+            },
+            {
+              "itemText": "Feature 9",
+              "itemStatus": "excluded"
+            }
+          ]
+        }
+      ],
+      "description": ""
+    },
+    "3659": {
+      "id": 3659,
+      "legacyId": "",
+      "name": "Pricing Card Bravo List Item",
+      "key": "PricingCardBravoListItem",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "List Item"
+            },
+            "tag": "li",
+            "attributes": {
+              "class": "pricing-card-bravo__list-item",
+              "data-item-status": "{props.status.toLowercase()}"
+            },
+            "styles": [
+              "8ym5wq5"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List Item Label"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "pricing-card-bravo__list-item-label"
+                },
+                "styles": [
+                  "6dranv5"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "{props.label}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Label",
+          "key": "label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum dolor."
+        },
+        {
+          "name": "Status",
+          "key": "status",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Included",
+          "selectOptionsString": "Included\nExcluded"
+        }
+      ],
+      "description": ""
+    }
+  }
+}

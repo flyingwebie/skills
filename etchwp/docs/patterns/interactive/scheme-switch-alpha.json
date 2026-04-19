@@ -1,0 +1,252 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3294,
+      "attributes": {
+        "swatchSize": "1.25rem"
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "aob2n5o": {
+      "type": "class",
+      "selector": ".scheme-switch-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: 0.5ch;\n  max-inline-size: max-content;\n  &[data-alignment=\"vertical\" i] {\n    \n  \n\tdisplay: flex;\n\tflex-direction: column;}",
+      "readonly": false
+    },
+    "h2op1i8": {
+      "type": "class",
+      "selector": ".scheme-switch-alpha__button",
+      "collection": "default",
+      "css": "padding: 0;\n  margin: 0;\n  inline-size: var(--swatch-size);\n  block-size: var(--swatch-size);\n  background: var(--swatch-color);\n  aspect-ratio: 1;\n  border-radius: 50vw;\n  &[aria-label*='dark' i] {\n    --swatch-color: var(--dark-swatch-color);\n    border: 1px solid color-mix(in hsl, white 30%, transparent);\n  }\n  &[aria-label*='light' i] {\n    --swatch-color: var(--light-swatch-color);\n    border: 1px solid color-mix(in hsl, black 30%, transparent);\n  }",
+      "readonly": false
+    },
+    "svz9bp6": {
+      "type": "class",
+      "selector": ".scheme-switch-alpha__button-label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "315inso": {
+      "type": "class",
+      "selector": ".screen-reader-text",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3294": {
+      "id": 3294,
+      "legacyId": "",
+      "name": "Scheme Switch Alpha",
+      "key": "SchemeSwitchAlpha",
+      "properties": [
+        {
+          "name": "Swatch Size",
+          "key": "swatchSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1.5rem"
+        },
+        {
+          "name": "Dark Swatch Color",
+          "key": "darkSwatchColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "black"
+        },
+        {
+          "name": "Light Swatch Color",
+          "key": "lightSwatchColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "white"
+        },
+        {
+          "key": "alignment",
+          "name": "Alignment",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nVertical"
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Scheme Switch Alpha"
+            },
+            "script": {
+              "code": "Y29uc3Qgc2NoZW1lU3dpdGNoID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignW2RhdGEtc2NoZW1lLXN3aXRjaC1hbHBoYV0nKTsKCmlmIChzY2hlbWVTd2l0Y2gpIHsKICBjb25zdCBTVE9SQUdFX0tFWSA9ICdjb2xvci1zY2hlbWUnOwogIGNvbnN0IGJ1dHRvbnMgPSBzY2hlbWVTd2l0Y2gucXVlcnlTZWxlY3RvckFsbCgnYnV0dG9uJyk7CiAgY29uc3QgbGlnaHRCdXR0b24gPSBidXR0b25zWzBdOwogIGNvbnN0IGRhcmtCdXR0b24gPSBidXR0b25zWzFdOwoKICBmdW5jdGlvbiB1cGRhdGVTY2hlbWUoaXNEYXJrKSB7CiAgICBjb25zdCBzY2hlbWUgPSBpc0RhcmsgPyAnZGFyaycgOiAnbGlnaHQnOwogICAgCiAgICAvLyBVcGRhdGUgYnV0dG9uIHN0YXRlcwogICAgbGlnaHRCdXR0b24uc2V0QXR0cmlidXRlKCdhcmlhLXByZXNzZWQnLCBpc0RhcmsgPyAnZmFsc2UnIDogJ3RydWUnKTsKICAgIGRhcmtCdXR0b24uc2V0QXR0cmlidXRlKCdhcmlhLXByZXNzZWQnLCBpc0RhcmsgPyAndHJ1ZScgOiAnZmFsc2UnKTsKICAgIAogICAgbGlnaHRCdXR0b24uc2V0QXR0cmlidXRlKCdhcmlhLWxhYmVsJywgaXNEYXJrID8gJ1N3aXRjaCB0byBMaWdodCBTY2hlbWUnIDogJ0xpZ2h0IFNjaGVtZSAoYWN0aXZlKScpOwogICAgZGFya0J1dHRvbi5zZXRBdHRyaWJ1dGUoJ2FyaWEtbGFiZWwnLCBpc0RhcmsgPyAnRGFyayBTY2hlbWUgKGFjdGl2ZSknIDogJ1N3aXRjaCB0byBEYXJrIFNjaGVtZScpOwogICAgCiAgICAvLyBBcHBseSB0aGUgc2NoZW1lCiAgICBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuc3R5bGUuY29sb3JTY2hlbWUgPSBzY2hlbWU7CiAgfQoKICBmdW5jdGlvbiBnZXRQcmVmZXJlbmNlKCkgewogICAgY29uc3Qgc2F2ZWQgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbShTVE9SQUdFX0tFWSk7CiAgICBpZiAoc2F2ZWQpIHsKICAgICAgcmV0dXJuIHNhdmVkID09PSAnZGFyayc7CiAgICB9CiAgICByZXR1cm4gd2luZG93Lm1hdGNoTWVkaWEoJyhwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyayknKS5tYXRjaGVzOwogIH0KCiAgZnVuY3Rpb24gc2V0UHJlZmVyZW5jZShpc0RhcmspIHsKICAgIGNvbnN0IHNjaGVtZSA9IGlzRGFyayA/ICdkYXJrJyA6ICdsaWdodCc7CiAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShTVE9SQUdFX0tFWSwgc2NoZW1lKTsKICAgIHVwZGF0ZVNjaGVtZShpc0RhcmspOwogIH0KCiAgLy8gU2V0IGluaXRpYWwgc3RhdGUgZnJvbSBzYXZlZCBwcmVmZXJlbmNlIG9yIHN5c3RlbSBwcmVmZXJlbmNlCiAgdXBkYXRlU2NoZW1lKGdldFByZWZlcmVuY2UoKSk7CgogIC8vIExpc3RlbiBmb3IgY2hhbmdlcyB0byBzeXN0ZW0gcHJlZmVyZW5jZSAob25seSBpZiBubyBzYXZlZCBwcmVmZXJlbmNlKQogIHdpbmRvdy5tYXRjaE1lZGlhKCcocHJlZmVycy1jb2xvci1zY2hlbWU6IGRhcmspJykuYWRkRXZlbnRMaXN0ZW5lcignY2hhbmdlJywgKGUpID0+IHsKICAgIGlmICghbG9jYWxTdG9yYWdlLmdldEl0ZW0oU1RPUkFHRV9LRVkpKSB7CiAgICAgIHVwZGF0ZVNjaGVtZShlLm1hdGNoZXMpOwogICAgfQogIH0pOwoKICAvLyBIYW5kbGUgYnV0dG9uIGNsaWNrcwogIGxpZ2h0QnV0dG9uLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgKCkgPT4gewogICAgc2V0UHJlZmVyZW5jZShmYWxzZSk7CiAgfSk7CgogIGRhcmtCdXR0b24uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiB7CiAgICBzZXRQcmVmZXJlbmNlKHRydWUpOwogIH0pOwp9",
+              "id": "elnc109"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-scheme-switch-alpha": "",
+              "style": "--swatch-size: {props.swatchSize}; --dark-swatch-color: {props.darkSwatchColor}; --light-swatch-color: {props.lightSwatchColor};",
+              "class": "scheme-switch-alpha",
+              "data-alignment": "{props.alignment}"
+            },
+            "styles": [
+              "aob2n5o"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Light"
+                },
+                "tag": "button",
+                "attributes": {
+                  "aria-label": "Switch to Dark Scheme",
+                  "class": "scheme-switch-alpha__button"
+                },
+                "styles": [
+                  "h2op1i8"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "class": "scheme-switch-alpha__button-label screen-reader-text"
+                    },
+                    "styles": [
+                      "svz9bp6",
+                      "315inso"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Light"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dark"
+                },
+                "tag": "button",
+                "attributes": {
+                  "aria-label": "Switch to Dark Scheme",
+                  "class": "scheme-switch-alpha__button"
+                },
+                "styles": [
+                  "h2op1i8"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "class": "scheme-switch-alpha__button-label screen-reader-text"
+                    },
+                    "styles": [
+                      "svz9bp6",
+                      "315inso"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Label"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3404,
+      "attributes": {}
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "ypxrn1u": {
+      "type": "class",
+      "selector": ".scheme-switch-bravo",
+      "collection": "default",
+      "css": "--switch-size: 16%;\n  --icon-size: 10em;\n  --moon-color: #d9fbff;\n  --star-color: var(--moon-color);\n  --sun-color: #ffc233;\n  inline-size: 100%;\n  max-inline-size: max-content;\n  inline-size: 36px;\n  block-size: 36px;\n  aspect-ratio: 1;\n  min-inline-size: 0;\n  min-block-size: 0;\n  display: grid;\n  place-items: center;\n  padding: 0;\n  position: relative;\n  overflow: visible;",
+      "readonly": false
+    },
+    "om5b9a7": {
+      "type": "class",
+      "selector": ".scheme-switch-bravo__icon",
+      "collection": "default",
+      "css": "font-size: var(--switch-size);\n  min-inline-size: 0;\n  min-block-size: 0;\n  display: flex;\n  inline-size: 100%;\n  block-size: 100%;\n  position: absolute;\n  inset-block-start: 50%;\n  inset-inline-start: 50%;\n  translate: -50% -50%;\n  border-radius: 50%;\n  transition:\n    rotate 400ms ease-in-out,\n    box-shadow 400ms ease-in-out,\n    background 400ms ease-in-out;\n\n  /* # Sun */\n  [data-current-scheme='sun' i] & {\n    font-size: calc(var(--switch-size) * 1.2);\n    background: var(--sun-color);\n    inline-size: calc(var(--icon-size) * 0.7);\n    block-size: calc(var(--icon-size) * 0.7);\n    rotate: 0deg;\n    box-shadow:\n      3em 3em 0 5em var(--sun-color) inset,\n      0 -5em 0 -2.7em var(--sun-color),\n      3.5em -3.5em 0 -3em var(--sun-color),\n      5em 0 0 -2.7em var(--sun-color),\n      3.5em 3.5em 0 -3em var(--sun-color),\n      0 5em 0 -2.7em var(--sun-color),\n      -3.5em 3.5em 0 -3em var(--sun-color),\n      -5em 0 0 -2.7em var(--sun-color),\n      -3.5em -3.5em 0 -3em var(--sun-color);\n  }\n\n  /* # Moon */\n  [data-current-scheme='moon' i] & {\n    font-size: calc(var(--switch-size) * 1);\n    inline-size: var(--icon-size);\n    block-size: var(--icon-size);\n    background: transparent;\n    rotate: -75deg;\n    box-shadow:\n      3em 2.5em 0 0em var(--moon-color) inset,\n      /* ## Stars */ color-mix(in hsl, var(--star-color, white) 70%, transparent) 0em -7em 0 -4.5em,\n      var(--star-color, white) 2em 6em 0 -4em,\n      var(--star-color, white) -4em -7em 0 -4.3em,\n      var(--star-color, white) 6em 2em 0 -4.2em,\n      color-mix(in hsl, var(--star-color, white) 70%, transparent) 4.5em 4em 0 -4.5em,\n      var(--star-color, white) -8em 0.5em 0 -4.4em,\n      color-mix(in hsl, var(--star-color, white) 70%, transparent) -6em -4em 0 -4.5em,\n      color-mix(in hsl, var(--star-color, white) 70%, transparent) -1em 7em 0 -4.5em;\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3404": {
+      "id": 3404,
+      "legacyId": "",
+      "name": "Scheme Switch Bravo",
+      "key": "SchemeSwitchBravo",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Scheme Switch Bravo"
+            },
+            "script": {
+              "code": "Y2xhc3MgU2NoZW1lU3dpdGNoIHsKICBjb25zdHJ1Y3RvcihidXR0b24pIHsKICAgIHRoaXMuYnV0dG9uID0gYnV0dG9uOwogICAgdGhpcy5pbml0KCk7CiAgfQoKICBpbml0KCkgewogICAgY29uc3Qgc3RvcmVkID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbG9yLXNjaGVtZScpOwogICAgaWYgKHN0b3JlZCkgewogICAgICB0aGlzLnNldFNjaGVtZShzdG9yZWQsIGZhbHNlKTsKICAgIH0gZWxzZSB7CiAgICAgIGNvbnN0IG9zUHJlZmVyc0RhcmsgPSB3aW5kb3cubWF0Y2hNZWRpYSgnKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKScpLm1hdGNoZXM7CiAgICAgIHRoaXMuc2V0U2NoZW1lKG9zUHJlZmVyc0RhcmsgPyAnbW9vbicgOiAnc3VuJywgZmFsc2UpOwogICAgfQoKICAgIHdpbmRvdy5tYXRjaE1lZGlhKCcocHJlZmVycy1jb2xvci1zY2hlbWU6IGRhcmspJykuYWRkRXZlbnRMaXN0ZW5lcignY2hhbmdlJywgKGUpID0+IHsKICAgICAgaWYgKCFsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29sb3Itc2NoZW1lJykpIHsKICAgICAgICB0aGlzLnNldFNjaGVtZShlLm1hdGNoZXMgPyAnbW9vbicgOiAnc3VuJywgZmFsc2UpOwogICAgICB9CiAgICB9KTsKCiAgICB0aGlzLmJ1dHRvbi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpID0+IHRoaXMudG9nZ2xlKCkpOwogIH0KCiAgdG9nZ2xlKCkgewogICAgY29uc3QgY3VycmVudCA9IGRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5kYXRhc2V0LmN1cnJlbnRTY2hlbWU7CiAgICBjb25zdCBuZXh0ID0gY3VycmVudCA9PT0gJ21vb24nID8gJ3N1bicgOiAnbW9vbic7CiAgICB0aGlzLnNldFNjaGVtZShuZXh0LCB0cnVlKTsKICB9CgogIHNldFNjaGVtZShzY2hlbWUsIHNhdmUpIHsKICAgIGNvbnN0IGlzRGFyayA9IHNjaGVtZSA9PT0gJ21vb24nOwoKICAgIC8vIFVwZGF0ZSBkb2N1bWVudAogICAgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmRhdGFzZXQuY3VycmVudFNjaGVtZSA9IHNjaGVtZTsKICAgIGRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5zdHlsZS5jb2xvclNjaGVtZSA9IGlzRGFyayA/ICdkYXJrJyA6ICdsaWdodCc7CgogICAgLy8gVXBkYXRlIGJ1dHRvbiBzdGF0ZQogICAgdGhpcy5idXR0b24uc2V0QXR0cmlidXRlKCdhcmlhLWNoZWNrZWQnLCBpc0RhcmspOwogICAgdGhpcy5idXR0b24uc2V0QXR0cmlidXRlKCdhcmlhLWxhYmVsJywgYENvbG9yIHNjaGVtZTogJHtpc0RhcmsgPyAnZGFyaycgOiAnbGlnaHQnfS4gQ2xpY2sgdG8gdG9nZ2xlLmApOwoKICAgIGlmIChzYXZlKSB7CiAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCdjb2xvci1zY2hlbWUnLCBzY2hlbWUpOwogICAgfQogIH0KfQoKLy8gSW5pdGlhbGl6ZQpkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdbZGF0YS1zY2hlbWUtc3dpdGNoLWJyYXZvXScpLmZvckVhY2goKGJ1dHRvbikgPT4gewogIG5ldyBTY2hlbWVTd2l0Y2goYnV0dG9uKTsKfSk7",
+              "id": "uc6svwh"
+            },
+            "tag": "button",
+            "attributes": {
+              "data-current-scheme": "sun",
+              "role": "switch",
+              "aria-checked": "false",
+              "aria-label": "Toggle color scheme",
+              "class": "scheme-switch-bravo",
+              "data-scheme-switch-bravo": "",
+              "style": "--switch-size: {props.switchSize}; --icon-size: {props.iconSize}; --moon-color: {props.moonColor}; --star-color: {props.starColor}; --sun-color: {props.sunColor};"
+            },
+            "styles": [
+              "ypxrn1u"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Icon"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "scheme-switch-bravo__icon"
+                },
+                "styles": [
+                  "om5b9a7"
+                ]
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Switch Size",
+          "key": "switchSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "16%"
+        },
+        {
+          "name": "Icon Size",
+          "key": "iconSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "10em"
+        },
+        {
+          "name": "Moon Color",
+          "key": "moonColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#d9fbff"
+        },
+        {
+          "name": "Star Color",
+          "key": "starColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--moon-color)"
+        },
+        {
+          "name": "Sun Color",
+          "key": "sunColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#ffc233"
+        }
+      ],
+      "description": ""
+    }
+  }
+}

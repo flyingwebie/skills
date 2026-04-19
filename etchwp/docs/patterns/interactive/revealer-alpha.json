@@ -1,0 +1,812 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 2436,
+      "attributes": {
+        "height": "150px"
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "revealerContent"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "y9lh087": {
+      "type": "class",
+      "selector": ".revealer-alpha",
+      "collection": "default",
+      "css": "&[data-revealer-alpha] {\n    interpolate-size: allow-keywords;\n  }",
+      "readonly": false
+    },
+    "caiftpu": {
+      "type": "class",
+      "selector": ".revealer-alpha__content",
+      "collection": "default",
+      "css": "&[data-revealer-content] {\n    height: var(--height);\n    overflow: clip;\n    transition:\n      height 0.3s ease-out,\n      --fade-amount 0.3s ease-out;\n    /* Begin Fade Bottom */\n    --fade-amount: 25%;\n    -webkit-mask-image: linear-gradient(to top, transparent 0%, black var(--fade-amount));\n    mask-image: linear-gradient(to top, transparent 0%, black var(--fade-amount));\n    /* End Fade Bottom */\n    &[data-revealer-content='revealed'] {\n      height: auto;\n      --fade-amount: 0% !important;\n    }\n  }",
+      "readonly": false
+    },
+    "0ri931w": {
+      "type": "class",
+      "selector": ".revealer-alpha__default-content",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: 1rem;",
+      "readonly": false
+    },
+    "3aynbux": {
+      "type": "class",
+      "selector": ".dev-note",
+      "collection": "default",
+      "css": "--accent-color: #fff8dc;\n  display: var(--display, none);\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 2);\n  background-color: var(--accent-color);\n  border-left: 4px solid oklch(from var(--accent-color) calc(l / 1.5) calc(c * 6) h / 1);\n  padding: 15px 20px;\n  border-radius: 4px;\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n  inline-size: 100%;\n  max-inline-size: max-content;\n  margin: var(--margin-block) var(--margin-inline);\n  &[data-display='Etch Only' i].etch-builder-block {\n    --display: flex;\n  }\n  &[data-display='Gutenberg Only' i].wp-block {\n    --display: flex;\n  }\n  &[data-display='Etch and Gutenberg' i]:is(.wp-block, .etch-builder-block) {\n    --display: flex;\n  }\n  &[data-style='danger' i] {\n    --accent-color: #f8d7d9;\n  }\n  &[data-style='info' i] {\n    --accent-color: #d1edf0;\n  }\n  &::before {\n    content: attr(data-heading);\n    font-weight: bold;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n  }\n  pre {\n    white-space: pre-wrap;\n    font-size: 0.95rem;\n    inline-size: 100%;\n    max-inline-size: max-content;\n    border-radius: 5px;\n    padding: 1.5rem;\n    background: oklch(from var(--black, black) l c h / .1);\n    code {\n      white-space: inherit;\n      font-size: 0.9rem;\n    }\n  }",
+      "readonly": false
+    },
+    "9kngfrx": {
+      "type": "class",
+      "selector": ".revealer-alpha__trigger",
+      "collection": "default",
+      "css": "margin-block-start: 1rem;\n  padding: 0;\n  font-weight: bold;\n  text-decoration: underline;\n  text-underline-offset: .25em;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2291": {
+      "id": 2291,
+      "name": "Dev Note",
+      "key": "DevNote",
+      "blocks": [
+        {
+          "blockName": "etch/condition",
+          "attrs": {
+            "metadata": {
+              "name": "If (Condition)"
+            },
+            "condition": {
+              "leftHand": {
+                "leftHand": "user.loggedIn",
+                "operator": "isTruthy",
+                "rightHand": null
+              },
+              "operator": "&&",
+              "rightHand": {
+                "leftHand": "props.show",
+                "operator": "isTruthy",
+                "rightHand": null
+              }
+            },
+            "conditionString": "user.loggedIn && props.show"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dev Note"
+                },
+                "tag": "div",
+                "attributes": {
+                  "style": "--margin-block: {props.marginBlock}; --margin-inline: {props.marginInline};",
+                  "data-display": "{props.display}",
+                  "class": "dev-note",
+                  "data-heading": "{props.heading}",
+                  "data-style": "{props.style}"
+                },
+                "styles": [
+                  "3aynbux"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "slots.noteContent.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.noteContent.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Insert your developer notes. They won't show up on the front end."
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "show",
+          "name": "Visibility",
+          "keyTouched": true,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "heading",
+          "name": "Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Developer Note"
+        },
+        {
+          "key": "display",
+          "name": "Display",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Etch Only",
+          "selectOptionsString": "Etch Only\nEtch And Gutenberg\nGutenberg Only"
+        },
+        {
+          "key": "marginBlock",
+          "name": "Margin Block",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "marginInline",
+          "name": "Margin Inline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "style",
+          "name": "Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Warning",
+          "selectOptionsString": "Warning\nInfo\nDanger"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "2436": {
+      "id": 2436,
+      "name": "Revealer Alpha",
+      "key": "RevealerAlpha",
+      "properties": [
+        {
+          "key": "height",
+          "name": "Height",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "300px"
+        },
+        {
+          "key": "buttonLabelClosed",
+          "name": "Button Label Closed",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Reveal More"
+        },
+        {
+          "key": "buttonLabelOpen",
+          "name": "Button Label Open",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Reveal Less"
+        },
+        {
+          "key": "buttonAriaLabel",
+          "name": "Button Aria Label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Reveal more about - explain what's being revealed."
+        },
+        {
+          "key": "fadeAmount",
+          "name": "Fade Amount %",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "25"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Revealer Alpha"
+            },
+            "script": {
+              "code": "ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnW2RhdGEtcmV2ZWFsZXItYWxwaGFdOm5vdChbZGF0YS1pbml0aWFsaXplZF0pJykuZm9yRWFjaCgocmV2ZWFsZXIsIGluZGV4KSA9PiB7CiAgcmV2ZWFsZXIuZGF0YXNldC5pbml0aWFsaXplZCA9ICcnOwogIAogIGNvbnN0IHRyaWdnZXIgPSByZXZlYWxlci5xdWVyeVNlbGVjdG9yKCdbZGF0YS1yZXZlYWxlci10cmlnZ2VyXScpOwogIGNvbnN0IGNvbnRlbnQgPSByZXZlYWxlci5xdWVyeVNlbGVjdG9yKCdbZGF0YS1yZXZlYWxlci1jb250ZW50XScpOwogIGNvbnN0IGxhYmVsID0gdHJpZ2dlci5xdWVyeVNlbGVjdG9yKCdzcGFuJyk7CiAgCiAgY29uc3QgaWQgPSBgcmV2ZWFsZXItY29udGVudC0ke2luZGV4fWA7CiAgY29udGVudC5pZCA9IGlkOwogIHRyaWdnZXIuc2V0QXR0cmlidXRlKCdhcmlhLWNvbnRyb2xzJywgaWQpOwoKICB0cmlnZ2VyLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgKCkgPT4gewogICAgY29uc3QgaXNSZXZlYWxlZCA9IGNvbnRlbnQuZGF0YXNldC5yZXZlYWxlckNvbnRlbnQgPT09ICdyZXZlYWxlZCc7CiAgICBjb250ZW50LmRhdGFzZXQucmV2ZWFsZXJDb250ZW50ID0gaXNSZXZlYWxlZCA/ICdoaWRkZW4nIDogJ3JldmVhbGVkJzsKICAgIHRyaWdnZXIuc2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJywgIWlzUmV2ZWFsZWQpOwogICAgbGFiZWwudGV4dENvbnRlbnQgPSBpc1JldmVhbGVkID8gY29udGVudC5kYXRhc2V0LmJ1dHRvbkxhYmVsQ2xvc2VkIDogY29udGVudC5kYXRhc2V0LmJ1dHRvbkxhYmVsT3BlbjsKICB9KTsKfSk7",
+              "id": "xgqlqde"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-revealer-alpha": "",
+              "class": "revealer-alpha"
+            },
+            "styles": [
+              "y9lh087"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Revealer Content"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-revealer-content": "hidden",
+                  "style": "--height: {props.height}; --fade-amount: {props.fadeAmount}%;",
+                  "data-button-label-open": "{props.buttonLabelOpen}",
+                  "data-button-label-closed": "{props.buttonLabelClosed}",
+                  "class": "revealer-alpha__content"
+                },
+                "styles": [
+                  "caiftpu"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "revealerContent"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "slots.revealerContent.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.revealerContent.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Default Content"
+                        },
+                        "tag": "div",
+                        "attributes": {
+                          "class": "revealer-alpha__default-content"
+                        },
+                        "styles": [
+                          "0ri931w"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Heading"
+                            },
+                            "tag": "h2",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "Revealer Alpha"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "tag": "p",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "This is a content disclosure component that reveals hidden content on user interaction. Use it for long text blocks, spoilers, supplementary information, or any content that should be partially collapsed or \"teased\" to reduce visual clutter. The reveal animation is smooth and accessible, with customizable button labels for open and closed states."
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "tag": "p",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "The revealer can contain any type of content—text, images, videos, forms, or other components. It can be conformed to any dimensions with no limitations on width, height, or aspect ratio."
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/component",
+              "attrs": {
+                "ref": 2291,
+                "attributes": {
+                  "marginBlock": "1rem 0"
+                }
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-content",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "If you want the fade effect to transition smoothly, you'll need to add the following to a global stylesheet:"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Preformatted Code"
+                        },
+                        "tag": "pre",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Code"
+                            },
+                            "tag": "code",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "@property --fade-amount {\"{\"} "
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "tag": "br",
+                                "attributes": {}
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "syntax: {\"'<percentage>'\"}; "
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "tag": "br",
+                                "attributes": {}
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "inherits: false; "
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "tag": "br",
+                                "attributes": {}
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "initial-value: 25%; "
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            },
+                            {
+                              "blockName": "etch/element",
+                              "attrs": {
+                                "tag": "br",
+                                "attributes": {}
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{\"}\"} "
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Trigger"
+                },
+                "tag": "button",
+                "attributes": {
+                  "data-revealer-trigger": "",
+                  "class": "revealer-alpha__trigger",
+                  "aria-label": "{props.buttonAriaLabel}"
+                },
+                "styles": [
+                  "9kngfrx"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "span",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.buttonLabelClosed}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

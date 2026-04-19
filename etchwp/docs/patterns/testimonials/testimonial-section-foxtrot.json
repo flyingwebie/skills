@@ -1,0 +1,399 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 1514,
+      "attributes": {}
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "zxdwn9f": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  --quote-width: 35ch;\n  --image-width: calc(100% - var(--quote-width) / var(--overlap-ratio, 2));\n  display: grid;\n  gap: var(--content-gap, 1rem);\n  grid-template-columns: repeat(12, minmax(0, 1fr));\n  align-items: center;\n  justify-items: end;\n\tposition: relative;\n  &[data-alignment='left' i] {\n    justify-items: start;\n  }\n  @container (inline-size <= to-rem(651px)) {\n    display: flex;\n    flex-direction: column;\n    gap: 0;\n    > &__image-wrapper {\n      inline-size: 100%;\n      max-inline-size: 100%;\n    }\n  }",
+      "readonly": false
+    },
+    "uddzw3r": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__image-wrapper",
+      "collection": "default",
+      "css": "grid-row: 1;\n  grid-column: 1 / -1;\n  inline-size: 100%;\n  max-inline-size: var(--image-width);\n  justify-self: start;\n  :has(> &)[data-alignment='left' i] & {\n    justify-self: end;\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "kwzqm8v": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__image",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: 100%;\n  border-radius: var(--radius, 0.5rem);\n  aspect-ratio: 16/11;\n  object-fit: cover;",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "jbldxe2": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__content-card",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, 1rem);\n  padding: var(--card-padding, 1rem);\n  background-color: var(--neutral-ultra-light, #ddd);\n  border-radius: var(--radius, 0.5rem);\n  grid-column: 1 / -1;\n  grid-row: 1;\n  inline-size: 100%;\n  max-inline-size: var(--quote-width);\n  @container (inline-size <= to-rem(651px)) {\n    position: relative;\n    margin-block-start: -20%;\n    inline-size: var(--quote-width);\n    max-inline-size: 85%;\n  }",
+      "readonly": false
+    },
+    "mmnmcqj": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__quote",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "d1c2qdc": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__name-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1rem) / 4);",
+      "readonly": false
+    },
+    "424kruk": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__name",
+      "collection": "default",
+      "css": "line-height: 1;\n\tfont-weight: 700;",
+      "readonly": false
+    },
+    "z5nz7ei": {
+      "type": "class",
+      "selector": ".featured-testimonial-foxtrot__title",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-size: var(--text-s, .8rem);",
+      "readonly": false
+    }
+  },
+  "components": {
+    "1514": {
+      "id": 1514,
+      "name": "Featured Testimonial Foxtrot",
+      "key": "FeaturedTestimonialFoxtrot",
+      "properties": [
+        {
+          "key": "alignment",
+          "name": "Alignment",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Right",
+          "selectOptionsString": "Right\nLeft"
+        },
+        {
+          "key": "overlapRatio",
+          "name": "Overlap Ratio",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "2",
+          "selectOptionsString": "1/2 : 2\n1/3 : 3\n1/4 : 4"
+        },
+        {
+          "key": "quote",
+          "name": "Quote",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse magni accusantium necessitatibus accusamus, nemo asperiores assumenda ullam delectus suscipit."
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Person's Name"
+        },
+        {
+          "key": "title",
+          "name": "Title",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Title goes here"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Featured Testimonial Foxtrot"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-alignment": "{props.alignment}",
+              "style": "--overlap-ratio: {props.overlapRatio}",
+              "class": "featured-testimonial-foxtrot"
+            },
+            "styles": [
+              "etch-container-style",
+              "zxdwn9f"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Image Wrapper"
+                },
+                "tag": "figure",
+                "attributes": {
+                  "class": "featured-testimonial-foxtrot__image-wrapper"
+                },
+                "styles": [
+                  "uddzw3r",
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Image"
+                    },
+                    "options": {
+                      "imageData": {
+                        "attachmentId": 34,
+                        "size": "large"
+                      }
+                    },
+                    "tag": "img",
+                    "attributes": {
+                      "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash-1024x684.webp",
+                      "alt": "Coffee Cup",
+                      "class": "featured-testimonial-foxtrot__image"
+                    },
+                    "styles": [
+                      "kwzqm8v"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Card"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "featured-testimonial-foxtrot__content-card"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "jbldxe2"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Quote"
+                    },
+                    "tag": "blockquote",
+                    "attributes": {
+                      "class": "featured-testimonial-foxtrot__quote"
+                    },
+                    "styles": [
+                      "mmnmcqj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.quote}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Name Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "featured-testimonial-foxtrot__name-wrapper"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "d1c2qdc"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Name"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "featured-testimonial-foxtrot__name"
+                        },
+                        "styles": [
+                          "424kruk"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.name}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Title"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "featured-testimonial-foxtrot__title"
+                        },
+                        "styles": [
+                          "z5nz7ei"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.title}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

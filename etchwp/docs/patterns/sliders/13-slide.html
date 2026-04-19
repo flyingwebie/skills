@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 100%;
+
+        padding: 0px 0px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-4ffe {
+        background-color: rgba(51, 51, 51, 1);
+      }
+      .swiper-slide-content-2f5e {
+        padding: 48px 48px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-text-78dc {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-purple-lolly-718">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 1</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 2</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 3</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 4</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 5</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 6</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 7</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 8</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 9</div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="swiper-slide-content swiper-slide-content-2f5e">
+            <div class="swiper-slide-text swiper-slide-text-78dc">Slide 10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {});
+    </script>
+  </body>
+</html>

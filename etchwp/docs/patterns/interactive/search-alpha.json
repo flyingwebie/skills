@@ -1,0 +1,390 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3087,
+      "attributes": {}
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "lvbdy5b": {
+      "type": "class",
+      "selector": ".search-alpha",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "240byq4": {
+      "type": "attribute",
+      "selector": "[data-search-alpha-form]",
+      "collection": "default",
+      "css": "display: grid;\n  gap: 0.5rem;\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= to-rem(400px)) {\n    grid-template-columns: minmax(0, 1fr) auto;\n  }",
+      "readonly": false
+    },
+    "cll1jc4": {
+      "type": "attribute",
+      "selector": "[data-search-alpha]",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: var(--max-width);\n  margin-block: var(--margin-block);\n  margin-inline: var(--margin-inline);",
+      "readonly": false
+    },
+    "21cdrge": {
+      "type": "class",
+      "selector": ".search-alpha__form",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bi9jihw": {
+      "type": "class",
+      "selector": ".search-alpha__label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "0nj7pom": {
+      "type": "attribute",
+      "selector": "[data-search-alpha-label]",
+      "collection": "default",
+      "css": "position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;",
+      "readonly": false
+    },
+    "1e8huxf": {
+      "type": "class",
+      "selector": ".search-alpha__input",
+      "collection": "default",
+      "css": "--input-padding-inline: 1ch;",
+      "readonly": false
+    },
+    "4h40h73": {
+      "type": "attribute",
+      "selector": "[data-search-alpha-input]",
+      "collection": "default",
+      "css": "border: var(--input-border, var(--border));\n  border-radius: var(--radius, 5px);\n  padding-inline: var(--input-padding-inline);\n  block-size: var(--input-height);\n  font-family: inherit;\n  font-size: inherit;\n  color: inherit;",
+      "readonly": false
+    },
+    "odfdeo4": {
+      "type": "class",
+      "selector": ".search-alpha__button",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "li98r7j": {
+      "type": "class",
+      "selector": ".btn--primary",
+      "collection": "default",
+      "css": "align-items: center;",
+      "readonly": false
+    },
+    "xuvtve5": {
+      "type": "class",
+      "selector": ".btn--outline",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "7mbiadd": {
+      "type": "attribute",
+      "selector": "[data-search-alpha-button]",
+      "collection": "default",
+      "css": "cursor: pointer;\n  block-size: var(--input-height);",
+      "readonly": false
+    },
+    "ss2zfec": {
+      "type": "class",
+      "selector": ".search-alpha__hint",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "0hbevc6": {
+      "type": "attribute",
+      "selector": "[data-search-alpha-hint]",
+      "collection": "default",
+      "css": "position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3087": {
+      "id": 3087,
+      "legacyId": "",
+      "name": "Search Alpha",
+      "key": "SearchAlpha",
+      "properties": [
+        {
+          "name": "Max Width",
+          "key": "maxWidth",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "640px"
+        },
+        {
+          "name": "Placeholder Text",
+          "key": "placeholderText",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Find something..."
+        },
+        {
+          "name": "Button Text",
+          "key": "buttonText",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Search"
+        },
+        {
+          "name": "Input Height",
+          "key": "inputHeight",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "45px"
+        },
+        {
+          "name": "Margin Block",
+          "key": "marginBlock",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "0 0"
+        },
+        {
+          "key": "marginInline",
+          "name": "Margin Inline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "0 0"
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Search Alpha"
+            },
+            "script": {
+              "code": "KGZ1bmN0aW9uKCkgewogIGNvbnN0IHNlYXJjaEZvcm0gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdbZGF0YS1zZWFyY2gtYWxwaGEtZm9ybV0nKTsKICBjb25zdCBzZWFyY2hJbnB1dCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ1tkYXRhLXNlYXJjaC1hbHBoYS1pbnB1dF0nKTsKICBjb25zdCBzZWFyY2hMYWJlbCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ1tkYXRhLXNlYXJjaC1hbHBoYS1sYWJlbF0nKTsKICAKICBpZiAoc2VhcmNoSW5wdXQgJiYgc2VhcmNoTGFiZWwpIHsKICAgIGNvbnN0IGlkID0gJ3NlYXJjaC1hbHBoYS0nICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgOSk7CiAgICBzZWFyY2hJbnB1dC5pZCA9IGlkOwogICAgc2VhcmNoTGFiZWwuc2V0QXR0cmlidXRlKCdmb3InLCBpZCk7CiAgfQogIAogIGlmIChzZWFyY2hGb3JtICYmIHNlYXJjaElucHV0KSB7CiAgICBzZWFyY2hGb3JtLmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsIGZ1bmN0aW9uKGUpIHsKICAgICAgaWYgKCFzZWFyY2hJbnB1dC52YWx1ZS50cmltKCkpIHsKICAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICAgICAgc2VhcmNoSW5wdXQuZm9jdXMoKTsKICAgICAgfQogICAgfSk7CiAgfQp9KSgpOw==",
+              "id": "6fjaemg"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-search-alpha": "",
+              "style": "--max-width: {props.maxWidth}; --margin-block: {props.marginBlock}; --margin-inline: {props.marginInline};",
+              "class": "search-alpha"
+            },
+            "styles": [
+              "lvbdy5b",
+              "240byq4",
+              "cll1jc4"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Form"
+                },
+                "tag": "form",
+                "attributes": {
+                  "role": "search",
+                  "action": "/",
+                  "method": "get",
+                  "data-search-alpha-form": "",
+                  "style": "--input-height: {props.inputHeight};",
+                  "class": "search-alpha__form"
+                },
+                "styles": [
+                  "21cdrge",
+                  "240byq4"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "label",
+                    "attributes": {
+                      "data-search-alpha-label": "",
+                      "class": "search-alpha__label"
+                    },
+                    "styles": [
+                      "bi9jihw",
+                      "0nj7pom"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": " Search "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Input"
+                    },
+                    "tag": "input",
+                    "attributes": {
+                      "type": "search",
+                      "name": "s",
+                      "placeholder": "{props.placeholderText}",
+                      "data-search-alpha-input": "",
+                      "class": "search-alpha__input"
+                    },
+                    "styles": [
+                      "1e8huxf",
+                      "4h40h73"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Button"
+                    },
+                    "tag": "button",
+                    "attributes": {
+                      "type": "submit",
+                      "data-search-alpha-button": "",
+                      "class": "search-alpha__button btn--primary btn--outline"
+                    },
+                    "styles": [
+                      "odfdeo4",
+                      "li98r7j",
+                      "xuvtve5",
+                      "7mbiadd"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.buttonText} "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Hint"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "data-search-alpha-hint": "",
+                      "class": "search-alpha__hint"
+                    },
+                    "styles": [
+                      "ss2zfec",
+                      "0hbevc6"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": " Press Enter to search "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

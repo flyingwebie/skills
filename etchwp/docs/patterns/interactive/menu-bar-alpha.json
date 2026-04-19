@@ -1,0 +1,403 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 2574,
+      "attributes": {
+        "showLabels": "{false}",
+        "showInBuilder": "{true}"
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "items"
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 2565,
+              "attributes": {
+                "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBjb2xvcj0iY3VycmVudENvbG9yIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNMTMuNDg5MiAxOS4wMjNMMTYuNDgzOSAxNi4wMjg0QzE2Ljc4ODcgMTUuNzIzNiAxNy4yNTQ0IDE1LjY0NyAxNy42NTU2IDE1LjgwNDZDMTguMjEzOCAxNi4wMjM4IDE5LjA2OTQgMTYuMzEwNSAyMC4wMDIgMTYuNDQ0NEMyMC41NDk1IDE2LjUyMyAyMSAxNi45Njc4IDIxIDE3LjUyMDlWMjAuMDI0NUMyMSAyMC41Nzc1IDIwLjU1MDkgMjEuMDI4OCAxOS45OTg2IDIwLjk5ODZDMTAuODQwNCAyMC40OTcxIDMuNTAyODkgMTMuMTU5NiAzLjAwMTQ0IDQuMDAxMzlDMi45NzEyIDMuNDQ5MTQgMy40MjI0NSAzIDMuOTc1NTMgM0g2LjQ3OTEzQzcuMDMyMjEgMyA3LjQ3Njk3IDMuNDUwNTEgNy41NTU1OCAzLjk5Nzk3QzcuNjg5NSA0LjkzMDYxIDcuOTc2MjEgNS43ODYxNyA4LjE5NTQ0IDYuMzQ0MzZDOC4zNTMwMiA2Ljc0NTU3IDguMjc2NDIgNy4yMTEzNSA3Ljk3MTYyIDcuNTE2MTRMNC45NzY5NyAxMC41MTA4IiAvPgo8L3N2Zz4=",
+                "label": "Phone",
+                "destination": "tel:888-23-4567"
+              }
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 2565,
+              "attributes": {
+                "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBjb2xvcj0iY3VycmVudENvbG9yIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPHBhdGggZD0iTTQgNEgyMEMyMS4xMDQ2IDQgMjIgNC44OTU0MyAyMiA2VjE4QzIyIDE5LjEwNDYgMjEuMTA0NiAyMCAyMCAyMEg0QzIuODk1NDMgMjAgMiAxOS4xMDQ2IDIgMThWNkMyIDQuODk1NDMgMi44OTU0MyA0IDQgNFoiIC8+CiAgICA8cGF0aCBkPSJNMjIgN0wxMi44OTQ0IDExLjU1MjhDMTIuMzMxNCAxMS44MzQzIDExLjY2ODYgMTEuODM0MyAxMS4xMDU2IDExLjU1MjhMMiA3IiAvPgo8L3N2Zz4=",
+                "label": "Email",
+                "destination": "mailto:test@help.com"
+              }
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 2565,
+              "attributes": {
+                "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBjb2xvcj0iY3VycmVudENvbG9yIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNNiAxOEM0Ljc1NTI3IDE4LjM5NiA0IDE5LjE4NCA0IDE5Ljc1MzdDNCAyMC45OTQzIDcuNTgxNzIgMjIgMTIgMjJDMTYuNDE4MyAyMiAyMCAyMC45OTQzIDIwIDE5Ljc1MzdDMjAgMTkuMTg0IDE5LjI0NDcgMTguMzk2IDE4IDE4IiAvPgogICAgPHBhdGggZD0iTTE0LjUgOUMxNC41IDEwLjM4MDcgMTMuMzgwNyAxMS41IDEyIDExLjVDMTAuNjE5MyAxMS41IDkuNSAxMC4zODA3IDkuNSA5QzkuNSA3LjYxOTI5IDEwLjYxOTMgNi41IDEyIDYuNUMxMy4zODA3IDYuNSAxNC41IDcuNjE5MjkgMTQuNSA5WiIgLz4KICAgIDxwYXRoIGQ9Ik0xOSA5LjJDMTkgMTMuOTgwOSAxMy44OTc5IDE3LjAxMjYgMTIuNDA1NCAxNy43OTcxQzEyLjE0ODUgMTcuOTMyMiAxMS44NTE1IDE3LjkzMjIgMTEuNTk0NiAxNy43OTcxQzEwLjEwMjEgMTcuMDEyNiA1IDEzLjk4MDkgNSA5LjJDNSA1LjIyMzU1IDguMTM0MDEgMiAxMiAyQzE1Ljg2NiAyIDE5IDUuMjIzNTUgMTkgOS4yWiIgLz4KPC9zdmc+",
+                "label": "Directions",
+                "destination": "/"
+              }
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/component",
+            "attrs": {
+              "ref": 2565,
+              "attributes": {
+                "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBjb2xvcj0iY3VycmVudENvbG9yIiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICA8cGF0aCBkPSJNMiA5LjVWNkMyIDQuODk1NDMgMi44OTU0MyA0IDQgNEgyMEMyMS4xMDQ2IDQgMjIgNC44OTU0MyAyMiA2VjkuNUMyMC42MTkzIDkuNSAxOS41IDEwLjYxOTMgMTkuNSAxMkMxOS41IDEzLjM4MDcgMjAuNjE5MyAxNC41IDIyIDE0LjVWMThDMjIgMTkuMTA0NiAyMS4xMDQ2IDIwIDIwIDIwSDRDMi44OTU0MyAyMCAyIDE5LjEwNDYgMiAxOFYxNC41QzMuMzgwNzEgMTQuNSA0LjUgMTMuMzgwNyA0LjUgMTJDNC41IDEwLjYxOTMgMy4zODA3MSA5LjUgMiA5LjVaIiAvPgogICAgPHBhdGggZD0iTTkgNEw5IDIwIiAvPgo8L3N2Zz4=",
+                "label": "Special Offer",
+                "destination": "/"
+              }
+            },
+            "innerBlocks": [],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "wuomz6d": {
+      "type": "class",
+      "selector": ".menu-bar-alpha",
+      "collection": "default",
+      "css": "box-shadow: 0 -20px 40px -20px oklch(from var(--black, black) l c h / 0.3);\n  margin-block-start: 200px;\n  inline-size: 100%;\n  position: fixed;\n  inset-inline-start: 0;\n  inset-block-end: 0;\n  z-index: 9999;\n  display: var(--menu-display, none);\n  .single-pattern__main & {\n    --menu-display: block;\n  }\n  &[data-show-in-builder='true'].etch-builder-block {\n    --menu-display: block;\n  }\n  @media (width < to-rem(951px)) {\n    --menu-display: block;\n  }",
+      "readonly": false
+    },
+    "lmi67t6": {
+      "type": "class",
+      "selector": ".menu-bar-alpha__list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;",
+      "readonly": false
+    },
+    "pe44jh6": {
+      "type": "class",
+      "selector": ".menu-bar-alpha__item",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  position: relative;\n  &:not(:first-of-type)::before {\n    content: '';\n    inline-size: 1px;\n    block-size: 100%;\n    display: flex;\n    position: absolute;\n    left: 0;\n    top: 0;\n    background: var(--border-color-dark, #eee);\n  }",
+      "readonly": false
+    },
+    "jf63etu": {
+      "type": "class",
+      "selector": ".menu-bar-alpha__item-trigger",
+      "collection": "default",
+      "css": "padding: var(--space-xs);\n  inline-size: 100%;\n  max-inline-size: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  gap: 0.5em;\n  align-items: center;\n  position: relative;\n  text-decoration: none;\n  line-height: 1;\n  font-size: var(--text-s, 0.8rem);\n  [data-show-labels='true'] & {\n    flex-direction: column;\n  }",
+      "readonly": false
+    },
+    "43bk047": {
+      "type": "class",
+      "selector": ".menu-bar-alpha__item-icon",
+      "collection": "default",
+      "css": "inline-size: var(--menu-icon-size, 28px);\n  color: currentColor;",
+      "readonly": false
+    },
+    "uj61944": {
+      "type": "class",
+      "selector": ".menu-bar-alpha__item-label",
+      "collection": "default",
+      "css": "[data-show-labels='false'] & {\n    position: absolute !important;\n    inline-size: 1px !important;\n    block-size: 1px !important;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip-path: inset(100%);\n    white-space: nowrap;\n    border: 0;\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2565": {
+      "id": 2565,
+      "name": "Menu Bar Alpha Item",
+      "key": "MenuBarAlphaItem",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Menu Bar Alpha Item"
+            },
+            "tag": "li",
+            "attributes": {
+              "class": "menu-bar-alpha__item"
+            },
+            "styles": [
+              "pe44jh6"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/dynamic-element",
+              "attrs": {
+                "metadata": {
+                  "name": "Trigger"
+                },
+                "tag": "a",
+                "attributes": {
+                  "class": "menu-bar-alpha__item-trigger",
+                  "href": "{props.destination}",
+                  "tag": "a"
+                },
+                "styles": [
+                  "jf63etu"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/svg",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Item Icon"
+                    },
+                    "tag": "svg",
+                    "attributes": {
+                      "class": "menu-bar-alpha__item-icon",
+                      "src": "{props.icon}",
+                      "stripColors": "true"
+                    },
+                    "styles": [
+                      "43bk047"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Item Label"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "class": "menu-bar-alpha__item-label"
+                    },
+                    "styles": [
+                      "uj61944"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.label}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "icon",
+          "name": "Icon",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://patterns.etchwp.com/wp-content/uploads/call-stroke-standard.svg"
+        },
+        {
+          "key": "label",
+          "name": "Label (Required)",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Label"
+        },
+        {
+          "key": "destination",
+          "name": "Destination",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "/"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "2574": {
+      "id": 2574,
+      "name": "Menu Bar Alpha",
+      "key": "MenuBarAlpha",
+      "properties": [
+        {
+          "key": "showLabels",
+          "name": "Show Labels",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        },
+        {
+          "key": "showInBuilder",
+          "name": "Show in Builder",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "iconSize",
+          "name": "Icon Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1.5rem"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Menu Bar Alpha"
+            },
+            "tag": "nav",
+            "attributes": {
+              "data-show-labels": "{props.showLabels}",
+              "aria-label": "Quick Actions",
+              "data-show-in-builder": "{props.showInBuilder}",
+              "style": "--menu-icon-size: {props.iconSize};",
+              "class": "menu-bar-alpha"
+            },
+            "styles": [
+              "wuomz6d"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "List"
+                },
+                "tag": "ul",
+                "attributes": {
+                  "class": "menu-bar-alpha__list"
+                },
+                "styles": [
+                  "lmi67t6"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "items"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1626 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "core/block",
+    "attrs": {
+      "ref": 277,
+      "metadata": {
+        "etchData": {
+          "origin": "etch",
+          "block": {
+            "type": "component",
+            "component": 277,
+            "innerBlocks": [
+              {
+                "blockName": "core/group",
+                "attrs": {
+                  "metadata": {
+                    "etchData": {
+                      "origin": "etch",
+                      "block": {
+                        "type": "slot",
+                        "slot": "bottomRight"
+                      }
+                    }
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "<div class=\"wp-block-group\"></div>",
+                "innerContent": [
+                  "<div class=\"wp-block-group\">",
+                  "</div>"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "",
+    "innerContent": []
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "ka0kz2r": {
+      "type": "class",
+      "selector": ".footer-alpha",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "sl4ent3": {
+      "type": "class",
+      "selector": ".footer-alpha__main",
+      "collection": "default",
+      "css": "padding-block: var(--section-space-m, 80px);\n  padding-inline: var(--gutter, 24px);\n  background: var(--bg-ultra-light, #ddd);\n  max-inline-size: 100%;",
+      "readonly": false
+    },
+    "668kafc": {
+      "type": "class",
+      "selector": ".footer-alpha__main-inner",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  @media (width >= rem(1118px)) {\n    &[data-hide-nav='false'] {\n      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);\n      gap: calc(var(--content-gap, 1em) * 2);\n    }\n    &[data-hide-nav='true'] {\n      max-inline-size: 50ch;\n      > * {\n        align-items: center;\n        justify-content: center;\n        text-align: center;\n      }\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "utsgwv8": {
+      "type": "class",
+      "selector": ".footer-alpha__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 1);",
+      "readonly": false
+    },
+    "0uvdjk5": {
+      "type": "class",
+      "selector": ".footer-alpha__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "z1dc56p": {
+      "type": "class",
+      "selector": ".hidden-accessible",
+      "collection": "default",
+      "css": "position: absolute !important;\n  inline-size: 1px !important;\n  block-size: 1px !important;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  -webkit-clip-path: inset(100%);\n          clip-path: inset(100%);\n  white-space: nowrap; /* added line */\n  border: 0;",
+      "readonly": false
+    },
+    "7uemdug": {
+      "type": "class",
+      "selector": ".footer-alpha__logo",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "p3s8znj": {
+      "type": "class",
+      "selector": ".footer-alpha__text",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "li98r7j": {
+      "type": "class",
+      "selector": ".btn--primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "g5llj8w": {
+      "type": "class",
+      "selector": ".footer-alpha__cta",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "10gonlf": {
+      "type": "class",
+      "selector": ".footer-alpha__nav",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "a56h1ik": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-list",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--content-gap, 1em);\n  :has(> &) {\n    container-type: inline-size;\n  }\n  @container (inline-size >= rem(560px)) {\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n  }",
+      "readonly": false
+    },
+    "bb6a03u": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-column",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap) / 2);",
+      "readonly": false
+    },
+    "wrgy1xu": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-column-heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "wnys07y": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-column-list",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 2);",
+      "readonly": false
+    },
+    "pwk0orh": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-column-item",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "a7q1bww": {
+      "type": "class",
+      "selector": ".footer-alpha__nav-link",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "e0z1uko": {
+      "type": "class",
+      "selector": ".footer-alpha__bottom",
+      "collection": "default",
+      "css": "background: var(--bg-ultra-light, #ddd);\n  max-inline-size: 100%;\n  padding-block: var(--space-xs, 20px);\n  padding-inline: var(--gutter, 24px);\n  border-block-start: 1px solid color-mix(in srgb, black 5%, transparent);",
+      "readonly": false
+    },
+    "y383da6": {
+      "type": "class",
+      "selector": ".footer-alpha__bottom-inner",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: 1em;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: space-between;",
+      "readonly": false
+    },
+    "whmxnfx": {
+      "type": "class",
+      "selector": ".footer-alpha__copyright-text",
+      "collection": "default",
+      "css": "max-inline-size: max-content;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "277": {
+      "id": 277,
+      "name": "Footer Alpha",
+      "key": "FooterAlpha",
+      "blocks": [
+        {
+          "blockName": "core/group",
+          "attrs": {
+            "metadata": {
+              "name": "Footer Alpha",
+              "etchData": {
+                "origin": "etch",
+                "name": "Footer Alpha",
+                "styles": [
+                  "etch-section-style",
+                  "ka0kz2r"
+                ],
+                "attributes": {
+                  "data-etch-element": "section",
+                  "class": "footer-alpha"
+                },
+                "block": {
+                  "type": "html",
+                  "tag": "footer"
+                }
+              }
+            }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "core/group",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)",
+                  "etchData": {
+                    "origin": "etch",
+                    "name": "If (Condition)",
+                    "block": {
+                      "type": "condition",
+                      "condition": {
+                        "leftHand": "props.minimalist",
+                        "operator": "isFalsy",
+                        "rightHand": null
+                      },
+                      "conditionString": "!props.minimalist"
+                    }
+                  }
+                }
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "core/group",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Main",
+                      "etchData": {
+                        "origin": "etch",
+                        "name": "Main",
+                        "styles": [
+                          "etch-container-style",
+                          "sl4ent3"
+                        ],
+                        "attributes": {
+                          "data-etch-element": "container",
+                          "class": "footer-alpha__main"
+                        },
+                        "block": {
+                          "type": "html",
+                          "tag": "div"
+                        }
+                      }
+                    }
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "core/group",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Main Inner",
+                          "etchData": {
+                            "origin": "etch",
+                            "name": "Main Inner",
+                            "styles": [
+                              "etch-container-style",
+                              "668kafc"
+                            ],
+                            "attributes": {
+                              "data-etch-element": "container",
+                              "class": "footer-alpha__main-inner",
+                              "data-hide-nav": "{props.hideNav}"
+                            },
+                            "block": {
+                              "type": "html",
+                              "tag": "div"
+                            }
+                          }
+                        }
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "core/group",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Content Wrapper",
+                              "etchData": {
+                                "origin": "etch",
+                                "name": "Content Wrapper",
+                                "styles": [
+                                  "etch-flex-div-style",
+                                  "utsgwv8"
+                                ],
+                                "attributes": {
+                                  "data-etch-element": "flex-div",
+                                  "class": "footer-alpha__content-wrapper"
+                                },
+                                "block": {
+                                  "type": "html",
+                                  "tag": "div"
+                                }
+                              }
+                            }
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "core/heading",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Heading",
+                                  "etchData": {
+                                    "origin": "etch",
+                                    "name": "Heading",
+                                    "styles": [
+                                      "0uvdjk5",
+                                      "z1dc56p"
+                                    ],
+                                    "attributes": {
+                                      "class": "footer-alpha__heading hidden-accessible"
+                                    },
+                                    "block": {
+                                      "type": "html",
+                                      "tag": "h2"
+                                    }
+                                  }
+                                },
+                                "level": 2
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "<h2 class=\"wp-block-heading\">Footer</h2>",
+                              "innerContent": [
+                                "<h2 class=\"wp-block-heading\">Footer</h2>"
+                              ]
+                            },
+                            {
+                              "blockName": "core/group",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Logo",
+                                  "etchData": {
+                                    "origin": "etch",
+                                    "name": "Logo",
+                                    "styles": [
+                                      "7uemdug"
+                                    ],
+                                    "attributes": {
+                                      "class": "footer-alpha__logo",
+                                      "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-264.svg",
+                                      "stripColors": "true"
+                                    },
+                                    "block": {
+                                      "type": "html",
+                                      "tag": "svg",
+                                      "specialized": "svg"
+                                    }
+                                  }
+                                }
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                              "innerContent": [
+                                "<div class=\"wp-block-group\">",
+                                "</div>"
+                              ]
+                            },
+                            {
+                              "blockName": "core/paragraph",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text",
+                                  "etchData": {
+                                    "origin": "etch",
+                                    "name": "Text",
+                                    "styles": [
+                                      "p3s8znj"
+                                    ],
+                                    "attributes": {
+                                      "class": "footer-alpha__text"
+                                    },
+                                    "block": {
+                                      "type": "html",
+                                      "tag": "p"
+                                    }
+                                  }
+                                }
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rem tempora itaque tempore repellendus quas? Omnis debitis sit quod dolore!</p>",
+                              "innerContent": [
+                                "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta rem tempora itaque tempore repellendus quas? Omnis debitis sit quod dolore!</p>"
+                              ]
+                            },
+                            {
+                              "blockName": "core/paragraph",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "CTA",
+                                  "etchData": {
+                                    "removeWrapper": true,
+                                    "block": {
+                                      "type": "html",
+                                      "tag": "p"
+                                    },
+                                    "origin": "etch",
+                                    "name": "CTA",
+                                    "nestedData": {
+                                      "u78iux4": {
+                                        "origin": "etch",
+                                        "name": "CTA",
+                                        "styles": [
+                                          "li98r7j",
+                                          "g5llj8w"
+                                        ],
+                                        "attributes": {
+                                          "href": "#",
+                                          "class": "btn--primary footer-alpha__cta"
+                                        },
+                                        "block": {
+                                          "type": "html",
+                                          "tag": "a"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "<p><a data-etch-ref=\"u78iux4\">Call to action</a></p>",
+                              "innerContent": [
+                                "<p><a data-etch-ref=\"u78iux4\">Call to action</a></p>"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "<div class=\"wp-block-group\"></div>",
+                          "innerContent": [
+                            "<div class=\"wp-block-group\">",
+                            null,
+                            null,
+                            null,
+                            null,
+                            "</div>"
+                          ]
+                        },
+                        {
+                          "blockName": "core/group",
+                          "attrs": {
+                            "metadata": {
+                              "name": "If (Condition)",
+                              "etchData": {
+                                "origin": "etch",
+                                "name": "If (Condition)",
+                                "block": {
+                                  "type": "condition",
+                                  "condition": {
+                                    "leftHand": "props.hideNav",
+                                    "operator": "isFalsy",
+                                    "rightHand": null
+                                  },
+                                  "conditionString": "!props.hideNav"
+                                }
+                              }
+                            }
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "core/group",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Nav",
+                                  "etchData": {
+                                    "origin": "etch",
+                                    "name": "Nav",
+                                    "styles": [
+                                      "10gonlf"
+                                    ],
+                                    "attributes": {
+                                      "class": "footer-alpha__nav",
+                                      "aria-label": "footer"
+                                    },
+                                    "block": {
+                                      "type": "html",
+                                      "tag": "nav"
+                                    }
+                                  }
+                                }
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "core/group",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Nav List",
+                                      "etchData": {
+                                        "origin": "etch",
+                                        "name": "Nav List",
+                                        "styles": [
+                                          "a56h1ik"
+                                        ],
+                                        "attributes": {
+                                          "class": "footer-alpha__nav-list"
+                                        },
+                                        "block": {
+                                          "type": "html",
+                                          "tag": "ul"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "core/group",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Column",
+                                          "etchData": {
+                                            "origin": "etch",
+                                            "name": "Nav Column",
+                                            "styles": [
+                                              "bb6a03u"
+                                            ],
+                                            "attributes": {
+                                              "class": "footer-alpha__nav-column"
+                                            },
+                                            "block": {
+                                              "type": "html",
+                                              "tag": "li"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "core/heading",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column Heading",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column Heading",
+                                                "styles": [
+                                                  "wrgy1xu"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-heading"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "h3"
+                                                }
+                                              }
+                                            },
+                                            "level": 3
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "<h3 class=\"wp-block-heading\">About</h3>",
+                                          "innerContent": [
+                                            "<h3 class=\"wp-block-heading\">About</h3>"
+                                          ]
+                                        },
+                                        {
+                                          "blockName": "core/group",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column List",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column List",
+                                                "styles": [
+                                                  "wnys07y"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-list"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "ul"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "innerBlocks": [
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "i229xbq": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"i229xbq\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"i229xbq\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "7urp6yn": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"7urp6yn\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"7urp6yn\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "5cpseic": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"5cpseic\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"5cpseic\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            }
+                                          ],
+                                          "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                          "innerContent": [
+                                            "<div class=\"wp-block-group\">",
+                                            null,
+                                            null,
+                                            null,
+                                            "</div>"
+                                          ]
+                                        }
+                                      ],
+                                      "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                      "innerContent": [
+                                        "<div class=\"wp-block-group\">",
+                                        null,
+                                        null,
+                                        "</div>"
+                                      ]
+                                    },
+                                    {
+                                      "blockName": "core/group",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Column",
+                                          "etchData": {
+                                            "origin": "etch",
+                                            "name": "Nav Column",
+                                            "styles": [
+                                              "bb6a03u"
+                                            ],
+                                            "attributes": {
+                                              "class": "footer-alpha__nav-column"
+                                            },
+                                            "block": {
+                                              "type": "html",
+                                              "tag": "li"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "core/heading",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column Heading",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column Heading",
+                                                "styles": [
+                                                  "wrgy1xu"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-heading"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "h3"
+                                                }
+                                              }
+                                            },
+                                            "level": 3
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "<h3 class=\"wp-block-heading\">Services</h3>",
+                                          "innerContent": [
+                                            "<h3 class=\"wp-block-heading\">Services</h3>"
+                                          ]
+                                        },
+                                        {
+                                          "blockName": "core/group",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column List",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column List",
+                                                "styles": [
+                                                  "wnys07y"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-list"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "ul"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "innerBlocks": [
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "3pm84v3": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"3pm84v3\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"3pm84v3\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "pew6cmk": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"pew6cmk\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"pew6cmk\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "ietyusf": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"ietyusf\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"ietyusf\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            }
+                                          ],
+                                          "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                          "innerContent": [
+                                            "<div class=\"wp-block-group\">",
+                                            null,
+                                            null,
+                                            null,
+                                            "</div>"
+                                          ]
+                                        }
+                                      ],
+                                      "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                      "innerContent": [
+                                        "<div class=\"wp-block-group\">",
+                                        null,
+                                        null,
+                                        "</div>"
+                                      ]
+                                    },
+                                    {
+                                      "blockName": "core/group",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Nav Column",
+                                          "etchData": {
+                                            "origin": "etch",
+                                            "name": "Nav Column",
+                                            "styles": [
+                                              "bb6a03u"
+                                            ],
+                                            "attributes": {
+                                              "class": "footer-alpha__nav-column"
+                                            },
+                                            "block": {
+                                              "type": "html",
+                                              "tag": "li"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "innerBlocks": [
+                                        {
+                                          "blockName": "core/heading",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column Heading",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column Heading",
+                                                "styles": [
+                                                  "wrgy1xu"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-heading"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "h3"
+                                                }
+                                              }
+                                            },
+                                            "level": 3
+                                          },
+                                          "innerBlocks": [],
+                                          "innerHTML": "<h3 class=\"wp-block-heading\">Resources</h3>",
+                                          "innerContent": [
+                                            "<h3 class=\"wp-block-heading\">Resources</h3>"
+                                          ]
+                                        },
+                                        {
+                                          "blockName": "core/group",
+                                          "attrs": {
+                                            "metadata": {
+                                              "name": "Nav Column List",
+                                              "etchData": {
+                                                "origin": "etch",
+                                                "name": "Nav Column List",
+                                                "styles": [
+                                                  "wnys07y"
+                                                ],
+                                                "attributes": {
+                                                  "class": "footer-alpha__nav-column-list"
+                                                },
+                                                "block": {
+                                                  "type": "html",
+                                                  "tag": "ul"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "innerBlocks": [
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "dpu5ho0": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"dpu5ho0\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"dpu5ho0\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "yvkaefx": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"yvkaefx\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"yvkaefx\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            },
+                                            {
+                                              "blockName": "core/group",
+                                              "attrs": {
+                                                "metadata": {
+                                                  "name": "Nav Column Item",
+                                                  "etchData": {
+                                                    "origin": "etch",
+                                                    "name": "Nav Column Item",
+                                                    "styles": [
+                                                      "pwk0orh"
+                                                    ],
+                                                    "attributes": {
+                                                      "class": "footer-alpha__nav-column-item"
+                                                    },
+                                                    "block": {
+                                                      "type": "html",
+                                                      "tag": "li"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "innerBlocks": [
+                                                {
+                                                  "blockName": "core/paragraph",
+                                                  "attrs": {
+                                                    "metadata": {
+                                                      "name": "Nav Link",
+                                                      "etchData": {
+                                                        "removeWrapper": true,
+                                                        "block": {
+                                                          "type": "html",
+                                                          "tag": "p"
+                                                        },
+                                                        "origin": "etch",
+                                                        "name": "Nav Link",
+                                                        "nestedData": {
+                                                          "knwirrc": {
+                                                            "origin": "etch",
+                                                            "name": "Nav Link",
+                                                            "styles": [
+                                                              "a7q1bww"
+                                                            ],
+                                                            "attributes": {
+                                                              "href": "#",
+                                                              "class": "footer-alpha__nav-link"
+                                                            },
+                                                            "block": {
+                                                              "type": "html",
+                                                              "tag": "a"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "innerBlocks": [],
+                                                  "innerHTML": "<p><a data-etch-ref=\"knwirrc\">Link</a></p>",
+                                                  "innerContent": [
+                                                    "<p><a data-etch-ref=\"knwirrc\">Link</a></p>"
+                                                  ]
+                                                }
+                                              ],
+                                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                              "innerContent": [
+                                                "<div class=\"wp-block-group\">",
+                                                null,
+                                                "</div>"
+                                              ]
+                                            }
+                                          ],
+                                          "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                          "innerContent": [
+                                            "<div class=\"wp-block-group\">",
+                                            null,
+                                            null,
+                                            null,
+                                            "</div>"
+                                          ]
+                                        }
+                                      ],
+                                      "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                      "innerContent": [
+                                        "<div class=\"wp-block-group\">",
+                                        null,
+                                        null,
+                                        "</div>"
+                                      ]
+                                    }
+                                  ],
+                                  "innerHTML": "<div class=\"wp-block-group\"></div>",
+                                  "innerContent": [
+                                    "<div class=\"wp-block-group\">",
+                                    null,
+                                    null,
+                                    null,
+                                    "</div>"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "<div class=\"wp-block-group\"></div>",
+                              "innerContent": [
+                                "<div class=\"wp-block-group\">",
+                                null,
+                                "</div>"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "<div class=\"wp-block-group\"></div>",
+                          "innerContent": [
+                            "<div class=\"wp-block-group\">",
+                            null,
+                            "</div>"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "<div class=\"wp-block-group\"></div>",
+                      "innerContent": [
+                        "<div class=\"wp-block-group\">",
+                        null,
+                        null,
+                        "</div>"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "<div class=\"wp-block-group\"></div>",
+                  "innerContent": [
+                    "<div class=\"wp-block-group\">",
+                    null,
+                    "</div>"
+                  ]
+                }
+              ],
+              "innerHTML": "<div class=\"wp-block-group\"></div>",
+              "innerContent": [
+                "<div class=\"wp-block-group\">",
+                null,
+                "</div>"
+              ]
+            },
+            {
+              "blockName": "core/group",
+              "attrs": {
+                "metadata": {
+                  "name": "Bottom",
+                  "etchData": {
+                    "origin": "etch",
+                    "name": "Bottom",
+                    "styles": [
+                      "etch-container-style",
+                      "e0z1uko"
+                    ],
+                    "attributes": {
+                      "data-etch-element": "container",
+                      "class": "footer-alpha__bottom"
+                    },
+                    "block": {
+                      "type": "html",
+                      "tag": "div"
+                    }
+                  }
+                }
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "core/group",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Bottom Inner",
+                      "etchData": {
+                        "origin": "etch",
+                        "name": "Bottom Inner",
+                        "styles": [
+                          "etch-container-style",
+                          "y383da6"
+                        ],
+                        "attributes": {
+                          "data-etch-element": "container",
+                          "class": "footer-alpha__bottom-inner"
+                        },
+                        "block": {
+                          "type": "html",
+                          "tag": "div"
+                        }
+                      }
+                    }
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "core/paragraph",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Copyright Text",
+                          "etchData": {
+                            "origin": "etch",
+                            "name": "Copyright Text",
+                            "styles": [
+                              "whmxnfx"
+                            ],
+                            "attributes": {
+                              "class": "footer-alpha__copyright-text"
+                            },
+                            "block": {
+                              "type": "html",
+                              "tag": "p"
+                            }
+                          }
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "<p>Copyright © {site.currentDate.dateFormat(\"Y\")} • {site.name}</p>",
+                      "innerContent": [
+                        "<p>Copyright © {site.currentDate.dateFormat(\"Y\")} • {site.name}</p>"
+                      ]
+                    },
+                    {
+                      "blockName": "core/group",
+                      "attrs": {
+                        "metadata": {
+                          "etchData": {
+                            "origin": "etch",
+                            "block": {
+                              "type": "slot-placeholder",
+                              "slot": "bottomRight"
+                            }
+                          }
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "<div class=\"wp-block-group\"></div>",
+                      "innerContent": [
+                        "<div class=\"wp-block-group\">",
+                        "</div>"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "<div class=\"wp-block-group\"></div>",
+                  "innerContent": [
+                    "<div class=\"wp-block-group\">",
+                    null,
+                    null,
+                    "</div>"
+                  ]
+                }
+              ],
+              "innerHTML": "<div class=\"wp-block-group\"></div>",
+              "innerContent": [
+                "<div class=\"wp-block-group\">",
+                null,
+                "</div>"
+              ]
+            }
+          ],
+          "innerHTML": "<div class=\"wp-block-group\"></div>",
+          "innerContent": [
+            "<div class=\"wp-block-group\">",
+            null,
+            null,
+            "</div>"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "minimalist",
+          "name": "Minimalist",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        },
+        {
+          "key": "hideNav",
+          "name": "Hide Nav",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

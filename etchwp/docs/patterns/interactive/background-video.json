@@ -1,0 +1,227 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3419,
+      "attributes": {
+        "hasOverlay": "{true}",
+        "source": "https://www.pexels.com/download/video/20229971/"
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "hgdyq2j": {
+      "type": "class",
+      "selector": ".background-video",
+      "collection": "default",
+      "css": ":has(> &) {\n    position: relative;\n    isolation: isolate;\n  }\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  z-index: -1;",
+      "readonly": false
+    },
+    "big702r": {
+      "type": "class",
+      "selector": ".background-video__video",
+      "collection": "default",
+      "css": "position: absolute;\n  inset: 0;\n  inline-size: 100%;\n  block-size: 100%;\n  object-fit: cover;",
+      "readonly": false
+    },
+    "oi8lx6s": {
+      "type": "class",
+      "selector": ".background-video__source",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  block-size: 100%;\n  position: absolute;\n  inset: 0;",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "zacxqwk": {
+      "type": "class",
+      "selector": ".background-video__overlay",
+      "collection": "default",
+      "css": "position: absolute;\n  inset: 0;\n  background: var(--overlay-color, black);\n  opacity: var(--overlay-opacity, 25%);\n  display: flex;\n  inline-size: 100%;\n  block-size: 100%;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3419": {
+      "id": 3419,
+      "name": "Background Video",
+      "key": "BackgroundVideo",
+      "properties": [
+        {
+          "key": "source",
+          "name": "Source",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+        },
+        {
+          "key": "hasOverlay",
+          "name": "Has Overlay",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "overlayColor",
+          "name": "Overlay Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "black"
+        },
+        {
+          "key": "overlayOpacity",
+          "name": "Overlay Opacity",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "70%"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Background Video"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "background-video",
+              "style": "--overlay-color: {props.overlayColor}; --overlay-opacity: {props.overlayOpacity};"
+            },
+            "styles": [
+              "hgdyq2j"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Video"
+                },
+                "tag": "video",
+                "attributes": {
+                  "autoplay": "autoplay",
+                  "muted": "muted",
+                  "loop": "loop",
+                  "class": "background-video__video"
+                },
+                "styles": [
+                  "big702r"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Source"
+                    },
+                    "tag": "source",
+                    "attributes": {
+                      "src": "{props.source}",
+                      "type": "video/mp4",
+                      "class": "background-video__source"
+                    },
+                    "styles": [
+                      "oi8lx6s"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "props.hasOverlay",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.hasOverlay"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Overlay"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-etch-element": "flex-div",
+                      "class": "background-video__overlay"
+                    },
+                    "styles": [
+                      "etch-flex-div-style",
+                      "zacxqwk"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

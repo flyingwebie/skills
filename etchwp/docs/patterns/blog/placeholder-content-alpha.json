@@ -1,0 +1,1959 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 3187,
+      "attributes": {}
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "rmwgxky": {
+      "type": "class",
+      "selector": ".blog-placeholder-alpha",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "sjd57kq": {
+      "type": "class",
+      "selector": ".smart-spacing",
+      "collection": "default",
+      "css": "/* This is a class from ACSS that intelligently handles rhythmic spacing in long-form content. If you don't have ACSS installed, remove this and manage your spacing manually. Learn more at https://automaticcss.com */",
+      "readonly": false
+    },
+    "3aynbux": {
+      "type": "class",
+      "selector": ".dev-note",
+      "collection": "default",
+      "css": "--accent-color: #fff8dc;\n  display: var(--display, none);\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 2);\n  background-color: var(--accent-color);\n  color: oklch(from var(--accent-color) 0.15 c h / 1);\n  border-left: 4px solid oklch(from var(--accent-color) calc(l / 1.5) calc(c * 6) h / 1);\n  padding: 15px 20px;\n  border-radius: 4px;\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n  inline-size: 100%;\n  max-inline-size: var(--max-width);\n  margin: var(--margin-block) var(--margin-inline);\n  z-index: 999;\n  h1,h2,h3,h4,h5,h6,p {\n    color: oklch(from var(--accent-color) 0.15 c h / 1);\n  }\n  &[data-display='Etch Only' i].etch-builder-block {\n    --display: flex;\n  }\n  &[data-display='Gutenberg Only' i].wp-block {\n    --display: flex;\n  }\n  &[data-display='Etch and Gutenberg' i]:is(.wp-block, .etch-builder-block) {\n    --display: flex;\n  }\n  &[data-style='danger' i] {\n    --accent-color: #f8d7d9;\n  }\n  &[data-style='info' i] {\n    --accent-color: #d1edf0;\n  }\n  &::before {\n    content: attr(data-heading);\n    font-weight: bold;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n  }\n  pre {\n    white-space: pre-wrap;\n    font-size: 0.95rem;\n    inline-size: 100%;\n    max-inline-size: max-content;\n    border-radius: 5px;\n    padding: 1.5rem;\n    background: oklch(from var(--black, black) l c h / 0.1);\n    code {\n      white-space: inherit;\n      font-size: 0.9rem;\n    }\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2291": {
+      "id": 2291,
+      "legacyId": "",
+      "name": "Dev Note",
+      "key": "DevNote",
+      "blocks": [
+        {
+          "blockName": "etch/condition",
+          "attrs": {
+            "metadata": {
+              "name": "If (Condition)"
+            },
+            "condition": {
+              "leftHand": {
+                "leftHand": "user.loggedIn",
+                "operator": "isTruthy",
+                "rightHand": null
+              },
+              "operator": "&&",
+              "rightHand": {
+                "leftHand": "props.show",
+                "operator": "isTruthy",
+                "rightHand": null
+              }
+            },
+            "conditionString": "user.loggedIn && props.show"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dev Note"
+                },
+                "tag": "div",
+                "attributes": {
+                  "style": "--margin-block: {props.marginBlock}; --margin-inline: {props.marginInline}; --max-width: {props.maxWidth};",
+                  "data-display": "{props.display}",
+                  "data-heading": "{props.heading}",
+                  "data-style": "{props.style}",
+                  "class": "dev-note"
+                },
+                "styles": [
+                  "3aynbux"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "slots.noteContent.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.noteContent.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Insert your developer notes. They won't show up on the front end."
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Visibility",
+          "key": "show",
+          "keyTouched": true,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Heading",
+          "key": "heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Developer Note"
+        },
+        {
+          "name": "Display",
+          "key": "display",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Etch Only",
+          "selectOptionsString": "Etch Only\nEtch And Gutenberg\nGutenberg Only"
+        },
+        {
+          "name": "Max Width",
+          "key": "maxWidth",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "max-content"
+        },
+        {
+          "name": "Margin Block",
+          "key": "marginBlock",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Margin Inline",
+          "key": "marginInline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Style",
+          "key": "style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Warning",
+          "selectOptionsString": "Warning\nInfo\nDanger"
+        }
+      ],
+      "description": ""
+    },
+    "3187": {
+      "id": 3187,
+      "legacyId": "",
+      "name": "Blog Placeholder Content",
+      "key": "BlogPlaceholderContent",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Placeholder Content"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "blog-placeholder-alpha smart-spacing"
+            },
+            "styles": [
+              "rmwgxky",
+              "sjd57kq"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/component",
+              "attrs": {
+                "ref": 2291,
+                "attributes": {
+                  "maxWidth": "100%"
+                }
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-content",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Drop this into any page that requires long-form content. It's especially good for blog post templates. You can wrap it in a condition to make sure it only shows in the builder. For example, in a blog post template:"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "pre",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "tag": "code",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "!slots[\"post-content\"]empty && environment.current === \"etch\""
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Every developer loves writing code. Few of us love deleting it."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "There's something deeply satisfying about building. Adding features. Watching a project grow. Lines of code feel like progress. They feel like work."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "But some of the best work I've ever done involved removing thousands of lines in a single commit."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "It felt wrong at first. Like burning money. All those hours. All that cleverness. Gone."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Then the tests ran faster. The builds finished sooner. New developers stopped asking questions about that weird module nobody understood."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "The codebase got better by getting smaller."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Heading"
+                },
+                "tag": "h2",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "The Weight of Legacy Code"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Figure"
+                },
+                "tag": "figure",
+                "attributes": {},
+                "styles": [
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-image",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Image"
+                    },
+                    "tag": "img",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Every line of code is a liability. Not an asset. A liability."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Code has to be read. Understood. Maintained. Tested. Debugged. Every line increases the surface area for bugs. Every abstraction adds cognitive load."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "We don't think about this when we're writing. We think about solving the problem in front of us. We think about elegance. About covering edge cases."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "We rarely think about the developer three years from now who has to figure out why this exists."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "That developer might be you. And you won't remember."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Heading"
+                },
+                "tag": "h2",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Signs You Should Delete Something"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Figure"
+                },
+                "tag": "figure",
+                "attributes": {},
+                "styles": [
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-image",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Image"
+                    },
+                    "tag": "img",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Not all code is worth keeping. Here's what to look for:"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Unordered List"
+                },
+                "tag": "ul",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "List Item"
+                    },
+                    "tag": "li",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Features nobody uses anymore"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "List Item"
+                    },
+                    "tag": "li",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Abstractions that only have one implementation"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "List Item"
+                    },
+                    "tag": "li",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Comments that explain what the code does instead of why"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "List Item"
+                    },
+                    "tag": "li",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Fallbacks for browsers or systems you no longer support"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "List Item"
+                    },
+                    "tag": "li",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Clever solutions to problems that no longer exist"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "If you're scared to touch something because nobody understands it, that's not a reason to keep it. That's a reason to kill it."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Dead code isn't harmless. It misleads. It suggests patterns that shouldn't be followed. It makes grep results noisy. It creates fear."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Fear is the mind-killer. And the codebase-killer."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Heading"
+                },
+                "tag": "h2",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "The Psychology of Hoarding"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Figure"
+                },
+                "tag": "figure",
+                "attributes": {},
+                "styles": [
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-image",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Image"
+                    },
+                    "tag": "img",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "We keep code for emotional reasons. Not rational ones."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Someone spent time on this. Maybe it was you. Deleting it feels like saying that time was wasted."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "But the time is already spent. The sunk cost fallacy is real. Keeping bad code doesn't redeem the hours. It just extends the pain."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "There's also fear. What if we need this later? What if there's a reason it exists that we don't understand?"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "That's what version control is for."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Figure"
+                },
+                "tag": "figure",
+                "attributes": {},
+                "styles": [
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Blockquote"
+                    },
+                    "tag": "blockquote",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Deleted code is debugged code. It has no bugs. It has no security vulnerabilities. It requires no maintenance."
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Figure Caption"
+                    },
+                    "tag": "figcaption",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "span",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "someone"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Cite"
+                        },
+                        "tag": "cite",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "somewhere on the internet"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "You can always bring it back. Git remembers even when you don't."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Heading"
+                },
+                "tag": "h2",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "How to Get Good at Deleting"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Figure"
+                },
+                "tag": "figure",
+                "attributes": {},
+                "styles": [
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/dynamic-image",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Image"
+                    },
+                    "tag": "img",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Start small. Find something obviously dead. A function with no callers. A file that hasn't been touched in two years. A feature flag that's been on for everyone since 2019."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Delete it. Run the tests. Deploy."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Notice how nothing bad happens."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Then do it again. Build the muscle. Get comfortable with subtraction."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Eventually you'll start seeing deletion as progress. Because it is."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "The best codebases aren't the ones with the most features. They're the ones where every line earns its place."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Every line should justify its existence. If it can't, it should go."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Your future self will thank you. So will everyone else who has to work in that codebase."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Text"
+                },
+                "tag": "p",
+                "attributes": {}
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Delete more code. Ship less. Sleep better."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [],
+      "description": ""
+    }
+  }
+}

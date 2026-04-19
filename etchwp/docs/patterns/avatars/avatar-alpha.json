@@ -1,0 +1,328 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 1455,
+      "attributes": {
+        "altText": "Sample Avatar"
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "6f9vr1z": {
+      "type": "class",
+      "selector": ".avatar-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  max-inline-size: max-content;\n  align-items: center;\n  gap: calc(var(--content-gap, 1em) / 2);\n\n  &[data-layout=\"center\" i] {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "jtrz8jn": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-wrapper",
+      "collection": "default",
+      "css": "max-inline-size: max-content;",
+      "readonly": false
+    },
+    "sf4lf2f": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar",
+      "collection": "default",
+      "css": "max-inline-size: var(--avatar-size);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  object-fit: cover;",
+      "readonly": false
+    },
+    "40aaz7e": {
+      "type": "class",
+      "selector": ".avatar-alpha__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 4);\n  font-size: var(--font-size, 1rem);",
+      "readonly": false
+    },
+    "5kj2p2d": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-name",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-weight: 700;",
+      "readonly": false
+    },
+    "0igzogo": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-description",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-size: 85%;",
+      "readonly": false
+    }
+  },
+  "components": {
+    "1455": {
+      "id": 1455,
+      "name": "Avatar Alpha",
+      "key": "AvatarAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Avatar Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "avatar-alpha",
+              "data-layout": "{props.layout}"
+            },
+            "styles": [
+              "6f9vr1z"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Avatar Wrapper"
+                },
+                "tag": "figure",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__avatar-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "jtrz8jn",
+                  "s4gkacs"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar"
+                    },
+                    "options": {
+                      "imageData": {
+                        "attachmentId": 1352,
+                        "size": ""
+                      }
+                    },
+                    "tag": "img",
+                    "attributes": {
+                      "src": "{props.avatar}",
+                      "alt": "{props.altText}",
+                      "class": "avatar-alpha__avatar",
+                      "style": "--avatar-size: {props.avatarSize}"
+                    },
+                    "styles": [
+                      "sf4lf2f"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__content-wrapper",
+                  "style": "--font-size: {props.fontSize}"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "40aaz7e"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Name"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-name"
+                    },
+                    "styles": [
+                      "5kj2p2d"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.name}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Description"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-description"
+                    },
+                    "styles": [
+                      "0igzogo"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.description}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "layout",
+          "name": "Layout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "left",
+          "selectOptionsString": "left\ncenter\n"
+        },
+        {
+          "key": "avatar",
+          "name": "Avatar",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://patterns.etchwp.com/wp-content/uploads/headshot.webp"
+        },
+        {
+          "key": "altText",
+          "name": "Alt Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Avatar Name"
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Description goes here"
+        },
+        {
+          "key": "avatarSize",
+          "name": "Avatar Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5rem"
+        },
+        {
+          "key": "fontSize",
+          "name": "Font Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--text-m, 1rem)"
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    }
+  }
+}

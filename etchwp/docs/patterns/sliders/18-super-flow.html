@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./effect-super-flow.min.css" />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      :root {
+        --swiper-pagination-color: rgba(255, 255, 255, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 1);
+      }
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 16/9;
+
+        padding: 0px 0px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-4ffe {
+        background-color: rgba(51, 51, 51, 1);
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-2f5e {
+        padding: 48px 48px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-text-66a3 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-theoretical-mon-mothma-274">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="super-flow-image">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+              src="https://studio.swiperjs.com/demo-presets/super-flow/01.jpg"
+            />
+          </div>
+
+          <div
+            class="swiper-slide-content super-flow-content swiper-slide-content-2f5e"
+          >
+            <div class="swiper-slide-text swiper-slide-text-66a3">
+              Super Flow
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="super-flow-image">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+              src="https://studio.swiperjs.com/demo-presets/super-flow/02.jpg"
+            />
+          </div>
+
+          <div
+            class="swiper-slide-content super-flow-content swiper-slide-content-2f5e"
+          >
+            <div class="swiper-slide-text swiper-slide-text-66a3">
+              Static Rush
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="super-flow-image">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+              src="https://studio.swiperjs.com/demo-presets/super-flow/03.jpg"
+            />
+          </div>
+
+          <div
+            class="swiper-slide-content super-flow-content swiper-slide-content-2f5e"
+          >
+            <div class="swiper-slide-text swiper-slide-text-66a3">
+              Still Motion
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="super-flow-image">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+              src="https://studio.swiperjs.com/demo-presets/super-flow/04.jpg"
+            />
+          </div>
+
+          <div
+            class="swiper-slide-content super-flow-content swiper-slide-content-2f5e"
+          >
+            <div class="swiper-slide-text swiper-slide-text-66a3">
+              Vertical Tension
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <div class="super-flow-image">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+              src="https://studio.swiperjs.com/demo-presets/super-flow/05.jpg"
+            />
+          </div>
+
+          <div
+            class="swiper-slide-content super-flow-content swiper-slide-content-2f5e"
+          >
+            <div class="swiper-slide-text swiper-slide-text-66a3">
+              Echo Core
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./effect-super-flow.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        modules: [EffectSuperFlow],
+        effect: "super-flow",
+        speed: 1000,
+        pagination: { el: ".swiper-pagination" },
+        autoplay: { enabled: true },
+      });
+    </script>
+  </body>
+</html>

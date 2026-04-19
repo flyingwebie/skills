@@ -1,0 +1,696 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Content Section Taurus"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "content-section-taurus"
+      },
+      "styles": [
+        "etch-section-style",
+        "on45u11"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Inner"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "content-section-taurus__inner"
+          },
+          "styles": [
+            "etch-container-style",
+            "b3dazgw"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "class": "content-section-taurus__content-wrapper"
+              },
+              "styles": [
+                "rswlx6j"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {
+                    "class": "content-section-taurus__heading"
+                  },
+                  "styles": [
+                    "fedudz0"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Your bold heading goes here. it can be a little longer."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Lede"
+                  },
+                  "tag": "p",
+                  "attributes": {
+                    "class": "content-section-taurus__lede"
+                  },
+                  "styles": [
+                    "pjk9i0j"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati est at voluptatem, laboriosam repellat vel! Facilis magni natus fugit repudiandae!"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "metadata": {
+                    "name": "\n"
+                  },
+                  "ref": 3312,
+                  "attributes": {
+                    "list": "[\"item 1\", \"item 2\", \"item 3\"]",
+                    "iconWP": "https://patterns.etchwp.com/wp-content/uploads/tick-03-solid-standard.svg",
+                    "fontSize": "var(--text-s, .9rem)",
+                    "labelColor": "var(--text-light-muted, #eee)"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "items"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 3328,
+                          "attributes": {
+                            "label": "Talking point number one."
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 3328,
+                          "attributes": {
+                            "label": "Talking point number two."
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 3328,
+                          "attributes": {
+                            "label": "Talking point number three."
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 3328,
+                          "attributes": {
+                            "label": "Talking point number four."
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/component",
+                        "attrs": {
+                          "ref": 3328,
+                          "attributes": {
+                            "label": "Talking point number five."
+                          }
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA"
+                  },
+                  "tag": "a",
+                  "attributes": {
+                    "href": "#",
+                    "class": "content-section-taurus__cta"
+                  },
+                  "styles": [
+                    "xktq4ez"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Get action here"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/dynamic-image",
+        "attrs": {
+          "metadata": {
+            "name": "Background Image"
+          },
+          "tag": "img",
+          "attributes": {
+            "class": "content-section-taurus__background-image is-bg",
+            "mediaId": "2985"
+          },
+          "styles": [
+            "1pfjamk",
+            "jnhmt2g"
+          ]
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Overlay"
+          },
+          "tag": "div",
+          "attributes": {
+            "class": "content-section-taurus__overlay is-bg"
+          },
+          "styles": [
+            "vw9iumq",
+            "jnhmt2g"
+          ]
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "on45u11": {
+      "type": "class",
+      "selector": ".content-section-taurus",
+      "collection": "default",
+      "css": "padding: var(--section-space-xl-to-m, 4rem) var(--gutter);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-inline-size: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "b3dazgw": {
+      "type": "class",
+      "selector": ".content-section-taurus__inner",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: 100%;",
+      "readonly": false
+    },
+    "rswlx6j": {
+      "type": "class",
+      "selector": ".content-section-taurus__content-wrapper",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: 40ch;\n  gap: var(--content-gap, 1rem);\n  display: flex;\n  flex-direction: column;\n  color: var(--text-light);",
+      "readonly": false
+    },
+    "fedudz0": {
+      "type": "class",
+      "selector": ".content-section-taurus__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "pjk9i0j": {
+      "type": "class",
+      "selector": ".content-section-taurus__lede",
+      "collection": "default",
+      "css": "margin-block-start: var(--section-space-m, 1.5rem);\n  color: var(--text-light);",
+      "readonly": false
+    },
+    "buc1m1x": {
+      "type": "class",
+      "selector": ".icon-list-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--list-item-gap, .5ex);",
+      "readonly": false
+    },
+    "po39rnl": {
+      "type": "class",
+      "selector": ".icon-list-alpha__item",
+      "collection": "default",
+      "css": "display: flex;\n  font-size: var(--font-size, 1em);\n  color: var(--label-color, currentColor);\n  &::before {\n    content: '';\n    inline-size: var(--font-size, 1em);\n    block-size: var(--font-size, 1em);\n    aspect-ratio: 1;\n    background: var(--icon-color);\n    mask-image: var(--icon);\n    mask-size: contain;\n    mask-repeat: no-repeat;\n    mask-position: center;\n    position: relative;\n    top: var(--icon-offset-block, 0);\n    margin-inline-end: 1ch;\n  }",
+      "readonly": false
+    },
+    "5u8r8vl": {
+      "type": "class",
+      "selector": ".list-item-alpha__item-label",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "xktq4ez": {
+      "type": "class",
+      "selector": ".content-section-taurus__cta",
+      "collection": "default",
+      "css": "color: var(--text-light, #fff);\n  &:hover {\n    color: var(--text-light-muted, #eee);\n  }\n  margin-block-start: 1em;",
+      "readonly": false
+    },
+    "1pfjamk": {
+      "type": "class",
+      "selector": ".content-section-taurus__background-image",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "jnhmt2g": {
+      "type": "class",
+      "selector": ".is-bg",
+      "collection": "default",
+      "css": ":has(> &) {\n    position: relative;\n    isolation: isolate;\n  }\n  position: var(--bg-position, absolute);\n  inset: var(--bg-inset, 0);\n  inline-size: var(--bg-width, 100%);\n  block-size: var(--bg-height, 100%);\n  border-radius: var(--bg-radius, 0);\n  object-fit: var(--bg-object-fit, cover);\n  object-position: var(--bg-object-position, center);\n  z-index: var(--bg-z-index, -2); /* Compatibility with overlays that use -1 */\n  border-radius: var(--bg-radius, 0);\n  pointer-events: none;\n  > img {\n    object-fit: var(--bg-object-fit, cover);\n    object-position: var(--bg-object-position, center);\n    inline-size: var(--bg-width, 100%);\n    block-size: var(--bg-height, 100%);\n  }",
+      "readonly": false
+    },
+    "vw9iumq": {
+      "type": "class",
+      "selector": ".content-section-taurus__overlay",
+      "collection": "default",
+      "css": "background-color: oklch(from var(--neutral, #000) l c h / 0.3);\n  background-image: radial-gradient(circle at center left, var(--neutral-ultra-dark, #111) 30%, transparent);",
+      "readonly": false
+    }
+  },
+  "components": {
+    "3312": {
+      "id": 3312,
+      "legacyId": "",
+      "name": "Icon List Alpha",
+      "key": "IconListAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/dynamic-element",
+          "attrs": {
+            "metadata": {
+              "name": "Icon List Alpha"
+            },
+            "tag": "{props.tag}",
+            "attributes": {
+              "style": "--icon: url({props.icon}); --icon-color: {props.iconColor}; --font-size: {props.fontSize}; --icon-offset-block: {props.iconOffsetBlock}; --list-item-gap: {props.listItemGap}; --label-color: {props.labelColor};",
+              "class": "icon-list-alpha",
+              "tag": "{props.tag}"
+            },
+            "styles": [
+              "buc1m1x"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/slot-placeholder",
+              "attrs": {
+                "name": "items"
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If Slot Empty"
+                },
+                "condition": {
+                  "leftHand": "slots.items.empty",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "slots.items.empty"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/component",
+                  "attrs": {
+                    "ref": 3328,
+                    "attributes": {
+                      "label": "Add \"List Item Alpha\" to get started."
+                    }
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Tag",
+          "key": "tag",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "ul",
+          "selectOptionsString": "ul\nol"
+        },
+        {
+          "name": "Icon\n",
+          "key": "icon",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://patterns.etchwp.com/wp-content/uploads/tick-03-solid-standard.svg"
+        },
+        {
+          "name": "Icon Color",
+          "key": "iconColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--primary, currentColor)"
+        },
+        {
+          "name": "Label Color",
+          "key": "labelColor",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "currentColor"
+        },
+        {
+          "name": "List Item Gap",
+          "key": "listItemGap",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": ".5ex"
+        },
+        {
+          "name": "Font Size",
+          "key": "fontSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "name": "Icon Offset (Block)",
+          "key": "iconOffsetBlock",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": ".5ex"
+        }
+      ],
+      "description": ""
+    },
+    "3328": {
+      "id": 3328,
+      "legacyId": "",
+      "name": "List Item Alpha",
+      "key": "ListItemAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "List Item Alpha"
+            },
+            "tag": "li",
+            "attributes": {
+              "class": "icon-list-alpha__item {props.class}"
+            },
+            "styles": [
+              "po39rnl"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Label"
+                },
+                "tag": "span",
+                "attributes": {
+                  "class": "list-item-alpha__item-label"
+                },
+                "styles": [
+                  "5u8r8vl"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/raw-html",
+                  "attrs": {
+                    "content": "{props.label}"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Label",
+          "key": "label",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Item #1"
+        },
+        {
+          "name": "Class",
+          "key": "class",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "description": ""
+    }
+  }
+}

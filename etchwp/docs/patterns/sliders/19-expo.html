@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./effect-expo.min.css" />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 100%;
+
+        padding: 32px 0px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-1990 {
+        border-radius: 32px;
+        --expo-image-border-radius: 32px;
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-66fa {
+        padding: 32px 32px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-text-66a3 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-tomato-dulcy-428">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-1990">
+          <div class="expo-container">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6 expo-image"
+              src="https://studio.swiperjs.com/demo-images/nature/01.jpg"
+            />
+
+            <div
+              class="swiper-slide-content expo-content swiper-slide-content-66fa"
+            >
+              <div class="swiper-slide-text swiper-slide-text-66a3">
+                Serenity in the Wild
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-1990">
+          <div class="expo-container">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6 expo-image"
+              src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
+            />
+
+            <div
+              class="swiper-slide-content expo-content swiper-slide-content-66fa"
+            >
+              <div class="swiper-slide-text swiper-slide-text-66a3">
+                Nature's Palette
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-1990">
+          <div class="expo-container">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6 expo-image"
+              src="https://studio.swiperjs.com/demo-images/nature/03.jpg"
+            />
+
+            <div
+              class="swiper-slide-content expo-content swiper-slide-content-66fa"
+            >
+              <div class="swiper-slide-text swiper-slide-text-66a3">
+                Majestic Horizons
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-1990">
+          <div class="expo-container">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6 expo-image"
+              src="https://studio.swiperjs.com/demo-images/nature/04.jpg"
+            />
+
+            <div
+              class="swiper-slide-content expo-content swiper-slide-content-66fa"
+            >
+              <div class="swiper-slide-text swiper-slide-text-66a3">
+                Tranquil Moments
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-1990">
+          <div class="expo-container">
+            <img
+              class="swiper-slide-bg-image swiper-slide-bg-image-bdb6 expo-image"
+              src="https://studio.swiperjs.com/demo-images/nature/05.jpg"
+            />
+
+            <div
+              class="swiper-slide-content expo-content swiper-slide-content-66fa"
+            >
+              <div class="swiper-slide-text swiper-slide-text-66a3">
+                Wilderness Wonders
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./effect-expo.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        modules: [EffectExpo],
+        slidesPerView: 1.5,
+        spaceBetween: 32,
+        effect: "expo",
+        expoEffect: { imageOffset: 1.25, rotate: 30, grayscale: true },
+        speed: 600,
+      });
+    </script>
+  </body>
+</html>

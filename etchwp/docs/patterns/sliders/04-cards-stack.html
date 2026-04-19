@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./effect-cards-stack.min.css" />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 380px;
+
+        height: 240px;
+
+        padding: 0px 0px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+
+        transform-style: preserve-3d;
+      }
+
+      .swiper-slide-af26 {
+        border-radius: 16px;
+      }
+      .swiper-slide-content-1a7e {
+        padding: 0px 0px;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-block-0f99 {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 16px;
+        padding: 0px 0px;
+      }
+      .swiper-slide-image-faa0 {
+        max-width: 100%;
+        min-width: 0;
+        max-height: 100%;
+        min-height: 0;
+        object-fit: contain;
+        opacity: 1;
+        filter: blur(0px);
+        border-radius: 16px;
+      }
+      .swiper-slide-block-17fe {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 16px;
+        padding: 0px 0px;
+      }
+      .swiper-slide-image-1c13 {
+        max-width: 100%;
+        min-width: 0;
+        max-height: 100%;
+        min-height: 0;
+        object-fit: cover;
+        opacity: 1;
+        filter: blur(0px);
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-considerable-jaclyn-972">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/02.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/01.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/04.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/03.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/06.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/05.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/08.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/07.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/10.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/09.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/12.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/11.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/14.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/13.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-af26">
+          <div class="swiper-slide-content swiper-slide-content-1a7e">
+            <div
+              class="swiper-slide-block swiper-slide-block-0f99 cards-stack-back"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-faa0"
+                src="https://studio.swiperjs.com/demo-images/cards/16.jpg"
+              />
+            </div>
+
+            <div
+              class="swiper-slide-block swiper-slide-block-17fe cards-stack-front"
+            >
+              <img
+                class="swiper-slide-image swiper-slide-image-1c13"
+                src="https://studio.swiperjs.com/demo-images/cards/15.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./effect-cards-stack.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        modules: [EffectCardsStack],
+        direction: "vertical",
+        effect: "cards-stack",
+        touchRatio: 1.5,
+      });
+    </script>
+  </body>
+</html>

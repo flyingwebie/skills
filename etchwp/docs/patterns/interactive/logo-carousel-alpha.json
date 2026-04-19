@@ -1,0 +1,945 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 2307,
+      "attributes": {
+        "fade": "Both Sides",
+        "gap": "2rem",
+        "logoWidth": "10rem"
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "logos"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-03-06T15:15:17.746Z",
+  "styles": {
+    "5tktqrf": {
+      "type": "class",
+      "selector": ".logo-carousel-alpha",
+      "collection": "default",
+      "css": "overflow: clip;\n  opacity: var(--opacity, 1);\n  &[data-fade*='both' i] {\n    /* Begin Fade Inline */\n    --fade-amount: 25%;\n    -webkit-mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent 100%);\n    mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent 100%);\n    /* End Fade Inline */\n  }\n  &[data-fade='left' i] {\n    /* Begin Fade Left */\n    --fade-amount: 25%;\n    -webkit-mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount));\n    mask-image: linear-gradient(to right, transparent 0%, black var(--fade-amount));\n    /* End Fade Left */\n  }\n  &[data-fade='right' i] {\n    /* Begin Fade Right */\n    --fade-amount: 25%;\n    -webkit-mask-image: linear-gradient(to left, transparent 0%, black var(--fade-amount));\n    mask-image: linear-gradient(to left, transparent 0%, black var(--fade-amount));\n    /* End Fade Right */\n  }",
+      "readonly": false
+    },
+    "zghjlx7": {
+      "type": "class",
+      "selector": ".logo-carousel-alpha__track",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  animation: logoCarouselAlpha var(--speed, 2s) linear infinite;\n  inline-size: fit-content;\n  will-change: transform;\n\n  [data-color*='grayscale' i] & {\n    filter: grayscale(1);\n  }\n\n  > * {\n    inline-size: var(--logo-width, 10rem);\n    flex-shrink: 0;\n    margin-inline-end: var(--gap, 2rem);\n  }\n  > *:last-child {\n    margin-inline-end: var(--gap, 2rem);\n  }",
+      "readonly": false
+    },
+    "3aynbux": {
+      "type": "class",
+      "selector": ".dev-note",
+      "collection": "default",
+      "css": "--accent-color: #fff8dc;\n  display: var(--display, none);\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 2);\n  background-color: var(--accent-color);\n  color: oklch(from var(--accent-color) 0.15 c h / 1);\n  border-left: 4px solid oklch(from var(--accent-color) calc(l / 1.5) calc(c * 6) h / 1);\n  padding: 15px 20px;\n  border-radius: 4px;\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n  inline-size: 100%;\n  max-inline-size: var(--max-width);\n  margin: var(--margin-block) var(--margin-inline);\n  z-index: 999;\n  h1,h2,h3,h4,h5,h6,p {\n    color: oklch(from var(--accent-color) 0.15 c h / 1);\n  }\n  &[data-display='Etch Only' i].etch-builder-block {\n    --display: flex;\n  }\n  &[data-display='Gutenberg Only' i].wp-block {\n    --display: flex;\n  }\n  &[data-display='Etch and Gutenberg' i]:is(.wp-block, .etch-builder-block) {\n    --display: flex;\n  }\n  &[data-style='danger' i] {\n    --accent-color: #f8d7d9;\n  }\n  &[data-style='info' i] {\n    --accent-color: #d1edf0;\n  }\n  &::before {\n    content: attr(data-heading);\n    font-weight: bold;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n  }\n  pre {\n    white-space: pre-wrap;\n    font-size: 0.95rem;\n    inline-size: 100%;\n    max-inline-size: max-content;\n    border-radius: 5px;\n    padding: 1.5rem;\n    background: oklch(from var(--black, black) l c h / 0.1);\n    code {\n      white-space: inherit;\n      font-size: 0.9rem;\n    }\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2291": {
+      "id": 2291,
+      "legacyId": "",
+      "name": "Dev Note",
+      "key": "DevNote",
+      "blocks": [
+        {
+          "blockName": "etch/condition",
+          "attrs": {
+            "metadata": {
+              "name": "If (Condition)"
+            },
+            "condition": {
+              "leftHand": {
+                "leftHand": "user.loggedIn",
+                "operator": "isTruthy",
+                "rightHand": null
+              },
+              "operator": "&&",
+              "rightHand": {
+                "leftHand": "props.show",
+                "operator": "isTruthy",
+                "rightHand": null
+              }
+            },
+            "conditionString": "user.loggedIn && props.show"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dev Note"
+                },
+                "tag": "div",
+                "attributes": {
+                  "style": "--margin-block: {props.marginBlock}; --margin-inline: {props.marginInline}; --max-width: {props.maxWidth};",
+                  "data-display": "{props.display}",
+                  "data-heading": "{props.heading}",
+                  "data-style": "{props.style}",
+                  "class": "dev-note"
+                },
+                "styles": [
+                  "3aynbux"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "slots.noteContent.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.noteContent.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Insert your developer notes. They won't show up on the front end."
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Visibility",
+          "key": "show",
+          "keyTouched": true,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Heading",
+          "key": "heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Developer Note"
+        },
+        {
+          "name": "Display",
+          "key": "display",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Etch Only",
+          "selectOptionsString": "Etch Only\nEtch And Gutenberg\nGutenberg Only"
+        },
+        {
+          "name": "Max Width",
+          "key": "maxWidth",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "max-content"
+        },
+        {
+          "name": "Margin Block",
+          "key": "marginBlock",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Margin Inline",
+          "key": "marginInline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Style",
+          "key": "style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Warning",
+          "selectOptionsString": "Warning\nInfo\nDanger"
+        }
+      ],
+      "description": ""
+    },
+    "2307": {
+      "id": 2307,
+      "legacyId": "",
+      "name": "Logo Carousel Alpha",
+      "key": "LogoCarouselAlpha",
+      "properties": [
+        {
+          "name": "Speed (Seconds)",
+          "key": "speed",
+          "keyTouched": true,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "20"
+        },
+        {
+          "name": "Fade",
+          "key": "fade",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "None",
+          "selectOptionsString": "None\nLeft\nRight\nBoth Sides"
+        },
+        {
+          "name": "Fade Amount (%)",
+          "key": "fadeAmount",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "20"
+        },
+        {
+          "name": "Color",
+          "key": "color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Full Color",
+          "selectOptionsString": "Full Color\nGrayscale"
+        },
+        {
+          "name": "Opacity",
+          "key": "opacity",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1"
+        },
+        {
+          "name": "Gap",
+          "key": "gap",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "2rem"
+        },
+        {
+          "name": "Logo Width",
+          "key": "logoWidth",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "10rem"
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Logo Carousel Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "role": "presentation",
+              "data-fade": "{props.fade}",
+              "style": "--fade-amount: {props.fadeAmount}%; --opacity: {props.opacity}; --gap: {props.gap};",
+              "class": "logo-carousel-alpha"
+            },
+            "styles": [
+              "5tktqrf"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Track"
+                },
+                "tag": "div",
+                "attributes": {
+                  "style": "--speed: {props.speed}s; --logo-width: {props.logoWidth};",
+                  "data-color": "{props.color.toLowercase()}",
+                  "class": "logo-carousel-alpha__track"
+                },
+                "styles": [
+                  "zghjlx7"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "logos"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "logos"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If Empty"
+                    },
+                    "condition": {
+                      "leftHand": "slots.logos.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.logos.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "SVG"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "https://patterns.etchwp.com/wp-content/uploads/logoipsum-418.svg",
+                          "stripColors": "true"
+                        }
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        },
+        {
+          "blockName": "etch/component",
+          "attrs": {
+            "ref": 2291,
+            "attributes": {
+              "marginBlock": "1em 0",
+              "style": "Danger",
+              "heading": "Developer Notes"
+            }
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/slot-content",
+              "attrs": {
+                "name": "noteContent"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "tag": "p",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "This carousel is for visual presentation only. It uses role=presentation to make it invisible to screen readers. If you need an accessible carousel or if the items you need to put in the slider are important content, use a different carousel component."
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "tag": "p",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "Additionally, you need to right click and copy this animation and paste it into a global stylesheet. If you're seeing any sort of \"snapping\" or delayed loading/gap, it likely means you need to add more logos to your slot."
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Preformatted Code"
+                    },
+                    "tag": "pre",
+                    "attributes": {}
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": " @keyframes logoCarouselAlpha {\"{\"} "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "br",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{\" 0% { transform: translateX(0); } \"} "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "br",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{\" 100% { transform: translateX(-50%); } \"} "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    },
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "tag": "br",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{\"}\"} "
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

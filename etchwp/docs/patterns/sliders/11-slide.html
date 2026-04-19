@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap");
+
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      :root {
+        --swiper-pagination-color: rgba(0, 0, 0, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(0, 0, 0, 1);
+      }
+
+      :root {
+        --swiper-pagination-right: 10px;
+        --swiper-pagination-left: auto;
+      }
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 100%;
+
+        padding: 0px 0px;
+
+        font-family: Inter;
+        font-synthesis-weight: none;
+        font-synthesis-style: none;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+
+        overflow: hidden;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: -10%;
+        top: -10%;
+        width: 120%;
+        height: 120%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        transform: translate3d(0, 0, 0);
+      }
+
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-e871 {
+        padding: 48px 48px;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-block-9b60 {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 960px;
+        width: 100%;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 32px;
+        padding: 0px 0px;
+      }
+      .swiper-slide-block-c8fb {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 0px;
+      }
+      .swiper-slide-image-6534 {
+        object-fit: contain;
+        opacity: 1;
+        filter: blur(0px);
+        width: 128px;
+        height: 128px;
+        border: 8px solid rgba(255, 122, 0, 1);
+        border-radius: 128px;
+      }
+      .swiper-slide-text-4522 {
+        color: rgba(0, 0, 0, 1);
+        text-align: left;
+        font-size: 42px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-text-948b {
+        color: rgba(0, 0, 0, 1);
+        text-align: left;
+        font-size: 42px;
+        line-height: 1;
+        font-weight: bold;
+      }
+      .swiper-slide-text-17f4 {
+        color: rgba(0, 0, 0, 1);
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-8ae7 {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 960px;
+        width: 100%;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px 0px;
+      }
+      .swiper-slide-text-3b38 {
+        color: rgba(73, 34, 8, 1);
+        text-align: left;
+        font-size: 42px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-text-018a {
+        color: rgba(73, 34, 8, 1);
+        text-align: left;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-c912 {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 960px;
+        width: 100%;
+        flex-direction: row;
+        gap: 32px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0px 0px;
+      }
+      .swiper-slide-block-9829 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(73, 34, 8, 1);
+        border-radius: 256px;
+        padding: 16px 16px;
+      }
+      .swiper-slide-image-afce {
+        object-fit: contain;
+        opacity: 1;
+        filter: blur(0px);
+        width: 48px;
+        height: 48px;
+      }
+      .swiper-slide-text-aefa {
+        color: rgba(73, 34, 8, 1);
+        text-align: center;
+        font-size: 21px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-7422 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(73, 34, 8, 1);
+        border-radius: 256px;
+        padding: 16px 16px;
+      }
+      .swiper-slide-image-7435 {
+        object-fit: contain;
+        opacity: 1;
+        filter: blur(0px);
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+      }
+      .swiper-slide-block-d665 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(73, 34, 8, 1);
+        border-radius: 256px;
+        padding: 16px 16px;
+      }
+      .swiper-slide-text-1e30 {
+        color: rgba(73, 34, 8, 1);
+        text-align: left;
+        font-size: 21px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-f557 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(73, 34, 8, 1);
+        border-radius: 256px;
+        padding: 16px 16px;
+      }
+      .swiper-slide-block-6804 {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 8px 16px;
+      }
+      .swiper-slide-text-d1a7 {
+        color: rgba(55, 183, 255, 1);
+        text-align: left;
+        font-size: 42px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-e1eb {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 960px;
+        width: 100%;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 0px;
+      }
+      .swiper-slide-block-7129 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 256px;
+        padding: 12px 32px;
+      }
+      .swiper-slide-image-dbdb {
+        object-fit: cover;
+        opacity: 1;
+        filter: blur(0px);
+        width: 32px;
+        height: 32px;
+      }
+      .swiper-slide-block-4080 {
+        display: flex;
+        box-sizing: border-box;
+        text-decoration: none;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 256px;
+        padding: 12px 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-pink-sella-261">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-ff5e">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-presets/landing/bg-01.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-e871">
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-9b60"
+            >
+              <div
+                data-swiper-parallax="0"
+                class="swiper-slide-block swiper-slide-block-c8fb"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-6534"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/avatar.jpg"
+                />
+                <div
+                  class="swiper-slide-text swiper-slide-text-4522"
+                  data-swiper-parallax="0"
+                >
+                  Hi 👋
+                </div>
+              </div>
+              <div
+                class="swiper-slide-text swiper-slide-text-948b"
+                data-swiper-parallax="0"
+              >
+                My name is Vladimir Kharlampidi
+              </div>
+              <div
+                class="swiper-slide-text swiper-slide-text-17f4"
+                data-swiper-parallax="0"
+              >
+                I am a front-end developer with more than 13 years of
+                experience. I am very passionate about building web
+                applications.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-ff5e">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-presets/landing/bg-02.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-e871">
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-8ae7"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-3b38"
+                data-swiper-parallax="0"
+              >
+                My Projects
+              </div>
+              <div
+                class="swiper-slide-text swiper-slide-text-018a"
+                data-swiper-parallax="0"
+              >
+                Some of my latest projects i am currently working on
+              </div>
+            </div>
+
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-c912"
+            >
+              <a
+                href="https://studio.swiperjs.com"
+                target="_blank"
+                data-swiper-parallax="-25"
+                class="swiper-slide-block swiper-slide-block-9829"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-afce"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/studio-logo.svg"
+                />
+                <div
+                  class="swiper-slide-text swiper-slide-text-aefa"
+                  data-swiper-parallax="0"
+                >
+                  Swiper Studio
+                </div> </a
+              ><a
+                href="https://uiinitiative.com"
+                target="_blank"
+                data-swiper-parallax="-50"
+                class="swiper-slide-block swiper-slide-block-7422"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-7435"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/ui-logo.svg"
+                />
+                <div
+                  class="swiper-slide-text swiper-slide-text-aefa"
+                  data-swiper-parallax="0"
+                >
+                  UI Initiative
+                </div>
+              </a>
+            </div>
+
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-c912"
+            >
+              <a
+                href="https://swiperjs.com"
+                target="_blank"
+                data-swiper-parallax="-75"
+                class="swiper-slide-block swiper-slide-block-d665"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-afce"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/swiper-logo.svg"
+                />
+                <div
+                  class="swiper-slide-text swiper-slide-text-1e30"
+                  data-swiper-parallax="0"
+                >
+                  Swiper
+                </div> </a
+              ><a
+                href="https://framework7.io"
+                target="_blank"
+                data-swiper-parallax="-100"
+                class="swiper-slide-block swiper-slide-block-f557"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-afce"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/f7-logo.svg"
+                />
+                <div
+                  class="swiper-slide-text swiper-slide-text-1e30"
+                  data-swiper-parallax="0"
+                >
+                  Framework7
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-ff5e">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-presets/landing/bg-03.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-e871">
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-8ae7"
+            >
+              <div
+                data-swiper-parallax="0"
+                class="swiper-slide-block swiper-slide-block-6804"
+              >
+                <div
+                  class="swiper-slide-text swiper-slide-text-d1a7"
+                  data-swiper-parallax="0"
+                >
+                  Get in touch
+                </div>
+              </div>
+              <div
+                class="swiper-slide-text swiper-slide-text-17f4"
+                data-swiper-parallax="0"
+              >
+                Get in touch with me on the following networks
+              </div>
+            </div>
+
+            <div
+              data-swiper-parallax="0"
+              class="swiper-slide-block swiper-slide-block-e1eb"
+            >
+              <a
+                href="https://twitter.com/nolimits4web"
+                target="_blank"
+                data-swiper-parallax="-100"
+                class="swiper-slide-block swiper-slide-block-7129"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-dbdb"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/x-logo.svg"
+                /> </a
+              ><a
+                href="https://github.com/nolimits4web"
+                target="_blank"
+                data-swiper-parallax="-150"
+                class="swiper-slide-block swiper-slide-block-4080"
+              >
+                <img
+                  class="swiper-slide-image swiper-slide-image-dbdb"
+                  data-swiper-parallax="0"
+                  src="https://studio.swiperjs.com/demo-presets/landing/gh-logo.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        grabCursor: true,
+        pagination: { clickable: true, el: ".swiper-pagination" },
+        freeMode: { enabled: true },
+        keyboard: { enabled: true },
+        mousewheel: { enabled: true },
+        parallax: { enabled: true },
+        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
+      });
+    </script>
+  </body>
+</html>

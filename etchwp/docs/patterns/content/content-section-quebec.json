@@ -1,0 +1,469 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Content Section Quebec"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "content-section-quebec"
+      },
+      "styles": [
+        "etch-section-style",
+        "xtsiyo4"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Inner"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "content-section-quebec__inner"
+          },
+          "styles": [
+            "etch-container-style",
+            "3i9nzm1"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "flex-div",
+                "class": "content-section-quebec__content-wrapper smart-spacing"
+              },
+              "styles": [
+                "etch-flex-div-style",
+                "yq15txp",
+                "sjd57kq"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {
+                    "class": "content-section-quebec__heading"
+                  },
+                  "styles": [
+                    "vg06x88"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Introduce the section"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Text Group"
+                  },
+                  "tag": "div",
+                  "attributes": {
+                    "class": "content-section-quebec__text-group smart-spacing"
+                  },
+                  "styles": [
+                    "j6fwkb7",
+                    "sjd57kq"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "\n"
+                      },
+                      "tag": "p",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla nostrum non vitae. Dolores libero ex amet, autem itaque velit, nemo minus aliquam, incidunt dolorum deserunt voluptas earum? Magnam pariatur."
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  },
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "\n"
+                      },
+                      "tag": "p",
+                      "attributes": {}
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/text",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quisquam tempora placeat sed ea obcaecati saepe voluptatum doloribus."
+                        },
+                        "innerBlocks": [],
+                        "innerHTML": "",
+                        "innerContent": []
+                      }
+                    ],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA"
+                  },
+                  "tag": "a",
+                  "attributes": {
+                    "href": "#",
+                    "class": "content-section-quebec__cta"
+                  },
+                  "styles": [
+                    "jvl2q4f"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Primary action"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Media Group"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "flex-div",
+                "class": "content-section-quebec__media-group"
+              },
+              "styles": [
+                "etch-flex-div-style",
+                "83pufl5"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Media Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "content-section-quebec__media-wrapper"
+                  },
+                  "styles": [
+                    "2vhz7or",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Media"
+                      },
+                      "options": {
+                        "imageData": {
+                          "attachmentId": 34,
+                          "size": ""
+                        }
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                        "class": "content-section-quebec__media",
+                        "alt": "Coffee Cup"
+                      },
+                      "styles": [
+                        "fkp0mwi"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Media Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "content-section-quebec__media-wrapper"
+                  },
+                  "styles": [
+                    "2vhz7or",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/element",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Media"
+                      },
+                      "options": {
+                        "imageData": {
+                          "attachmentId": 34,
+                          "size": ""
+                        }
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                        "class": "content-section-quebec__media",
+                        "alt": "Coffee Cup"
+                      },
+                      "styles": [
+                        "fkp0mwi"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "xtsiyo4": {
+      "type": "class",
+      "selector": ".content-section-quebec",
+      "collection": "default",
+      "css": "background: var(--bg-ultra-light, #fff);\n  /* Begin Content Grid */\n  :where(&) {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0;\n    column-gap: 0 !important;\n    display: grid !important;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width, var(--feature-max-width)))\n      [feature-start]\n      minmax(0, var(--feature-width, var(--feature-width)))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width, var(--feature-width)))\n      [feature-end]\n      minmax(0, var(--feature-max-width, var(--feature-max-width)))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n  }\n  /* End Content Grid */\n  @media (width >= to-rem(1280px)) {\n    padding: 0;\n  }",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "3i9nzm1": {
+      "type": "class",
+      "selector": ".content-section-quebec__inner",
+      "collection": "default",
+      "css": "display: grid;\n  grid-template-rows: 1fr;\n  grid-column: feature-max;\n  gap: var(--content-gap, 1rem);\n  @media (width >= to-rem(1280px)) {\n    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);\n    gap: calc(var(--content-gap, 1rem) * 5);\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "yq15txp": {
+      "type": "class",
+      "selector": ".content-section-quebec__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  justify-content: center;\n  @media (width >= to-rem(1280px)) {\n    padding-block: var(--section-space-m, 6em);\n  }",
+      "readonly": false
+    },
+    "sjd57kq": {
+      "type": "class",
+      "selector": ".smart-spacing",
+      "collection": "default",
+      "css": "/* This is an ACSS utility class for intelligently spacing rich text content. Learn more at https://automaticcss.com. If you don't have ACSS, you'll need to space this content yourself. */",
+      "readonly": false
+    },
+    "vg06x88": {
+      "type": "class",
+      "selector": ".content-section-quebec__heading",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "j6fwkb7": {
+      "type": "class",
+      "selector": ".content-section-quebec__text-group",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "jvl2q4f": {
+      "type": "class",
+      "selector": ".content-section-quebec__cta",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "83pufl5": {
+      "type": "class",
+      "selector": ".content-section-quebec__media-group",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: var(--content-gap, 1rem);\n  @media (width >= to-rem(1280px)) {\n    > figure:nth-child(1) {\n      align-self: start;\n      block-size: 90%;\n      img {\n        border-top-left-radius: 0;\n        border-top-right-radius: 0;\n      }\n    }\n    > figure:nth-child(2) {\n      align-self: end;\n      block-size: 90%;\n      img {\n        border-bottom-left-radius: 0;\n        border-bottom-right-radius: 0;\n      }\n    }\n  }",
+      "readonly": false
+    },
+    "2vhz7or": {
+      "type": "class",
+      "selector": ".content-section-quebec__media-wrapper",
+      "collection": "default",
+      "css": "flex: 1;",
+      "readonly": false
+    },
+    "fkp0mwi": {
+      "type": "class",
+      "selector": ".content-section-quebec__media",
+      "collection": "default",
+      "css": "block-size: 100%;\n  inline-size: 100%;\n  object-fit: cover;\n  aspect-ratio: 12/16;\n  border-radius: var(--radius, 0.5rem);",
+      "readonly": false
+    }
+  }
+}

@@ -1,0 +1,1556 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "Article Alpha"
+      },
+      "tag": "article",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "article-alpha"
+      },
+      "styles": [
+        "etch-section-style",
+        "q2fy3v0"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Article Alpha Hero"
+          },
+          "tag": "header",
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "article-alpha-hero"
+          },
+          "styles": [
+            "etch-section-style",
+            "9sfny0o"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Intro Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "article-alpha-hero__intro-wrapper"
+              },
+              "styles": [
+                "etch-container-style",
+                "grbzxsk"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 89,
+                  "attributes": {
+                    "style": "Center",
+                    "sectionHeadline": "Sample Blog Post Title",
+                    "lede": "This is an introduction. You can populate it dynamically with a custom text field on your site's blog post type.",
+                    "showPrimaryCta": "{false}",
+                    "showSecondaryCta": "{false}"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 1455,
+                  "attributes": {}
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Featured Image Wrapper"
+              },
+              "tag": "figure",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "article-alpha-hero__featured-image-wrapper"
+              },
+              "styles": [
+                "etch-container-style",
+                "fewkx5n",
+                "s4gkacs"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Featured Image"
+                  },
+                  "options": {
+                    "imageData": {
+                      "attachmentId": 34,
+                      "size": ""
+                    }
+                  },
+                  "tag": "img",
+                  "attributes": {
+                    "src": "https://patterns.etchwp.com/wp-content/uploads/jakub-dziubak-XtUd5SiX464-unsplash.webp",
+                    "class": "article-alpha-hero__featured-image",
+                    "alt": "Coffee Cup"
+                  },
+                  "styles": [
+                    "ydvclps"
+                  ]
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Article Alpha Body"
+          },
+          "tag": "section",
+          "attributes": {
+            "data-etch-element": "section",
+            "class": "article-alpha-body"
+          },
+          "styles": [
+            "etch-section-style",
+            "te1w57c"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "article-alpha-body__content-wrapper smart-spacing"
+              },
+              "styles": [
+                "etch-container-style",
+                "o4g5z46",
+                "sjd57kq"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "core/post-content",
+                "attrs": {
+                  "align": "full",
+                  "layout": {
+                    "type": "default"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "",
+                "innerContent": []
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "tag": "p",
+                  "attributes": {}
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Sample content."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "End Matter"
+              },
+              "tag": "div",
+              "attributes": {
+                "data-etch-element": "container",
+                "class": "article-alpha-body__end-matter"
+              },
+              "styles": [
+                "etch-container-style",
+                "r8ztqkp"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Category Badge"
+                  },
+                  "tag": "span",
+                  "attributes": {
+                    "class": "article-alpha-body__category-badge"
+                  },
+                  "styles": [
+                    "hftejb9"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Category"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 282,
+                  "attributes": {
+                    "barStyle": "{false}",
+                    "showLabels": "{false}"
+                  }
+                },
+                "innerBlocks": [],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "q2fy3v0": {
+      "type": "class",
+      "selector": ".article-alpha",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "9sfny0o": {
+      "type": "class",
+      "selector": ".article-alpha-hero",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--container-gap, 2em);\n  padding-block: var(--section-space-m, 6em) 0;\n  padding-inline: var(--gutter, 1em);",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-width: var(--content-width, 1366px);\n  align-self: center;",
+      "readonly": true
+    },
+    "grbzxsk": {
+      "type": "class",
+      "selector": ".article-alpha-hero__intro-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--content-gap, 1em);\n  align-items: center;\n  @media (width < to-rem(796px)) {\n    align-items: start;\n  }",
+      "readonly": false
+    },
+    "vcsar64": {
+      "type": "class",
+      "selector": ".section-intro",
+      "collection": "default",
+      "css": ":has(> &) {\n    container-type: inline-size;\n  }\n  display: flex;\n  flex-direction: column;\n  gap: var(--content-gap);\n\n  &[data-intro-style='center' i] {\n    @container (inline-size >= to-rem(700px)) {\n    align-items: center;\n    text-align: center;\n    }\n  }\n  &[data-intro-style='two column' i] {\n    @container (inline-size >= to-rem(700px)) {\n      display: grid;\n      grid-template-columns: var(--grid-3-2);\n      align-items: center;\n    }\n  }",
+      "readonly": false
+    },
+    "etch-flex-div-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"flex-div\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;",
+      "readonly": true
+    },
+    "vuwo78z": {
+      "type": "class",
+      "selector": ".section-intro__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  gap: var(--content-gap, 1em);\n  max-inline-size: 60ch;",
+      "readonly": false
+    },
+    "xq4u8jj": {
+      "type": "class",
+      "selector": ".section-intro__heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .8em);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  font-weight: 400;",
+      "readonly": false
+    },
+    "be9rana": {
+      "type": "class",
+      "selector": ".section-intro__headline",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "f46yuji": {
+      "type": "class",
+      "selector": ".h1",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "bu9irfe": {
+      "type": "class",
+      "selector": ".section-intro__lede",
+      "collection": "default",
+      "css": "text-wrap: balance;",
+      "readonly": false
+    },
+    "z1c4l0y": {
+      "type": "class",
+      "selector": ".section-intro__cta-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap, 1em) / 2);\n  flex-wrap: wrap;\n  max-inline-size: max-content;\n  justify-self: end;",
+      "readonly": false
+    },
+    "4yvhrzp": {
+      "type": "class",
+      "selector": ".section-intro__cta-primary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "01lzq3r": {
+      "type": "class",
+      "selector": ".section-intro__cta-secondary",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "6f9vr1z": {
+      "type": "class",
+      "selector": ".avatar-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  max-inline-size: max-content;\n  align-items: center;\n  gap: calc(var(--content-gap, 1em) / 2);\n\n  &[data-layout=\"center\" i] {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }",
+      "readonly": false
+    },
+    "jtrz8jn": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-wrapper",
+      "collection": "default",
+      "css": "max-inline-size: max-content;",
+      "readonly": false
+    },
+    "sf4lf2f": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar",
+      "collection": "default",
+      "css": "max-inline-size: var(--avatar-size);\n  aspect-ratio: 1;\n  border-radius: 50%;\n  object-fit: cover;",
+      "readonly": false
+    },
+    "40aaz7e": {
+      "type": "class",
+      "selector": ".avatar-alpha__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 4);\n  font-size: var(--font-size, 1rem);",
+      "readonly": false
+    },
+    "5kj2p2d": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-name",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-weight: 700;",
+      "readonly": false
+    },
+    "0igzogo": {
+      "type": "class",
+      "selector": ".avatar-alpha__avatar-description",
+      "collection": "default",
+      "css": "line-height: 1;\n  font-size: 85%;",
+      "readonly": false
+    },
+    "fewkx5n": {
+      "type": "class",
+      "selector": ".article-alpha-hero__featured-image-wrapper",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "ydvclps": {
+      "type": "class",
+      "selector": ".article-alpha-hero__featured-image",
+      "collection": "default",
+      "css": "object-fit: cover;\n  aspect-ratio: 16/7;",
+      "readonly": false
+    },
+    "te1w57c": {
+      "type": "class",
+      "selector": ".article-alpha-body",
+      "collection": "default",
+      "css": "--content-width: 60ch;\n  padding-block: var(--section-space-m, 6em);\n  padding-inline: 0;",
+      "readonly": false
+    },
+    "o4g5z46": {
+      "type": "class",
+      "selector": ".article-alpha-body__content-wrapper",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: 100%;\n  /* Begin Content Grid */\n  :where(&) {\n    --feature-width: 50px;\n    --feature-max-width: 100px;\n    --full: minmax(var(--gutter), 1fr);\n    padding-inline: 0;\n    column-gap: 0 !important;\n    display: grid !important;\n    grid-template-columns:\n      [full-start]\n      var(--full)\n      [feature-max-start]\n      minmax(0, var(--feature-max-width, var(--feature-max-width)))\n      [feature-start]\n      minmax(0, var(--feature-width, var(--feature-width)))\n      [content-start]\n      min(var(--content-width), 100% - var(--gutter) * 2)\n      [content-end]\n      minmax(0, var(--feature-width, var(--feature-width)))\n      [feature-end]\n      minmax(0, var(--feature-max-width, var(--feature-max-width)))\n      [feature-max-end]\n      var(--full)\n      [full-end];\n\n    > :not(.content--feature, .content--feature-max, .content--full, .content--full-safe) {\n      max-width: 100%;\n      width: 100%;\n    }\n\n    > :where(:not(.content--feature, .content--feature-max, .content--full, .content--full-safe)) {\n      grid-column: content;\n    }\n\n    > .is-bg {\n      grid-column: full;\n    }\n\n    &:is([class*='section--'], [class*='header--']) {\n      padding-inline: 0;\n    }\n  }\n  /* End Content Grid */",
+      "readonly": false
+    },
+    "sjd57kq": {
+      "type": "class",
+      "selector": ".smart-spacing",
+      "collection": "default",
+      "css": "/* \n  This is an ACSS utility class for intelligently spacing rich text content. \n  Learn more at https://automaticcss.com \n  */",
+      "readonly": false
+    },
+    "r8ztqkp": {
+      "type": "class",
+      "selector": ".article-alpha-body__end-matter",
+      "collection": "default",
+      "css": "padding-block-start: calc(var(--content-gap, 1em) / 2);\n  margin-block-start: var(--content-gap, 1em);\n  border-block-start: var(--border, 1px solid #ddd);\n  max-inline-size: min(var(--content-width), calc(100% - var(--gutter) * 2));\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: var(--content-gap, 1em);\n  justify-content: space-between;\n  align-items: center;",
+      "readonly": false
+    },
+    "hftejb9": {
+      "type": "class",
+      "selector": ".article-alpha-body__category-badge",
+      "collection": "default",
+      "css": "font-size: var(--text-s, .75em);",
+      "readonly": false
+    },
+    "xyvbs2g": {
+      "type": "class",
+      "selector": ".social-share-alpha",
+      "collection": "default",
+      "css": "--icon-gap: 0.5em;\n  --background: var(--white);\n  max-inline-size: max-content;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  gap: var(--icon-gap);\n  &[data-show-labels='false'] {\n    &__item-label {\n      position: absolute;\n      width: 1px;\n      height: 1px;\n      padding: 0;\n      margin: -1px;\n      overflow: hidden;\n      clip: rect(0 0 0 0);\n      white-space: nowrap;\n      border: 0;\n    }\n  }\n  &[data-bar-style='true']:not([data-show-labels=\"true\"]) {\n    padding: var(--icon-gap);\n    border-radius: var(--radius);\n    background: var(--background);\n  }",
+      "readonly": false
+    },
+    "jwm38ok": {
+      "type": "class",
+      "selector": ".social-share-alpha__item",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "5bvaxj3": {
+      "type": "class",
+      "selector": ".social-share-alpha__item-link",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 0.5em;\n  line-height: 1;\n  text-decoration: none;\n  [data-show-labels='true']:has(&) a {\n    padding: 0.5em 1em;\n    border-radius: var(--radius, 5px);\n    background: var(--background, #fff);\n  }",
+      "readonly": false
+    },
+    "ymcu3wl": {
+      "type": "class",
+      "selector": ".social-share-alpha__item-icon",
+      "collection": "default",
+      "css": "inline-size: var(--icon-size, 1em);\n  aspect-ratio: 1;\n  color: var(--icon-color, currentColor);",
+      "readonly": false
+    },
+    "0376n46": {
+      "type": "class",
+      "selector": ".social-share-alpha__item-label",
+      "collection": "default",
+      "css": "font-size: var(--icon-size);\n  color: var(--label-color, currentColor);",
+      "readonly": false
+    }
+  },
+  "loops": {
+    "adbwsrq": {
+      "key": "social",
+      "name": "Social",
+      "global": true,
+      "config": {
+        "type": "json",
+        "data": [
+          {
+            "label": "Facebook",
+            "icon": "https://patterns.etchwp.com/wp-content/uploads/fb.svg",
+            "url": "https://facebook.com"
+          },
+          {
+            "label": "X",
+            "icon": "https://patterns.etchwp.com/wp-content/uploads/x.svg",
+            "url": "https://x.com"
+          },
+          {
+            "label": "LinkedIn",
+            "icon": "https://patterns.etchwp.com/wp-content/uploads/ln.svg",
+            "url": "https://linkedin.com"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "89": {
+      "id": 89,
+      "name": "Section Intro",
+      "key": "SectionIntro",
+      "properties": [
+        {
+          "key": "style",
+          "name": "Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "selectOptionsString": "Left\nCenter\nTwo Column",
+          "default": "Left"
+        },
+        {
+          "key": "sectionHeading",
+          "name": "Section Heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Section Heading"
+        },
+        {
+          "key": "sectionHeadline",
+          "name": "Section Headline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Write a compelling headline."
+        },
+        {
+          "key": "lede",
+          "name": "Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is just placeholder text. Don’t be alarmed, this is just here to fill up space since your finalized copy isn’t ready yet."
+        },
+        {
+          "key": "showLede",
+          "name": "Show Lede",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "primaryCtaText",
+          "name": "Primary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Primary CTA"
+        },
+        {
+          "key": "primaryCtaUrl",
+          "name": "Primary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showPrimaryCta",
+          "name": "Show Primary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "secondaryCtaText",
+          "name": "Secondary CTA Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Secondary CTA"
+        },
+        {
+          "key": "secondaryCtaUrl",
+          "name": "Secondary CTA URL",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#"
+        },
+        {
+          "key": "showSecondaryCta",
+          "name": "Show Secondary CTA",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Section Intro"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-etch-element": "container",
+              "data-intro-style": "{props.style}",
+              "class": "section-intro"
+            },
+            "styles": [
+              "etch-container-style",
+              "vcsar64"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "section-intro__content-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "vuwo78z"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Heading"
+                    },
+                    "tag": "h2",
+                    "attributes": {
+                      "class": "section-intro__heading"
+                    },
+                    "styles": [
+                      "xq4u8jj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeading}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Headline"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "section-intro__headline h1"
+                    },
+                    "styles": [
+                      "be9rana",
+                      "f46yuji"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.sectionHeadline}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.showLede",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showLede"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Lede"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "section-intro__lede"
+                        },
+                        "styles": [
+                          "bu9irfe"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.lede}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showPrimaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": "props.showSecondaryCta",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  }
+                },
+                "conditionString": "props.showPrimaryCta || props.showSecondaryCta"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "CTA Wrapper"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "class": "section-intro__cta-wrapper"
+                    },
+                    "styles": [
+                      "z1c4l0y"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showPrimaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showPrimaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Primary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.primaryCtaUrl}",
+                              "class": "section-intro__cta-primary"
+                            },
+                            "styles": [
+                              "4yvhrzp"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.primaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "props.showSecondaryCta",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showSecondaryCta"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "CTA Secondary"
+                            },
+                            "tag": "a",
+                            "attributes": {
+                              "href": "{props.secondaryCtaUrl}",
+                              "class": "section-intro__cta-secondary"
+                            },
+                            "styles": [
+                              "01lzq3r"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{props.secondaryCtaText}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    },
+    "282": {
+      "id": 282,
+      "name": "Social Share Alpha",
+      "key": "SocialShareAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Social Share Alpha"
+            },
+            "tag": "ul",
+            "attributes": {
+              "data-show-labels": "{props.showLabels}",
+              "style": "--background: {props.backgroundColor}; --icon-color: {props.iconColor}; --label-color: {props.labelColor}; --icon-size: {props.iconSize};",
+              "class": "social-share-alpha",
+              "data-bar-style": "{props.barStyle}"
+            },
+            "styles": [
+              "xyvbs2g"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/loop",
+              "attrs": {
+                "metadata": {
+                  "name": "Loop"
+                },
+                "target": "props.loop",
+                "itemId": "network"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Item"
+                    },
+                    "tag": "li",
+                    "attributes": {
+                      "class": "social-share-alpha__item"
+                    },
+                    "styles": [
+                      "jwm38ok"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Item Link"
+                        },
+                        "tag": "a",
+                        "attributes": {
+                          "href": "{network.url}",
+                          "class": "social-share-alpha__item-link",
+                          "aria-label": "Follow on {network.label}"
+                        },
+                        "styles": [
+                          "5bvaxj3"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/svg",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Item Icon"
+                            },
+                            "tag": "svg",
+                            "attributes": {
+                              "class": "social-share-alpha__item-icon",
+                              "src": "{network.icon}",
+                              "stripColors": "true"
+                            },
+                            "styles": [
+                              "ymcu3wl"
+                            ]
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            "\n"
+                          ]
+                        },
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Item Label"
+                            },
+                            "tag": "span",
+                            "attributes": {
+                              "class": "social-share-alpha__item-label"
+                            },
+                            "styles": [
+                              "0376n46"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "{network.label}"
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "key": "loop",
+          "name": "Loop",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "array"
+          },
+          "default": "social"
+        },
+        {
+          "key": "iconSize",
+          "name": "Icon Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "1em",
+          "selectOptionsString": "Match Text : 1em\nSmall : var(--text-s, .5em)\nMedium : var(--text-m, , 1em)\nLarge : var(--text-l, 1.5em)\nX-Large : var(--text-xl, 2em)\nXX-Large : var(--text-xxl, 2.5em)"
+        },
+        {
+          "key": "iconColor",
+          "name": "Icon Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "currentColor"
+        },
+        {
+          "key": "labelColor",
+          "name": "Label Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "currentColor"
+        },
+        {
+          "key": "backgroundColor",
+          "name": "Background Color",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "#fff"
+        },
+        {
+          "key": "barStyle",
+          "name": "Bar Style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        },
+        {
+          "key": "showLabels",
+          "name": "Show Labels",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": false
+        }
+      ],
+      "description": "",
+      "legacyId": ""
+    },
+    "1455": {
+      "name": "Avatar Alpha",
+      "key": "AvatarAlpha",
+      "properties": [
+        {
+          "key": "layout",
+          "name": "Layout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "left",
+          "selectOptionsString": "left\ncenter\n"
+        },
+        {
+          "key": "avatar",
+          "name": "Avatar",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "image"
+          },
+          "default": "https://patterns.etchwp.com/wp-content/uploads/headshot.webp"
+        },
+        {
+          "key": "altText",
+          "name": "Alt Text",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Avatar Name"
+        },
+        {
+          "key": "description",
+          "name": "Description",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Description goes here"
+        },
+        {
+          "key": "avatarSize",
+          "name": "Avatar Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5rem"
+        },
+        {
+          "key": "fontSize",
+          "name": "Font Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--text-m, 1rem)"
+        }
+      ],
+      "id": 1455,
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Avatar Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "class": "avatar-alpha",
+              "data-layout": "{props.layout}"
+            },
+            "styles": [
+              "6f9vr1z"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Avatar Wrapper"
+                },
+                "tag": "figure",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__avatar-wrapper"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "jtrz8jn"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar"
+                    },
+                    "options": {
+                      "imageData": {
+                        "attachmentId": 1352,
+                        "size": ""
+                      }
+                    },
+                    "tag": "img",
+                    "attributes": {
+                      "src": "{props.avatar}",
+                      "alt": "{props.altText}",
+                      "class": "avatar-alpha__avatar",
+                      "style": "--avatar-size: {props.avatarSize}"
+                    },
+                    "styles": [
+                      "sf4lf2f"
+                    ]
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Content Wrapper"
+                },
+                "tag": "div",
+                "attributes": {
+                  "data-etch-element": "flex-div",
+                  "class": "avatar-alpha__content-wrapper",
+                  "style": "--font-size: {props.fontSize}"
+                },
+                "styles": [
+                  "etch-flex-div-style",
+                  "40aaz7e"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Name"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-name"
+                    },
+                    "styles": [
+                      "5kj2p2d"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.name}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Avatar Description"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "avatar-alpha__avatar-description"
+                    },
+                    "styles": [
+                      "0igzogo"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.description}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

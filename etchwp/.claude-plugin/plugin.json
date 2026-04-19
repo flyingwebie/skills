@@ -1,6 +1,6 @@
 {
   "name": "etchwp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates production-ready Etch + AutomaticCSS components with correct BEM naming, ACSS token usage, semantic HTML, and vanilla JavaScript.",
   "author": {
     "name": "Flying Web Solutions",

@@ -1,0 +1,1254 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 1451,
+      "attributes": {
+        "rating": "5",
+        "showBadge": "{false}",
+        "quote": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi neque? Aliquid quibusdam nisi magni repudiandae quo nobis eligendi distinctio explicabo unde. Libero vero quibusdam atque laudantium temporibus itaque asperiores.",
+        "callout": "Made simple!",
+        "showHeadshot": "{true}",
+        "showName": "{true}",
+        "showCitation": "{true}",
+        "truncateWords": "40",
+        "showCallout": "{true}",
+        "showStars": "{true}",
+        "starPosition": "Top",
+        "captionPosition": "Top",
+        "headshotSize": "5rem"
+      }
+    },
+    "innerBlocks": [],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-02-10T22:55:27.266Z",
+  "styles": {
+    "ov6irl6": {
+      "type": "class",
+      "selector": ".testimonial-card",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: var(--card-gap, 1lh);\n\n  &[data-star-position='bottom'] .star-rating-alpha {\n    order: 2;\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "jyw00ma": {
+      "type": "class",
+      "selector": ".star-rating-alpha",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: calc(var(--content-gap) / 3);\n  inline-size: 100%;\n  max-inline-size: max-content;\n  align-items: center;\n  justify-content: start;\n  font-size: var(--font-size);\n  &[data-layout='stacked' i] {\n    display: flex;\n    flex-direction: column;\n    align-items: start;\n  }",
+      "readonly": false
+    },
+    "xs3sigf": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star-group",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: .15em;",
+      "readonly": false
+    },
+    "x7gpurz": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star",
+      "collection": "default",
+      "css": "inline-size: 1em;",
+      "readonly": false
+    },
+    "1t3ud2l": {
+      "type": "class",
+      "selector": ".star-rating-alpha__star--half",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "ge6ni9v": {
+      "type": "class",
+      "selector": ".star-rating-alpha__label",
+      "collection": "default",
+      "css": "line-height: 1;",
+      "readonly": false
+    },
+    "ki8c1ak": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__blockquote",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  gap: .5lh;",
+      "readonly": false
+    },
+    "h0ywt9x": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__callout",
+      "collection": "default",
+      "css": "font-weight: 700;\n  font-size: 1.15em;",
+      "readonly": false
+    },
+    "7wga5cj": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__paragraph",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "9bl25u8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__caption",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: row;\n  gap: 1ch;\n  order: 2;\n  * + & {\n    margin-block-start: 1em;\n  }\n  &[data-caption-position='top'] {\n    order: -2;\n    margin-block-start: 0;\n    margin-block-end: 1em;\n  }",
+      "readonly": false
+    },
+    "rsxlfd8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__headshot-wrapper",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "lzo3j2f": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__headshot",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  max-inline-size: var(--headshot-size);\n  aspect-ratio: 1;\n  object-fit: cover;\n  border-radius: var(--radius, 0.5rem);",
+      "readonly": false
+    },
+    "tfrqliq": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__citation-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  line-height: 1.25;\n  gap: 0.5lh;\n\tjustify-content: center;",
+      "readonly": false
+    },
+    "eam9oe1": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__name",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "twcamw8": {
+      "type": "class",
+      "selector": ".testimonial-card-bravo__citation",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    }
+  },
+  "components": {
+    "1451": {
+      "id": 1451,
+      "legacyId": "",
+      "name": "Testimonial Card Bravo\n",
+      "key": "TestimonialCardBravo",
+      "properties": [
+        {
+          "name": "Rating",
+          "key": "rating",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5"
+        },
+        {
+          "name": "Layout",
+          "key": "layout",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nStacked"
+        },
+        {
+          "name": "Font Size",
+          "key": "fontSize",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "name": "Show Badge",
+          "key": "showBadge",
+          "keyTouched": false,
+          "propSourceId": "51n134a",
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "callout",
+          "name": "Callout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "This is a callout."
+        },
+        {
+          "name": "Quote",
+          "key": "quote",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi neque? Aliquid quibusdam nisi magni repudiandae quo nobis eligendi distinctio explicabo unde. Libero vero quibusdam atque laudantium temporibus itaque asperiores."
+        },
+        {
+          "key": "name",
+          "name": "Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Jenny Juice"
+        },
+        {
+          "key": "citation",
+          "name": "Citation",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Publication Alpha"
+        },
+        {
+          "key": "starPosition",
+          "name": "Star Position",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Bottom",
+          "selectOptionsString": "Bottom\nTop"
+        },
+        {
+          "key": "captionPosition",
+          "name": "Caption Position",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Bottom",
+          "selectOptionsString": "Bottom\nTop"
+        },
+        {
+          "key": "headshotSize",
+          "name": "Headshot Size",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "5rem"
+        },
+        {
+          "key": "showStars",
+          "name": "Show Stars",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "showCallout",
+          "name": "Show Callout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "showHeadshot",
+          "name": "Show Headshot",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "showName",
+          "name": "Show Name",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "showCitation",
+          "name": "Show Citation",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "key": "truncateWords",
+          "name": "Truncate Words",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "75"
+        }
+      ],
+      "description": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Testimonial Card Bravo"
+            },
+            "tag": "figure",
+            "attributes": {
+              "data-star-position": "{props.starPosition.toLowercase()}",
+              "class": "testimonial-card"
+            },
+            "styles": [
+              "ov6irl6",
+              "s4gkacs"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "Show Stars"
+                },
+                "condition": {
+                  "leftHand": "props.showStars",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.showStars"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/component",
+                  "attrs": {
+                    "ref": 1569,
+                    "attributes": {
+                      "rating": "{props.rating}",
+                      "fontSize": "{props.fontSize}",
+                      "showBadge": "{props.showBadge}",
+                      "layout": "{props.layout}",
+                      "nestedPropSourceId": "51n134a"
+                    }
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Blockquote"
+                },
+                "tag": "blockquote",
+                "attributes": {
+                  "class": "testimonial-card-bravo__blockquote"
+                },
+                "styles": [
+                  "ki8c1ak"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Show Callout"
+                    },
+                    "condition": {
+                      "leftHand": "props.showCallout",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "props.showCallout"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Callout"
+                        },
+                        "tag": "p",
+                        "attributes": {
+                          "class": "testimonial-card-bravo__callout"
+                        },
+                        "styles": [
+                          "h0ywt9x"
+                        ]
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "{props.callout}"
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Paragraph"
+                    },
+                    "tag": "p",
+                    "attributes": {
+                      "class": "testimonial-card-bravo__paragraph"
+                    },
+                    "styles": [
+                      "7wga5cj"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.quote.truncateWords(props.truncateWords)}"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "Show Caption Elements"
+                },
+                "condition": {
+                  "leftHand": {
+                    "leftHand": "props.showHeadshot",
+                    "operator": "isTruthy",
+                    "rightHand": null
+                  },
+                  "operator": "||",
+                  "rightHand": {
+                    "leftHand": {
+                      "leftHand": "props.showName",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "operator": "||",
+                    "rightHand": {
+                      "leftHand": "props.showCitation",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    }
+                  }
+                },
+                "conditionString": "props.showHeadshot || props.showName || props.showCitation"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Caption"
+                    },
+                    "tag": "figcaption",
+                    "attributes": {
+                      "data-caption-position": "{props.captionPosition.toLowercase()}",
+                      "class": "testimonial-card-bravo__caption"
+                    },
+                    "styles": [
+                      "9bl25u8"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Show Headshot"
+                        },
+                        "condition": {
+                          "leftHand": "props.showHeadshot",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "props.showHeadshot"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Headshot Wrapper"
+                            },
+                            "tag": "figure",
+                            "attributes": {
+                              "class": "testimonial-card-bravo__headshot-wrapper"
+                            },
+                            "styles": [
+                              "rsxlfd8",
+                              "s4gkacs"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/dynamic-image",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Headshot"
+                                },
+                                "tag": "img",
+                                "attributes": {
+                                  "class": "testimonial-card-bravo__headshot",
+                                  "mediaId": "1352",
+                                  "style": "--headshot-size: {props.headshotSize};"
+                                },
+                                "styles": [
+                                  "lzo3j2f"
+                                ]
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Show Citation Wrapper"
+                        },
+                        "condition": {
+                          "leftHand": {
+                            "leftHand": "props.showName",
+                            "operator": "isTruthy",
+                            "rightHand": null
+                          },
+                          "operator": "||",
+                          "rightHand": {
+                            "leftHand": "props.showCitation",
+                            "operator": "isTruthy",
+                            "rightHand": null
+                          }
+                        },
+                        "conditionString": "props.showName || props.showCitation"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Citation Wrapper"
+                            },
+                            "tag": "div",
+                            "attributes": {
+                              "class": "testimonial-card-bravo__citation-wrapper"
+                            },
+                            "styles": [
+                              "tfrqliq"
+                            ]
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/condition",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Show Name"
+                                },
+                                "condition": {
+                                  "leftHand": "props.showName",
+                                  "operator": "isTruthy",
+                                  "rightHand": null
+                                },
+                                "conditionString": "props.showName"
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Name"
+                                    },
+                                    "tag": "span",
+                                    "attributes": {
+                                      "class": "testimonial-card-bravo__name"
+                                    },
+                                    "styles": [
+                                      "eam9oe1"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/text",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Text"
+                                        },
+                                        "content": "{props.name}"
+                                      },
+                                      "innerBlocks": [],
+                                      "innerHTML": "",
+                                      "innerContent": []
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            },
+                            {
+                              "blockName": "etch/condition",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Show Citation"
+                                },
+                                "condition": {
+                                  "leftHand": "props.showCitation",
+                                  "operator": "isTruthy",
+                                  "rightHand": null
+                                },
+                                "conditionString": "props.showCitation"
+                              },
+                              "innerBlocks": [
+                                {
+                                  "blockName": "etch/element",
+                                  "attrs": {
+                                    "metadata": {
+                                      "name": "Citation"
+                                    },
+                                    "tag": "cite",
+                                    "attributes": {
+                                      "class": "testimonial-card-bravo__citation"
+                                    },
+                                    "styles": [
+                                      "twcamw8"
+                                    ]
+                                  },
+                                  "innerBlocks": [
+                                    {
+                                      "blockName": "etch/text",
+                                      "attrs": {
+                                        "metadata": {
+                                          "name": "Text"
+                                        },
+                                        "content": "{props.citation}"
+                                      },
+                                      "innerBlocks": [],
+                                      "innerHTML": "",
+                                      "innerContent": []
+                                    }
+                                  ],
+                                  "innerHTML": "\n\n",
+                                  "innerContent": [
+                                    "\n",
+                                    null,
+                                    "\n"
+                                  ]
+                                }
+                              ],
+                              "innerHTML": "\n\n",
+                              "innerContent": [
+                                "\n",
+                                null,
+                                "\n"
+                              ]
+                            }
+                          ],
+                          "innerHTML": "\n\n\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    },
+    "1569": {
+      "id": 1569,
+      "legacyId": "",
+      "name": "Star Rating Alpha",
+      "key": "StarRatingAlpha",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Star Rating Alpha"
+            },
+            "tag": "div",
+            "attributes": {
+              "role": "img",
+              "aria-label": "{props.rating} star rating",
+              "data-layout": "{props.layout}",
+              "style": "--font-size: {props.fontSize};",
+              "class": "star-rating-alpha"
+            },
+            "styles": [
+              "jyw00ma"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Star Group"
+                },
+                "tag": "div",
+                "attributes": {
+                  "role": "none",
+                  "aria-hidden": "true",
+                  "class": "star-rating-alpha__star-group"
+                },
+                "styles": [
+                  "xs3sigf"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 1
+                    },
+                    "conditionString": "props.rating >= 1"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 2
+                    },
+                    "conditionString": "props.rating >= 2"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 3
+                    },
+                    "conditionString": "props.rating >= 3"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 4
+                    },
+                    "conditionString": "props.rating >= 4"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "props.rating",
+                      "operator": ">=",
+                      "rightHand": 5
+                    },
+                    "conditionString": "props.rating >= 5"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "class": "star-rating-alpha__star",
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12%201.75C12.311%201.75%2012.5898%201.94201%2012.7007%202.23263L15.0587%208.41234L21.5366%208.72913C21.8418%208.74406%2022.1074%208.94263%2022.2081%209.23111C22.3088%209.5196%2022.2244%209.84032%2021.9947%2010.0419L17.0648%2014.3695L18.8767%2021.3106C18.9558%2021.6135%2018.8383%2021.9338%2018.5821%2022.1137C18.3258%2022.2937%2017.9848%2022.2956%2017.7266%2022.1183L12%2018.1875L6.27335%2022.1183C6.01519%2022.2956%205.67409%2022.2937%205.41785%2022.1137C5.1616%2021.9338%205.04413%2021.6135%205.12323%2021.3106L6.93517%2014.3695L2.0052%2010.0419C1.77557%209.84032%201.69118%209.5196%201.79186%209.23111C1.89253%208.94263%202.15815%208.74406%202.46334%208.72913L8.94127%208.41234L11.2992%202.23263C11.4101%201.94201%2011.6889%201.75%2012%201.75Z%22%20fill%3D%22currentColor%22%20%2F%3E%20%3C%2Fsvg%3E"
+                        },
+                        "styles": [
+                          "x7gpurz"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": {
+                        "leftHand": "props.rating.includes('.')",
+                        "operator": "isTruthy",
+                        "rightHand": null
+                      },
+                      "operator": "&&",
+                      "rightHand": {
+                        "leftHand": "props.rating.endsWith('.0')",
+                        "operator": "isFalsy",
+                        "rightHand": null
+                      }
+                    },
+                    "conditionString": "props.rating.includes('.') && !props.rating.endsWith('.0')"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/svg",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Star"
+                        },
+                        "tag": "svg",
+                        "attributes": {
+                          "src": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20height%3D%2224%22%20color%3D%22currentColor%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M12.1965%201.27048C12.651%201.36378%2012.9772%201.7638%2012.9772%202.22779V18.4504L5.13033%2022.6354C4.77743%2022.8237%204.34546%2022.7778%204.03989%2022.5198C3.73433%2022.2617%203.61684%2021.8435%203.74332%2021.4641L6.00551%2014.6775L1.50414%209.72605C1.24393%209.43983%201.17704%209.02706%201.33353%208.67331C1.49002%208.31956%201.84044%208.0914%202.22726%208.0914H8.42375L11.1017%201.84283C11.2845%201.41635%2011.7419%201.17719%2012.1965%201.27048Z%22%20fill%3D%22currentColor%22%20%2F%3E%3Cpath%20d%3D%22M15.4112%207.70643L15.5762%208.0914H21.7727C22.1595%208.0914%2022.5099%208.31956%2022.6664%208.67331C22.8229%209.02706%2022.756%209.43983%2022.4958%209.72605L17.9944%2014.6775L20.2566%2021.4641C20.3831%2021.8435%2020.2656%2022.2617%2019.96%2022.5198C19.6545%2022.7778%2019.2225%2022.8237%2018.8696%2022.6354L14.5%2020.305V18.342H14.9728L17.6276%2019.7579L15.7782%2014.2097L19.5635%2010.0459H14.5V7.70643H15.4112Z%22%20fill%3D%22currentColor%22%20%2F%3E%3C%2Fsvg%3E",
+                          "class": "star-rating-alpha__star star-rating-alpha__star--half"
+                        },
+                        "styles": [
+                          "x7gpurz",
+                          "1t3ud2l"
+                        ]
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/condition",
+              "attrs": {
+                "metadata": {
+                  "name": "If (Condition)"
+                },
+                "condition": {
+                  "leftHand": "props.showBadge",
+                  "operator": "isTruthy",
+                  "rightHand": null
+                },
+                "conditionString": "props.showBadge"
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Label"
+                    },
+                    "tag": "span",
+                    "attributes": {
+                      "class": "star-rating-alpha__label"
+                    },
+                    "styles": [
+                      "ge6ni9v"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/text",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "content": "{props.rating} Star Rating"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "",
+                      "innerContent": []
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Rating",
+          "key": "rating",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "3.25"
+        },
+        {
+          "name": "Layout",
+          "key": "layout",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nStacked"
+        },
+        {
+          "name": "Font Size",
+          "key": "fontSize",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "1em"
+        },
+        {
+          "name": "Show Badge",
+          "key": "showBadge",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": ""
+    }
+  }
+}

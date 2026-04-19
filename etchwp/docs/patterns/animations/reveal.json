@@ -1,0 +1,170 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 778,
+      "attributes": {
+        "image": "831",
+        "once": "{true}"
+      }
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "revealcontent"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-03-01T18:47:38.952Z",
+  "styles": {
+    "i47sjyk": {
+      "type": "class",
+      "selector": ".reveal",
+      "collection": "default",
+      "css": "position: relative;\n\toverflow: hidden;\n\tdisplay: block;\n\n\t& > * {\n\t\tdisplay: block;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tobject-fit: cover;\n\t}\n\n\t&[data-effect='clip'] {\n\t\t&.reveal--hidden > * { clip-path: var(--reveal-clip-from); }\n\t\t&.reveal--ready > * { will-change: clip-path; }\n\t\t&.reveal--visible > * { clip-path: inset(0% 0% 0% 0%); transition: clip-path var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&.reveal--leaving > * { clip-path: var(--reveal-clip-from); transition: clip-path var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&[data-direction='up'].reveal--hidden > *, &[data-direction='up'].reveal--leaving > * { --reveal-clip-from: inset(100% 0% 0% 0%); }\n\t\t&[data-direction='down'].reveal--hidden > *, &[data-direction='down'].reveal--leaving > * { --reveal-clip-from: inset(0% 0% 100% 0%); }\n\t\t&[data-direction='left'].reveal--hidden > *, &[data-direction='left'].reveal--leaving > * { --reveal-clip-from: inset(0% 100% 0% 0%); }\n\t\t&[data-direction='right'].reveal--hidden > *, &[data-direction='right'].reveal--leaving > * { --reveal-clip-from: inset(0% 0% 0% 100%); }\n\t}\n\n\t&[data-effect='slide'] {\n\t\t&.reveal--hidden > * { transform: var(--reveal-slide-from); }\n\t\t&.reveal--ready > * { will-change: transform; }\n\t\t&.reveal--visible > * { transform: translate(0, 0); transition: transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&.reveal--leaving > * { transform: var(--reveal-slide-from); transition: transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&[data-direction='up'].reveal--hidden > *, &[data-direction='up'].reveal--leaving > * { --reveal-slide-from: translateY(105%); }\n\t\t&[data-direction='down'].reveal--hidden > *, &[data-direction='down'].reveal--leaving > * { --reveal-slide-from: translateY(-105%); }\n\t\t&[data-direction='left'].reveal--hidden > *, &[data-direction='left'].reveal--leaving > * { --reveal-slide-from: translateX(105%); }\n\t\t&[data-direction='right'].reveal--hidden > *, &[data-direction='right'].reveal--leaving > * { --reveal-slide-from: translateX(-105%); }\n\t}\n\n\t&[data-effect='fade'] {\n\t\t&.reveal--hidden > * { opacity: 0; }\n\t\t&.reveal--ready > * { will-change: opacity; }\n\t\t&.reveal--visible > * { opacity: 1; transition: opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&.reveal--leaving > * { opacity: 0; transition: opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t}\n\n\t&[data-effect='scale'] {\n\t\t&.reveal--hidden > * { opacity: 0; transform: var(--reveal-scale-from, scale(1.12)); }\n\t\t&.reveal--ready > * { will-change: transform, opacity; }\n\t\t&.reveal--visible > * { opacity: 1; transform: scale(1); transition: transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&.reveal--leaving > * { opacity: 0; transform: var(--reveal-scale-from, scale(1.12)); transition: transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&[data-direction='up'].reveal--hidden > *, &[data-direction='up'].reveal--leaving > * { --reveal-scale-from: scale(1.12); }\n\t\t&[data-direction='down'].reveal--hidden > *, &[data-direction='down'].reveal--leaving > * { --reveal-scale-from: scale(0.88); }\n\t}\n\n\t&[data-effect='blur'] {\n\t\t&.reveal--hidden > * { opacity: 0; filter: blur(var(--reveal-blur-amount, 16px)); transform: scale(1.04); }\n\t\t&.reveal--ready > * { will-change: filter, opacity, transform; }\n\t\t&.reveal--visible > * { opacity: 1; filter: blur(0px); transform: scale(1); transition: filter var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t\t&.reveal--leaving > * { opacity: 0; filter: blur(var(--reveal-blur-amount, 16px)); transform: scale(1.04); transition: filter var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), opacity var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms), transform var(--reveal-duration, 800ms) var(--reveal-easing, ease) var(--reveal-delay, 0ms); }\n\t}\n\n\t&.reveal--done > * { will-change: auto; }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "778": {
+      "id": 778,
+      "legacyId": "",
+      "name": "Reveal",
+      "key": "Reveal",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Reveal"
+            },
+            "script": {
+              "code": "KGZ1bmN0aW9uICgpIHsKICAndXNlIHN0cmljdCc7CgogIGNvbnN0IFZBTElEX0VGRkVDVFMgPSBuZXcgU2V0KFsnY2xpcCcsICdzbGlkZScsICdmYWRlJywgJ3NjYWxlJywgJ2JsdXInXSk7CiAgY29uc3QgVkFMSURfRElSUyAgICA9IG5ldyBTZXQoWyd1cCcsICdkb3duJywgJ2xlZnQnLCAncmlnaHQnXSk7CiAgY29uc3QgSEFTX0RJUkVDVElPTiA9IG5ldyBTZXQoWydjbGlwJywgJ3NsaWRlJywgJ3NjYWxlJ10pOwogIGNvbnN0IERFRkFVTFRfRElSICAgPSB7IGNsaXA6ICd1cCcsIHNsaWRlOiAndXAnLCBzY2FsZTogJ3VwJyB9OwoKICBmdW5jdGlvbiBwYXJzZUNvbmZpZyhlbCkgewogICAgY29uc3QgZCA9IGVsLmRhdGFzZXQ7CiAgICBjb25zdCBlZmZlY3QgICAgPSBWQUxJRF9FRkZFQ1RTLmhhcyhkLmVmZmVjdCkgICAgPyBkLmVmZmVjdCAgICA6ICdjbGlwJzsKICAgIGNvbnN0IGRpcmVjdGlvbiA9IFZBTElEX0RJUlMuaGFzKGQuZGlyZWN0aW9uKSAgICA/IGQuZGlyZWN0aW9uIDogKERFRkFVTFRfRElSW2VmZmVjdF0gfHwgJ3VwJyk7CiAgICBjb25zdCBkdXJhdGlvbiAgPSBNYXRoLm1heCg1MCwgcGFyc2VJbnQoZC5kdXJhdGlvbiwgMTApIHx8IDgwMCk7CiAgICBjb25zdCBkZWxheSAgICAgPSBNYXRoLm1heCgwLCAgcGFyc2VJbnQoZC5kZWxheSwgICAgMTApIHx8IDApOwogICAgY29uc3QgdGhyZXNob2xkID0gTWF0aC5taW4oMSwgTWF0aC5tYXgoMCwgcGFyc2VGbG9hdChkLnRocmVzaG9sZCkgfHwgMC4yKSk7CiAgICBjb25zdCBvbmNlICAgICAgPSBkLm9uY2UgIT09ICdmYWxzZSc7CiAgICBjb25zdCBlYXNpbmcgICAgPSBkLmVhc2luZyB8fCAnZWFzZSc7CiAgICByZXR1cm4geyBlZmZlY3QsIGRpcmVjdGlvbiwgZHVyYXRpb24sIGRlbGF5LCB0aHJlc2hvbGQsIG9uY2UsIGVhc2luZyB9OwogIH0KCiAgZnVuY3Rpb24gYXBwbHlUaW1pbmdWYXJzKGVsLCBjZmcpIHsKICAgIGVsLnN0eWxlLnNldFByb3BlcnR5KCctLXJldmVhbC1kdXJhdGlvbicsIGNmZy5kdXJhdGlvbiArICdtcycpOwogICAgZWwuc3R5bGUuc2V0UHJvcGVydHkoJy0tcmV2ZWFsLWRlbGF5JywgY2ZnLmRlbGF5ICsgJ21zJyk7CiAgICBlbC5zdHlsZS5zZXRQcm9wZXJ0eSgnLS1yZXZlYWwtZWFzaW5nJywgY2ZnLmVhc2luZyk7CiAgfQoKICBmdW5jdGlvbiBzZXRIaWRkZW4oZWwpIHsKICAgIGVsLmNsYXNzTGlzdC5yZW1vdmUoJ3JldmVhbC0tdmlzaWJsZScsICdyZXZlYWwtLXJlYWR5JywgJ3JldmVhbC0tZG9uZScsICdyZXZlYWwtLWxlYXZpbmcnKTsKICAgIGVsLmNsYXNzTGlzdC5hZGQoJ3JldmVhbC0taGlkZGVuJyk7CiAgfQoKICBmdW5jdGlvbiB0cmlnZ2VyUmV2ZWFsKGVsLCBjZmcpIHsKICAgIGVsLmNsYXNzTGlzdC5yZW1vdmUoJ3JldmVhbC0tbGVhdmluZycpOwogICAgZWwuY2xhc3NMaXN0LmFkZCgncmV2ZWFsLS1yZWFkeScpOwogICAgcmVxdWVzdEFuaW1hdGlvbkZyYW1lKCgpID0+IHsKICAgICAgcmVxdWVzdEFuaW1hdGlvbkZyYW1lKCgpID0+IHsKICAgICAgICBlbC5jbGFzc0xpc3QucmVtb3ZlKCdyZXZlYWwtLWhpZGRlbicpOwogICAgICAgIGVsLmNsYXNzTGlzdC5hZGQoJ3JldmVhbC0tdmlzaWJsZScpOwogICAgICAgIHNldFRpbWVvdXQoKCkgPT4geyBlbC5jbGFzc0xpc3QuYWRkKCdyZXZlYWwtLWRvbmUnKTsgfSwgY2ZnLmR1cmF0aW9uICsgY2ZnLmRlbGF5ICsgNTApOwogICAgICB9KTsKICAgIH0pOwogIH0KCiAgZnVuY3Rpb24gdHJpZ2dlckxlYXZlKGVsLCBjZmcpIHsKICAgIGVsLmNsYXNzTGlzdC5yZW1vdmUoJ3JldmVhbC0tdmlzaWJsZScsICdyZXZlYWwtLWRvbmUnKTsKICAgIGVsLmNsYXNzTGlzdC5hZGQoJ3JldmVhbC0tbGVhdmluZycpOwogICAgc2V0VGltZW91dCgoKSA9PiB7CiAgICAgIGVsLmNsYXNzTGlzdC5yZW1vdmUoJ3JldmVhbC0tbGVhdmluZycsICdyZXZlYWwtLXJlYWR5Jyk7CiAgICAgIGVsLmNsYXNzTGlzdC5hZGQoJ3JldmVhbC0taGlkZGVuJyk7CiAgICB9LCBjZmcuZHVyYXRpb24gKyBjZmcuZGVsYXkgKyA1MCk7CiAgfQoKICBjb25zdCBlbGVtZW50TWFwID0gbmV3IE1hcCgpOwogIGNvbnN0IG9ic2VydmVyc0J5VGhyZXNob2xkID0gbmV3IE1hcCgpOwoKICBmdW5jdGlvbiBnZXRPckNyZWF0ZU9ic2VydmVyKHRocmVzaG9sZCkgewogICAgY29uc3Qga2V5ID0gU3RyaW5nKHRocmVzaG9sZCk7CiAgICBpZiAob2JzZXJ2ZXJzQnlUaHJlc2hvbGQuaGFzKGtleSkpIHJldHVybiBvYnNlcnZlcnNCeVRocmVzaG9sZC5nZXQoa2V5KTsKICAgIGNvbnN0IG9ic2VydmVyID0gbmV3IEludGVyc2VjdGlvbk9ic2VydmVyKChlbnRyaWVzKSA9PiB7CiAgICAgIGVudHJpZXMuZm9yRWFjaChlbnRyeSA9PiB7CiAgICAgICAgY29uc3QgZWwgPSBlbnRyeS50YXJnZXQ7CiAgICAgICAgY29uc3QgY2ZnID0gZWxlbWVudE1hcC5nZXQoZWwpOwogICAgICAgIGlmICghY2ZnKSByZXR1cm47CiAgICAgICAgaWYgKGVudHJ5LmlzSW50ZXJzZWN0aW5nKSB7CiAgICAgICAgICB0cmlnZ2VyUmV2ZWFsKGVsLCBjZmcpOwogICAgICAgICAgaWYgKGNmZy5vbmNlKSB7IG9ic2VydmVyLnVub2JzZXJ2ZShlbCk7IGVsZW1lbnRNYXAuZGVsZXRlKGVsKTsgfQogICAgICAgIH0gZWxzZSBpZiAoIWNmZy5vbmNlKSB7IHRyaWdnZXJMZWF2ZShlbCwgY2ZnKTsgfQogICAgICB9KTsKICAgIH0sIHsgdGhyZXNob2xkLCByb290TWFyZ2luOiAnMHB4IDBweCAtMjBweCAwcHgnIH0pOwogICAgb2JzZXJ2ZXJzQnlUaHJlc2hvbGQuc2V0KGtleSwgb2JzZXJ2ZXIpOwogICAgcmV0dXJuIG9ic2VydmVyOwogIH0KCiAgZnVuY3Rpb24gaW5pdEVsZW1lbnQoZWwpIHsKICAgIGlmIChlbGVtZW50TWFwLmhhcyhlbCkpIHJldHVybjsKICAgIGNvbnN0IGNmZyA9IHBhcnNlQ29uZmlnKGVsKTsKICAgIGlmIChIQVNfRElSRUNUSU9OLmhhcyhjZmcuZWZmZWN0KSAmJiAhZWwuZGF0YXNldC5kaXJlY3Rpb24pIHsKICAgICAgZWwuZGF0YXNldC5kaXJlY3Rpb24gPSBERUZBVUxUX0RJUltjZmcuZWZmZWN0XTsKICAgIH0KICAgIGFwcGx5VGltaW5nVmFycyhlbCwgY2ZnKTsKICAgIHNldEhpZGRlbihlbCk7CiAgICBlbGVtZW50TWFwLnNldChlbCwgY2ZnKTsKICAgIGdldE9yQ3JlYXRlT2JzZXJ2ZXIoY2ZnLnRocmVzaG9sZCkub2JzZXJ2ZShlbCk7CiAgfQoKICBmdW5jdGlvbiBpbml0QWxsKCkgeyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcucmV2ZWFsJykuZm9yRWFjaChpbml0RWxlbWVudCk7IH0KCiAgY29uc3QgbXV0YXRpb25PYnNlcnZlciA9IG5ldyBNdXRhdGlvbk9ic2VydmVyKG11dGF0aW9ucyA9PiB7CiAgICBtdXRhdGlvbnMuZm9yRWFjaChtID0+IHsKICAgICAgbS5hZGRlZE5vZGVzLmZvckVhY2gobiA9PiB7CiAgICAgICAgaWYgKG4ubm9kZVR5cGUgIT09IDEpIHJldHVybjsKICAgICAgICBpZiAobi5jbGFzc0xpc3QgJiYgbi5jbGFzc0xpc3QuY29udGFpbnMoJ3JldmVhbCcpKSBpbml0RWxlbWVudChuKTsKICAgICAgICBuLnF1ZXJ5U2VsZWN0b3JBbGwgJiYgbi5xdWVyeVNlbGVjdG9yQWxsKCcucmV2ZWFsJykuZm9yRWFjaChpbml0RWxlbWVudCk7CiAgICAgIH0pOwogICAgfSk7CiAgfSk7CgogIHdpbmRvdy5SZXZlYWwgPSB7IGluaXQ6IGluaXRFbGVtZW50LCByZWZyZXNoOiBpbml0QWxsIH07CgogIGlmIChkb2N1bWVudC5yZWFkeVN0YXRlID09PSAnbG9hZGluZycpIHsKICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCAoKSA9PiB7IGluaXRBbGwoKTsgbXV0YXRpb25PYnNlcnZlci5vYnNlcnZlKGRvY3VtZW50LmJvZHksIHsgY2hpbGRMaXN0OiB0cnVlLCBzdWJ0cmVlOiB0cnVlIH0pOyB9KTsKICB9IGVsc2UgewogICAgaW5pdEFsbCgpOwogICAgbXV0YXRpb25PYnNlcnZlci5vYnNlcnZlKGRvY3VtZW50LmJvZHksIHsgY2hpbGRMaXN0OiB0cnVlLCBzdWJ0cmVlOiB0cnVlIH0pOwogIH0KfSkoKTs=",
+              "id": "kkekyik"
+            },
+            "tag": "div",
+            "attributes": {
+              "data-effect": "{props.effect}",
+              "data-direction": "{props.direction}",
+              "data-duration": "{props.duration}",
+              "data-delay": "{props.delay}",
+              "data-easing": "{props.easing}",
+              "data-threshold": "{props.threshold}",
+              "data-once": "{props.once}",
+              "class": "reveal"
+            },
+            "styles": [
+              "i47sjyk"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/slot-placeholder",
+              "attrs": {
+                "name": "revealcontent"
+              },
+              "innerBlocks": [],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Effect",
+          "key": "effect",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "clip",
+          "selectOptionsString": "Clip : clip\nSlide : slide\nFade : fade\nScale : scale\nBlur : blur"
+        },
+        {
+          "name": "Direction",
+          "key": "direction",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "up",
+          "selectOptionsString": "Up : up\nRight : right\nDown : down\nLeft : left"
+        },
+        {
+          "name": "Duration",
+          "key": "duration",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "900"
+        },
+        {
+          "name": "Delay",
+          "key": "delay",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "0"
+        },
+        {
+          "name": "Easing",
+          "key": "easing",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "cubic-bezier(0.22, 1, 0.36, 1)"
+        },
+        {
+          "name": "Threshold",
+          "key": "threshold",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "0.2"
+        },
+        {
+          "name": "Once",
+          "key": "once",
+          "keyTouched": false,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        }
+      ],
+      "description": ""
+    }
+  }
+}

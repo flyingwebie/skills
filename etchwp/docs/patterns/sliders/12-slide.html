@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Swiper Studio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <style>
+      /** Demo styles **/
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      body {
+        background: #000;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif;
+        overflow: hidden;
+      }
+
+      /** Swiper styles **/
+
+      :root {
+        --swiper-pagination-color: rgba(255, 255, 255, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 1);
+      }
+
+      .swiper {
+        user-select: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+
+        height: 480px;
+
+        padding: 0px 0px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-sizing: border-box;
+
+        overflow: hidden;
+      }
+
+      .swiper-slide-bg-image {
+        position: absolute;
+        left: -10%;
+        top: -10%;
+        width: 120%;
+        height: 120%;
+        max-width: none;
+        z-index: 0;
+      }
+
+      .swiper-slide-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        transform: translate3d(0, 0, 0);
+      }
+
+      .swiper-slide-4ffe {
+        background-color: rgba(51, 51, 51, 1);
+      }
+      .swiper-slide-bg-image-bdb6 {
+        object-fit: cover;
+        border-radius: inherit;
+        opacity: 1;
+      }
+      .swiper-slide-content-91ee {
+        padding: 48px 48px;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+      }
+      .swiper-slide-text-66a3 {
+        color: rgba(255, 255, 255, 1);
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      .swiper-slide-block-da09 {
+        display: flex;
+        box-sizing: border-box;
+        max-width: 640px;
+        flex-direction: row;
+        gap: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 0px;
+      }
+      .swiper-slide-text-c39c {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper swiper-purple-antlion-531">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/01.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 1
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                nemo saepe vero aliquid assumenda! Ipsa maxime sit reiciendis
+                velit odit aliquam,
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/02.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 2
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Repellat porro animi ad autem mollitia dolorum unde facere
+                laboriosam nostrum, non fuga sapiente incidunt explicabo
+                voluptates voluptas, dolor quisquam corrupti ea ab.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/03.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 3
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Consequatur, amet quibusdam vitae alias, autem asperiores magnam
+                doloribus qui molestiae vel voluptate sit ex, assumenda aperiam
+                esse saepe distinctio doloremque repellendus veniam maiores!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/04.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 4
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Ipsum accusamus officiis nesciunt adipisci nam? Vero sapiente ab
+                et esse veniam laudantium reiciendis accusantium, odio similique
+                fuga praesentium dignissimos facilis.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/05.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 5
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Aliquam, quae hic ducimus a sed et repellat ullam reprehenderit
+                fuga quo vitae excepturi quos quis, non odit magnam laborum
+                consequatur maiores at!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/06.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 6
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Quis veniam ab reiciendis magni error. Fugit excepturi velit
+                veniam ea, fugiat voluptas minus incidunt minima consequatur nam
+                sit neque molestias error.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/07.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 7
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Ea consectetur iste quae repudiandae quas unde ducimus provident
+                earum quasi blanditiis placeat tempore animi possimus, inventore
+                laudantium?
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/08.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 8
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Minima, qui. Harum, magnam non. Cupiditate quaerat pariatur
+                voluptatibus veniam! Debitis velit, quos corrupti accusantium in
+                ea odit.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/09.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 9
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Distinctio sit veritatis accusantium magni unde culpa
+                consequuntur placeat a? Distinctio ad alias qui dicta aliquid
+                deleniti illum voluptatem aperiam.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide swiper-slide-4ffe">
+          <img
+            class="swiper-slide-bg-image swiper-slide-bg-image-bdb6"
+            data-swiper-parallax="10%"
+            src="https://studio.swiperjs.com/demo-images/nature/10.jpg"
+          />
+
+          <div class="swiper-slide-content swiper-slide-content-91ee">
+            <div
+              class="swiper-slide-text swiper-slide-text-66a3"
+              data-swiper-parallax="-100"
+            >
+              Slide 10
+            </div>
+
+            <div
+              data-swiper-parallax="-200"
+              class="swiper-slide-block swiper-slide-block-da09"
+            >
+              <div
+                class="swiper-slide-text swiper-slide-text-c39c"
+                data-swiper-parallax="-100"
+              >
+                Quia quos suscipit error, soluta alias minus hic accusamus
+                repellat, sint rem dolore numquam ab a minima? Adipisci odit
+                perspiciatis ea doloribus.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        grabCursor: true,
+        speed: 600,
+        pagination: { el: ".swiper-pagination" },
+        autoplay: { enabled: true },
+        keyboard: { enabled: true },
+        parallax: { enabled: true },
+        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
+      });
+    </script>
+  </body>
+</html>

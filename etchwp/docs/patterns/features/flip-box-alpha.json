@@ -1,0 +1,431 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/component",
+    "attrs": {
+      "ref": 2383,
+      "attributes": {}
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "front"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      },
+      {
+        "blockName": "etch/slot-content",
+        "attrs": {
+          "name": "back"
+        },
+        "innerBlocks": [],
+        "innerHTML": "\n\n",
+        "innerContent": [
+          "\n",
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2,
+  "styles": {
+    "ufny7fb": {
+      "type": "class",
+      "selector": ".flip-box-alpha",
+      "collection": "default",
+      "css": "perspective: 100vw;\n  position: relative;\n  background: transparent;\n  padding: 0;\n  color: inherit;\n  text-align: inherit;\n\n  [data-flip-box-side='front'],\n  [data-flip-box-side='back'] {\n    backface-visibility: hidden;\n    grid-area: 1 / 1;\n    display: flex;\n    flex-direction: column;\n    background: var(--box-background, white);\n    justify-content: center;\n    align-items: center;\n  }\n\n  &[aria-pressed='true'] &__inner {\n    transform: rotateY(180deg);\n    transition: transform var(--flip-speed, 0.5s);\n  }\n\n  &[data-flip-direction='block'][aria-pressed='true'] &__inner {\n    transform: rotateX(180deg);\n  }\n\n  @media (hover: hover) and (pointer: fine) {\n    &[data-flip-behavior*='hover']:hover &__inner {\n      transform: rotateY(180deg);\n      transition: transform var(--flip-speed, 0.5s);\n    }\n\n    &[data-flip-direction='block'][data-flip-behavior*='hover']:hover &__inner {\n      transform: rotateX(180deg);\n    }\n  }\n\n  &[data-flip-behavior*=\"click\"] {\n    cursor: pointer;\n  }",
+      "readonly": false
+    },
+    "64tu9f4": {
+      "type": "class",
+      "selector": ".flip-box-alpha__inner",
+      "collection": "default",
+      "css": "transition: transform var(--flip-speed, 0.5s);\n  transform-style: preserve-3d;\n  display: grid;\n  inline-size: 100%;\n  block-size: 100%;\n  padding: 0;\n  background: transparent;\n  text-align: inherit;",
+      "readonly": false
+    },
+    "zvorpp2": {
+      "type": "class",
+      "selector": ".flip-box-alpha__front",
+      "collection": "default",
+      "css": "background: white;\n  padding: var(--front-padding);",
+      "readonly": false
+    },
+    "4w3t0tv": {
+      "type": "class",
+      "selector": ".flip-box-alpha__back",
+      "collection": "default",
+      "css": "transform: rotateY(180deg);\n  padding: var(--back-padding);\n\n  [data-flip-direction='block'] & {\n    transform: rotateX(180deg);\n  }",
+      "readonly": false
+    },
+    "je056k8": {
+      "type": "id",
+      "selector": "#flip-box-alpha-hint",
+      "collection": "default",
+      "css": "&.wp-block {\n    display: none;\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2383": {
+      "id": 2383,
+      "name": "Flip Box Alpha",
+      "key": "FlipBoxAlpha",
+      "properties": [
+        {
+          "key": "flipDirection",
+          "name": "Flip Direction",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Inline",
+          "selectOptionsString": "Inline\nBlock"
+        },
+        {
+          "key": "flipSpeed",
+          "name": "Flip Speed",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": ".5s"
+        },
+        {
+          "key": "frontPadding",
+          "name": "Front Padding",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--space-xl, 4rem)"
+        },
+        {
+          "key": "backPadding",
+          "name": "Back Padding",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--space-xl, 4rem)"
+        },
+        {
+          "key": "boxBackground",
+          "name": "Box Background",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "var(--neutral-ultra-light, #f5f5f5)"
+        },
+        {
+          "key": "flipBehavior",
+          "name": "Flip Behavior",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "On Hover",
+          "selectOptionsString": "On Hover\nOn Click"
+        }
+      ],
+      "description": "",
+      "legacyId": "",
+      "blocks": [
+        {
+          "blockName": "etch/element",
+          "attrs": {
+            "metadata": {
+              "name": "Flip Box Alpha"
+            },
+            "script": {
+              "code": "Y2xhc3MgRmxpcEJveCB7CiAgY29uc3RydWN0b3IoZWxlbWVudCkgewogICAgdGhpcy5ib3ggPSBlbGVtZW50OwogICAgdGhpcy5mcm9udCA9IGVsZW1lbnQucXVlcnlTZWxlY3RvcignW2RhdGEtZmxpcC1ib3gtc2lkZT0iZnJvbnQiXScpOwogICAgdGhpcy5iYWNrID0gZWxlbWVudC5xdWVyeVNlbGVjdG9yKCdbZGF0YS1mbGlwLWJveC1zaWRlPSJiYWNrIl0nKTsKICAgIHRoaXMuZm9jdXNUaW1lb3V0ID0gbnVsbDsKICAgIAogICAgdGhpcy5mcm9udC5zZXRBdHRyaWJ1dGUoJ3RhYmluZGV4JywgJy0xJyk7CiAgICB0aGlzLmJhY2suc2V0QXR0cmlidXRlKCd0YWJpbmRleCcsICctMScpOwogICAgdGhpcy5iYWNrLnNldEF0dHJpYnV0ZSgnYXJpYS1oaWRkZW4nLCAndHJ1ZScpOwogICAgCiAgICB0aGlzLmJveC5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICgpID0+IHRoaXMudG9nZ2xlKCkpOwogICAgdGhpcy5ib3guYWRkRXZlbnRMaXN0ZW5lcigna2V5ZG93bicsIChlKSA9PiB0aGlzLmhhbmRsZUtleWRvd24oZSkpOwogICAgdGhpcy5mcm9udC5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHRoaXMuaGFuZGxlUGFuZWxLZXlkb3duKGUpKTsKICAgIHRoaXMuYmFjay5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgKGUpID0+IHRoaXMuaGFuZGxlUGFuZWxLZXlkb3duKGUpKTsKICB9CgogIGhhbmRsZUtleWRvd24oZSkgewogICAgaWYgKGUua2V5ID09PSAnRW50ZXInIHx8IGUua2V5ID09PSAnICcpIHsKICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgICB0aGlzLnRvZ2dsZSgpOwogICAgfQogIH0KCiAgaGFuZGxlUGFuZWxLZXlkb3duKGUpIHsKICAgIGlmIChlLmtleSA9PT0gJ0VudGVyJyB8fCBlLmtleSA9PT0gJyAnKSB7CiAgICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgICAgZS5zdG9wUHJvcGFnYXRpb24oKTsKICAgICAgdGhpcy50b2dnbGUoKTsKICAgIH0KICAgIAogICAgaWYgKGUua2V5ID09PSAnRXNjYXBlJykgewogICAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICAgIHRoaXMuY2xvc2UoKTsKICAgICAgdGhpcy5ib3guZm9jdXMoKTsKICAgIH0KICB9CgogIHRvZ2dsZSgpIHsKICAgIGNsZWFyVGltZW91dCh0aGlzLmZvY3VzVGltZW91dCk7CiAgICAKICAgIGNvbnN0IGZsaXBwZWQgPSB0aGlzLmJveC5nZXRBdHRyaWJ1dGUoJ2FyaWEtcHJlc3NlZCcpID09PSAndHJ1ZSc7CiAgICB0aGlzLmJveC5zZXRBdHRyaWJ1dGUoJ2FyaWEtcHJlc3NlZCcsICFmbGlwcGVkKTsKICAgIHRoaXMuZnJvbnQuc2V0QXR0cmlidXRlKCdhcmlhLWhpZGRlbicsICFmbGlwcGVkKTsKICAgIHRoaXMuYmFjay5zZXRBdHRyaWJ1dGUoJ2FyaWEtaGlkZGVuJywgZmxpcHBlZCk7CiAgICAKICAgIGNvbnN0IHRhcmdldCA9IGZsaXBwZWQgPyB0aGlzLmZyb250IDogdGhpcy5iYWNrOwogICAgdGhpcy5mb2N1c1RpbWVvdXQgPSBzZXRUaW1lb3V0KCgpID0+IHRhcmdldC5mb2N1cygpLCA1MCk7CiAgfQoKICBvcGVuKCkgewogICAgY2xlYXJUaW1lb3V0KHRoaXMuZm9jdXNUaW1lb3V0KTsKICAgIHRoaXMuYm94LnNldEF0dHJpYnV0ZSgnYXJpYS1wcmVzc2VkJywgJ3RydWUnKTsKICAgIHRoaXMuZnJvbnQuc2V0QXR0cmlidXRlKCdhcmlhLWhpZGRlbicsICd0cnVlJyk7CiAgICB0aGlzLmJhY2suc2V0QXR0cmlidXRlKCdhcmlhLWhpZGRlbicsICdmYWxzZScpOwogICAgdGhpcy5mb2N1c1RpbWVvdXQgPSBzZXRUaW1lb3V0KCgpID0+IHRoaXMuYmFjay5mb2N1cygpLCA1MCk7CiAgfQoKICBjbG9zZSgpIHsKICAgIGNsZWFyVGltZW91dCh0aGlzLmZvY3VzVGltZW91dCk7CiAgICB0aGlzLmJveC5zZXRBdHRyaWJ1dGUoJ2FyaWEtcHJlc3NlZCcsICdmYWxzZScpOwogICAgdGhpcy5mcm9udC5zZXRBdHRyaWJ1dGUoJ2FyaWEtaGlkZGVuJywgJ2ZhbHNlJyk7CiAgICB0aGlzLmJhY2suc2V0QXR0cmlidXRlKCdhcmlhLWhpZGRlbicsICd0cnVlJyk7CiAgICB0aGlzLmZvY3VzVGltZW91dCA9IHNldFRpbWVvdXQoKCkgPT4gdGhpcy5mcm9udC5mb2N1cygpLCA1MCk7CiAgfQp9Cgpjb25zdCBmbGlwQm94ZXMgPSBbLi4uZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnW2RhdGEtZmxpcC1ib3hdJyldLm1hcChlbCA9PiBuZXcgRmxpcEJveChlbCkpOw==",
+              "id": "scr7isb"
+            },
+            "tag": "div",
+            "attributes": {
+              "style": "--box-background: {props.boxBackground}; --flip-speed: {props.flipSpeed}; --front-padding: {props.frontPadding}; --back-padding: {props.backPadding};",
+              "data-flip-direction": "{props.flipDirection.toLowercase()}",
+              "aria-pressed": "false",
+              "data-flip-box": "",
+              "role": "button",
+              "tabindex": "0",
+              "aria-describedby": "flip-box-alpha-hint",
+              "data-flip-behavior": "{props.flipBehavior.toLowercase()}",
+              "class": "flip-box-alpha"
+            },
+            "styles": [
+              "ufny7fb"
+            ]
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Inner"
+                },
+                "tag": "div",
+                "attributes": {
+                  "class": "flip-box-alpha__inner"
+                },
+                "styles": [
+                  "64tu9f4"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Front"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-flip-box-side": "front",
+                      "class": "flip-box-alpha__front"
+                    },
+                    "styles": [
+                      "zvorpp2"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/slot-placeholder",
+                      "attrs": {
+                        "name": "front"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "slots.front.empty",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "slots.front.empty"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Front Default"
+                            },
+                            "tag": "p",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "This is the front. We recommend putting a full height, full width wrapper in each slot so you have full control of the layout and styling of your flip box. Then you can clear out the padding and background color props."
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/element",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Back"
+                    },
+                    "tag": "div",
+                    "attributes": {
+                      "data-flip-box-side": "back",
+                      "class": "flip-box-alpha__back"
+                    },
+                    "styles": [
+                      "4w3t0tv"
+                    ]
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/slot-placeholder",
+                      "attrs": {
+                        "name": "back"
+                      },
+                      "innerBlocks": [],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        "\n"
+                      ]
+                    },
+                    {
+                      "blockName": "etch/condition",
+                      "attrs": {
+                        "metadata": {
+                          "name": "If (Condition)"
+                        },
+                        "condition": {
+                          "leftHand": "slots.back.empty",
+                          "operator": "isTruthy",
+                          "rightHand": null
+                        },
+                        "conditionString": "slots.back.empty"
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/element",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "tag": "p",
+                            "attributes": {}
+                          },
+                          "innerBlocks": [
+                            {
+                              "blockName": "etch/text",
+                              "attrs": {
+                                "metadata": {
+                                  "name": "Text"
+                                },
+                                "content": "This is the back of the box. Keep in mind that the back and front will grow equally. Whichever side has the tallest content will determine the ultimate height of your box."
+                              },
+                              "innerBlocks": [],
+                              "innerHTML": "",
+                              "innerContent": []
+                            }
+                          ],
+                          "innerHTML": "\n\n",
+                          "innerContent": [
+                            "\n",
+                            null,
+                            "\n"
+                          ]
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Flip Hint"
+                },
+                "tag": "span",
+                "attributes": {
+                  "id": "flip-box-alpha-hint",
+                  "hidden": ""
+                },
+                "styles": [
+                  "je056k8"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/text",
+                  "attrs": {
+                    "metadata": {
+                      "name": "Text"
+                    },
+                    "content": "Activate to flip card"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ]
+    }
+  }
+}

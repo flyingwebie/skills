@@ -1,0 +1,913 @@
+{
+  "type": "block",
+  "gutenbergBlock": {
+    "blockName": "etch/element",
+    "attrs": {
+      "metadata": {
+        "name": "CTA Section Hotel"
+      },
+      "tag": "section",
+      "attributes": {
+        "data-etch-element": "section",
+        "class": "cta-section-hotel"
+      },
+      "styles": [
+        "etch-section-style",
+        "5o6c8lk"
+      ]
+    },
+    "innerBlocks": [
+      {
+        "blockName": "etch/element",
+        "attrs": {
+          "metadata": {
+            "name": "Inner"
+          },
+          "tag": "div",
+          "attributes": {
+            "data-etch-element": "container",
+            "class": "cta-section-hotel__inner"
+          },
+          "styles": [
+            "etch-container-style",
+            "frnb8br"
+          ]
+        },
+        "innerBlocks": [
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Image Group"
+              },
+              "tag": "div",
+              "attributes": {
+                "class": "cta-section-hotel__image-group"
+              },
+              "styles": [
+                "z2qj7qn"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "cta-section-hotel__image-wrapper"
+                  },
+                  "styles": [
+                    "a91ywn3",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "cta-section-hotel__image"
+                      },
+                      "styles": [
+                        "j49o4pm"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "cta-section-hotel__image-wrapper"
+                  },
+                  "styles": [
+                    "a91ywn3",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "cta-section-hotel__image"
+                      },
+                      "styles": [
+                        "j49o4pm"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "cta-section-hotel__image-wrapper"
+                  },
+                  "styles": [
+                    "a91ywn3",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "cta-section-hotel__image"
+                      },
+                      "styles": [
+                        "j49o4pm"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "cta-section-hotel__image-wrapper"
+                  },
+                  "styles": [
+                    "a91ywn3",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "cta-section-hotel__image"
+                      },
+                      "styles": [
+                        "j49o4pm"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Image Wrapper"
+                  },
+                  "tag": "figure",
+                  "attributes": {
+                    "class": "cta-section-hotel__image-wrapper"
+                  },
+                  "styles": [
+                    "a91ywn3",
+                    "s4gkacs"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/dynamic-image",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Image"
+                      },
+                      "tag": "img",
+                      "attributes": {
+                        "class": "cta-section-hotel__image"
+                      },
+                      "styles": [
+                        "j49o4pm"
+                      ]
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "\n\n",
+                    "innerContent": [
+                      "\n",
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          },
+          {
+            "blockName": "etch/element",
+            "attrs": {
+              "metadata": {
+                "name": "Content Wrapper"
+              },
+              "tag": "div",
+              "attributes": {
+                "class": "cta-section-hotel__content-wrapper"
+              },
+              "styles": [
+                "w97sgw4"
+              ]
+            },
+            "innerBlocks": [
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Heading"
+                  },
+                  "tag": "h2",
+                  "attributes": {
+                    "class": "cta-section-hotel__heading accent-heading"
+                  },
+                  "styles": [
+                    "rezvwe3",
+                    "0uetwk5"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Insert your heading here..."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Headline"
+                  },
+                  "tag": "p",
+                  "attributes": {
+                    "class": "cta-section-hotel__headline h2"
+                  },
+                  "styles": [
+                    "scx0ion",
+                    "vrpk9tf"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Insert your text here..."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "Description"
+                  },
+                  "tag": "p",
+                  "attributes": {
+                    "class": "cta-section-hotel__description"
+                  },
+                  "styles": [
+                    "u82buwy"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolores exercitationem, quaerat amet magnam minima vero veniam et eaque illo quam sequi maxime quia blanditiis explicabo mollitia eius veritatis molestias."
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/element",
+                "attrs": {
+                  "metadata": {
+                    "name": "CTA"
+                  },
+                  "tag": "a",
+                  "attributes": {
+                    "href": "#",
+                    "class": "cta-section-hotel__cta"
+                  },
+                  "styles": [
+                    "y903q9m"
+                  ]
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/text",
+                    "attrs": {
+                      "metadata": {
+                        "name": "Text"
+                      },
+                      "content": "Click me"
+                    },
+                    "innerBlocks": [],
+                    "innerHTML": "",
+                    "innerContent": []
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              },
+              {
+                "blockName": "etch/component",
+                "attrs": {
+                  "ref": 2291,
+                  "attributes": {
+                    "show": "{true}"
+                  }
+                },
+                "innerBlocks": [
+                  {
+                    "blockName": "etch/slot-content",
+                    "attrs": {
+                      "name": "noteContent"
+                    },
+                    "innerBlocks": [
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Text"
+                          },
+                          "tag": "p",
+                          "attributes": {}
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/text",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Text"
+                              },
+                              "content": "Import these custom media definitions"
+                            },
+                            "innerBlocks": [],
+                            "innerHTML": "",
+                            "innerContent": []
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      },
+                      {
+                        "blockName": "etch/element",
+                        "attrs": {
+                          "metadata": {
+                            "name": "Preformatted Code"
+                          },
+                          "tag": "pre",
+                          "attributes": {}
+                        },
+                        "innerBlocks": [
+                          {
+                            "blockName": "etch/element",
+                            "attrs": {
+                              "metadata": {
+                                "name": "Code"
+                              },
+                              "tag": "code",
+                              "attributes": {}
+                            },
+                            "innerBlocks": [
+                              {
+                                "blockName": "etch/text",
+                                "attrs": {
+                                  "metadata": {
+                                    "name": "Text"
+                                  },
+                                  "content": "@custom-media --cta-hotel-desk (width >= 1000px);\n@custom-media --cta-hotel-mob (width < 1000px);\n@custom-media --cta-hotel-narrow (width < 520px);"
+                                },
+                                "innerBlocks": [],
+                                "innerHTML": "",
+                                "innerContent": []
+                              }
+                            ],
+                            "innerHTML": "\n\n",
+                            "innerContent": [
+                              "\n",
+                              null,
+                              "\n"
+                            ]
+                          }
+                        ],
+                        "innerHTML": "\n\n",
+                        "innerContent": [
+                          "\n",
+                          null,
+                          "\n"
+                        ]
+                      }
+                    ],
+                    "innerHTML": "\n\n\n\n",
+                    "innerContent": [
+                      "\n",
+                      null,
+                      "\n\n",
+                      null,
+                      "\n"
+                    ]
+                  }
+                ],
+                "innerHTML": "\n\n",
+                "innerContent": [
+                  "\n",
+                  null,
+                  "\n"
+                ]
+              }
+            ],
+            "innerHTML": "\n\n\n\n\n\n\n\n\n\n",
+            "innerContent": [
+              "\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n\n",
+              null,
+              "\n"
+            ]
+          }
+        ],
+        "innerHTML": "\n\n\n\n",
+        "innerContent": [
+          "\n",
+          null,
+          "\n\n",
+          null,
+          "\n"
+        ]
+      }
+    ],
+    "innerHTML": "\n\n",
+    "innerContent": [
+      "\n",
+      null,
+      "\n"
+    ]
+  },
+  "version": 2.1,
+  "timestamp": "2026-03-03T17:23:44.320Z",
+  "styles": {
+    "etch-section-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"section\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;",
+      "readonly": true
+    },
+    "5o6c8lk": {
+      "type": "class",
+      "selector": ".cta-section-hotel",
+      "collection": "default",
+      "css": "@media (--cta-hotel-desk) {\n    padding-block: 0;\n  }",
+      "readonly": false
+    },
+    "etch-container-style": {
+      "type": "element",
+      "selector": ":where([data-etch-element=\"container\"])",
+      "collection": "default",
+      "css": "inline-size: 100%;\n  display: flex;\n  flex-direction: column;\n  max-inline-size: var(--content-width, 1366px);\n  align-self: center; margin-inline: auto;",
+      "readonly": true
+    },
+    "frnb8br": {
+      "type": "class",
+      "selector": ".cta-section-hotel__inner",
+      "collection": "default",
+      "css": "display: grid;\n  gap: var(--grid-gap, 1rem);\n  @media (--cta-hotel-desk) {\n    grid-template-columns: var(--grid-2);\n    gap: calc(var(--grid-gap, 1rem) * 2);\n  }",
+      "readonly": false
+    },
+    "z2qj7qn": {
+      "type": "class",
+      "selector": ".cta-section-hotel__image-group",
+      "collection": "default",
+      "css": "gap: var(--content-gap, 1rem);\n  display: grid;\n  @media (--cta-hotel-mob) {\n    grid-template-columns: var(--grid-2);\n  }\n  @media (--cta-hotel-desk) {\n    grid-template-columns: var(--grid-2);\n    grid-template-rows: var(--grid-6);\n  }",
+      "readonly": false
+    },
+    "a91ywn3": {
+      "type": "class",
+      "selector": ".cta-section-hotel__image-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  @media (--cta-hotel-desk) {\n    &:nth-child(1) {\n      grid-area: 2 / 1 / span 2 / span 1;\n    }\n    &:nth-child(2) {\n      grid-area: 1 / 2 / span 2 / span 1;\n    }\n    &:nth-child(3) {\n      grid-area: 4 / 1 / span 2 / span 1;\n    }\n    &:nth-child(4) {\n      grid-area: 3 / 2 / span 2 / span 1;\n    }\n    &:nth-child(5) {\n      grid-area: 5 / 2 / span 2 / span 1;\n    }\n  }\n  @media (--cta-hotel-mob) {\n    &:nth-child(5) {\n      display: none;\n    }\n  }",
+      "readonly": false
+    },
+    "s4gkacs": {
+      "type": "custom",
+      "selector": "body figure",
+      "collection": "default",
+      "css": "margin: 0;",
+      "readonly": false
+    },
+    "j49o4pm": {
+      "type": "class",
+      "selector": ".cta-section-hotel__image",
+      "collection": "default",
+      "css": "object-fit: var(--card-media-object-fit);\n  aspect-ratio: 3/3.5;\n  border-radius: var(--radius);\n  flex: 1;",
+      "readonly": false
+    },
+    "w97sgw4": {
+      "type": "class",
+      "selector": ".cta-section-hotel__content-wrapper",
+      "collection": "default",
+      "css": "display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: var(--content-gap, 1rem);\n  @media (--cta-hotel-mob) {\n    display: contents;\n  }",
+      "readonly": false
+    },
+    "rezvwe3": {
+      "type": "class",
+      "selector": ".cta-section-hotel__heading",
+      "collection": "default",
+      "css": "@media (--cta-hotel-mob) {\n    order: -1;\n  }",
+      "readonly": false
+    },
+    "0uetwk5": {
+      "type": "class",
+      "selector": ".accent-heading",
+      "collection": "default",
+      "css": "font-size: var(--text-s, 16px);\n  font-weight: 400;\n  text-transform: uppercase;\n  margin-block-end: -1em;",
+      "readonly": false
+    },
+    "scx0ion": {
+      "type": "class",
+      "selector": ".cta-section-hotel__headline",
+      "collection": "default",
+      "css": "@media (--cta-hotel-mob) {\n    order: -1;\n  }",
+      "readonly": false
+    },
+    "vrpk9tf": {
+      "type": "class",
+      "selector": ".h2",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "u82buwy": {
+      "type": "class",
+      "selector": ".cta-section-hotel__description",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "y903q9m": {
+      "type": "class",
+      "selector": ".cta-section-hotel__cta",
+      "collection": "default",
+      "css": "",
+      "readonly": false
+    },
+    "3aynbux": {
+      "type": "class",
+      "selector": ".dev-note",
+      "collection": "default",
+      "css": "--accent-color: #fff8dc;\n  display: var(--display, none);\n  flex-direction: column;\n  gap: calc(var(--content-gap, 1em) / 2);\n  background-color: var(--accent-color);\n  color: oklch(from var(--accent-color) 0.15 c h / 1);\n  border-left: 4px solid oklch(from var(--accent-color) calc(l / 1.5) calc(c * 6) h / 1);\n  padding: 15px 20px;\n  border-radius: 4px;\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n  inline-size: 100%;\n  max-inline-size: var(--max-width);\n  margin: var(--margin-block) var(--margin-inline);\n  z-index: 999;\n  h1,h2,h3,h4,h5,h6,p {\n    color: oklch(from var(--accent-color) 0.15 c h / 1);\n  }\n  &[data-display='Etch Only' i].etch-builder-block {\n    --display: flex;\n  }\n  &[data-display='Gutenberg Only' i].wp-block {\n    --display: flex;\n  }\n  &[data-display='Etch and Gutenberg' i]:is(.wp-block, .etch-builder-block) {\n    --display: flex;\n  }\n  &[data-style='danger' i] {\n    --accent-color: #f8d7d9;\n  }\n  &[data-style='info' i] {\n    --accent-color: #d1edf0;\n  }\n  &::before {\n    content: attr(data-heading);\n    font-weight: bold;\n    font-size: 0.8rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n  }\n  pre {\n    white-space: pre-wrap;\n    font-size: 0.95rem;\n    inline-size: 100%;\n    max-inline-size: max-content;\n    border-radius: 5px;\n    padding: 1.5rem;\n    background: oklch(from var(--black, black) l c h / 0.1);\n    code {\n      white-space: inherit;\n      font-size: 0.9rem;\n    }\n  }",
+      "readonly": false
+    }
+  },
+  "components": {
+    "2291": {
+      "id": 2291,
+      "legacyId": "",
+      "name": "Dev Note",
+      "key": "DevNote",
+      "blocks": [
+        {
+          "blockName": "etch/condition",
+          "attrs": {
+            "metadata": {
+              "name": "If (Condition)"
+            },
+            "condition": {
+              "leftHand": {
+                "leftHand": "user.loggedIn",
+                "operator": "isTruthy",
+                "rightHand": null
+              },
+              "operator": "&&",
+              "rightHand": {
+                "leftHand": "props.show",
+                "operator": "isTruthy",
+                "rightHand": null
+              }
+            },
+            "conditionString": "user.loggedIn && props.show"
+          },
+          "innerBlocks": [
+            {
+              "blockName": "etch/element",
+              "attrs": {
+                "metadata": {
+                  "name": "Dev Note"
+                },
+                "tag": "div",
+                "attributes": {
+                  "style": "--margin-block: {props.marginBlock}; --margin-inline: {props.marginInline}; --max-width: {props.maxWidth};",
+                  "data-display": "{props.display}",
+                  "data-heading": "{props.heading}",
+                  "data-style": "{props.style}",
+                  "class": "dev-note"
+                },
+                "styles": [
+                  "3aynbux"
+                ]
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "etch/slot-placeholder",
+                  "attrs": {
+                    "name": "noteContent"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    "\n"
+                  ]
+                },
+                {
+                  "blockName": "etch/condition",
+                  "attrs": {
+                    "metadata": {
+                      "name": "If (Condition)"
+                    },
+                    "condition": {
+                      "leftHand": "slots.noteContent.empty",
+                      "operator": "isTruthy",
+                      "rightHand": null
+                    },
+                    "conditionString": "slots.noteContent.empty"
+                  },
+                  "innerBlocks": [
+                    {
+                      "blockName": "etch/element",
+                      "attrs": {
+                        "metadata": {
+                          "name": "Text"
+                        },
+                        "tag": "p",
+                        "attributes": {}
+                      },
+                      "innerBlocks": [
+                        {
+                          "blockName": "etch/text",
+                          "attrs": {
+                            "metadata": {
+                              "name": "Text"
+                            },
+                            "content": "Insert your developer notes. They won't show up on the front end."
+                          },
+                          "innerBlocks": [],
+                          "innerHTML": "",
+                          "innerContent": []
+                        }
+                      ],
+                      "innerHTML": "\n\n",
+                      "innerContent": [
+                        "\n",
+                        null,
+                        "\n"
+                      ]
+                    }
+                  ],
+                  "innerHTML": "\n\n",
+                  "innerContent": [
+                    "\n",
+                    null,
+                    "\n"
+                  ]
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "Visibility",
+          "key": "show",
+          "keyTouched": true,
+          "type": {
+            "primitive": "boolean"
+          },
+          "default": true
+        },
+        {
+          "name": "Heading",
+          "key": "heading",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "Developer Note"
+        },
+        {
+          "name": "Display",
+          "key": "display",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Etch Only",
+          "selectOptionsString": "Etch Only\nEtch And Gutenberg\nGutenberg Only"
+        },
+        {
+          "name": "Max Width",
+          "key": "maxWidth",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          },
+          "default": "max-content"
+        },
+        {
+          "name": "Margin Block",
+          "key": "marginBlock",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Margin Inline",
+          "key": "marginInline",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "name": "Style",
+          "key": "style",
+          "keyTouched": false,
+          "type": {
+            "primitive": "string",
+            "specialized": "select"
+          },
+          "default": "Warning",
+          "selectOptionsString": "Warning\nInfo\nDanger"
+        }
+      ],
+      "description": ""
+    }
+  }
+}
